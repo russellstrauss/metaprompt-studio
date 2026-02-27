@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+:root {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Warm, creative dark theme */
+  --bg: #1a1816;
+  --text: #f5f0eb;
+  --muted: #9c958d;
+  --border: #3d3832;
+  --card: #24211d;
+  --input: #2c2824;
+  --accent: #c97b4a;
+  --accent-fg: #1a1816;
+  --accent-alpha: rgba(201, 123, 74, 0.2);
+  --quality: #5a8f6e;
+  --quality-fg: #f5f0eb;
+  --output-bg: #1e1c19;
+}
+
+/* Dark theme only – no light scheme override */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.8;
+}
