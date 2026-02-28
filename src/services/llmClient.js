@@ -56,7 +56,7 @@ export async function generateOptimizedPrompt({ summary, developerTemplate, mode
 
   if (!cleanSummary) throw new Error('Add prompt details before generating.')
   if (!cleanModel) throw new Error('Select a model before generating.')
-  if (!cleanKey) throw new Error('No Gemini API key. Add one in Developer settings, or set GEMINI_API_KEY in your deployment environment (e.g. Cloudflare Pages → Settings → Environment variables).')
+  if (!cleanKey) throw new Error('No Gemini API key. In dev: add to Developer settings or .env. In production: host must add functions/api/metaprompt-config.js and set GEMINI_API_KEY in Cloudflare Pages env.')
 
   const controller = new AbortController()
   const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS)

@@ -46,15 +46,32 @@ export function useMetaprompt() {
   const meta = ref(defaultMetaprompt())
   const developerInstructionTemplate = ref(readFromStorage(STORAGE_KEYS.instructionTemplate, defaultDeveloperInstructionTemplate))
 
-  const getDefaultApiKey = () =>
-    (typeof window !== 'undefined' && window.__RUNTIME_CONFIG__?.GEMINI_API_KEY
-      ? window.__RUNTIME_CONFIG__.GEMINI_API_KEY
-      : (import.meta.env?.VITE_GEMINI_API_KEY || '')
-    ).trim()
+  // Key NEVER from build in production. Dev: .env (VITE_GEMINI_API_KEY). Prod: runtime config or fetch from parent's config endpoint.
+  const getDefaultApiKey = () => {
+    if (typeof window !== 'undefined' && window.__RUNTIME_CONFIG__?.GEMINI_API_KEY) {
+      return (window.__RUNTIME_CONFIG__.GEMINI_API_KEY || '').trim()
+    }
+    if (import.meta.env.DEV) {
+      return (import.meta.env.VITE_GEMINI_API_KEY || '').trim()
+    }
+    return ''
+  }
   const optimizeProxyUrl =
     (typeof window !== 'undefined' && window.__RUNTIME_CONFIG__?.OPTIMIZE_PROXY_URL) || '/api/optimize-prompt'
 
   const llmApiKey = ref(readFromStorage(STORAGE_KEYS.apiKey, getDefaultApiKey()))
+
+  // Production: key not in build; fetch from parent's config endpoint (same env var, exposed at runtime only).
+  if (typeof window !== 'undefined' && !(llmApiKey.value || '').trim()) {
+    const configUrl = (window.__RUNTIME_CONFIG__?.METAPROMPT_CONFIG_URL) || '/api/metaprompt-config'
+    fetch(configUrl)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        const key = (data?.GEMINI_API_KEY || '').trim()
+        if (key) llmApiKey.value = key
+      })
+      .catch(() => {})
+  }
   const optimizedPrompt = ref('')
   const isOptimizing = ref(false)
   const optimizeError = ref('')
@@ -266,12 +283,19 @@ export function useMetaprompt() {
       return
     }
 
+    const hasExplicitProxy = typeof window !== 'undefined' && window.__RUNTIME_CONFIG__?.OPTIMIZE_PROXY_URL
+    const keyEmpty = !(llmApiKey.value || '').trim()
+    if (keyEmpty && !hasExplicitProxy) {
+      optimizeError.value = 'No API key. Ensure the host provides GET /api/metaprompt-config and sets GEMINI_API_KEY in Cloudflare Pages.'
+      return
+    }
+
     isOptimizing.value = true
     const startedAt = performance.now()
     trackEvent('optimize_start', { model: GEMINI_MODEL })
 
     try {
-      const useProxy = !(llmApiKey.value || '').trim()
+      const useProxy = keyEmpty && hasExplicitProxy
       const output = useProxy
         ? await generateOptimizedPromptViaProxy({
             summary,
