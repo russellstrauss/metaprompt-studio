@@ -37,8 +37,27 @@ npm run preview # preview production build
 3. **Copy**  
    Use “Copy prompt” to paste into DALL·E, Midjourney, Stable Diffusion, or any image generator that accepts text prompts.
 
+## Embedding and API key (host project)
+
+This app **builds to `dist/`** and is meant to be included in another project (e.g. a portfolio) and served from a relative path. Only the host project is deployed. **Optimize (Gemini)** without a client-side key: when the browser has no API key, the app calls a proxy on the same origin. The **host** project must provide that API.
+
+- **Option A – Cloudflare Pages:** Copy the reference Function from this repo into the **host** project: add `functions/api/optimize-prompt.js` to the host repo (see `functions/README.md`). In the **host** project Cloudflare env, set **`GEMINI_API_KEY`** (encrypted is fine). The app will call `/api/optimize-prompt` on the host origin.
+- **Option B – Other host:** Implement `POST` that accepts `{ summary, developerTemplate, model }` and returns `{ prompt }` or `{ error }`. Set **`window.__RUNTIME_CONFIG__.OPTIMIZE_PROXY_URL`** to that URL before the app loads.
+
+The host can also inject **`window.__RUNTIME_CONFIG__.GEMINI_API_KEY`** so the app calls Gemini directly.
+
+ If the host project is on Cloudflare Pages, it should add the Function (see `functions/README.md`) and set **GEMINI_API_KEY** in that project's env. Steps for the host’s :
+
+1. In Cloudflare: open your **Pages** project → **Settings** → **Environment variables**.
+2. Add a variable named **`GEMINI_API_KEY`** and set it to your Gemini API key. Encrypted is fine (and recommended).
+3. Set its value to your Gemini API key and apply it to **Production** (and Preview if you use it).
+4. Trigger a new build (e.g. push a commit or “Retry deployment”). Deploy from source so the static build and `functions/` are both deployed; the Function reads `GEMINI_API_KEY` at runtime.
+
+When no API key is set in the browser (e.g. production), the app calls `/api/optimize-prompt` on the same origin; the Function uses the encrypted env var to call Gemini.
+
 ## Project layout
 
 - `src/App.vue` – main UI and form
 - `src/composables/useMetaprompt.js` – metaprompt state and prompt-building logic
 - `src/style.css` – global styles and theme variables
+- `functions/` – reference Cloudflare Pages Function for the host project (see `functions/README.md`)

@@ -1,5 +1,5 @@
 import { ref, computed, watch } from 'vue'
-import { generateOptimizedPrompt } from '../services/llmClient.js'
+import { generateOptimizedPrompt, generateOptimizedPromptViaProxy } from '../services/llmClient.js'
 import { PROMPT_PLACEHOLDER, defaultDeveloperInstructionTemplate } from '../constants/promptTemplates.js'
 
 const STORAGE_KEYS = {
@@ -46,11 +46,15 @@ export function useMetaprompt() {
   const meta = ref(defaultMetaprompt())
   const developerInstructionTemplate = ref(readFromStorage(STORAGE_KEYS.instructionTemplate, defaultDeveloperInstructionTemplate))
 
-  const envGeminiKey = typeof import.meta !== 'undefined'
-    ? (import.meta.env?.VITE_GEMINI_API_KEY || '').trim()
-    : ''
+  const getDefaultApiKey = () =>
+    (typeof window !== 'undefined' && window.__RUNTIME_CONFIG__?.GEMINI_API_KEY
+      ? window.__RUNTIME_CONFIG__.GEMINI_API_KEY
+      : (import.meta.env?.VITE_GEMINI_API_KEY || '')
+    ).trim()
+  const optimizeProxyUrl =
+    (typeof window !== 'undefined' && window.__RUNTIME_CONFIG__?.OPTIMIZE_PROXY_URL) || '/api/optimize-prompt'
 
-  const llmApiKey = ref(readFromStorage(STORAGE_KEYS.apiKey, envGeminiKey))
+  const llmApiKey = ref(readFromStorage(STORAGE_KEYS.apiKey, getDefaultApiKey()))
   const optimizedPrompt = ref('')
   const isOptimizing = ref(false)
   const optimizeError = ref('')
@@ -267,13 +271,21 @@ export function useMetaprompt() {
     trackEvent('optimize_start', { model: GEMINI_MODEL })
 
     try {
-      const output = await generateOptimizedPrompt({
-        summary,
-        developerTemplate: developerInstructionTemplate.value,
-        model: GEMINI_MODEL,
-        apiKey: llmApiKey.value,
-        endpoint: GEMINI_ENDPOINT,
-      })
+      const useProxy = !(llmApiKey.value || '').trim()
+      const output = useProxy
+        ? await generateOptimizedPromptViaProxy({
+            summary,
+            developerTemplate: developerInstructionTemplate.value,
+            model: GEMINI_MODEL,
+            proxyUrl: optimizeProxyUrl,
+          })
+        : await generateOptimizedPrompt({
+            summary,
+            developerTemplate: developerInstructionTemplate.value,
+            model: GEMINI_MODEL,
+            apiKey: llmApiKey.value,
+            endpoint: GEMINI_ENDPOINT,
+          })
 
       const sanitized = sanitizePromptOutput(output)
       if (!sanitized) {
@@ -302,7 +314,7 @@ export function useMetaprompt() {
   }
 
   function resetDeveloperSettings() {
-    llmApiKey.value = envGeminiKey
+    llmApiKey.value = getDefaultApiKey()
     resetDeveloperTemplateToDefault()
   }
 

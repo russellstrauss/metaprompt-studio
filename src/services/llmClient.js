@@ -56,7 +56,7 @@ export async function generateOptimizedPrompt({ summary, developerTemplate, mode
 
   if (!cleanSummary) throw new Error('Add prompt details before generating.')
   if (!cleanModel) throw new Error('Select a model before generating.')
-  if (!cleanKey) throw new Error('Add a Gemini API key in Developer settings.')
+  if (!cleanKey) throw new Error('No Gemini API key. Add one in Developer settings, or set GEMINI_API_KEY in your deployment environment (e.g. Cloudflare Pages → Settings → Environment variables).')
 
   const controller = new AbortController()
   const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS)
@@ -105,6 +105,53 @@ export async function generateOptimizedPrompt({ summary, developerTemplate, mode
     }
 
     return extractPromptText(payload).trim()
+  } catch (error) {
+    throw new Error(normalizeError(error))
+  } finally {
+    clearTimeout(timeout)
+  }
+}
+
+const PROXY_ENDPOINT = '/api/optimize-prompt'
+const REQUEST_TIMEOUT_MS_PROXY = 30000
+
+/**
+ * Call the Cloudflare Pages Function that uses the encrypted GEMINI_API_KEY at runtime.
+ * Use when no client-side API key is available (e.g. production with encrypted env).
+ */
+export async function generateOptimizedPromptViaProxy({ summary, developerTemplate, model, proxyUrl = PROXY_ENDPOINT }) {
+  const cleanSummary = (summary || '').trim()
+  const cleanModel = (model || '').trim()
+  if (!cleanSummary) throw new Error('Add prompt details before generating.')
+  if (!cleanModel) throw new Error('Select a model before generating.')
+
+  const controller = new AbortController()
+  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS_PROXY)
+
+  try {
+    const url = proxyUrl.startsWith('http') ? proxyUrl : new URL(proxyUrl, typeof window !== 'undefined' ? window.location.origin : '').href
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      signal: controller.signal,
+      body: JSON.stringify({
+        summary: cleanSummary,
+        developerTemplate: (developerTemplate || '').trim(),
+        model: cleanModel,
+      }),
+    })
+
+    const rawText = await response.text().catch(() => '')
+    const data = rawText ? (() => { try { return JSON.parse(rawText) } catch { return {} } })() : {}
+
+    if (!response.ok) {
+      const message = data?.error || `Request failed (${response.status})`
+      throw new Error(message)
+    }
+
+    const prompt = (data?.prompt ?? '').trim()
+    if (!prompt) throw new Error('No prompt text found in response.')
+    return prompt
   } catch (error) {
     throw new Error(normalizeError(error))
   } finally {
