@@ -29,6 +29,17 @@ const defaultMetaprompt = () => ({
   typography: '',
   qualityModifiers: [],
   negativePrompt: '',
+  negativeModifiers: [],
+  brandTones: [],
+  audiences: [],
+  subjectTypes: [],
+  cameraSettings: [],
+  aspectRatios: [],
+  timeOfDay: [],
+  weather: [],
+  materials: [],
+  abstractionLevel: '',
+  renderMediums: [],
 })
 
 export function useMetaprompt() {
@@ -44,6 +55,7 @@ export function useMetaprompt() {
   const isOptimizing = ref(false)
   const optimizeError = ref('')
   const lastOptimizedAt = ref('')
+  const characterLimit = ref(400)
 
   const presetStyles = [
     'cinematic', 'digital painting', 'oil painting', 'watercolor', 'ink illustration',
@@ -82,6 +94,18 @@ export function useMetaprompt() {
     'intricate', 'atmospheric', 'dynamic', 'expressive', 'stylized',
   ]
 
+  const presetSubjectTypes = []
+  const presetCameraSettings = []
+  const presetTimeOfDay = ['dawn', 'midday', 'golden hour', 'dusk', 'night', 'blue hour']
+  const presetWeather = ['clear', 'overcast', 'rain', 'snow', 'fog', 'dramatic clouds']
+  const presetMaterials = ['matte', 'glossy', 'textured', 'metallic', 'translucent', 'organic']
+  const presetAbstractionLevels = ['literal', 'stylized', 'abstract', 'schematic']
+  const presetRenderMediums = ['3D render', 'digital painting', 'photo', 'illustration', 'mixed media']
+  const presetBrandTones = ['professional', 'playful', 'luxury', 'minimal', 'bold', 'trustworthy']
+  const presetAudiences = ['consumer', 'B2B', 'creative', 'technical', 'general']
+  const presetNegativeModifiers = ['blurry', 'low quality', 'oversaturated', 'cluttered', 'generic']
+  const presetAspectRatios = ['1:1', '16:9', '9:16', '4:3', '3:4', '21:9']
+
   const baseSummary = computed(() => buildPrompt(meta.value))
   const generatedPrompt = computed(() => baseSummary.value) // Backward-compatible alias for existing UI references.
   const selectedModel = computed(() => GEMINI_MODEL)
@@ -100,6 +124,13 @@ export function useMetaprompt() {
     const optimized = (optimizedPrompt.value || '').trim()
     if (optimized) return optimized
     return baseSummary.value
+  })
+
+  /** Parsed array of prompt options when LLM returns multiple (e.g. three prompts separated by blank lines). */
+  const optimizedPromptOptions = computed(() => {
+    const raw = (optimizedPrompt.value || '').trim()
+    if (!raw) return []
+    return raw.split(/\n\n+/).map((s) => s.trim()).filter(Boolean)
   })
 
   function buildPrompt(m) {
@@ -136,6 +167,20 @@ export function useMetaprompt() {
       parts.push(`Quality: [${m.qualityModifiers.join(', ')}]`)
     }
 
+    // 9. Brand, audience, negative modifiers
+    const brandParts = [...(m.brandTones || []), ...(m.audiences || [])].filter(Boolean)
+    if (brandParts.length) parts.push(`Brand / Audience: [${brandParts.join(', ')}]`)
+    if (m.negativeModifiers?.length) parts.push(`Avoid: [${m.negativeModifiers.join(', ')}]`)
+    if (m.negativePrompt) parts.push(`Avoid (custom): ${m.negativePrompt}`)
+
+    // 10. Aspect ratio, time, weather, materials, abstraction, render mediums
+    if (m.aspectRatios?.length) parts.push(`Aspect ratio: [${m.aspectRatios.join(', ')}]`)
+    const timeParts = [...(m.timeOfDay || []), ...(m.weather || [])].filter(Boolean)
+    if (timeParts.length) parts.push(`Time / Weather: [${timeParts.join(', ')}]`)
+    if (m.materials?.length) parts.push(`Materials: [${m.materials.join(', ')}]`)
+    if (m.abstractionLevel) parts.push(`Abstraction: ${m.abstractionLevel}`)
+    if (m.renderMediums?.length) parts.push(`Render medium: [${m.renderMediums.join(', ')}]`)
+
     return parts.filter(Boolean).join('. ')
   }
 
@@ -168,6 +213,23 @@ export function useMetaprompt() {
 
   function toggleQualityTag(tag) {
     toggleInArray('qualityModifiers', tag)
+  }
+
+  function toggleSubjectType(s) { toggleInArray('subjectTypes', s) }
+  function toggleAspectRatio(r) { toggleInArray('aspectRatios', r) }
+  function toggleCameraSetting(c) { toggleInArray('cameraSettings', c) }
+  function toggleTimeOfDay(t) { toggleInArray('timeOfDay', t) }
+  function toggleWeather(w) { toggleInArray('weather', w) }
+  function toggleMaterial(m) { toggleInArray('materials', m) }
+  function toggleRenderMedium(m) { toggleInArray('renderMediums', m) }
+  function toggleBrandTone(t) { toggleInArray('brandTones', t) }
+  function toggleAudience(a) { toggleInArray('audiences', a) }
+  function toggleNegativeModifier(n) { toggleInArray('negativeModifiers', n) }
+  function setAbstractionLevel(level) {
+    meta.value.abstractionLevel = level
+  }
+  function clearSelections() {
+    reset()
   }
 
   function reset() {
@@ -264,6 +326,7 @@ export function useMetaprompt() {
     finalOutput,
     optimizePrompt,
     optimizedPrompt,
+    optimizedPromptOptions,
     isOptimizing,
     optimizeError,
     lastOptimizedAt,
@@ -281,12 +344,36 @@ export function useMetaprompt() {
     presetLighting,
     presetMoods,
     qualityTags,
+    presetSubjectTypes,
+    presetCameraSettings,
+    presetTimeOfDay,
+    presetWeather,
+    presetMaterials,
+    presetAbstractionLevels,
+    presetRenderMediums,
+    presetBrandTones,
+    presetAudiences,
+    presetNegativeModifiers,
+    presetAspectRatios,
+    characterLimit,
     toggleArtStyle,
+    toggleSubjectType,
     toggleColorPalette,
     toggleComposition,
+    toggleAspectRatio,
+    toggleCameraSetting,
     toggleLighting,
     toggleMood,
     toggleQualityTag,
+    toggleTimeOfDay,
+    toggleWeather,
+    toggleMaterial,
+    toggleRenderMedium,
+    toggleBrandTone,
+    toggleAudience,
+    toggleNegativeModifier,
+    setAbstractionLevel,
+    clearSelections,
     reset,
   }
 }

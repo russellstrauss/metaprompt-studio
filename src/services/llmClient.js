@@ -92,7 +92,14 @@ export async function generateOptimizedPrompt({ summary, developerTemplate, mode
       const apiError = payload?.error?.message || payload?.message
       if (apiError) throw new Error(apiError)
       if (response.status === 429) throw new Error('Rate limit reached (429). Wait a moment and try again, or switch to a different model.')
-      if (response.status === 401 || response.status === 403) throw new Error('Invalid or unauthorized API key. Check your key in Developer settings.')
+      if (response.status === 403) {
+        const origin = typeof window !== 'undefined' && window.location?.origin ? window.location.origin : ''
+        const hint = origin
+          ? ` If your API key is restricted by HTTP referrer, add "${origin}/*" and "${origin}" in Google Cloud Console → Credentials → your key → Application restrictions.`
+          : ' If your API key is restricted by HTTP referrer, add this site’s domain in Google Cloud Console → Credentials → your key → Application restrictions.'
+        throw new Error(`Invalid or unauthorized API key. Check your key in Developer settings.${hint}`)
+      }
+      if (response.status === 401) throw new Error('Invalid or unauthorized API key. Check your key in Developer settings.')
       const detail = rawText ? ` — ${rawText.slice(0, 200)}` : ''
       throw new Error(`Request failed (${response.status})${detail}`)
     }
