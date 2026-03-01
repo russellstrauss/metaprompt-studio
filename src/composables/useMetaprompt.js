@@ -22,17 +22,22 @@ const defaultMetaprompt = () => ({
   compositionCustom: '',
   framing: '',
   lightings: [],
-  lightingCustom: '',
   moods: [],
   moodCustom: '',
   context: '',
+  contextPresets: [],
   typography: '',
   qualityModifiers: [],
   brandTones: [],
+  brandToneCustom: '',
   audiences: [],
+  audienceCustom: '',
   subjectTypes: [],
+  subjectTypeCustom: '',
   cameraSettings: [],
+  cameraSettingCustom: '',
   aspectRatios: [],
+  aspectRatioCustom: '',
   timeOfDay: [],
   weather: [],
   materials: [],
@@ -62,14 +67,18 @@ export function useMetaprompt() {
 
   const llmApiKey = ref(readFromStorage(STORAGE_KEYS.apiKey, getDefaultApiKey()))
 
-  // Production: key not in build; fetch from parent's config endpoint (same env var, exposed at runtime only).
-  if (typeof window !== 'undefined' && !(llmApiKey.value || '').trim()) {
+  /** Optional presets from GET /api/metaprompt-config (presets: { artStyles: [], colorPalettes: [], ... }). Merged with in-code defaults. */
+  const configPresets = ref({})
+  if (typeof window !== 'undefined') {
     const configUrl = (window.__RUNTIME_CONFIG__?.METAPROMPT_CONFIG_URL) || '/api/metaprompt-config'
     fetch(configUrl)
       .then((r) => (r.ok ? r.json() : null))
       .then((data) => {
         const key = (data?.GEMINI_API_KEY || '').trim()
-        if (key) llmApiKey.value = key
+        if (!(llmApiKey.value || '').trim() && key) llmApiKey.value = key
+        if (data?.presets && typeof data.presets === 'object') {
+          configPresets.value = data.presets
+        }
       })
       .catch(() => {})
   }
@@ -92,53 +101,90 @@ export function useMetaprompt() {
     return typeof document !== 'undefined' && document.visibilityState === 'visible'
   }
 
-  const presetStyles = [
+  const defaultPresetStyles = [
     'cinematic', 'digital painting', 'oil painting', 'watercolor', 'ink illustration',
     'photorealistic', 'concept art', 'anime', 'flat design', 'minimalist',
     'surrealist', 'impressionist', 'art deco', 'retro', 'cyberpunk', 'fantasy',
     'sci-fi', 'noir', 'vintage', 'brutalist', 'organic', 'geometric',
+    'ukiyo-e', 'pixel art', 'collage', 'linocut', 'gouache', 'charcoal', 'low-poly', 'isometric',
+    'paper cutout', 'stained glass', 'mosaic', 'engraving', 'airbrush', 'pastel drawing',
+    'art nouveau', 'pop art', 'constructivist', 'expressionist', 'baroque', 'renaissance',
   ]
-
-  const presetColorPalettes = [
+  const defaultPresetColorPalettes = [
     'warm earth tones', 'cool blues and grays', 'teal and coral', 'monochrome',
     'pastel', 'vibrant saturated', 'muted desaturated', 'golden and amber',
     'forest greens', 'sunset orange and purple', 'neutral beige', 'high contrast B&W',
     'jewel tones', 'dusty rose and sage', 'electric neon', 'sepia',
+    'complementary', 'analogous', 'muted primary', 'burgundy and cream',
+    'slate and silver', 'terracotta and ochre', 'ocean blues', 'autumn foliage',
+    'black and gold', 'cream and charcoal', 'mint and coral', 'lavender and sage',
   ]
-
-  const presetCompositions = [
+  const defaultPresetCompositions = [
     'rule of thirds', 'centered', 'golden ratio', 'symmetrical', 'dynamic diagonal',
     'leading lines', 'frame within frame', 'negative space', 'close-up', 'wide shot',
     'bird\'s eye', 'low angle', 'Dutch angle', 'portrait', 'landscape',
+    'extreme close-up', 'two-shot', 'panorama', 'over-the-shoulder',
+    'split screen', 'layered depth', 'foreground focus', 'centered subject',
+    'off-center', 'triangular', 'radial', 'grid', 'organic flow',
   ]
-
-  const presetLighting = [
+  const defaultPresetLighting = [
     'soft natural light', 'dramatic chiaroscuro', 'golden hour', 'blue hour',
     'studio lighting', 'rim light', 'backlit', 'overcast', 'neon', 'candlelight',
     'volumetric', 'high contrast', 'low key', 'high key', 'dappled light',
+    'silhouette', 'bounce light', 'fluorescent', 'moonlight', 'overcast midday',
+    'sunset glow', 'window light', 'hard light', 'soft diffused', 'dramatic side light',
+    'ambient', 'practical lights', 'strobe', 'natural overcast',
   ]
-
-  const presetMoods = [
+  const defaultPresetMoods = [
     'serene', 'mysterious', 'epic', 'intimate', 'melancholic', 'joyful',
     'tense', 'dreamy', 'nostalgic', 'ethereal', 'powerful', 'whimsical',
     'ominous', 'hopeful', 'chaotic', 'peaceful',
+    'eerie', 'cozy', 'triumphant', 'urgent', 'contemplative',
+    'dramatic', 'romantic', 'witty', 'solemn', 'playful', 'rebellious',
+    'futuristic', 'timeless', 'raw', 'refined',
   ]
-
-  const qualityTags = [
+  const defaultQualityTags = [
     'highly detailed', 'sharp focus', '8k', 'masterpiece', 'professional',
     'intricate', 'atmospheric', 'dynamic', 'expressive', 'stylized',
+    'clean edges', 'consistent lighting', 'depth of field',
+    '4k', 'ultra detailed', 'hyperrealistic', 'polished', 'cinematic quality',
+    'rich textures', 'vibrant colors', 'balanced composition', 'professional grade',
   ]
+  const defaultPresetTimeOfDay = ['dawn', 'midday', 'noon', 'golden hour', 'twilight', 'dusk', 'night', 'midnight', 'blue hour', 'sunrise', 'late afternoon', 'pre-dawn']
+  const defaultPresetWeather = ['clear', 'overcast', 'rain', 'snow', 'fog', 'dramatic clouds', 'storm', 'haze', 'wind', 'aurora', 'mist', 'light rain', 'heavy clouds', 'sunny', 'partly cloudy']
+  const defaultPresetMaterials = ['matte', 'glossy', 'textured', 'metallic', 'translucent', 'organic', 'frosted', 'iridescent', 'weathered', 'glossy matte', 'satin', 'rough', 'smooth', 'grainy', 'lustrous', 'opaque']
+  const defaultPresetAbstractionLevels = ['literal', 'stylized', 'abstract', 'schematic', 'semi-abstract', 'hyperrealistic']
+  const defaultPresetRenderMediums = ['3D render', 'digital painting', 'photo', 'illustration', 'mixed media', 'vector', 'hand-drawn', 'CGI', 'oil on canvas', 'watercolor', 'pencil sketch', 'clay render', 'cel-shaded', 'motion graphics still']
+  const defaultPresetBrandTones = ['professional', 'playful', 'luxury', 'minimal', 'bold', 'trustworthy', 'innovative', 'heritage', 'approachable', 'premium', 'edgy', 'warm', 'authoritative', 'friendly', 'sophisticated', 'disruptive']
+  const defaultPresetAudiences = ['consumer', 'B2B', 'creative', 'technical', 'general', 'enterprise', 'youth', 'educators', 'professionals', 'enthusiasts', 'beginners', 'luxury buyers', 'budget-conscious', 'international', 'local']
+  const defaultPresetAspectRatios = ['1:1', '16:9', '9:16', '4:3', '3:4', '21:9', '2:3', '3:2', '5:4', '4:5', '1.85:1', '2.39:1']
+  const defaultPresetContexts = ['modern', 'historical', 'fantasy', 'corporate', 'outdoor', 'studio', 'urban', 'rural', 'domestic', 'industrial', 'minimal', 'luxury', 'natural', 'futuristic', 'medieval', 'contemporary']
+  const defaultPresetSubjectTypes = ['product', 'portrait', 'landscape', 'architecture', 'food', 'vehicle', 'abstract', 'still life', 'wildlife', 'fashion', 'interior', 'editorial', 'event', 'conceptual']
+  const defaultPresetCameraSettings = ['shallow DOF', 'deep DOF', 'macro', 'wide-angle', 'telephoto', 'fish-eye', 'standard', 'tilt-shift', 'bokeh', 'sharp throughout']
 
-  const presetSubjectTypes = []
-  const presetCameraSettings = []
-  const presetTimeOfDay = ['dawn', 'midday', 'golden hour', 'dusk', 'night', 'blue hour']
-  const presetWeather = ['clear', 'overcast', 'rain', 'snow', 'fog', 'dramatic clouds']
-  const presetMaterials = ['matte', 'glossy', 'textured', 'metallic', 'translucent', 'organic']
-  const presetAbstractionLevels = ['literal', 'stylized', 'abstract', 'schematic']
-  const presetRenderMediums = ['3D render', 'digital painting', 'photo', 'illustration', 'mixed media']
-  const presetBrandTones = ['professional', 'playful', 'luxury', 'minimal', 'bold', 'trustworthy']
-  const presetAudiences = ['consumer', 'B2B', 'creative', 'technical', 'general']
-  const presetAspectRatios = ['1:1', '16:9', '9:16', '4:3', '3:4', '21:9']
+  function mergePresets(defaultList, configKey) {
+    const configList = configPresets.value[configKey]
+    if (!Array.isArray(configList) || configList.length === 0) return defaultList
+    return [...defaultList, ...configList]
+  }
+
+  const presetStyles = computed(() => mergePresets(defaultPresetStyles, 'artStyles'))
+  const presetColorPalettes = computed(() => mergePresets(defaultPresetColorPalettes, 'colorPalettes'))
+  const presetCompositions = computed(() => mergePresets(defaultPresetCompositions, 'compositions'))
+  const presetLighting = computed(() => mergePresets(defaultPresetLighting, 'lighting'))
+  const presetMoods = computed(() => mergePresets(defaultPresetMoods, 'moods'))
+  const qualityTags = computed(() => mergePresets(defaultQualityTags, 'qualityTags'))
+  const presetTimeOfDay = computed(() => mergePresets(defaultPresetTimeOfDay, 'timeOfDay'))
+  const presetWeather = computed(() => mergePresets(defaultPresetWeather, 'weather'))
+  const presetMaterials = computed(() => mergePresets(defaultPresetMaterials, 'materials'))
+  const presetAbstractionLevels = computed(() => mergePresets(defaultPresetAbstractionLevels, 'abstractionLevels'))
+  const presetRenderMediums = computed(() => mergePresets(defaultPresetRenderMediums, 'renderMediums'))
+  const presetBrandTones = computed(() => mergePresets(defaultPresetBrandTones, 'brandTones'))
+  const presetAudiences = computed(() => mergePresets(defaultPresetAudiences, 'audiences'))
+  const presetAspectRatios = computed(() => mergePresets(defaultPresetAspectRatios, 'aspectRatios'))
+  const presetContexts = computed(() => mergePresets(defaultPresetContexts, 'contexts'))
+  const presetSubjectTypes = computed(() => mergePresets(defaultPresetSubjectTypes, 'subjectTypes'))
+  const presetCameraSettings = computed(() => mergePresets(defaultPresetCameraSettings, 'cameraSettings'))
 
   const baseSummary = computed(() => buildPrompt(meta.value))
   const generatedPrompt = computed(() => baseSummary.value) // Backward-compatible alias for existing UI references.
@@ -197,17 +243,21 @@ export function useMetaprompt() {
     // 1. Subject & description (core content)
     if (m.subject) parts.push(m.subject)
     if (m.description) parts.push(`Description: ${m.description}`)
+    const subjectTypeParts = [...(m.subjectTypes || []), (m.subjectTypeCustom || '').trim()].filter(Boolean)
+    if (subjectTypeParts.length) parts.push(`Subject type: [${subjectTypeParts.join(', ')}]`)
 
     // 2. Art style & medium
     const styleParts = [...(m.artStyles || []), m.artStyleCustom, m.medium].filter(Boolean)
     if (styleParts.length) parts.push(`Art Style: [${styleParts.join(', ')}]`)
 
-    // 3. Composition & framing
+    // 3. Composition, framing & camera
     const compParts = [...(m.compositions || []), m.compositionCustom, m.framing].filter(Boolean)
     if (compParts.length) parts.push(`Composition: [${compParts.join(', ')}]`)
+    const cameraParts = [...(m.cameraSettings || []), (m.cameraSettingCustom || '').trim()].filter(Boolean)
+    if (cameraParts.length) parts.push(`Camera: [${cameraParts.join(', ')}]`)
 
     // 4. Lighting & mood
-    const atmParts = [...(m.lightings || []), m.lightingCustom, ...(m.moods || []), m.moodCustom].filter(Boolean)
+    const atmParts = [...(m.lightings || []), ...(m.moods || []), m.moodCustom].filter(Boolean)
     if (atmParts.length) parts.push(`Lighting & Mood: [${atmParts.join(', ')}]`)
 
     // 5. Color palette
@@ -215,7 +265,8 @@ export function useMetaprompt() {
     if (colorParts.length) parts.push(`Color Palette: [${colorParts.join(', ')}]`)
 
     // 6. Context (scene/setting)
-    if (m.context) parts.push(`Setting: ${m.context}`)
+    const contextParts = [(m.context || '').trim(), ...(m.contextPresets || [])].filter(Boolean)
+    if (contextParts.length) parts.push(`Setting: ${contextParts.join(', ')}`)
 
     // 7. Typography (if relevant for image gen)
     if (m.typography) parts.push(`Typography: [${m.typography}]`)
@@ -281,6 +332,7 @@ export function useMetaprompt() {
   function toggleRenderMedium(m) { toggleInArray('renderMediums', m) }
   function toggleBrandTone(t) { toggleInArray('brandTones', t) }
   function toggleAudience(a) { toggleInArray('audiences', a) }
+  function toggleContextPreset(p) { toggleInArray('contextPresets', p) }
   function setAbstractionLevel(level) {
     meta.value.abstractionLevel = level
   }
@@ -510,6 +562,7 @@ export function useMetaprompt() {
     presetBrandTones,
     presetAudiences,
     presetAspectRatios,
+    presetContexts,
     characterLimit,
     toggleArtStyle,
     toggleSubjectType,
@@ -526,6 +579,7 @@ export function useMetaprompt() {
     toggleRenderMedium,
     toggleBrandTone,
     toggleAudience,
+    toggleContextPreset,
     setAbstractionLevel,
     clearSelections,
     reset,

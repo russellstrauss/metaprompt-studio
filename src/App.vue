@@ -35,6 +35,7 @@ const {
 	presetRenderMediums,
 	presetBrandTones,
 	presetAudiences,
+	presetContexts,
 	toggleArtStyle,
 	toggleSubjectType,
 	toggleColorPalette,
@@ -50,6 +51,7 @@ const {
 	toggleRenderMedium,
 	toggleBrandTone,
 	toggleAudience,
+	toggleContextPreset,
 	setAbstractionLevel,
 	clearSelections,
 	reset,
@@ -96,16 +98,6 @@ function addCustomComposition() {
 	meta.value.compositionCustom = ''
 }
 
-function addCustomLighting() {
-	const value = (meta.value.lightingCustom || '').trim()
-	if (!value) return
-	const existing = meta.value.lightings || []
-	if (!existing.includes(value)) {
-		meta.value.lightings = [...existing, value]
-	}
-	meta.value.lightingCustom = ''
-}
-
 function addCustomMood() {
 	const value = (meta.value.moodCustom || '').trim()
 	if (!value) return
@@ -114,6 +106,56 @@ function addCustomMood() {
 		meta.value.moods = [...existing, value]
 	}
 	meta.value.moodCustom = ''
+}
+
+function addCustomBrandTone() {
+	const value = (meta.value.brandToneCustom || '').trim()
+	if (!value) return
+	const existing = meta.value.brandTones || []
+	if (!existing.includes(value)) {
+		meta.value.brandTones = [...existing, value]
+	}
+	meta.value.brandToneCustom = ''
+}
+
+function addCustomAudience() {
+	const value = (meta.value.audienceCustom || '').trim()
+	if (!value) return
+	const existing = meta.value.audiences || []
+	if (!existing.includes(value)) {
+		meta.value.audiences = [...existing, value]
+	}
+	meta.value.audienceCustom = ''
+}
+
+function addCustomAspectRatio() {
+	const value = (meta.value.aspectRatioCustom || '').trim()
+	if (!value) return
+	const existing = meta.value.aspectRatios || []
+	if (!existing.includes(value)) {
+		meta.value.aspectRatios = [...existing, value]
+	}
+	meta.value.aspectRatioCustom = ''
+}
+
+function addCustomSubjectType() {
+	const value = (meta.value.subjectTypeCustom || '').trim()
+	if (!value) return
+	const existing = meta.value.subjectTypes || []
+	if (!existing.includes(value)) {
+		meta.value.subjectTypes = [...existing, value]
+	}
+	meta.value.subjectTypeCustom = ''
+}
+
+function addCustomCameraSetting() {
+	const value = (meta.value.cameraSettingCustom || '').trim()
+	if (!value) return
+	const existing = meta.value.cameraSettings || []
+	if (!existing.includes(value)) {
+		meta.value.cameraSettings = [...existing, value]
+	}
+	meta.value.cameraSettingCustom = ''
 }
 
 </script>
@@ -173,6 +215,28 @@ function addCustomMood() {
 					<section class="block block-setting">
 						<h2>Setting</h2>
 						<textarea v-model="meta.context" rows="2" placeholder="Environment, era, or narrative context..." />
+						<label class="mt">Context presets</label>
+						<div class="chips">
+							<button v-for="p in presetContexts" :key="p" type="button" class="chip"
+								:class="{ active: meta.contextPresets?.includes(p) }" @click="toggleContextPreset(p)">
+								{{ p }}
+							</button>
+						</div>
+					</section>
+					<section class="block block-subject-type">
+						<h2>Subject type</h2>
+						<div class="chips">
+							<button v-for="s in [...new Set([...(presetSubjectTypes || []), ...(meta.subjectTypes || [])])]" :key="s" type="button" class="chip"
+								:class="{ active: meta.subjectTypes?.includes(s) }" @click="toggleSubjectType(s)">
+								{{ s }}
+							</button>
+						</div>
+						<hr class="custom-input-divider" />
+						<div class="custom-input-row">
+							<input v-model="meta.subjectTypeCustom" type="text" placeholder="Or custom subject type"
+								@keydown.enter="addCustomSubjectType" />
+							<button type="button" class="btn-add" @click="addCustomSubjectType" aria-label="Add custom subject type">+</button>
+						</div>
 					</section>
 				</div>
 
@@ -183,9 +247,17 @@ function addCustomMood() {
 					<section class="block">
 						<h2>Audience</h2>
 						<div class="chips">
-							<button v-for="aud in presetAudiences" :key="aud" type="button" class="chip"
+							<button v-for="aud in [...new Set([...(presetAudiences || []), ...(meta.audiences || [])])]" :key="aud" type="button" class="chip"
 								:class="{ active: meta.audiences?.includes(aud) }" @click="toggleAudience(aud)">
 								{{ aud }}
+							</button>
+						</div>
+						<hr class="custom-input-divider" />
+						<div class="custom-input-row">
+							<input v-model="meta.audienceCustom" type="text" placeholder="Or type custom audience"
+								@keydown.enter="addCustomAudience" />
+							<button type="button" class="btn-add" @click="addCustomAudience" aria-label="Add custom audience">
+								+
 							</button>
 						</div>
 					</section>
@@ -197,9 +269,17 @@ function addCustomMood() {
 					<section class="block">
 						<h2>Brand tone</h2>
 						<div class="chips">
-							<button v-for="tone in presetBrandTones" :key="tone" type="button" class="chip"
+							<button v-for="tone in [...new Set([...(presetBrandTones || []), ...(meta.brandTones || [])])]" :key="tone" type="button" class="chip"
 								:class="{ active: meta.brandTones?.includes(tone) }" @click="toggleBrandTone(tone)">
 								{{ tone }}
+							</button>
+						</div>
+						<hr class="custom-input-divider" />
+						<div class="custom-input-row">
+							<input v-model="meta.brandToneCustom" type="text" placeholder="Or type custom brand tone"
+								@keydown.enter="addCustomBrandTone" />
+							<button type="button" class="btn-add" @click="addCustomBrandTone" aria-label="Add custom brand tone">
+								+
 							</button>
 						</div>
 					</section>
@@ -321,18 +401,10 @@ function addCustomMood() {
 					</div>
 					<label class="mt">Lighting</label>
 					<div class="chips">
-						<button v-for="l in [...new Set([...(presetLighting || []), ...(meta.lightings || [])])]" :key="l"
+						<button v-for="l in presetLighting" :key="l"
 							type="button" class="chip" :class="{ active: meta.lightings?.includes(l) }"
 							@click="toggleLighting(l)">
 							{{ l }}
-						</button>
-					</div>
-					<hr class="custom-input-divider" />
-					<div class="custom-input-row">
-						<input v-model="meta.lightingCustom" type="text" placeholder="Or custom"
-							@keydown.enter="addCustomLighting" />
-						<button type="button" class="btn-add" @click="addCustomLighting" aria-label="Add custom lighting">
-							+
 						</button>
 					</div>
 				</section>
@@ -378,10 +450,33 @@ function addCustomMood() {
 					<section class="block">
 						<h2>Aspect ratio</h2>
 						<div class="chips">
-							<button v-for="ratio in presetAspectRatios" :key="ratio" type="button" class="chip"
+							<button v-for="ratio in [...new Set([...(presetAspectRatios || []), ...(meta.aspectRatios || [])])]" :key="ratio" type="button" class="chip"
 								:class="{ active: meta.aspectRatios?.includes(ratio) }" @click="toggleAspectRatio(ratio)">
 								{{ ratio }}
 							</button>
+						</div>
+						<hr class="custom-input-divider" />
+						<div class="custom-input-row">
+							<input v-model="meta.aspectRatioCustom" type="text" placeholder="Or custom ratio (e.g. 2:3)"
+								@keydown.enter="addCustomAspectRatio" />
+							<button type="button" class="btn-add" @click="addCustomAspectRatio" aria-label="Add custom aspect ratio">
+								+
+							</button>
+						</div>
+					</section>
+					<section class="block">
+						<h2>Camera</h2>
+						<div class="chips">
+							<button v-for="c in [...new Set([...(presetCameraSettings || []), ...(meta.cameraSettings || [])])]" :key="c" type="button" class="chip"
+								:class="{ active: meta.cameraSettings?.includes(c) }" @click="toggleCameraSetting(c)">
+								{{ c }}
+							</button>
+						</div>
+						<hr class="custom-input-divider" />
+						<div class="custom-input-row">
+							<input v-model="meta.cameraSettingCustom" type="text" placeholder="Or custom camera setting"
+								@keydown.enter="addCustomCameraSetting" />
+							<button type="button" class="btn-add" @click="addCustomCameraSetting" aria-label="Add custom camera setting">+</button>
 						</div>
 					</section>
 					<section class="block">
@@ -525,6 +620,9 @@ function addCustomMood() {
 	}
 	.descriptive-section .block-setting {
 		grid-column: 2;
+	}
+	.descriptive-section .block-subject-type {
+		grid-column: 1 / -1;
 	}
 }
 
