@@ -1,5 +1,5 @@
 import { ref, computed, watch } from 'vue'
-import { generateOptimizedPrompt, generateOptimizedPromptViaProxy } from '../services/llmClient.js'
+import { generateOptimizedPrompt, generateOptimizedPromptViaProxy, generateDescriptionSuggestions, generateDescriptionSuggestionsViaProxy } from '../services/llmClient.js'
 import { PROMPT_PLACEHOLDER, defaultDeveloperInstructionTemplate } from '../constants/promptTemplates.js'
 
 const STORAGE_KEYS = {
@@ -8,7 +8,7 @@ const STORAGE_KEYS = {
 }
 
 const GEMINI_ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
-const GEMINI_MODEL = 'gemini-2.5-flash'
+const GEMINI_MODEL = 'gemini-2.5-flash-lite'
 
 const defaultMetaprompt = () => ({
   description: '',
@@ -28,8 +28,6 @@ const defaultMetaprompt = () => ({
   context: '',
   typography: '',
   qualityModifiers: [],
-  negativePrompt: '',
-  negativeModifiers: [],
   brandTones: [],
   audiences: [],
   subjectTypes: [],
@@ -40,6 +38,7 @@ const defaultMetaprompt = () => ({
   materials: [],
   abstractionLevel: '',
   renderMediums: [],
+  logoHolePlacement: [], // array of: 'top-left'|'top-center'|'top-right'|'center-left'|'center'|'center-right'|'bottom-left'|'bottom-center'|'bottom-right'
 })
 
 export function useMetaprompt() {
@@ -58,6 +57,8 @@ export function useMetaprompt() {
   }
   const optimizeProxyUrl =
     (typeof window !== 'undefined' && window.__RUNTIME_CONFIG__?.OPTIMIZE_PROXY_URL) || '/api/optimize-prompt'
+  const suggestDescriptionProxyUrl =
+    (typeof window !== 'undefined' && window.__RUNTIME_CONFIG__?.SUGGEST_DESCRIPTION_PROXY_URL) || '/api/suggest-description'
 
   const llmApiKey = ref(readFromStorage(STORAGE_KEYS.apiKey, getDefaultApiKey()))
 
@@ -77,6 +78,19 @@ export function useMetaprompt() {
   const optimizeError = ref('')
   const lastOptimizedAt = ref('')
   const characterLimit = ref(400)
+
+  const descriptionSuggestions = ref([])
+  const isSuggestingDescription = ref(false)
+  const descriptionSuggestionError = ref('')
+  /** Suggestions run once, 5s after user stops typing in description/context. */
+  const DESCRIPTION_SUGGEST_DEBOUNCE_MS = 5000
+  let descriptionSuggestDebounceId = null
+  /** Once true, no further suggestion API calls (max 1 per session). */
+  let descriptionSuggestionsAlreadyRequested = false
+
+  function isPageVisible() {
+    return typeof document !== 'undefined' && document.visibilityState === 'visible'
+  }
 
   const presetStyles = [
     'cinematic', 'digital painting', 'oil painting', 'watercolor', 'ink illustration',
@@ -124,7 +138,6 @@ export function useMetaprompt() {
   const presetRenderMediums = ['3D render', 'digital painting', 'photo', 'illustration', 'mixed media']
   const presetBrandTones = ['professional', 'playful', 'luxury', 'minimal', 'bold', 'trustworthy']
   const presetAudiences = ['consumer', 'B2B', 'creative', 'technical', 'general']
-  const presetNegativeModifiers = ['blurry', 'low quality', 'oversaturated', 'cluttered', 'generic']
   const presetAspectRatios = ['1:1', '16:9', '9:16', '4:3', '3:4', '21:9']
 
   const baseSummary = computed(() => buildPrompt(meta.value))
@@ -140,13 +153,6 @@ export function useMetaprompt() {
     return `${template}\n\n${summary}`
   })
 
-  /** Final output always favors optimized LLM prompt with deterministic fallback. */
-  const finalOutput = computed(() => {
-    const optimized = (optimizedPrompt.value || '').trim()
-    if (optimized) return optimized
-    return baseSummary.value
-  })
-
   /** Parsed array of prompt options when LLM returns multiple (e.g. three prompts separated by blank lines). */
   const optimizedPromptOptions = computed(() => {
     const raw = (optimizedPrompt.value || '').trim()
@@ -154,12 +160,43 @@ export function useMetaprompt() {
     return raw.split(/\n\n+/).map((s) => s.trim()).filter(Boolean)
   })
 
+  /** Convert placement keys to natural prompt wording (e.g. "top-left" → "top left"). */
+  function formatLogoPlacementAsPromptText(placements) {
+    if (!placements?.length) return ''
+    const toWords = (key) => key.replace(/-/g, ' ')
+    const list = placements.map(toWords)
+    if (list.length === 1) return `Leave clear space for a logo in the ${list[0]}.`
+    const last = list.pop()
+    return `Leave clear space for a logo in the ${list.join(', ')} and ${last}.`
+  }
+
+  /** Logo placement as natural prompt wording to append when user has selected placements. */
+  const logoPlacementSuffix = computed(() => formatLogoPlacementAsPromptText(meta.value.logoHolePlacement || []))
+
+  /** Prompt options with logo placement appended when set (for display and copy). */
+  const finalPromptOptions = computed(() => {
+    const options = optimizedPromptOptions.value
+    const suffix = logoPlacementSuffix.value
+    if (!suffix) return options
+    return options.map((o) => `${o}. ${suffix}`)
+  })
+
+  /** Final output always favors optimized LLM prompt with deterministic fallback. Logo placement is appended when set so it is never dropped. */
+  const finalOutput = computed(() => {
+    const optimized = (optimizedPrompt.value || '').trim()
+    if (optimized) {
+      const options = finalPromptOptions.value
+      return options.length ? options.join('\n\n') : optimized + (logoPlacementSuffix.value ? `. ${logoPlacementSuffix.value}` : '')
+    }
+    return baseSummary.value
+  })
+
   function buildPrompt(m) {
     const parts = []
 
     // 1. Subject & description (core content)
     if (m.subject) parts.push(m.subject)
-    if (m.description) parts.push(m.description)
+    if (m.description) parts.push(`Description: ${m.description}`)
 
     // 2. Art style & medium
     const styleParts = [...(m.artStyles || []), m.artStyleCustom, m.medium].filter(Boolean)
@@ -178,7 +215,7 @@ export function useMetaprompt() {
     if (colorParts.length) parts.push(`Color Palette: [${colorParts.join(', ')}]`)
 
     // 6. Context (scene/setting)
-    if (m.context) parts.push(m.context)
+    if (m.context) parts.push(`Setting: ${m.context}`)
 
     // 7. Typography (if relevant for image gen)
     if (m.typography) parts.push(`Typography: [${m.typography}]`)
@@ -188,11 +225,10 @@ export function useMetaprompt() {
       parts.push(`Quality: [${m.qualityModifiers.join(', ')}]`)
     }
 
-    // 9. Brand, audience, negative modifiers
+    // 9. Brand, audience
     const brandParts = [...(m.brandTones || []), ...(m.audiences || [])].filter(Boolean)
     if (brandParts.length) parts.push(`Brand / Audience: [${brandParts.join(', ')}]`)
-    if (m.negativeModifiers?.length) parts.push(`Avoid: [${m.negativeModifiers.join(', ')}]`)
-    if (m.negativePrompt) parts.push(`Avoid (custom): ${m.negativePrompt}`)
+    if (m.logoHolePlacement?.length) parts.push(formatLogoPlacementAsPromptText(m.logoHolePlacement))
 
     // 10. Aspect ratio, time, weather, materials, abstraction, render mediums
     if (m.aspectRatios?.length) parts.push(`Aspect ratio: [${m.aspectRatios.join(', ')}]`)
@@ -245,9 +281,16 @@ export function useMetaprompt() {
   function toggleRenderMedium(m) { toggleInArray('renderMediums', m) }
   function toggleBrandTone(t) { toggleInArray('brandTones', t) }
   function toggleAudience(a) { toggleInArray('audiences', a) }
-  function toggleNegativeModifier(n) { toggleInArray('negativeModifiers', n) }
   function setAbstractionLevel(level) {
     meta.value.abstractionLevel = level
+  }
+  const logoHolePlacements = [
+    'top-left', 'top-center', 'top-right',
+    'center-left', 'center', 'center-right',
+    'bottom-left', 'bottom-center', 'bottom-right',
+  ]
+  function setLogoHolePlacement(placement) {
+    toggleInArray('logoHolePlacement', placement)
   }
   function clearSelections() {
     reset()
@@ -275,11 +318,15 @@ export function useMetaprompt() {
   }
 
   async function optimizePrompt() {
+    if (isOptimizing.value) return
+    isOptimizing.value = true
+
     const summary = (baseSummary.value || '').trim()
     optimizeError.value = ''
 
     if (!summary) {
       optimizeError.value = 'Add prompt details before generating.'
+      isOptimizing.value = false
       return
     }
 
@@ -287,10 +334,9 @@ export function useMetaprompt() {
     const keyEmpty = !(llmApiKey.value || '').trim()
     if (keyEmpty && !hasExplicitProxy) {
       optimizeError.value = 'No API key. Ensure the host provides GET /api/metaprompt-config and sets GEMINI_API_KEY in Cloudflare Pages.'
+      isOptimizing.value = false
       return
     }
-
-    isOptimizing.value = true
     const startedAt = performance.now()
     trackEvent('optimize_start', { model: GEMINI_MODEL })
 
@@ -331,6 +377,72 @@ export function useMetaprompt() {
     }
   }
 
+  async function suggestDescription() {
+    if (!isPageVisible()) return
+    if (descriptionSuggestionsAlreadyRequested) return
+    descriptionSuggestionError.value = ''
+
+    const inputsSummary = (baseSummary.value || '').trim()
+    if (!inputsSummary) {
+      descriptionSuggestions.value = []
+      return
+    }
+
+    const hasExplicitProxy = typeof window !== 'undefined' && window.__RUNTIME_CONFIG__?.OPTIMIZE_PROXY_URL
+    const keyEmpty = !(llmApiKey.value || '').trim()
+    if (keyEmpty && !hasExplicitProxy) {
+      descriptionSuggestionError.value = 'No API key. Set in Developer settings or use a host that provides the suggest-description API.'
+      return
+    }
+
+    descriptionSuggestionsAlreadyRequested = true
+    isSuggestingDescription.value = true
+    try {
+      const useProxy = keyEmpty && hasExplicitProxy
+      const suggestions = useProxy
+        ? await generateDescriptionSuggestionsViaProxy({
+            inputsSummary,
+            model: GEMINI_MODEL,
+            proxyUrl: suggestDescriptionProxyUrl,
+          })
+        : await generateDescriptionSuggestions({
+            inputsSummary,
+            model: GEMINI_MODEL,
+            apiKey: llmApiKey.value,
+            endpoint: GEMINI_ENDPOINT,
+          })
+      descriptionSuggestions.value = Array.isArray(suggestions) ? suggestions : []
+    } catch (error) {
+      descriptionSuggestionError.value = error?.message || 'Could not get suggestions.'
+    } finally {
+      isSuggestingDescription.value = false
+    }
+  }
+
+  function scheduleDescriptionSuggest() {
+    if (descriptionSuggestionsAlreadyRequested) return
+    if (descriptionSuggestDebounceId) clearTimeout(descriptionSuggestDebounceId)
+    if (!isPageVisible()) return
+    const inputsSummary = (baseSummary.value || '').trim()
+    if (!inputsSummary) {
+      descriptionSuggestions.value = []
+      descriptionSuggestionError.value = ''
+      return
+    }
+    const hasKey = (llmApiKey.value || '').trim()
+    const hasProxy = typeof window !== 'undefined' && window.__RUNTIME_CONFIG__?.OPTIMIZE_PROXY_URL
+    if (!hasKey && !hasProxy) return
+    descriptionSuggestDebounceId = setTimeout(() => {
+      descriptionSuggestDebounceId = null
+      if (isPageVisible() && !descriptionSuggestionsAlreadyRequested) suggestDescription()
+    }, DESCRIPTION_SUGGEST_DEBOUNCE_MS)
+  }
+
+  function applyDescriptionSuggestion(word) {
+    const current = (meta.value.description || '').trim()
+    meta.value.description = current ? `${current} ${word}` : word
+  }
+
   function resetDeveloperTemplateToDefault() {
     developerInstructionTemplate.value = defaultDeveloperInstructionTemplate
     optimizedPrompt.value = ''
@@ -355,6 +467,8 @@ export function useMetaprompt() {
   watch(llmApiKey, (value) => { writeToStorage(STORAGE_KEYS.apiKey, value) })
   watch(developerInstructionTemplate, (value) => { writeToStorage(STORAGE_KEYS.instructionTemplate, value) })
 
+  // No auto-call for description suggestions: Gemini is only invoked when the user clicks "Generate prompt".
+
   return {
     meta,
     baseSummary,
@@ -363,9 +477,15 @@ export function useMetaprompt() {
     optimizePrompt,
     optimizedPrompt,
     optimizedPromptOptions,
+    finalPromptOptions,
     isOptimizing,
     optimizeError,
     lastOptimizedAt,
+    descriptionSuggestions,
+    isSuggestingDescription,
+    descriptionSuggestionError,
+    suggestDescription,
+    applyDescriptionSuggestion,
     developerInstructionTemplate,
     llmApiKey,
     GEMINI_MODEL,
@@ -389,7 +509,6 @@ export function useMetaprompt() {
     presetRenderMediums,
     presetBrandTones,
     presetAudiences,
-    presetNegativeModifiers,
     presetAspectRatios,
     characterLimit,
     toggleArtStyle,
@@ -407,10 +526,11 @@ export function useMetaprompt() {
     toggleRenderMedium,
     toggleBrandTone,
     toggleAudience,
-    toggleNegativeModifier,
     setAbstractionLevel,
     clearSelections,
     reset,
+    logoHolePlacements,
+    setLogoHolePlacement,
   }
 }
 

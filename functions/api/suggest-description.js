@@ -1,15 +1,4 @@
 const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
-const PROMPT_PLACEHOLDER = '[Insert brand imagery summary here]'
-
-function applyDeveloperTemplate(summary, developerTemplate) {
-  const template = (developerTemplate || '').trim()
-  const cleanSummary = (summary || '').trim()
-  if (!template) return cleanSummary
-  if (template.includes(PROMPT_PLACEHOLDER)) {
-    return template.replaceAll(PROMPT_PLACEHOLDER, cleanSummary)
-  }
-  return `${template}\n\n${cleanSummary}`
-}
 
 function normalizeMessageContent(content) {
   if (!content) return ''
@@ -31,7 +20,7 @@ function extractPromptText(payload) {
   if (textContent) return textContent
   const outputText = normalizeMessageContent(payload?.output_text)
   if (outputText) return outputText
-  throw new Error('No prompt text found in LLM response.')
+  throw new Error('No text found in LLM response.')
 }
 
 function corsHeaders(origin = '*') {
@@ -54,16 +43,9 @@ export async function onRequestPost(context) {
     }
 
     const body = await context.request.json().catch(() => ({}))
-    const summary = (body.summary ?? '').trim()
-    const developerTemplate = (body.developerTemplate ?? '').trim()
+    const inputsSummary = (body.inputsSummary ?? '').trim()
     const model = (body.model ?? 'gemini-2.5-flash-lite').trim()
 
-    if (!summary) {
-      return new Response(
-        JSON.stringify({ error: 'Add prompt details before generating.' }),
-        { status: 400, headers: { 'Content-Type': 'application/json', ...corsHeaders(origin) } }
-      )
-    }
     if (!model) {
       return new Response(
         JSON.stringify({ error: 'Select a model before generating.' }),
@@ -71,7 +53,10 @@ export async function onRequestPost(context) {
       )
     }
 
-    const instructionPayload = applyDeveloperTemplate(summary, developerTemplate)
+    const userContent = inputsSummary
+      ? `Current prompt inputs:\n\n${inputsSummary}\n\nSuggest 5–10 short inspiration words that fit this vibe. Output only comma-separated words, all lowercase.`
+      : 'Suggest 5–10 versatile image-prompt inspiration words. Output only comma-separated words, all lowercase.'
+
     const response = await fetch(GEMINI_URL, {
       method: 'POST',
       headers: {
@@ -83,15 +68,11 @@ export async function onRequestPost(context) {
         messages: [
           {
             role: 'system',
-            content:
-              'You are an expert image metaprompt generator. Return one polished prompt string only. Never include meta/instructional wording, explanations, template language, labels, or markdown.',
+            content: 'You suggest inspiration words for image prompts. Output only a single set of 5–10 related words, comma-separated, all lowercase. No sentences, no explanation. Example: misty, serene, dawn, soft, atmospheric.',
           },
-          {
-            role: 'user',
-            content: `Craft one final image prompt from these instructions:\n\n${instructionPayload}\n\nImportant: output only the final prompt text. Do not include process language, template instructions, marketing terms, or explanation.`,
-          },
+          { role: 'user', content: userContent },
         ],
-        temperature: 0.7,
+        temperature: 0.6,
       }),
     })
 
@@ -107,13 +88,15 @@ export async function onRequestPost(context) {
       )
     }
 
-    const prompt = extractPromptText(payload).trim()
-    return new Response(JSON.stringify({ prompt }), {
+    const text = extractPromptText(payload).trim().toLowerCase()
+    const result = text.split(/[,;\s]+/).map((s) => s.trim()).filter(Boolean)
+
+    return new Response(JSON.stringify({ suggestions: result }), {
       status: 200,
       headers: { 'Content-Type': 'application/json', ...corsHeaders(origin) },
     })
   } catch (err) {
-    const message = err?.message || 'Prompt optimization failed.'
+    const message = err?.message || 'Description suggestion failed.'
     return new Response(JSON.stringify({ error: message }), {
       status: 500,
       headers: { 'Content-Type': 'application/json', ...corsHeaders(origin) },

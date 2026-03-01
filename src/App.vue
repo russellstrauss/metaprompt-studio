@@ -1,6 +1,6 @@
 <script setup>
 import { useMetaprompt } from './composables/useMetaprompt'
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 
 const {
 	meta,
@@ -8,11 +8,17 @@ const {
 	finalOutput,
 	optimizedPrompt,
 	optimizedPromptOptions,
+	finalPromptOptions,
 	characterLimit,
 	optimizePrompt,
 	isOptimizing,
 	optimizeError,
 	lastOptimizedAt,
+	descriptionSuggestions,
+	isSuggestingDescription,
+	descriptionSuggestionError,
+	suggestDescription,
+	applyDescriptionSuggestion,
 	presetStyles,
 	presetColorPalettes,
 	presetCompositions,
@@ -29,7 +35,6 @@ const {
 	presetRenderMediums,
 	presetBrandTones,
 	presetAudiences,
-	presetNegativeModifiers,
 	toggleArtStyle,
 	toggleSubjectType,
 	toggleColorPalette,
@@ -45,35 +50,20 @@ const {
 	toggleRenderMedium,
 	toggleBrandTone,
 	toggleAudience,
-	toggleNegativeModifier,
 	setAbstractionLevel,
 	clearSelections,
 	reset,
+	logoHolePlacements,
+	setLogoHolePlacement,
 } = useMetaprompt()
 
 const copied = ref(false)
-
-const negativeFull = computed(() => {
-	const tags = meta.value.negativeModifiers || []
-	const custom = meta.value.negativePrompt || ''
-	return [...tags, custom].filter(Boolean).join(', ')
-})
 
 function copyToClipboard() {
 	navigator.clipboard.writeText(finalOutput.value).then(() => {
 		copied.value = true
 		setTimeout(() => (copied.value = false), 2000)
 	})
-}
-
-function addCustomNegative() {
-	const value = (meta.value.negativePrompt || '').trim()
-	if (!value) return
-	const existing = meta.value.negativeModifiers || []
-	if (!existing.includes(value)) {
-		meta.value.negativeModifiers = [...existing, value]
-	}
-	meta.value.negativePrompt = ''
 }
 
 function addCustomArtStyle() {
@@ -126,12 +116,6 @@ function addCustomMood() {
 	meta.value.moodCustom = ''
 }
 
-function useCustomAbstraction() {
-	const value = (meta.value.abstractionLevelCustom || '').trim()
-	if (!value) return
-	meta.value.abstractionLevel = value
-	meta.value.abstractionLevelCustom = ''
-}
 </script>
 
 <template>
@@ -140,24 +124,18 @@ function useCustomAbstraction() {
 			<h1>Metaprompt Studio</h1>
 			<p class="tagline">Structuring attributes for high-quality image prompts</p>
 			<div class="prompt-at-top">
-				<div v-if="meta.negativePrompt" class="negative-at-top">
-					<span class="negative-label">Avoid:</span>
-					<span class="negative-text">{{ negativeFull }}</span>
-				</div>
 				<div v-if="baseSummary" class="facet-input-section">
 					<span class="facet-label">Structured Prompt Inputs:</span>
 					<p class="facet-text">{{ baseSummary }}</p>
 				</div>
-				<div v-if="(optimizedPromptOptions || []).length" class="final-output-section">
-					<span class="facet-label">Final prompts:</span>
-					<div v-for="(option, index) in (optimizedPromptOptions || [])" :key="index" class="prompt-option">
+				<div v-if="(finalPromptOptions || []).length" class="final-output-section">
+					<div v-for="(option, index) in (finalPromptOptions || [])" :key="index" class="prompt-option">
 						<p class="prompt-option-label">Prompt option {{ index + 1 }}</p>
 						<p class="prompt-text">{{ option }}</p>
 					</div>
 				</div>
-				<p v-else-if="finalOutput" class="prompt-text">{{ finalOutput }}</p>
-				<p v-else class="prompt-placeholder">Set a template above and fill in attributes below to see your prompt
-					here.</p>
+				<p v-else-if="optimizedPrompt" class="prompt-text">{{ finalOutput }}</p>
+				<p v-else class="prompt-placeholder">Choose input attributes and add any custom descriptions or requirements.</p>
 				<div class="prompt-actions">
 					<button type="button" class="btn secondary" :disabled="isOptimizing" @click="optimizePrompt">
 						{{ isOptimizing ? 'Generating...' : 'Generate prompt' }}
@@ -176,59 +154,77 @@ function useCustomAbstraction() {
 
 		<div class="layout">
 			<aside class="form-panel">
-				<section class="block block-description">
-					<h2>Description</h2>
-					<textarea v-model="meta.description" rows="2"
-						placeholder="Detailed description of the scene or subject..." />
-				</section>
+				<div class="descriptive-section">
+					<p class="attribute-section-label">Descriptive</p>
+					<section class="block block-description">
+						<h2>Description</h2>
+						<textarea v-model="meta.description" rows="2"
+							placeholder="Detailed description of the scene or subject..." />
+						<div class="description-suggestions">
+							<label class="suggestion-label">Suggestions</label>
+							<p v-if="descriptionSuggestionError" class="status-error suggestion-error">
+								{{ descriptionSuggestionError }}
+							</p>
+							<div v-if="descriptionSuggestions.length" class="suggestion-row">
+								<span class="suggestion-text">{{ descriptionSuggestions.join(', ') }}</span>
+							</div>
+						</div>
+					</section>
+					<section class="block block-setting">
+						<h2>Setting</h2>
+						<textarea v-model="meta.context" rows="2" placeholder="Environment, era, or narrative context..." />
+					</section>
+				</div>
 
-				<section class="block">
-					<h2>Branding</h2>
-					<label>Brand tone</label>
-					<div class="chips">
-						<button v-for="tone in presetBrandTones" :key="tone" type="button" class="chip"
-							:class="{ active: meta.brandTones?.includes(tone) }" @click="toggleBrandTone(tone)">
-							{{ tone }}
-						</button>
-					</div>
-					<label class="mt">Audience</label>
-					<div class="chips">
-						<button v-for="aud in presetAudiences" :key="aud" type="button" class="chip"
-							:class="{ active: meta.audiences?.includes(aud) }" @click="toggleAudience(aud)">
-							{{ aud }}
-						</button>
-					</div>
-				</section>
+				<hr class="attribute-section-divider" />
 
-				<section class="block block-brand-reqs">
-					<h2>Brand requirements</h2>
-					<textarea v-model="meta.brandRequirements" rows="2"
-						placeholder="Specific brand requirements, guardrails, or must-include elements..." />
-				</section>
+				<div class="marketing-section">
+					<p class="attribute-section-label">Marketing</p>
+					<section class="block">
+						<h2>Audience</h2>
+						<div class="chips">
+							<button v-for="aud in presetAudiences" :key="aud" type="button" class="chip"
+								:class="{ active: meta.audiences?.includes(aud) }" @click="toggleAudience(aud)">
+								{{ aud }}
+							</button>
+						</div>
+					</section>
+					<section class="block block-brand-reqs">
+						<h2>Brand requirements</h2>
+						<textarea v-model="meta.brandRequirements" rows="6"
+							placeholder="Specific brand requirements, guardrails, or must-include elements..." />
+					</section>
+					<section class="block">
+						<h2>Brand tone</h2>
+						<div class="chips">
+							<button v-for="tone in presetBrandTones" :key="tone" type="button" class="chip"
+								:class="{ active: meta.brandTones?.includes(tone) }" @click="toggleBrandTone(tone)">
+								{{ tone }}
+							</button>
+						</div>
+					</section>
+					<section class="block block-logo-hole">
+						<h2>Logo placement</h2>
+						<div class="logo-grid" role="group" aria-label="Logo placement" aria-multiselectable="true">
+							<button
+								v-for="placement in logoHolePlacements"
+								:key="placement"
+								type="button"
+								class="logo-grid-cell"
+								:class="{ active: (meta.logoHolePlacement || []).includes(placement) }"
+								:title="placement"
+								:aria-pressed="(meta.logoHolePlacement || []).includes(placement)"
+								@click="setLogoHolePlacement(placement)"
+							>
+								<span v-if="(meta.logoHolePlacement || []).includes(placement)" class="logo-grid-dot" aria-hidden="true" />
+							</button>
+						</div>
+					</section>
+				</div>
 
-				<section class="block">
-					<h2>Avoid</h2>
-					<div class="chips">
-						<button
-							v-for="n in [...new Set([...(presetNegativeModifiers || []), ...(meta.negativeModifiers || [])])]"
-							:key="n" type="button" class="chip" :class="{ active: meta.negativeModifiers?.includes(n) }"
-							@click="toggleNegativeModifier(n)">
-							{{ n }}
-						</button>
-					</div>
-					<div class="custom-input-row">
-						<input v-model="meta.negativePrompt" type="text"
-							placeholder="Additional negatives or custom phrasing (for tools that support it)" />
-						<button type="button" class="btn-add" @click="addCustomNegative" aria-label="Add custom negative">
-							+
-						</button>
-					</div>
-				</section>
+				<hr class="attribute-section-divider" />
 
-				<section class="block block-setting">
-					<h2>Setting</h2>
-					<textarea v-model="meta.context" rows="2" placeholder="Environment, era, or narrative context..." />
-				</section>
+				<p class="attribute-section-label">Appearance</p>
 
 				<section class="block">
 					<h2>Art Style</h2>
@@ -239,37 +235,11 @@ function useCustomAbstraction() {
 							{{ s }}
 						</button>
 					</div>
+					<hr class="custom-input-divider" />
 					<div class="custom-input-row">
-						<input v-model="meta.artStyleCustom" type="text" placeholder="Or type custom style" />
+						<input v-model="meta.artStyleCustom" type="text" placeholder="Or type custom style"
+							@keydown.enter="addCustomArtStyle" />
 						<button type="button" class="btn-add" @click="addCustomArtStyle" aria-label="Add custom art style">
-							+
-						</button>
-					</div>
-				</section>
-
-				<section class="block">
-					<h2>Medium &amp; rendering</h2>
-					<div class="chips">
-						<button v-for="m in presetRenderMediums" :key="m" type="button" class="chip"
-							:class="{ active: meta.renderMediums?.includes(m) }" @click="toggleRenderMedium(m)">
-							{{ m }}
-						</button>
-					</div>
-				</section>
-
-				<section class="block">
-					<h2>Abstraction &amp; realism</h2>
-					<div class="chips">
-						<button v-for="level in presetAbstractionLevels" :key="level" type="button" class="chip"
-							:class="{ active: meta.abstractionLevel === level }" @click="setAbstractionLevel(level)">
-							{{ level }}
-						</button>
-					</div>
-					<div class="custom-input-row">
-						<input v-model="meta.abstractionLevelCustom" type="text"
-							placeholder="Or custom description (e.g. data-heavy schematic)" />
-						<button type="button" class="btn-add" @click="useCustomAbstraction"
-							aria-label="Use custom abstraction">
 							+
 						</button>
 					</div>
@@ -284,10 +254,31 @@ function useCustomAbstraction() {
 							{{ p }}
 						</button>
 					</div>
+					<hr class="custom-input-divider" />
 					<div class="custom-input-row">
-						<input v-model="meta.colorPaletteCustom" type="text" placeholder="Or type custom palette" />
+						<input v-model="meta.colorPaletteCustom" type="text" placeholder="Or type custom palette"
+							@keydown.enter="addCustomColorPalette" />
 						<button type="button" class="btn-add" @click="addCustomColorPalette"
 							aria-label="Add custom color palette">
+							+
+						</button>
+					</div>
+				</section>
+
+				<section class="block">
+					<h2>Mood</h2>
+					<div class="chips">
+						<button v-for="mood in [...new Set([...(presetMoods || []), ...(meta.moods || [])])]" :key="mood"
+							type="button" class="chip" :class="{ active: meta.moods?.includes(mood) }"
+							@click="toggleMood(mood)">
+							{{ mood }}
+						</button>
+					</div>
+					<hr class="custom-input-divider" />
+					<div class="custom-input-row">
+						<input v-model="meta.moodCustom" type="text" placeholder="Or custom mood"
+							@keydown.enter="addCustomMood" />
+						<button type="button" class="btn-add" @click="addCustomMood" aria-label="Add custom mood">
 							+
 						</button>
 					</div>
@@ -302,8 +293,10 @@ function useCustomAbstraction() {
 							{{ c }}
 						</button>
 					</div>
+					<hr class="custom-input-divider" />
 					<div class="custom-input-row">
-						<input v-model="meta.compositionCustom" type="text" placeholder="Or custom composition" />
+						<input v-model="meta.compositionCustom" type="text" placeholder="Or custom composition"
+							@keydown.enter="addCustomComposition" />
 						<button type="button" class="btn-add" @click="addCustomComposition"
 							aria-label="Add custom composition">
 							+
@@ -312,7 +305,7 @@ function useCustomAbstraction() {
 				</section>
 
 				<section class="block">
-					<h2>Lighting & mood</h2>
+					<h2>Lighting</h2>
 					<label>Time &amp; weather</label>
 					<div class="chips">
 						<button v-for="t in presetTimeOfDay" :key="t" type="button" class="chip"
@@ -334,30 +327,32 @@ function useCustomAbstraction() {
 							{{ l }}
 						</button>
 					</div>
+					<hr class="custom-input-divider" />
 					<div class="custom-input-row">
-						<input v-model="meta.lightingCustom" type="text" placeholder="Or custom" />
+						<input v-model="meta.lightingCustom" type="text" placeholder="Or custom"
+							@keydown.enter="addCustomLighting" />
 						<button type="button" class="btn-add" @click="addCustomLighting" aria-label="Add custom lighting">
-							+
-						</button>
-					</div>
-					<label class="mt">Mood</label>
-					<div class="chips">
-						<button v-for="mood in [...new Set([...(presetMoods || []), ...(meta.moods || [])])]" :key="mood"
-							type="button" class="chip" :class="{ active: meta.moods?.includes(mood) }"
-							@click="toggleMood(mood)">
-							{{ mood }}
-						</button>
-					</div>
-					<div class="custom-input-row">
-						<input v-model="meta.moodCustom" type="text" placeholder="Or custom mood" />
-						<button type="button" class="btn-add" @click="addCustomMood" aria-label="Add custom mood">
 							+
 						</button>
 					</div>
 				</section>
 
 				<section class="block">
-					<h2>Texture &amp; materials</h2>
+					<h3 class="subheading">Abstraction &amp; realism</h3>
+					<div class="chips">
+						<button v-for="level in presetAbstractionLevels" :key="level" type="button" class="chip"
+							:class="{ active: meta.abstractionLevel === level }" @click="setAbstractionLevel(level)">
+							{{ level }}
+						</button>
+					</div>
+					<h3 class="subheading">Medium &amp; rendering</h3>
+					<div class="chips">
+						<button v-for="m in presetRenderMediums" :key="m" type="button" class="chip"
+							:class="{ active: meta.renderMediums?.includes(m) }" @click="toggleRenderMedium(m)">
+							{{ m }}
+						</button>
+					</div>
+					<h3 class="subheading">Texture &amp; materials</h3>
 					<div class="chips">
 						<button v-for="mat in presetMaterials" :key="mat" type="button" class="chip"
 							:class="{ active: meta.materials?.includes(mat) }" @click="toggleMaterial(mat)">
@@ -376,21 +371,25 @@ function useCustomAbstraction() {
 					</div>
 				</section>
 
-				<section class="block">
-					<h2>Character limit</h2>
-					<input v-model.number="characterLimit" type="number" min="0" placeholder="400"
-						class="input-no-spinner" />
-				</section>
+				<hr class="attribute-section-divider" />
 
-				<section class="block">
-					<h2>Aspect ratio</h2>
-					<div class="chips">
-						<button v-for="ratio in presetAspectRatios" :key="ratio" type="button" class="chip"
-							:class="{ active: meta.aspectRatios?.includes(ratio) }" @click="toggleAspectRatio(ratio)">
-							{{ ratio }}
-						</button>
-					</div>
-				</section>
+				<div class="structure-section">
+					<p class="attribute-section-label">Structure</p>
+					<section class="block">
+						<h2>Aspect ratio</h2>
+						<div class="chips">
+							<button v-for="ratio in presetAspectRatios" :key="ratio" type="button" class="chip"
+								:class="{ active: meta.aspectRatios?.includes(ratio) }" @click="toggleAspectRatio(ratio)">
+								{{ ratio }}
+							</button>
+						</div>
+					</section>
+					<section class="block">
+						<h2>Prompt Character Limit</h2>
+						<input v-model.number="characterLimit" type="number" min="0" placeholder="400"
+							class="input-no-spinner" />
+					</section>
+				</div>
 			</aside>
 		</div>
 	</div>
@@ -496,24 +495,6 @@ function useCustomAbstraction() {
 	margin-left: auto;
 }
 
-.negative-at-top {
-	display: block;
-	margin-bottom: 0.75rem;
-	padding-bottom: 0.75rem;
-	border-bottom: 1px solid var(--border);
-	font-size: 0.9rem;
-}
-
-.negative-label {
-	font-weight: 600;
-	color: var(--muted);
-	margin-right: 0.35rem;
-}
-
-.negative-text {
-	color: var(--text);
-}
-
 .layout {
 	max-width: 1280px;
 	margin: 0 auto;
@@ -527,21 +508,108 @@ function useCustomAbstraction() {
 	grid-auto-flow: row dense;
 }
 
+.descriptive-section {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--column-gutter);
+}
+
+.descriptive-section .attribute-section-label {
+	grid-column: 1 / -1;
+}
+
 @media (min-width: 701px) {
-	.block-description,
-	.block-brand-reqs,
-	.block-setting {
+	.descriptive-section .block-description {
+		grid-column: 1;
+	}
+	.descriptive-section .block-setting {
 		grid-column: 2;
 	}
+}
+
+.attribute-section-label {
+	grid-column: 1 / -1;
+	margin: 1.5rem 0 0.35rem;
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	color: var(--muted);
+}
+
+.attribute-section-label:first-child {
+	margin-top: 0;
+}
+
+.attribute-section-divider + .attribute-section-label {
+	margin-top: 0.5rem;
+}
+
+.attribute-section-divider {
+	grid-column: 1 / -1;
+	margin: 0.5rem 0;
+	border: 0;
+	border-top: 1px solid var(--border);
+}
+
+.marketing-section {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--column-gutter);
+	grid-auto-flow: row dense;
+}
+
+.marketing-section .attribute-section-label {
+	grid-column: 1 / -1;
+	grid-row: 1;
+}
+
+@media (min-width: 701px) {
+	.marketing-section .block:first-of-type {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.marketing-section .block-brand-reqs {
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.marketing-section .block:nth-of-type(3) {
+		grid-column: 2;
+		grid-row: 2;
+	}
+	.marketing-section .block-logo-hole {
+		grid-column: 2;
+		grid-row: 3;
+	}
+}
+
+.structure-section {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--column-gutter);
+	grid-auto-flow: row dense;
+}
+
+.structure-section .attribute-section-label {
+	grid-column: 1 / -1;
 }
 
 @media (max-width: 700px) {
 	.form-panel {
 		grid-template-columns: 1fr;
 	}
+	.marketing-section,
+	.structure-section {
+		grid-template-columns: 1fr;
+	}
 }
 
 .block {
+	display: flex;
+	flex-direction: column;
 	background: var(--card);
 	border: 1px solid var(--border);
 	border-radius: 12px;
@@ -550,6 +618,47 @@ function useCustomAbstraction() {
 
 .block-template {
 	grid-column: 1 / -1;
+}
+
+.logo-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 4px;
+	max-width: 140px;
+	aspect-ratio: 1;
+	margin-top: 0.5rem;
+}
+
+.logo-grid-cell {
+	aspect-ratio: 1;
+	min-width: 0;
+	min-height: 0;
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	background: var(--input);
+	color: var(--text);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: border-color 0.15s, background 0.15s;
+}
+
+.logo-grid-cell:hover {
+	border-color: var(--accent);
+}
+
+.logo-grid-cell.active {
+	background: var(--accent-alpha);
+	border-color: var(--accent);
+}
+
+.logo-grid-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--accent);
 }
 
 .block-hint {
@@ -578,8 +687,36 @@ function useCustomAbstraction() {
 	font-size: 0.8rem;
 }
 
-.btn-sm {
+.description-suggestions {
 	margin-top: 0.75rem;
+	padding-top: 0.75rem;
+	border-top: 1px solid var(--border);
+}
+
+.suggestion-label {
+	display: block;
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: var(--muted);
+	margin-bottom: 0.35rem;
+}
+
+.suggestion-error {
+	margin-top: 0.35rem;
+}
+
+.suggestion-row {
+	margin-top: 0.5rem;
+}
+
+.suggestion-text {
+	font-size: 0.9rem;
+	color: var(--text);
+	line-height: 1.4;
+}
+
+.btn-sm {
+	margin-top: 0;
 	padding: 0.4rem 0.8rem;
 	font-size: 0.85rem;
 }
@@ -603,6 +740,20 @@ function useCustomAbstraction() {
 	text-transform: uppercase;
 	letter-spacing: 0.04em;
 	color: var(--muted);
+}
+
+.block h3.subheading {
+	margin: 1rem 0 0.5rem;
+	font-size: 0.8rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: var(--muted);
+	opacity: 0.9;
+}
+
+.block h3.subheading:first-of-type {
+	margin-top: 0;
 }
 
 .block label {
@@ -635,28 +786,36 @@ function useCustomAbstraction() {
 	color: var(--text);
 }
 
+.custom-input-divider {
+	margin-top: auto;
+	margin-bottom: 0;
+	padding-top: 0.75rem;
+	border: 0;
+	border-top: 1px solid var(--border);
+}
+
 .custom-input-row {
-	display: inline-flex;
+	display: flex;
 	align-items: center;
-	gap: 0.4rem;
-	margin-top: 0.75rem;
+	justify-content: flex-end;
+	gap: 0.35rem;
+	margin-top: 0.4rem;
 }
 
 .custom-input-row input {
-	width: auto;
-	min-width: 0;
-	flex: 1 1 auto;
-	display: inline-block;
+	max-width: 180px;
+	padding: 0.35rem 0.5rem;
+	font-size: 0.8rem;
 }
 
 .btn-add {
-	padding: 0.45rem 0.7rem;
+	padding: 0.3rem 0.55rem;
 	border-radius: 999px;
 	border: 1px solid var(--border);
 	background: var(--input);
 	color: var(--text);
 	cursor: pointer;
-	font-size: 0.85rem;
+	font-size: 0.8rem;
 	line-height: 1;
 }
 

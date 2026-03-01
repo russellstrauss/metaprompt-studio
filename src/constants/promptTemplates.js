@@ -12,12 +12,12 @@ The template should be:
 Please provide multiple template options, each with a slightly different emphasis or approach to accommodate varying creative needs. Additionally, include a brief explanation for each template, outlining its strengths and potential use cases."
 
 Instructions:
-- Treat the summary and structured attributes as the complete source of truth for subjects, styles, color palettes, lighting, moods, materials, brand tones, audiences, compositions, camera settings, quality modifiers, and negative modifiers.
+- Treat the summary and structured attributes as the complete source of truth for subjects, styles, color palettes, lighting, moods, materials, brand tones, audiences, compositions, camera settings, and quality modifiers.
 - Synthesize the summary into three polished, vivid prompts suitable for image generation.
 - For each prompt, lead with the subject or main focal point, then layer in style, composition, lighting, mood, and quality cues.
 - Use concrete, descriptive language. Be specific about visual details rather than abstract concepts.
 - Preserve useful visual constraints from the summary (composition, color, lighting, mood, quality cues).
-- Only use specific genres, art styles, color palettes, lighting setups, moods, materials, brand tones, audiences, and negative terms that are clearly present in the summary or structured attributes.
+- Only use specific genres, art styles, color palettes, lighting setups, moods, materials, brand tones, and audiences that are clearly present in the summary or structured attributes.
 - If an attribute is not specified (for example, lighting, time of day, or color palette), either omit it or describe it in neutral, generic terms; do not invent specific unprovided details.
 - Output exactly three prompt strings, each as its own paragraph. Include only scene/content/style language that belongs inside the final prompts.
 - The three prompts should share the same overall brand identity and subject, and vary only in perspective, framing, or emphasis while staying within the provided constraints.
@@ -27,7 +27,7 @@ What NOT to include in the output prompt:
 - Do NOT include headings, labels, bullets, numbering, or markdown.
 - Do NOT mention these instructions.
 
-Before finalizing each prompt, silently check that every concrete style, genre, color, lighting, mood, material, brand tone, audience, and negative term is grounded in the input summary or attributes. If anything is not grounded, replace it with a neutral or input-derived alternative.
+Before finalizing each prompt, silently check that every concrete style, genre, color, lighting, mood, material, brand tone, and audience is grounded in the input summary or attributes. If anything is not grounded, replace it with a neutral or input-derived alternative.
 
 Return only the three final prompt strings, separated by a single blank line between each one.`
 

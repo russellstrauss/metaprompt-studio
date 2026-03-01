@@ -3,6 +3,27 @@ import { PROMPT_PLACEHOLDER } from '../constants/promptTemplates.js'
 const DEFAULT_ENDPOINT = 'https://api.openai.com/v1/chat/completions'
 const REQUEST_TIMEOUT_MS = 30000
 
+/** Max retries when API returns 429 (rate limit). */
+const RATE_LIMIT_MAX_RETRIES = 3
+
+/**
+ * Retries a fetch when the response is 429, with exponential backoff or Retry-After.
+ * @param {() => Promise<Response>} fetchFn - Function that performs one fetch (no body read).
+ * @returns {Promise<Response>} - The response once non-429 or retries exhausted.
+ */
+async function fetchWithRetryOn429(fetchFn) {
+  let response = await fetchFn()
+  for (let attempt = 0; response.status === 429 && attempt < RATE_LIMIT_MAX_RETRIES; attempt++) {
+    const retryAfter = response.headers.get('Retry-After')
+    const waitMs = retryAfter
+      ? Math.min(parseInt(retryAfter, 10) * 1000, 60000)
+      : Math.min(2000 * Math.pow(2, attempt), 30000)
+    await new Promise((r) => setTimeout(r, waitMs))
+    response = await fetchFn()
+  }
+  return response
+}
+
 function applyDeveloperTemplate(summary, developerTemplate) {
   const template = (developerTemplate || '').trim()
   const cleanSummary = (summary || '').trim()
@@ -62,28 +83,30 @@ export async function generateOptimizedPrompt({ summary, developerTemplate, mode
   const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS)
 
   try {
-    const response = await fetch(endpoint, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${cleanKey}`,
-      },
-      signal: controller.signal,
-      body: JSON.stringify({
-        model: cleanModel,
-        messages: [
-          {
-            role: 'system',
-            content: 'You are an expert image metaprompt generator. Return one polished prompt string only. Never include meta/instructional wording, explanations, template language, labels, or markdown.',
-          },
-          {
-            role: 'user',
-            content: `Craft one final image prompt from these instructions:\n\n${instructionPayload}\n\nImportant: output only the final prompt text. Do not include process language, template instructions, marketing terms, or explanation.`,
-          },
-        ],
-        temperature: 0.7,
-      }),
-    })
+    const response = await fetchWithRetryOn429(() =>
+      fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${cleanKey}`,
+        },
+        signal: controller.signal,
+        body: JSON.stringify({
+          model: cleanModel,
+          messages: [
+            {
+              role: 'system',
+              content: 'You are an expert image metaprompt generator. Return one polished prompt string only. Never include meta/instructional wording, explanations, template language, labels, or markdown.',
+            },
+            {
+              role: 'user',
+              content: `Craft one final image prompt from these instructions:\n\n${instructionPayload}\n\nImportant: output only the final prompt text. Do not include process language, template instructions, marketing terms, or explanation.`,
+            },
+          ],
+          temperature: 0.7,
+        }),
+      })
+    )
 
     const rawText = await response.text().catch(() => '')
     const payload = rawText ? (() => { try { return JSON.parse(rawText) } catch { return {} } })() : {}
@@ -119,6 +142,130 @@ const REQUEST_TIMEOUT_MS_PROXY = 30000
  * Call the Cloudflare Pages Function that uses the encrypted GEMINI_API_KEY at runtime.
  * Use when no client-side API key is available (e.g. production with encrypted env).
  */
+/**
+ * Ask the LLM for one set of short inspiration words based on current prompt inputs.
+ * Returns an array of lowercase words (e.g. ["misty", "serene", "dawn", "soft"]).
+ */
+export async function generateDescriptionSuggestions({ inputsSummary, model, apiKey, endpoint = DEFAULT_ENDPOINT }) {
+  const cleanInputs = (inputsSummary || '').trim()
+  const cleanModel = (model || '').trim()
+  const cleanKey = (apiKey || '').trim()
+  if (!cleanModel) throw new Error('Select a model before generating.')
+  if (!cleanKey) throw new Error('No API key configured.')
+
+  const controller = new AbortController()
+  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS)
+
+  try {
+    const response = await fetchWithRetryOn429(() =>
+      fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${cleanKey}`,
+        },
+        signal: controller.signal,
+        body: JSON.stringify({
+          model: cleanModel,
+          messages: [
+            {
+              role: 'system',
+              content: 'You suggest inspiration words for image prompts. Output only a single set of 5–10 related words, comma-separated, all lowercase. No sentences, no explanation. Example: misty, serene, dawn, soft, atmospheric.',
+            },
+            {
+              role: 'user',
+              content: cleanInputs
+                ? `Current prompt inputs:\n\n${cleanInputs}\n\nSuggest 5–10 short inspiration words that fit this vibe. Output only comma-separated words, all lowercase.`
+                : 'Suggest 5–10 versatile image-prompt inspiration words. Output only comma-separated words, all lowercase.',
+            },
+          ],
+          temperature: 0.6,
+        }),
+      })
+    )
+
+    const rawText = await response.text().catch(() => '')
+    const payload = rawText ? (() => { try { return JSON.parse(rawText) } catch { return {} } })() : {}
+
+    if (!response.ok) {
+      const apiError = payload?.error?.message || payload?.message
+      if (apiError) throw new Error(apiError)
+      if (response.status === 429) throw new Error('Rate limit reached. Wait a moment and try again.')
+      throw new Error(`Request failed (${response.status})`)
+    }
+
+    const text = extractPromptText(payload).trim().toLowerCase()
+    const words = text.split(/[,;\s]+/).map((s) => s.trim()).filter(Boolean)
+    return words.length ? words : []
+  } catch (error) {
+    throw new Error(normalizeError(error))
+  } finally {
+    clearTimeout(timeout)
+  }
+}
+
+const SUGGEST_DESCRIPTION_PROXY = '/api/suggest-description'
+
+function isRateLimitError(response, data) {
+  return response.status === 429 || ((response.status === 400 || response.status >= 500) && (data?.error || '').toLowerCase().includes('rate limit'))
+}
+
+/** Retry proxy requests when response indicates rate limit (429 or error message). */
+async function proxyFetchWithRetry(fetchFn) {
+  let response
+  let rawText = ''
+  let data = {}
+  for (let attempt = 0; attempt <= RATE_LIMIT_MAX_RETRIES; attempt++) {
+    response = await fetchFn()
+    rawText = await response.text().catch(() => '')
+    data = rawText ? (() => { try { return JSON.parse(rawText) } catch { return {} } })() : {}
+    if (!response.ok && isRateLimitError(response, data) && attempt < RATE_LIMIT_MAX_RETRIES) {
+      const waitMs = Math.min(2000 * Math.pow(2, attempt), 30000)
+      await new Promise((r) => setTimeout(r, waitMs))
+      continue
+    }
+    break
+  }
+  return { response, rawText, data }
+}
+
+export async function generateDescriptionSuggestionsViaProxy({ inputsSummary, model, proxyUrl = SUGGEST_DESCRIPTION_PROXY }) {
+  const cleanInputs = (inputsSummary || '').trim()
+  const cleanModel = (model || '').trim()
+  if (!cleanModel) throw new Error('Select a model before generating.')
+
+  const controller = new AbortController()
+  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS_PROXY)
+
+  try {
+    const url = proxyUrl.startsWith('http') ? proxyUrl : new URL(proxyUrl, typeof window !== 'undefined' ? window.location.origin : '').href
+    const { response, data } = await proxyFetchWithRetry(() =>
+      fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        signal: controller.signal,
+        body: JSON.stringify({
+          inputsSummary: cleanInputs,
+          model: cleanModel,
+        }),
+      })
+    )
+
+    if (!response.ok) {
+      const message = data?.error || `Request failed (${response.status})`
+      throw new Error(message)
+    }
+
+    const suggestions = data?.suggestions
+    if (!Array.isArray(suggestions)) return []
+    return suggestions.map((s) => String(s).trim().toLowerCase()).filter(Boolean)
+  } catch (error) {
+    throw new Error(normalizeError(error))
+  } finally {
+    clearTimeout(timeout)
+  }
+}
+
 export async function generateOptimizedPromptViaProxy({ summary, developerTemplate, model, proxyUrl = PROXY_ENDPOINT }) {
   const cleanSummary = (summary || '').trim()
   const cleanModel = (model || '').trim()
@@ -130,19 +277,18 @@ export async function generateOptimizedPromptViaProxy({ summary, developerTempla
 
   try {
     const url = proxyUrl.startsWith('http') ? proxyUrl : new URL(proxyUrl, typeof window !== 'undefined' ? window.location.origin : '').href
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      signal: controller.signal,
-      body: JSON.stringify({
-        summary: cleanSummary,
-        developerTemplate: (developerTemplate || '').trim(),
-        model: cleanModel,
-      }),
-    })
-
-    const rawText = await response.text().catch(() => '')
-    const data = rawText ? (() => { try { return JSON.parse(rawText) } catch { return {} } })() : {}
+    const { response, data } = await proxyFetchWithRetry(() =>
+      fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        signal: controller.signal,
+        body: JSON.stringify({
+          summary: cleanSummary,
+          developerTemplate: (developerTemplate || '').trim(),
+          model: cleanModel,
+        }),
+      })
+    )
 
     if (!response.ok) {
       const message = data?.error || `Request failed (${response.status})`
