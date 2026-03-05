@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Fall football design variant",
+  "description": "Config for one school/variant when running apply-template-variants.jsx on the fall football template",
+  "type": "object",
+  "properties": {
+    "outputFileName": {
+      "type": "string",
+      "description": "Name for the saved .ai file (e.g. 'Fall Football - Eagles')"
+    },
+    "images": {
+      "type": "object",
+      "description": "Layer name to file path. Keys: school_logo, school_mascot, bg_image, year_overlay_image",
+      "additionalProperties": { "type": "string" }
+    },
+    "text": {
+      "type": "object",
+      "description": "Layer name to text content. Keys: school_title, school_subtitle",
+      "additionalProperties": { "type": "string" }
+    },
+    "colors": {
+      "type": "object",
+      "description": "Layer name to hex color. Keys: primary_color, secondary_color",
+      "additionalProperties": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
+    }
+  },
+  "additionalProperties": true
+}

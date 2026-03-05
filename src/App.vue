@@ -61,7 +61,56 @@ const {
 
 const copied = ref(false)
 
-// Azure OpenAI image generation UI state
+// Design template variant config (Illustrator): build JSON for apply-template-variants.jsx
+// Interchangeable data: school_title, school_subtitle, school_logo, school_mascot, bg_image, year_overlay_image, primary_color, secondary_color
+const variantConfig = ref({
+	outputFileName: '',
+	images: { school_logo: '', school_mascot: '', bg_image: '', year_overlay_image: '' },
+	text: { school_title: '', school_subtitle: '' },
+	colors: { primary_color: '', secondary_color: '' },
+})
+function buildOneVariant() {
+	const c = variantConfig.value
+	const colors = Object.fromEntries(
+		Object.entries(c.colors).filter(([, v]) => (v || '').trim())
+	)
+	return {
+		outputFileName: (c.outputFileName || '').trim() || 'Fall Football - variant',
+		images: Object.fromEntries(
+			Object.entries(c.images).filter(([, v]) => (v || '').trim())
+		),
+		text: Object.fromEntries(
+			Object.entries(c.text).filter(([, v]) => (v || '').trim())
+		),
+		...(Object.keys(colors).length && { colors }),
+	}
+}
+
+function downloadVariantJson() {
+	const payload = buildOneVariant()
+	const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' })
+	const url = URL.createObjectURL(blob)
+	const a = document.createElement('a')
+	a.href = url
+	a.download = (payload.outputFileName || 'variant').replace(/\s+/g, '-') + '.json'
+	a.click()
+	URL.revokeObjectURL(url)
+}
+
+/** Export one content JSON with a variants array (one template → many outputs). */
+function downloadContentJson() {
+	const variant = buildOneVariant()
+	const payload = { variants: [variant] }
+	const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' })
+	const url = URL.createObjectURL(blob)
+	const a = document.createElement('a')
+	a.href = url
+	a.download = 'fall-football-content.json'
+	a.click()
+	URL.revokeObjectURL(url)
+}
+
+// Adobe Firefly image generation UI state
 const imagePrompt1 = ref('')
 const imagePrompt2 = ref('')
 const imagePrompt3 = ref('')
@@ -69,7 +118,7 @@ const generatedImages = ref(['', '', ''])
 const isGeneratingImages = ref(false)
 const imageError = ref('')
 
-async function generateImagesFromAzure() {
+async function generateImagesFromFirefly() {
 	imageError.value = ''
 
 	const prompts = [imagePrompt1.value, imagePrompt2.value, imagePrompt3.value].map((p) => (p || '').trim())
@@ -91,7 +140,8 @@ async function generateImagesFromAzure() {
 
 		if (!response.ok) {
 			const errBody = await response.json().catch(() => ({}))
-			throw new Error(errBody.error || 'Failed to generate images.')
+			const msg = errBody.details ? `${errBody.error || 'Failed to generate images.'} ${errBody.details}` : (errBody.error || 'Failed to generate images.')
+			throw new Error(msg)
 		}
 
 		const data = await response.json()
@@ -406,11 +456,11 @@ function addCustomCameraSetting() {
 		</header>
 
 		<section class="block image-generator">
-			<h2>Azure image preview (3 prompts → 3 images)</h2>
+			<h2>Adobe Firefly image preview (3 prompts → 3 images)</h2>
 			<p class="placeholder-hint">
 				Enter three prompts below and click
 				<code>Generate images</code>
-				to fetch images from your Azure OpenAI deployment.
+				to generate images with Adobe Firefly.
 			</p>
 
 			<div class="image-prompts-grid">
@@ -429,7 +479,7 @@ function addCustomCameraSetting() {
 			</div>
 
 			<div class="actions">
-				<button class="btn primary" type="button" :disabled="isGeneratingImages" @click="generateImagesFromAzure">
+				<button class="btn primary" type="button" :disabled="isGeneratingImages" @click="generateImagesFromFirefly">
 					<span v-if="isGeneratingImages" class="loading-inline">
 						<span class="progress-ring" />
 						<span>Generating images…</span>
@@ -448,6 +498,68 @@ function addCustomCameraSetting() {
 					<img v-if="src" :src="src" alt="Generated image" />
 					<p v-else class="status-note">No image for this prompt yet.</p>
 				</div>
+			</div>
+		</section>
+
+		<section class="block design-template-variants">
+			<h2>Design template variants (Illustrator)</h2>
+			<p class="block-hint">
+				One content JSON (with a <code>variants</code> array) plus one .ai template creates many outputs. Build a variant below, export as content JSON, then run
+				<code>apply-template-variants.jsx</code>
+				in Illustrator with the template open.
+			</p>
+			<div class="variant-form">
+				<label>Output file name</label>
+				<input v-model="variantConfig.outputFileName" type="text" placeholder="e.g. Fall Football - Eagles" />
+				<fieldset class="variant-fieldset">
+					<legend>Images (layer name = path)</legend>
+					<div class="variant-row">
+						<label>school_logo</label>
+						<input v-model="variantConfig.images.school_logo" type="text" placeholder="path/to/logo.png" />
+					</div>
+					<div class="variant-row">
+						<label>school_mascot</label>
+						<input v-model="variantConfig.images.school_mascot" type="text" placeholder="path/to/mascot.png" />
+					</div>
+					<div class="variant-row">
+						<label>bg_image</label>
+						<input v-model="variantConfig.images.bg_image" type="text" placeholder="path/to/background.jpg" />
+					</div>
+					<div class="variant-row">
+						<label>year_overlay_image</label>
+						<input v-model="variantConfig.images.year_overlay_image" type="text" placeholder="path/to/year-overlay.png" />
+					</div>
+				</fieldset>
+				<fieldset class="variant-fieldset">
+					<legend>Text (layer name = content)</legend>
+					<div class="variant-row">
+						<label>school_title</label>
+						<input v-model="variantConfig.text.school_title" type="text" placeholder="School or team name" />
+					</div>
+					<div class="variant-row">
+						<label>school_subtitle</label>
+						<input v-model="variantConfig.text.school_subtitle" type="text" placeholder="e.g. 2025 Fall Season" />
+					</div>
+				</fieldset>
+				<fieldset class="variant-fieldset">
+					<legend>Colors (layer name = hex)</legend>
+					<div class="variant-row">
+						<label>primary_color</label>
+						<input v-model="variantConfig.colors.primary_color" type="text" placeholder="#C41E3A" />
+					</div>
+					<div class="variant-row">
+						<label>secondary_color</label>
+						<input v-model="variantConfig.colors.secondary_color" type="text" placeholder="#1a1a1a" />
+					</div>
+				</fieldset>
+			</div>
+			<div class="actions">
+				<button type="button" class="btn primary" @click="downloadContentJson">
+					Export content JSON (variants array)
+				</button>
+				<button type="button" class="btn secondary" @click="downloadVariantJson">
+					Export single variant only
+				</button>
 			</div>
 		</section>
 
@@ -1116,6 +1228,57 @@ function addCustomCameraSetting() {
 
 .image-generator {
 	margin-top: 2rem;
+}
+
+.design-template-variants {
+	margin-top: 2rem;
+	max-width: 640px;
+}
+
+.design-template-variants .block-hint code {
+	background: var(--input);
+	padding: 0.15rem 0.4rem;
+	border-radius: 4px;
+	font-size: 0.8rem;
+}
+
+.variant-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 0.75rem;
+}
+
+.variant-fieldset {
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	padding: 0.75rem 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.variant-fieldset legend {
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: var(--muted);
+	padding: 0 0.35rem;
+}
+
+.variant-row {
+	display: grid;
+	grid-template-columns: 140px 1fr;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.variant-row label {
+	margin: 0;
+	font-size: 0.85rem;
+}
+
+.variant-row input {
+	margin: 0;
 }
 
 .image-prompts-grid {

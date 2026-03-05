@@ -55,3 +55,4 @@ This app **builds to `dist/`** and is meant to be included in another project (e
 - `src/composables/useMetaprompt.js` â€“ metaprompt state and prompt-building logic
 - `src/style.css` â€“ global styles and theme variables
 - `functions/` â€“ reference Cloudflare Pages Function for the host project (see `functions/README.md`)
+- `illustrator-templates/` - Adobe Illustrator template + ExtendScript to swap images, text, and colors for design variants (e.g. fall football per school); see illustrator-templates/README.md

@@ -1,0 +1,72 @@
+{
+	"description": "One content JSON for the fall football AI template. Run apply-template-variants.jsx with this file and the template open to generate one .ai per school.",
+	"templateLayerNames": {
+		"images": [
+			"school_logo",
+			"school_mascot",
+			"bg_image",
+			"year_overlay_image"
+		],
+		"text": [
+			"school_title",
+			"school_subtitle"
+		],
+		"colors": [
+			"primary_color",
+			"secondary_color"
+		]
+	},
+	"variants": [
+		{
+			"outputFileName": "virginia-tech",
+			"images": {
+				"bg_image": "images/vt-football-players.jpg",
+				"school_logo": "images/vt-logo.svg",
+				"school_mascot": "images/vt-mascot.png",
+				"year_overlay_image": "images/vt-year-bg.jpg"
+			},
+			"text": {
+				"school_title": "VIRGINIA TECH",
+				"school_subtitle": "Go Hokies!!"
+			},
+			"colors": {
+				"primary_color": "#640031",
+				"secondary_color": "#ec280f"
+			}
+		},
+		{
+			"outputFileName": "georgia-tech",
+			"images": {
+				"bg_image": "images/gt-bg.jpg",
+				"school_logo": "images/gt-logo.svg",
+				"school_mascot": "images/gt-mascot-2.svg",
+				"year_overlay_image": "images/gt-year-bg.jpg"
+			},
+			"text": {
+				"school_title": "GEORGIA TECH",
+				"school_subtitle": "Go Jackets!!"
+			},
+			"colors": {
+				"primary_color": "#ffffff",
+				"secondary_color": "#eaac11"
+			}
+		},
+		{
+			"outputFileName": "kansas",
+			"images": {
+				"bg_image": "images/kansas-bg.jpg",
+				"school_logo": "images/kansas-logo.png",
+				"school_mascot": "images/kansas-mascot.svg",
+				"year_overlay_image": "images/kansas-year-bg.jpg"
+			},
+			"text": {
+				"school_title": "UNIVERSITY OF KANSAS",
+				"school_subtitle": "Go Jayhawks!!"
+			},
+			"colors": {
+				"primary_color": "#E8000D",
+				"secondary_color": "#0051BA"
+			}
+		}
+	]
+}

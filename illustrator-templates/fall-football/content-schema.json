@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Fall football content (one JSON, one template, many outputs)",
+  "description": "One content file pairs with one .ai template; apply-template-variants.jsx generates one .ai per variant.",
+  "type": "object",
+  "required": ["variants"],
+  "properties": {
+    "description": { "type": "string" },
+    "templateLayerNames": {
+      "type": "object",
+      "description": "Reference only: layer names used by the template",
+      "additionalProperties": { "type": "array", "items": { "type": "string" } }
+    },
+    "variants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "outputFileName": { "type": "string" },
+          "images": { "type": "object", "additionalProperties": { "type": "string" } },
+          "text": { "type": "object", "additionalProperties": { "type": "string" } },
+          "colors": { "type": "object", "additionalProperties": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" } }
+        }
+      }
+    }
+  }
+}
