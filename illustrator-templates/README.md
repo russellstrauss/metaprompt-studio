@@ -44,10 +44,33 @@ See `fall-football/README.md` and `fall-football/fall-football-content.json` for
 
 ## Script usage (apply-template-variants.jsx)
 
-1. Open your **template** in Illustrator.
-2. Run **File → Scripts → Other Script…** and select `apply-template-variants.jsx`.
-3. In the file dialog, choose the **content JSON** (the file that contains the `variants` array).
-4. The script loops over each variant: applies images, text, and colors; exports one JPEG per variant to the JSON folder; reopens the template for the next. When done, the template is open again and all JPEGs have been written.
+### Stored paths (run by simply executing the script)
+
+1. Open `apply-template-variants.jsx` in a text editor.
+2. At the top, set **STORED_TEMPLATE_PATH** and **STORED_JSON_PATH** (paths relative to the script’s folder or full paths), for example:
+   ```js
+   var STORED_TEMPLATE_PATH = 'fall-football-template.ai';
+   var STORED_JSON_PATH = 'fall-football/fall-football-content.json';
+   ```
+3. In Illustrator, run **File → Scripts → Other Script…** and select `apply-template-variants.jsx` (or run the script from the command line by passing it to Illustrator). No dialogs; the script opens the template, applies the JSON, exports JPEGs to the JSON folder, and leaves the template open.
+
+### Interactive (no stored paths)
+
+1. Leave both stored paths empty in the script.
+2. Open your **template** in Illustrator.
+3. Run **File → Scripts → Other Script…** and select `apply-template-variants.jsx`.
+4. In the file dialog, choose the **content JSON**. The script exports one JPEG per variant and reopens the template when done.
+
+### Optional: single command from terminal (wrapper)
+
+To run without opening Illustrator first and pass paths on the command line:
+
+```powershell
+cd illustrator-templates
+.\run-apply-template.ps1 ".\fall-football-template.ai" ".\fall-football\fall-football-content.json"
+```
+
+The wrapper writes an args file, launches Illustrator with the script, runs the export, then Illustrator quits. Set `$env:ILLUSTRATOR_EXE` if Illustrator is not in the default install path.
 
 ## Content JSON format (one file, many outputs)
 

@@ -5,28 +5,99 @@
  * Replaces images (by layer name), text (by layer name), and colors (by layer name).
  * Supports raster/placed formats (e.g. JPG, PNG).
  *
- * Usage: Open your template in Illustrator → File → Scripts → Other Script… → select this
- * file → choose the content JSON. The script exports one JPEG per variant to the same folder as the JSON.
+ * Usage (stored paths): Set STORED_TEMPLATE_PATH and STORED_JSON_PATH below, then run the script
+ * (File → Scripts → Other Script… or double-click). No dialogs; exports and leaves the template open.
+ *
+ * Usage (interactive): Leave both paths empty. Open your template in Illustrator, run this script,
+ * then choose the content JSON in the file dialog.
+ *
  * JSON format: { "variants": [ { "outputFileName": "...", "images": {...}, "text": {...}, "colors": {...} }, ... ] }
  * Requires: Named layers in the .ai template matching the keys in each variant.
  */
 
 #target illustrator
 
+// ——— Edit these paths to run with no dialogs (relative to this script’s folder or full paths) ———
+// EDIT THESE TWO PATHS (or leave empty to use interactive mode):
+var STORED_TEMPLATE_PATH = './fall-football-template.ai';  // e.g. "fall-football-template.ai"
+var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g. "fall-football/fall-football-content.json"
+
 (function () {
   'use strict';
 
-  if (!app.documents.length) {
-    alert('Please open your template document first.');
-    return;
+  var scriptFile = new File($.fileName);
+  var scriptFolder = scriptFile.parent;
+  var argsFile = new File(scriptFolder.fullName + '/apply-template-args.txt');
+  var batchMode = argsFile.exists;
+
+  function resolvePath(pathStr) {
+    if (!pathStr || !String(pathStr).length) return null;
+    var p = String(pathStr).replace(/\\/g, '/');
+    var fromScript = new File(scriptFolder.fullName + '/' + p);
+    if (fromScript.exists) return fromScript;
+    var absolute = new File(p);
+    if (absolute.exists) return absolute;
+    return null;
   }
 
-  var configFile = File.openDialog('Select content JSON (one file, many variants)', '*.json', false);
-  if (!configFile) return;
+  var configFile = null;
+  var storedPathMode = false;
+
+  if (batchMode) {
+    argsFile.open('r');
+    argsFile.encoding = 'UTF-8';
+    var templatePath = argsFile.readln();
+    var jsonPath = argsFile.readln();
+    argsFile.close();
+
+    configFile = new File(jsonPath);
+    if (!configFile.exists) {
+      alert('Batch mode: JSON file not found: ' + jsonPath);
+      try { if (argsFile.exists) argsFile.remove(); } catch (e) {}
+      app.quit();
+      return;
+    }
+    var templateFileObj = new File(templatePath);
+    if (!templateFileObj.exists) {
+      alert('Batch mode: Template file not found: ' + templatePath);
+      try { if (argsFile.exists) argsFile.remove(); } catch (e) {}
+      app.quit();
+      return;
+    }
+    app.open(templateFileObj);
+  } else if (STORED_TEMPLATE_PATH && STORED_JSON_PATH) {
+    var storedTemplate = resolvePath(STORED_TEMPLATE_PATH);
+    var storedJson = resolvePath(STORED_JSON_PATH);
+    if (storedTemplate && storedTemplate.exists && storedJson && storedJson.exists) {
+      storedPathMode = true;
+      configFile = storedJson;
+      app.open(storedTemplate);
+    } else {
+      if (!storedTemplate || !storedTemplate.exists) {
+        alert('Stored template path not found: ' + STORED_TEMPLATE_PATH);
+      } else {
+        alert('Stored JSON path not found: ' + STORED_JSON_PATH);
+      }
+      return;
+    }
+  } else {
+    if (!app.documents.length) {
+      alert('Please open your template document first, or set STORED_TEMPLATE_PATH and STORED_JSON_PATH at the top of this script.');
+      return;
+    }
+    configFile = File.openDialog('Select content JSON (one file, many variants)', '*.json', false);
+    if (!configFile) return;
+  }
+
+  function quitBatch() {
+    try { if (argsFile.exists) argsFile.remove(); } catch (e) {}
+    app.quit();
+  }
 
   var jsonStr = readFile(configFile);
   if (!jsonStr) {
     alert('Could not read config file.');
+    if (batchMode) quitBatch();
     return;
   }
 
@@ -35,6 +106,7 @@
     data = parseJSON(jsonStr);
   } catch (e) {
     alert('Invalid JSON in config file: ' + (e.message || e.toString()));
+    if (batchMode) quitBatch();
     return;
   }
 
@@ -57,6 +129,7 @@
       variants = [data];
     } else {
       alert('Content JSON must contain a "variants" array or a single variant (outputFileName, images, text, colors).');
+      if (batchMode) quitBatch();
       return;
     }
   }
@@ -65,6 +138,8 @@
   var basePath = configFile.parent;
 
   main();
+
+  if (batchMode) quitBatch();
 
   function applyOneVariant(doc, config, basePath) {
     if (config.images && typeof config.images === 'object') {
@@ -104,13 +179,15 @@
       }
     }
 
-    // Reopen template so user has it open after batch
-    if (variants.length > 1) {
+    // Reopen template so user has it open after batch (skip if batch mode; we're quitting)
+    if (!batchMode && variants.length > 1) {
       doc.close(SaveOptions.DONOTSAVECHANGES);
       app.open(templateFile);
     }
 
-    alert('Exported ' + exportedFiles.length + ' JPEG(s):\n' + exportedFiles.join('\n'));
+    if (!batchMode) {
+      alert('Exported ' + exportedFiles.length + ' JPEG(s):\n' + exportedFiles.join('\n'));
+    }
   }
 
   function readFile(file) {
@@ -543,6 +620,25 @@
     return null;
   }
 
+  // Shrink font size until text fits within the text frame (no overflow).
+  // Used for school_title so longer names fit in the bounding box.
+  function shrinkTextToFitFrame(textFrame, minSizePt) {
+    if (!textFrame || textFrame.typename !== 'TextFrame') return;
+    minSizePt = (minSizePt !== undefined && minSizePt > 0) ? minSizePt : 6;
+    try {
+      var tr = textFrame.textRange;
+      var ca = tr.characterAttributes;
+      var step = 2; // reduce by 2 pt each iteration for reasonable speed
+      while (textFrame.overflows) {
+        var currentSize = ca.size;
+        if (typeof currentSize !== 'number') currentSize = parseFloat(currentSize) || 12;
+        if (currentSize <= minSizePt) break;
+        var newSize = Math.max(minSizePt, currentSize - step);
+        ca.size = newSize;
+      }
+    } catch (e) {}
+  }
+
   function applyText(doc, textMap) {
     for (var layerName in textMap) {
       if (!textMap.hasOwnProperty(layerName)) continue;
@@ -556,6 +652,9 @@
         var item = layer.pageItems[j];
         if (item.typename === 'TextFrame') {
           item.contents = str;
+          if (layerName === 'school_title') {
+            shrinkTextToFitFrame(item, 6);
+          }
           break;
         }
       }
@@ -566,6 +665,16 @@
     var primaryRgb = null;
     var secondaryRgb = null;
 
+    // Resolve primary/secondary from colorMap for template-specific mappings (gradients, masked overlay, etc.).
+    if (colorMap.primary_color) {
+      var pr = hexToRgb(colorMap.primary_color);
+      if (pr) primaryRgb = pr;
+    }
+    if (colorMap.secondary_color) {
+      var sr = hexToRgb(colorMap.secondary_color);
+      if (sr) secondaryRgb = sr;
+    }
+
     for (var layerName in colorMap) {
       if (!colorMap.hasOwnProperty(layerName)) continue;
       var hex = colorMap[layerName];
@@ -573,10 +682,6 @@
 
       var rgb = hexToRgb(hex);
       if (!rgb) continue;
-
-       // Remember primary/secondary for template-specific mappings.
-       if (layerName === 'primary_color') primaryRgb = rgb;
-       if (layerName === 'secondary_color') secondaryRgb = rgb;
 
       var layer = getLayerByName(doc, layerName);
       if (!layer) continue;
@@ -655,18 +760,104 @@
         bgGradItem.fillColor = gc;
       }
 
-      // overlay_gradient: top color (end stop) = secondary_color.
+      // overlay_gradient: top color = primary_color (first stop). Duplicate gradient so the change applies (shared swatches may not update otherwise).
       var overlayGradItem = findPageItemByNameInContainer(doc, 'overlay_gradient');
-      if (overlayGradItem && overlayGradItem.fillColor && overlayGradItem.fillColor.typename === 'GradientColor' && secondaryRgb) {
-        var gc2 = overlayGradItem.fillColor;
-        var grad2 = gc2.gradient;
-        var stops2 = grad2.gradientStops;
-        if (stops2.length >= 2) {
-          stops2[stops2.length - 1].color = secondaryRgb;
+      if (!overlayGradItem && getLayerByName(doc, 'overlay_gradient')) {
+        overlayGradItem = findFirstItemWithGradientFill(getLayerByName(doc, 'overlay_gradient'));
+      }
+      if (overlayGradItem && primaryRgb) {
+        var gradientTarget = getGradientFillTarget(overlayGradItem);
+        if (gradientTarget) {
+          var newGc = duplicateGradientAndSetFirstStopColor(doc, gradientTarget.fillColor, primaryRgb);
+          if (newGc) {
+            gradientTarget.item.fillColor = newGc;
+          }
         }
-        overlayGradItem.fillColor = gc2;
       }
     }
+  }
+
+  // Duplicate a GradientColor, set the first stop (top of gradient) to the given color, return new GradientColor for assignment.
+  // This avoids modifying a shared gradient swatch which may not update the item.
+  function duplicateGradientAndSetFirstStopColor(doc, sourceGradientColor, firstStopRgb) {
+    if (!doc || !sourceGradientColor || sourceGradientColor.typename !== 'GradientColor' || !firstStopRgb) return null;
+    try {
+      var srcGrad = sourceGradientColor.gradient;
+      var srcStops = srcGrad.gradientStops;
+      if (!srcStops || srcStops.length < 1) return null;
+
+      var newGrad = doc.gradients.add();
+      newGrad.name = srcGrad.name + ' (variant)';
+      newGrad.type = srcGrad.type;
+
+      // Copy stops: set first stop color to firstStopRgb (top), copy others.
+      for (var i = 0; i < srcStops.length; i++) {
+        var srcStop = srcStops[i];
+        var destStop = i < newGrad.gradientStops.length ? newGrad.gradientStops[i] : newGrad.gradientStops.add();
+        destStop.rampPoint = srcStop.rampPoint;
+        destStop.midPoint = srcStop.midPoint;
+        destStop.opacity = srcStop.opacity;
+        destStop.color = (i === 0) ? firstStopRgb : srcStop.color;
+      }
+
+      var newGc = new GradientColor();
+      newGc.gradient = newGrad;
+      newGc.angle = sourceGradientColor.angle;
+      newGc.length = sourceGradientColor.length;
+      if (sourceGradientColor.origin !== undefined) newGc.origin = sourceGradientColor.origin;
+      if (sourceGradientColor.hiliteAngle !== undefined) newGc.hiliteAngle = sourceGradientColor.hiliteAngle;
+      if (sourceGradientColor.hiliteLength !== undefined) newGc.hiliteLength = sourceGradientColor.hiliteLength;
+      return newGc;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  // Return the first item (at any depth) in container that has a GradientColor fill.
+  function findFirstItemWithGradientFill(container) {
+    if (!container) return null;
+    var items = null;
+    try {
+      items = container.pageItems;
+    } catch (e) {
+      return null;
+    }
+    if (!items || !items.length) return null;
+    for (var i = 0; i < items.length; i++) {
+      var it = items[i];
+      try {
+        if (it.fillColor && it.fillColor.typename === 'GradientColor') return it;
+        if (it.typename === 'CompoundPathItem' && it.pathItems && it.pathItems.length && it.pathItems[0].fillColor && it.pathItems[0].fillColor.typename === 'GradientColor') return it;
+      } catch (e2) {}
+      if (it.typename === 'GroupItem') {
+        var nested = findFirstItemWithGradientFill(it);
+        if (nested) return nested;
+      }
+    }
+    return null;
+  }
+
+  // If item (or its first path in case of CompoundPathItem/GroupItem) has a gradient fill, return { item, fillColor }.
+  function getGradientFillTarget(item) {
+    if (!item) return null;
+    try {
+      if (item.fillColor && item.fillColor.typename === 'GradientColor') {
+        return { item: item, fillColor: item.fillColor };
+      }
+      if (item.typename === 'CompoundPathItem' && item.pathItems && item.pathItems.length) {
+        var p0 = item.pathItems[0];
+        if (p0.fillColor && p0.fillColor.typename === 'GradientColor') {
+          return { item: p0, fillColor: p0.fillColor };
+        }
+      }
+      if (item.typename === 'GroupItem' && item.pageItems && item.pageItems.length) {
+        for (var j = 0; j < item.pageItems.length; j++) {
+          var sub = getGradientFillTarget(item.pageItems[j]);
+          if (sub) return sub;
+        }
+      }
+    } catch (e) {}
+    return null;
   }
 
   function hexToRgb(hex) {

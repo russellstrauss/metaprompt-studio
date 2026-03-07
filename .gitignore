@@ -26,3 +26,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Illustrator batch run temp file
+illustrator-templates/apply-template-args.txt
