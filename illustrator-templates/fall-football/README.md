@@ -18,7 +18,7 @@ Create an `.ai` template with these layer names (or subset). The script matches 
 | `secondary_color`     | color | Secondary brand color (hex fill) |
 
 - **Images** (`school_logo`, `school_mascot`, `bg_image`, `year_overlay_image`): Each layer should contain a single **placed image** (File â†’ Place). The script replaces that image with the file path in the JSON.
-- **Text** (`school_title`, `school_subtitle`): Each layer should contain one **text frame**. The script sets its contents from the JSON.
+- **Text** (`school_title`, `school_subtitle`): Each layer should contain one **text frame**. The script sets its contents from the JSON. For **school_title**, use **area text** (drag with the Type tool to draw a frame); the script will shrink the font so the full name fits in that frame. Optionally, add a rectangle path on the same layer to define the title area; the script will fit the text into that box.
 - **Colors** (`primary_color`, `secondary_color`): Each layer should contain path(s) with a fill. The script sets the fill to the hex color in the JSON (e.g. `#C41E3A`).
 
 ## Naming your template file

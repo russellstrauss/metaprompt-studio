@@ -325,9 +325,9 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
     return null;
   }
 
-  // Resize and center a placed image so it fits inside a rectangular bounds
-  // while preserving aspect ratio.
-  function fitItemIntoBounds(item, boundsPath) {
+  // Resize and position a placed image so it fits inside a rectangular bounds
+  // while preserving aspect ratio. verticalAlign: 'center' (default) or 'bottom'.
+  function fitItemIntoBounds(item, boundsPath, verticalAlign) {
     if (!item || !boundsPath) return;
 
     var bb = boundsPath.geometricBounds; // [left, top, right, bottom]
@@ -370,14 +370,20 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
     iWidth = iRight - iLeft;
     iHeight = iTop - iBottom;
 
-    // Center within the bounding box
+    // Horizontal: center within the bounding box
     var boxCx = (boxLeft + boxRight) / 2;
-    var boxCy = (boxTop + boxBottom) / 2;
     var itemCx = (iLeft + iRight) / 2;
-    var itemCy = (iTop + iBottom) / 2;
-
     var dx = boxCx - itemCx;
-    var dy = boxCy - itemCy;
+
+    // Vertical: center (default) or bottom-align to bounding box
+    var dy;
+    if (verticalAlign === 'bottom') {
+      dy = boxBottom - iBottom;
+    } else {
+      var boxCy = (boxTop + boxBottom) / 2;
+      var itemCy = (iTop + iBottom) / 2;
+      dy = boxCy - itemCy;
+    }
 
     item.left += dx;
     item.top += dy;
@@ -586,7 +592,7 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
           logoItem.move(parent, ElementPlacement.PLACEATEND);
           var bbPath = findBoundsPathInContainer(layer);
           if (bbPath) {
-            fitItemIntoBounds(logoItem, bbPath);
+            fitItemIntoBounds(logoItem, bbPath, layerName === 'school_mascot' ? 'bottom' : undefined);
           }
           item = logoItem;
         }
@@ -602,7 +608,7 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
         if (layerName === 'school_logo' || layerName === 'school_mascot') {
           var bbPath2 = findBoundsPathInContainer(layer);
           if (bbPath2) {
-            fitItemIntoBounds(item, bbPath2);
+            fitItemIntoBounds(item, bbPath2, layerName === 'school_mascot' ? 'bottom' : undefined);
           }
         }
       }
@@ -620,21 +626,79 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
     return null;
   }
 
+  // True if the text frame has overset/overflowing text.
+  function textOverflows(textFrame) {
+    if (!textFrame || textFrame.typename !== 'TextFrame') return false;
+    try {
+      if (textFrame.overflows) return true;
+      var tr = textFrame.textRange;
+      var totalLen = (tr && tr.length !== undefined) ? tr.length : (textFrame.contents ? textFrame.contents.length : 0);
+      if (totalLen === 0) return false;
+      var lines = tr && tr.lines;
+      if (lines && lines.length) {
+        var visible = 0;
+        for (var i = 0; i < lines.length; i++) {
+          if (lines[i].characters && lines[i].characters.length !== undefined) visible += lines[i].characters.length;
+          else visible += (lines[i].length !== undefined) ? lines[i].length : 0;
+        }
+        return visible < totalLen;
+      }
+      return !!textFrame.overflows;
+    } catch (e) {
+      return !!textFrame.overflows;
+    }
+  }
+
+  // Set text frame to bounds [left, top, right, bottom]. Tries geometricBounds then left/top/width/height.
+  function setTextFrameBounds(textFrame, bounds) {
+    if (!textFrame || textFrame.typename !== 'TextFrame' || !bounds || bounds.length !== 4) return;
+    try {
+      textFrame.geometricBounds = bounds;
+    } catch (e1) {
+      try {
+        var width = bounds[2] - bounds[0];
+        var height = bounds[3] - bounds[1];
+        if (width > 0 && height > 0) {
+          textFrame.left = bounds[0];
+          textFrame.top = bounds[1];
+          textFrame.width = width;
+          textFrame.height = height;
+        }
+      } catch (e2) {}
+    }
+  }
+
   // Shrink font size until text fits within the text frame (no overflow).
-  // Used for school_title so longer names fit in the bounding box.
-  function shrinkTextToFitFrame(textFrame, minSizePt) {
+  // Used for school_title so longer names fit in the bounding box of the type object.
+  function shrinkTextToFitFrame(textFrame, minSizePt, doc) {
     if (!textFrame || textFrame.typename !== 'TextFrame') return;
     minSizePt = (minSizePt !== undefined && minSizePt > 0) ? minSizePt : 6;
+    var step = 2;
+    var maxIterations = 100;
+    var iterations = 0;
     try {
-      var tr = textFrame.textRange;
-      var ca = tr.characterAttributes;
-      var step = 2; // reduce by 2 pt each iteration for reasonable speed
-      while (textFrame.overflows) {
+      if (doc && typeof doc.redraw === 'function') doc.redraw();
+      while (textOverflows(textFrame) && iterations < maxIterations) {
+        iterations++;
+        var tr = textFrame.textRange;
+        var ca = tr.characterAttributes;
         var currentSize = ca.size;
         if (typeof currentSize !== 'number') currentSize = parseFloat(currentSize) || 12;
         if (currentSize <= minSizePt) break;
         var newSize = Math.max(minSizePt, currentSize - step);
-        ca.size = newSize;
+        var words = tr.words;
+        if (words && words.length > 0) {
+          for (var w = 0; w < words.length; w++) {
+            try {
+              words[w].characterAttributes.size = newSize;
+            } catch (e2) {}
+          }
+        } else {
+          try {
+            ca.size = newSize;
+          } catch (e2) {}
+        }
+        if (doc && typeof doc.redraw === 'function') doc.redraw();
       }
     } catch (e) {}
   }
@@ -651,9 +715,20 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
       for (var j = 0; j < layer.pageItems.length; j++) {
         var item = layer.pageItems[j];
         if (item.typename === 'TextFrame') {
-          item.contents = str;
           if (layerName === 'school_title') {
-            shrinkTextToFitFrame(item, 6);
+            var targetBounds = null;
+            var boundsPath = findBoundsPathInContainer(layer);
+            if (boundsPath && boundsPath.typename === 'PathItem') {
+              targetBounds = boundsPath.geometricBounds;
+            } else {
+              targetBounds = item.geometricBounds;
+            }
+            item.contents = str;
+            if (targetBounds && targetBounds.length === 4) setTextFrameBounds(item, targetBounds);
+            if (doc && typeof doc.redraw === 'function') doc.redraw();
+            shrinkTextToFitFrame(item, 6, doc);
+          } else {
+            item.contents = str;
           }
           break;
         }
