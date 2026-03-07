@@ -154,7 +154,11 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
 
     var baseName = (config.outputFileName || doc.name.replace(/\\.ai$/i, '') + ' - variant').replace(/\\.ai$/i, '');
     if (!/\.jpe?g$/i.test(baseName)) baseName += '.jpg';
-    var outFile = basePath ? new File(basePath.fullName + '/' + baseName) : new File(baseName);
+    var outputDir = basePath ? new Folder(basePath.fullName + '/output') : null;
+    if (outputDir && !outputDir.exists) outputDir.create();
+    var outFile = outputDir
+      ? new File(outputDir.fullName + '/' + baseName)
+      : (basePath ? new File(basePath.fullName + '/' + baseName) : new File(baseName));
 
     var jpegOptions = new ExportOptionsJPEG();
     jpegOptions.qualitySetting = 100;
@@ -236,11 +240,40 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
     return findLayerInContainer(doc, name);
   }
 
+  // Collect all layers whose name starts with "school_title" (e.g. school_title, school_title_2, school_title copy).
+  function collectSchoolTitleLayers(container, result) {
+    if (!container || !result) return;
+    var layers;
+    try {
+      layers = container.layers;
+    } catch (e) {
+      return;
+    }
+    if (!layers || layers.length === 0) return;
+    for (var i = 0; i < layers.length; i++) {
+      try {
+        var layer = layers[i];
+        if (layer.name && String(layer.name).indexOf('school_title') === 0) {
+          result.push(layer);
+        }
+        collectSchoolTitleLayers(layer, result);
+      } catch (e2) {}
+    }
+  }
+
   // Find the first PlacedItem/RasterItem inside a container (layer or group),
   // recursing into nested GroupItems and sublayers so we can correctly handle
   // clipping masks and layer hierarchies like `bg_image` → `image`.
   function findImageItemInContainer(container) {
-    if (!container) return null;
+    var all = findAllImageItemsInContainer(container);
+    return all.length ? all[0] : null;
+  }
+
+  // Find all PlacedItem/RasterItem inside a container (e.g. bg_image with duplicate layers).
+  // Same recursion as findImageItemInContainer but collects every image.
+  function findAllImageItemsInContainer(container, out) {
+    if (!container) return out || [];
+    out = out || [];
 
     // 1) Search pageItems on this container
     var items = null;
@@ -254,17 +287,14 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
       for (var i = items.length - 1; i >= 0; i--) {
         var it = items[i];
         if (it.typename === 'PlacedItem' || it.typename === 'RasterItem') {
-          return it;
-        }
-        if (it.typename === 'GroupItem') {
-          var nested = findImageItemInContainer(it);
-          if (nested) return nested;
+          out.push(it);
+        } else if (it.typename === 'GroupItem') {
+          findAllImageItemsInContainer(it, out);
         }
       }
     }
 
-    // 2) Also recurse into sublayers, which is how backgrounds like `bg_image`
-    // are often structured (layer → sublayer → placed image).
+    // 2) Also recurse into sublayers
     var layers = null;
     try {
       layers = container.layers;
@@ -274,12 +304,11 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
 
     if (layers && layers.length) {
       for (var j = 0; j < layers.length; j++) {
-        var nestedLayerItem = findImageItemInContainer(layers[j]);
-        if (nestedLayerItem) return nestedLayerItem;
+        findAllImageItemsInContainer(layers[j], out);
       }
     }
 
-    return null;
+    return out;
   }
 
   // Find a "bounding box" PathItem for a logo/mascot layer. Assumes the layer (or
@@ -549,54 +578,52 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
       // images inside clipping groups and sublayers (e.g. year_overlay_image masks, bg_image, etc.).
       // For most layers we keep the existing bounds and just swap the file.
       // For school_logo and school_mascot we fit the image into a bounding box while preserving aspect ratio.
-      var existing = findImageItemInContainer(layer);
+      var allExisting = findAllImageItemsInContainer(layer);
       var item = null;
 
-      if (existing) {
-        var parent = existing.parent;
-        var left = existing.left;
-        var top = existing.top;
-        var width = existing.width;
-        var height = existing.height;
-
-        if (layerName !== 'school_logo' && layerName !== 'school_mascot') {
-          // Generic case: try to reuse the existing placed/raster item so its
-          // transform, masks, and effects remain intact.
-          try {
-            existing.file = file;
-            item = existing;
-          } catch (eSet) {
-            // Fallback: recreate with same bounds in the same parent so any
-            // clipping mask/group structure is preserved.
-            try {
-              existing.remove();
-            } catch (eRem) {}
-            var repl = doc.placedItems.add();
-            repl.file = file;
-            repl.left = left;
-            repl.top = top;
-            if (width && height) {
-              repl.width = width;
-              repl.height = height;
-            }
-            repl.move(parent, ElementPlacement.PLACEATEND);
-            item = repl;
-          }
-        } else {
-          // Logo/mascot: remove and place a fresh item, then fit into bounding box while preserving aspect ratio.
+      if (layerName !== 'school_logo' && layerName !== 'school_mascot') {
+        // Generic case (bg_image, year_overlay_image, etc.): replace every image in the layer
+        // so duplicate layers / multiple placed images all get the same file.
+        for (var idx = 0; idx < allExisting.length; idx++) {
+          var existing = allExisting[idx];
+          var parent = existing.parent;
+          var left = existing.left;
+          var top = existing.top;
+          var width = existing.width;
+          var height = existing.height;
+          // PlacedItem.file is read-only, so remove and re-place with the new file.
           try {
             existing.remove();
-          } catch (eRem2) {}
-          var logoItem = doc.placedItems.add();
-          logoItem.file = file;
-          logoItem.move(parent, ElementPlacement.PLACEATEND);
-          var bbPath = findBoundsPathInContainer(layer);
-          if (bbPath) {
-            fitItemIntoBounds(logoItem, bbPath, layerName === 'school_mascot' ? 'bottom' : undefined);
+          } catch (eRem) {}
+          var repl = doc.placedItems.add();
+          repl.file = file;
+          repl.left = left;
+          repl.top = top;
+          if (width && height) {
+            repl.width = width;
+            repl.height = height;
           }
-          item = logoItem;
+          repl.move(parent, ElementPlacement.PLACEATEND);
+          item = repl;
         }
-      } else {
+      } else if (allExisting.length) {
+        // Logo/mascot: only one image; remove and place fresh, then fit into bounding box.
+        var existing = allExisting[0];
+        var parent = existing.parent;
+        try {
+          existing.remove();
+        } catch (eRem2) {}
+        var logoItem = doc.placedItems.add();
+        logoItem.file = file;
+        logoItem.move(parent, ElementPlacement.PLACEATEND);
+        var bbPath = findBoundsPathInContainer(layer);
+        if (bbPath) {
+          fitItemIntoBounds(logoItem, bbPath, layerName === 'school_mascot' ? 'bottom' : undefined);
+        }
+        item = logoItem;
+      }
+
+      if (!allExisting.length) {
         // No existing image found: place a new one on this layer.
         var placeItem = doc.placedItems.add();
         placeItem.file = file;
@@ -703,11 +730,46 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
     } catch (e) {}
   }
 
+  function applyTextToSchoolTitleLayer(doc, layer, str) {
+    if (!layer || !layer.pageItems) return;
+    var boundsPath = findBoundsPathInContainer(layer);
+    var targetBounds = null;
+    if (boundsPath && boundsPath.typename === 'PathItem') {
+      targetBounds = boundsPath.geometricBounds;
+    }
+    for (var j = 0; j < layer.pageItems.length; j++) {
+      var item = layer.pageItems[j];
+      if (item.typename === 'TextFrame') {
+        var bounds = targetBounds && targetBounds.length === 4 ? targetBounds : item.geometricBounds;
+        item.contents = str;
+        if (bounds && bounds.length === 4) setTextFrameBounds(item, bounds);
+        if (doc && typeof doc.redraw === 'function') doc.redraw();
+        shrinkTextToFitFrame(item, 6, doc);
+      }
+    }
+  }
+
   function applyText(doc, textMap) {
+    var schoolTitleStr = null;
+    if (textMap.hasOwnProperty('school_title')) {
+      schoolTitleStr = textMap['school_title'];
+      if (typeof schoolTitleStr !== 'string') schoolTitleStr = String(schoolTitleStr);
+    }
+
     for (var layerName in textMap) {
       if (!textMap.hasOwnProperty(layerName)) continue;
       var str = textMap[layerName];
       if (typeof str !== 'string') str = String(str);
+
+      if (layerName === 'school_title' && schoolTitleStr !== null) {
+        // Apply school name to school_title and any duplicate layers (e.g. school_title_2, school_title copy).
+        var schoolTitleLayers = [];
+        collectSchoolTitleLayers(doc, schoolTitleLayers);
+        for (var s = 0; s < schoolTitleLayers.length; s++) {
+          applyTextToSchoolTitleLayer(doc, schoolTitleLayers[s], schoolTitleStr);
+        }
+        continue;
+      }
 
       var layer = getLayerByName(doc, layerName);
       if (!layer) continue;
@@ -715,21 +777,7 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
       for (var j = 0; j < layer.pageItems.length; j++) {
         var item = layer.pageItems[j];
         if (item.typename === 'TextFrame') {
-          if (layerName === 'school_title') {
-            var targetBounds = null;
-            var boundsPath = findBoundsPathInContainer(layer);
-            if (boundsPath && boundsPath.typename === 'PathItem') {
-              targetBounds = boundsPath.geometricBounds;
-            } else {
-              targetBounds = item.geometricBounds;
-            }
-            item.contents = str;
-            if (targetBounds && targetBounds.length === 4) setTextFrameBounds(item, targetBounds);
-            if (doc && typeof doc.redraw === 'function') doc.redraw();
-            shrinkTextToFitFrame(item, 6, doc);
-          } else {
-            item.contents = str;
-          }
+          item.contents = str;
           break;
         }
       }
