@@ -21,7 +21,7 @@
 			"outputFileName": "virginia-tech",
 			"images": {
 				"bg_image": "images/vt-football-players.jpg",
-				"school_logo": "images/vt-logo.svg",
+				"school_logo": "images/vt-logo.png",
 				"school_mascot": "images/vt-mascot.png",
 				"year_overlay_image": "images/vt-year-bg.jpg"
 			},
@@ -38,8 +38,8 @@
 			"outputFileName": "georgia-tech",
 			"images": {
 				"bg_image": "images/gt-bg.jpg",
-				"school_logo": "images/gt-logo.svg",
-				"school_mascot": "images/gt-mascot-2.svg",
+				"school_logo": "images/gt-logo.png",
+				"school_mascot": "images/gt-mascot-2.png",
 				"year_overlay_image": "images/gt-year-bg.jpg"
 			},
 			"text": {
@@ -56,7 +56,7 @@
 			"images": {
 				"bg_image": "images/kansas-bg.jpg",
 				"school_logo": "images/kansas-logo.png",
-				"school_mascot": "images/kansas-mascot.svg",
+				"school_mascot": "images/kansas-mascot.png",
 				"year_overlay_image": "images/kansas-year-bg.jpg"
 			},
 			"text": {
