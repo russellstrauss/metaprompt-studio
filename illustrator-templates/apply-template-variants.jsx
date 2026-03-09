@@ -160,17 +160,41 @@ var VARIANT_LIMIT = 20;
   if (batchMode) quitBatch();
 
   function applyOneVariant(doc, config, basePath) {
-    // Hide the mascot layer when this variant has no mascot image (logo is the only graphic).
+    // Hide and clear the mascot layer when this variant has no mascot image.
+    // We remove the placed image entirely (not just hide the layer) so that a
+    // leftover image from the previous school never bleeds into this export.
     if (!config.images || !config.images.school_mascot) {
       var mascotLayer = getLayerByName(doc, 'school_mascot');
       if (mascotLayer) {
         try { mascotLayer.visible = false; } catch (eHide) {}
+        // Unlock the layer so items inside can be removed.
+        try { mascotLayer.locked = false; } catch (eUnlock) {}
+        var staleItems = findAllImageItemsInContainer(mascotLayer);
+        for (var si = 0; si < staleItems.length; si++) {
+          var staleItem = staleItems[si];
+          var staleRemoved = false;
+          // Try removing the item directly first.
+          try { staleItem.remove(); staleRemoved = true; } catch (eRm) {}
+          // If that failed the item may be inside a clipping group — try removing the group.
+          if (!staleRemoved) {
+            var stalePar = null;
+            try { stalePar = staleItem.parent; } catch (eParent) {}
+            if (stalePar && stalePar.typename === 'GroupItem') {
+              try { stalePar.remove(); staleRemoved = true; } catch (eRmGrp) {}
+            }
+          }
+          // Last resort: hide the item individually so it won't appear in the export.
+          if (!staleRemoved) {
+            try { staleItem.hidden = true; } catch (eHideItem) {}
+          }
+        }
       }
     } else {
       // Ensure it's visible for variants that do have a distinct mascot.
       var mascotLayerOn = getLayerByName(doc, 'school_mascot');
       if (mascotLayerOn) {
         try { mascotLayerOn.visible = true; } catch (eShow) {}
+        try { mascotLayerOn.locked = false; } catch (eUnlock2) {}
       }
     }
 
@@ -639,10 +663,33 @@ var VARIANT_LIMIT = 20;
       var file = resolveFile(pathOrUrl, basePath);
       if (!file || !file.exists) {
         logError('Image file not found for layer "' + layerName + '": ' + pathOrUrl);
+        // For mascot/logo layers, clear the stale image so the previous school's
+        // graphic doesn't bleed into this export when the file is missing.
+        if (layerName === 'school_mascot' || layerName === 'school_logo') {
+          try { layer.visible = false; } catch (eClearVis) {}
+          try { layer.locked = false; } catch (eClearLock) {}
+          var clearItems = findAllImageItemsInContainer(layer);
+          for (var ci = 0; ci < clearItems.length; ci++) {
+            try { clearItems[ci].remove(); } catch (eCi) {
+              try { clearItems[ci].hidden = true; } catch (eCiH) {}
+            }
+          }
+        }
         continue;
       }
       if (!isValidPlacedImageFile(file)) {
         logError('Image file is not a valid PNG/JPEG (or is corrupt); skipping to avoid plug-in error. Layer: "' + layerName + '", path: ' + pathOrUrl);
+        // Same stale-image clearance for corrupt/unreadable files.
+        if (layerName === 'school_mascot' || layerName === 'school_logo') {
+          try { layer.visible = false; } catch (eClearVis2) {}
+          try { layer.locked = false; } catch (eClearLock2) {}
+          var clearItems2 = findAllImageItemsInContainer(layer);
+          for (var ci2 = 0; ci2 < clearItems2.length; ci2++) {
+            try { clearItems2[ci2].remove(); } catch (eCi2) {
+              try { clearItems2[ci2].hidden = true; } catch (eCi2H) {}
+            }
+          }
+        }
         continue;
       }
 
@@ -733,7 +780,7 @@ var VARIANT_LIMIT = 20;
         }
         var bbPath = findBoundsPathInContainer(layer);
         if (bbPath && item) {
-          fitItemIntoBounds(item, bbPath, layerName === 'school_mascot' ? 'bottom' : undefined);
+          fitItemIntoBounds(item, bbPath, (layerName === 'school_mascot' || layerName === 'school_logo') ? 'bottom' : undefined);
         }
       }
 
@@ -763,7 +810,7 @@ var VARIANT_LIMIT = 20;
         if (item && (layerName === 'school_logo' || layerName === 'school_mascot')) {
           var bbPath2 = findBoundsPathInContainer(layer);
           if (bbPath2) {
-            fitItemIntoBounds(item, bbPath2, layerName === 'school_mascot' ? 'bottom' : undefined);
+            fitItemIntoBounds(item, bbPath2, (layerName === 'school_mascot' || layerName === 'school_logo') ? 'bottom' : undefined);
           }
         }
       }
