@@ -1,4 +1,4 @@
-{
+﻿{
 	"description": "Generated from logos.csv. Run apply-template-variants.jsx with this file.",
 	"templateLayerNames": {
 		"images": [
@@ -6171,7 +6171,7 @@
 				"school_mascot": "images/mascots/SAN_JOS_STATE_mascot.png"
 			},
 			"text": {
-				"school_title": "SAN JOS� STATE",
+				"school_title": "SAN JOSé STATE",
 				"school_subtitle": "Go Spartans!!!"
 			},
 			"colors": {
