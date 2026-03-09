@@ -1,0 +1,12 @@
+{
+  "name": "fall-football",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Build scripts for the Fall Football Illustrator template",
+  "scripts": {
+    "install-browser": "playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0"
+  }
+}

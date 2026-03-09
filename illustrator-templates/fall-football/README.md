@@ -74,6 +74,132 @@ Use **one** content file for this template: **`fall-football-content.json`** in 
 
 Paths in the JSON are placeholders; replace with real paths (or relative paths from the JSON file folder).
 
+## Generating AI backgrounds with Adobe Firefly
+
+There are **two ways** to generate Firefly images depending on whether you have an Adobe API account:
+
+| Method | File | Requires |
+|--------|------|----------|
+| Browser automation (free account) | `generate-firefly-browser.mjs` | Any Adobe account (free) |
+| Firefly REST API | `generate-firefly-images.mjs` | Adobe Developer Console + Firefly API access |
+
+---
+
+### Option A — Browser automation (free account)
+
+`generate-firefly-browser.mjs` drives the [Firefly web UI](https://firefly.adobe.com) with Playwright, so it works with any free Adobe account.
+
+#### First-time setup
+
+```bash
+npm install                       # installs Playwright
+npx playwright install chromium   # downloads the browser (~200 MB)
+```
+
+#### Usage
+
+```bash
+# Preview prompts without opening the browser
+node generate-firefly-browser.mjs --bg --year-overlay --dry-run
+
+# Generate a unique bg_image for the first 5 schools (test run)
+node generate-firefly-browser.mjs --bg --limit 5
+
+# Generate a single shared year overlay image for all variants
+node generate-firefly-browser.mjs --year-overlay --year 2025
+
+# Generate both per-school bg_image and per-school year overlay
+node generate-firefly-browser.mjs --bg --year-overlay-per-school
+
+# Re-generate everything from scratch
+node generate-firefly-browser.mjs --bg --year-overlay --overwrite
+```
+
+On first run the browser will open at `firefly.adobe.com`. **Sign in with your Adobe account** — the script waits up to 5 minutes. Your login is saved in `.firefly-profile/` (in this folder) so you only need to log in once.
+
+#### Options
+
+| Flag | Description |
+|------|-------------|
+| `--bg` | Generate a unique `bg_image` per school |
+| `--year-overlay` | Generate ONE shared `year_overlay_image` for all variants |
+| `--year-overlay-per-school` | Generate a per-school `year_overlay_image` (uses team colors) |
+| `--limit N` | Process only first N variants |
+| `--dry-run` | Print prompts; do not open browser |
+| `--overwrite` | Re-generate images that already exist |
+| `--year YYYY` | Year for overlay prompts (default: current year) |
+| `--profile PATH` | Custom browser profile directory (default: `./.firefly-profile`) |
+| `--headless` | Run browser without a visible window |
+| `--pause-between N` | Extra ms to wait between schools (default: 2000) |
+
+#### UI selector notes
+
+Firefly's web interface changes occasionally. If the script can't find the prompt field or generate button, the selectors at the top of the file (in the `SEL` object) may need updating. Run `--dry-run` first, then open `firefly.adobe.com` in DevTools to find the new selectors.
+
+---
+
+### Option B — Firefly REST API (enterprise)
+
+Use `generate-firefly-images.mjs` to generate AI images for the **`bg_image`** layer (a unique game-day atmosphere background per school) and the **`year_overlay_image`** layer (a decorative season graphic) using the [Adobe Firefly text-to-image API v3](https://developer.adobe.com/firefly-services/docs/firefly-api/).
+
+#### Setup
+
+1. Create a project in the [Adobe Developer Console](https://developer.adobe.com/console/) and add the **Firefly API** service.
+2. Generate **OAuth Server-to-Server** credentials (client ID + client secret).
+3. Set them in your environment:
+   ```bash
+   set FIREFLY_CLIENT_ID=your_client_id_here
+   set FIREFLY_CLIENT_SECRET=your_client_secret_here
+   ```
+   Or pass them directly as flags (see below).
+
+#### Usage
+
+```bash
+# Preview prompts without calling the API (recommended first step)
+node generate-firefly-images.mjs --bg --year-overlay --dry-run
+
+# Generate a unique bg_image for the first 5 schools (for testing)
+node generate-firefly-images.mjs --bg --limit 5
+
+# Generate a single shared year overlay image for all variants
+node generate-firefly-images.mjs --year-overlay --year 2025
+
+# Generate both bg_image (per-school) and year_overlay_image (per-school)
+node generate-firefly-images.mjs --bg --year-overlay-per-school
+
+# Regenerate everything, overwriting existing files
+node generate-firefly-images.mjs --bg --year-overlay --overwrite
+```
+
+#### Flags
+
+| Flag | Description |
+|------|-------------|
+| `--bg` | Generate a unique `bg_image` for each school variant |
+| `--year-overlay` | Generate **one shared** `year_overlay_image` applied to all variants |
+| `--year-overlay-per-school` | Generate a school-specific `year_overlay_image` per variant (uses team colors) |
+| `--limit N` | Only process first N variants (for testing) |
+| `--dry-run` | Print prompts; skip API calls and file writes |
+| `--overwrite` | Re-generate images that already exist on disk |
+| `--year YYYY` | Year to use in overlay prompts (default: current year) |
+| `--bg-size WxH` | Size for `bg_image` (default: `1792x1024`, 16:9 landscape) |
+| `--overlay-size WxH` | Size for `year_overlay_image` (default: `1024x1024`, square) |
+| `--client-id=ID` | Adobe client ID (overrides `FIREFLY_CLIENT_ID` env) |
+| `--client-secret=SECRET` | Adobe client secret (overrides `FIREFLY_CLIENT_SECRET` env) |
+
+#### Output
+
+- `bg_image` files are saved to `images/backgrounds/<slug>_bg.jpg`
+- `year_overlay_image` files are saved to `images/year-overlays/` (either `year_overlay_<year>.jpg` for the shared image, or `<slug>_year_overlay.jpg` for per-school)
+- Paths are written back into `fall-football-content.json` automatically
+
+#### Rate limits
+
+Adobe Firefly trial plans are limited to ~4 requests/minute. Set `FIREFLY_DELAY_MS=15000` to slow the script down if you hit rate-limit errors. Production plans allow much higher throughput.
+
+---
+
 ## Quick test
 
 1. Create `fall-football-template.ai` with named layers (e.g. `school_title`, `school_subtitle`, `school_logo`, `bg_image`, etc.).

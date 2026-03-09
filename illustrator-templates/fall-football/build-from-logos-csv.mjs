@@ -139,6 +139,7 @@ async function main() {
 
   for (const row of rowsToProcess) {
     const school = (row.school || '').trim();
+    const mascot = (row.mascot || '').trim();
     const primaryColorRaw = (row.color || '').trim();
     const secondaryColorRaw = (row.alt_color || '').trim();
     const primaryColor = primaryColorRaw || '#000000';
@@ -201,7 +202,7 @@ async function main() {
       },
       text: {
         school_title: school.toUpperCase(),
-        school_subtitle: '',
+        school_subtitle: mascot ? `Go ${mascot}!!!` : '',
       },
       colors: {
         primary_color: primaryColor.startsWith('#') ? primaryColor : '#' + primaryColor.replace(/^#/, ''),

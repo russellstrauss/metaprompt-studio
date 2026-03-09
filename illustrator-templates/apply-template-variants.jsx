@@ -23,11 +23,17 @@
 // EDIT THESE TWO PATHS (or leave empty to use interactive mode):
 var STORED_TEMPLATE_PATH = './fall-football-template.ai';  // e.g. "fall-football-template.ai"
 var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g. "fall-football/fall-football-content.json"
-// Limit variants for quick testing (e.g. 20). Set to 0 or delete the line to process all.
-var VARIANT_LIMIT = 20;
+// Limit variants for quick testing (e.g. 20). Set to 0 to process all.
+var VARIANT_LIMIT = 0; // Change to 20 to re-enable the testing limit
 
 (function () {
   'use strict';
+
+  // Original school_title text attributes captured once from the template before
+  // the variant loop runs. Restored before each variant so shrinkTextToFitFrame
+  // always starts from the template's intended size rather than whatever the
+  // previous variant left behind.
+  var schoolTitleOriginalAttrs = null; // { size, autoLeading, leading }
 
   var scriptFile = new File($.fileName);
   var scriptFolder = scriptFile.parent;
@@ -233,8 +239,65 @@ var VARIANT_LIMIT = 20;
     // Each call to applyOneVariant overwrites colors, text, and images in-place.
     var doc = app.activeDocument;
 
+    // Build sorted lists of background and year-overlay images to cycle through.
+    // Each variant gets a different image; after the last file the list wraps around.
+    // bg and overlay counts are independent so they produce a varied combination per variant.
+    function buildImageCycleList(folderPath) {
+      var files = [];
+      var folder = new Folder(folderPath);
+      if (!folder.exists) return files;
+      var found = folder.getFiles(/\.(jpg|jpeg|png)$/i);
+      if (!found || !found.length) return files;
+      found.sort(function (a, b) {
+        var an = (a instanceof File) ? a.name.toLowerCase() : String(a).toLowerCase();
+        var bn = (b instanceof File) ? b.name.toLowerCase() : String(b).toLowerCase();
+        return an < bn ? -1 : an > bn ? 1 : 0;
+      });
+      for (var fi = 0; fi < found.length; fi++) {
+        if (found[fi] instanceof File) files.push(found[fi]);
+      }
+      return files;
+    }
+
+    var bgFiles = buildImageCycleList(basePath.fullName + '/images/backgrounds');
+    var overlayFiles = buildImageCycleList(basePath.fullName + '/images/year-overlays');
+
+    // Capture original font attributes from the school_title text frame once so we
+    // can restore them before every variant. Without this, shrinkTextToFitFrame
+    // leaves a reduced font size in the live document, and subsequent variants start
+    // from that smaller size instead of the template's intended size.
+    schoolTitleOriginalAttrs = null;
+    var stlCapture = [];
+    collectSchoolTitleLayers(doc, stlCapture);
+    outer: for (var si = 0; si < stlCapture.length; si++) {
+      var stlLayer = stlCapture[si];
+      for (var spi = 0; spi < stlLayer.pageItems.length; spi++) {
+        var spItem = stlLayer.pageItems[spi];
+        if (spItem.typename === 'TextFrame') {
+          try {
+            var stlTr = spItem.textRange;
+            var stlCa = stlTr.characterAttributes;
+            schoolTitleOriginalAttrs = {
+              size: stlCa.size,
+              autoLeading: stlCa.autoLeading,
+              leading: stlCa.autoLeading ? null : stlCa.leading
+            };
+          } catch (eCap) {}
+          break outer;
+        }
+      }
+    }
+
     for (var i = 0; i < variants.length; i++) {
       var config = variants[i];
+      // Override bg_image and year_overlay_image with the next file in each cycle,
+      // ignoring whatever the JSON specifies. The two lists have independent lengths
+      // so they produce a varied combination for each output photo.
+      if (bgFiles.length || overlayFiles.length) {
+        if (!config.images) config.images = {};
+        if (bgFiles.length) config.images['bg_image'] = bgFiles[i % bgFiles.length].fsName;
+        if (overlayFiles.length) config.images['year_overlay_image'] = overlayFiles[i % overlayFiles.length].fsName;
+      }
       var outFile = applyOneVariant(doc, config, basePath);
       exportedFiles.push(outFile.fullName);
     }
@@ -915,16 +978,37 @@ var VARIANT_LIMIT = 20;
         if (typeof currentSize !== 'number') currentSize = parseFloat(currentSize) || 12;
         if (currentSize <= minSizePt) break;
         var newSize = Math.max(minSizePt, currentSize - step);
+        var sizeRatio = newSize / currentSize;
+
+        // Sample leading from the first character so we can scale it proportionally.
+        // Only applies when leading is fixed (autoLeading = false); auto-leading
+        // adjusts itself automatically as font size changes.
+        var sampleAutoLeading = true;
+        var sampleLeading = null;
+        try {
+          var firstChar = tr.characters[0];
+          if (firstChar) {
+            sampleAutoLeading = firstChar.characterAttributes.autoLeading;
+            if (!sampleAutoLeading) sampleLeading = firstChar.characterAttributes.leading;
+          }
+        } catch (eLead) {}
+
         var words = tr.words;
         if (words && words.length > 0) {
           for (var w = 0; w < words.length; w++) {
             try {
               words[w].characterAttributes.size = newSize;
+              if (!sampleAutoLeading && sampleLeading !== null) {
+                words[w].characterAttributes.leading = sampleLeading * sizeRatio;
+              }
             } catch (e2) {}
           }
         } else {
           try {
             ca.size = newSize;
+            if (!sampleAutoLeading && sampleLeading !== null) {
+              ca.leading = sampleLeading * sizeRatio;
+            }
           } catch (e2) {}
         }
         if (doc && typeof doc.redraw === 'function') doc.redraw();
@@ -943,6 +1027,26 @@ var VARIANT_LIMIT = 20;
       var item = layer.pageItems[j];
       if (item.typename === 'TextFrame') {
         var bounds = targetBounds && targetBounds.length === 4 ? targetBounds : item.geometricBounds;
+
+        // Restore the template's original font size and leading before setting new
+        // content. shrinkTextToFitFrame only ever reduces size, so without this reset
+        // each variant inherits whatever reduced size the previous variant left behind.
+        if (schoolTitleOriginalAttrs) {
+          try {
+            var restoreChars = item.textRange.characters;
+            for (var rc = 0; rc < restoreChars.length; rc++) {
+              try {
+                var rca = restoreChars[rc].characterAttributes;
+                rca.size = schoolTitleOriginalAttrs.size;
+                rca.autoLeading = schoolTitleOriginalAttrs.autoLeading;
+                if (!schoolTitleOriginalAttrs.autoLeading && schoolTitleOriginalAttrs.leading !== null) {
+                  rca.leading = schoolTitleOriginalAttrs.leading;
+                }
+              } catch (eRestore) {}
+            }
+          } catch (eRestoreOuter) {}
+        }
+
         item.contents = str;
         if (bounds && bounds.length === 4) setTextFrameBounds(item, bounds);
         if (doc && typeof doc.redraw === 'function') doc.redraw();

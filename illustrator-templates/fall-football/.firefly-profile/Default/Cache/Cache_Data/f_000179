@@ -1,0 +1,1853 @@
+DL_CANCEL=Cancel
+DL_OK=OK
+FINISH=Finish
+DL_CONTINUE=Continue
+DL_NOT_NOW=Not now
+DL_NAME=Name:
+DL_CHANGE=Change
+DL_CREATE=Create
+DL_CREATE_LIBRARY=Create library
+DL_DELETE=Delete
+DL_PROMOTE=Move
+DL_LEAVE=Leave
+DL_UNFOLLOW=Remove
+DL_RENAME=Rename
+DL_SAVE=Save
+DL_MOVE=Move
+DL_DOWNLOAD=Download
+DL_SHARE=Share
+DL_COPY=Copy
+DL_VIEW=View
+DL_OPEN=Open
+DL_MAKE_COPY=Make a copy
+DL_SAVE_COPY=Save copy
+DL_MERGE=Merge
+DL_SHARE_LINK=Share link...
+DL_COPY_TO=Copy to
+DL_MOVE_TO=Move to
+DL_MOVE_HERE=Move here
+DL_COPY_HERE=Copy here
+DL_SAVE_TO=Save to library
+DL_SET_AS_DEFAULT_LIBRARY=Set as default library
+DL_COPY_ITEM=Copy to...
+DL_MOVE_ITEM=Move to...
+DL_COPY_ITEM_AND_DEPENDENCIES=Copy with dependencies to
+DL_MOVE_ITEM_AND_DEPENDENCIES=Move with dependencies to
+DL_DUPLICATE_ITEM=Duplicate
+DL_COPY_SELECTED_ITEMS=Copy selected items to
+DL_MOVE_SELECTED_ITEMS=Move selected items to
+DL_DUPLICATE_SELECTED_ITEMS=Duplicate selected items
+DL_EDIT_TAG=Edit tag
+DL_NAME_DESC=Library name
+DL_CLOSE=Close
+DL_DISMISS=Dismiss
+DL_SELECT_FOLDER=Select a folder
+DL_SELECT_LIBRARY=Select a library
+DL_REMOVE_FROM_YOUR_LIBRARIES=Remove from your libraries
+DL_REMOVE_FROM_YOUR_BRANDS=Remove from your brands
+DL_ADD_NOTE=Add description
+DL_EDIT_NOTE=Edit description
+DL_DELETE_NOTE=Delete description
+DL_NOTE_ATTACHED=Description attached
+DL_NOTE_DIALOG_PLACEHOLDER=Write a description
+DL_ADD_ELEMENT=Add item
+DL_LEARN_MORE=Learn more
+DL_SHARE_LIBRARY_BUTTON_TOOLTIP=Invite to library
+DL_OPEN_LIB_MANAGER_BUTTON_TOOLTIP=Browse libraries
+DL_OPEN_LIB_MANAGER_BUTTON_DOC_ASSETS_TOOLTIP=Publish as a library
+DL_OPEN_LIB_MANAGER_BUTTON_DOC_ASSETS_TOOLTIP_UPDATE=Publish updates
+DL_NEW_USER_ROOT_ONBOARDING_TITLE=Reuse elements across files
+DL_NEW_USER_ROOT_ONBOARDING_BODY=Share and reuse sets of creative elements across Adobe files and apps with Creative Cloud libraries.
+DL_EXISTING_USER_ROOT_ONBOARDING_TITLE=View all libraries at a glance
+DL_EXISTING_USER_ROOT_ONBOARDING_BODY=We're working to make managing multiple libraries easier. Select a library to view its contents.
+
+DL_LIBRARIES=Libraries
+DL_BRANDS=Brands
+DL_MEMBERS=Members
+DL_LAST_MODIFIED=Last modified
+DL_BROKEN_LINKS=Broken links
+
+DL_PANEL_NEW_USER_ONBOARDING_TITLE1=Libraries: a single source of truth for assets
+DL_PANEL_NEW_USER_ONBOARDING_DESCRIPTION1=Collect, organize and share creative elements like colors, and images. Stay consistent across files and make sure everyone is working with the latest elements.
+DL_PANEL_NEW_USER_ONBOARDING_TITLE2=Add libraries to your Adobe apps
+DL_PANEL_NEW_USER_ONBOARDING_DESCRIPTION2=Create your own library, browse libraries that others share with you, or find readymade libraries created by Adobe.
+
+DL_EXISTING_USER_PANEL_ONBOARDING_TITLE1=Share and update team assets smoothly
+DL_EXISTING_USER_PANEL_ONBOARDING_DESCRIPTION1=Share a library in your business storage to automatically share it with all members. <a>Learn More</a>
+DL_EXISTING_USER_PANEL_ONBOARDING_DESCRIPTION1_PROJECTS=Create a library in business storage to share ownership with other team members <a>Learn More</a>
+DL_EXISTING_USER_PANEL_ONBOARDING_TITLE2=Browse libraries in business storage
+DL_EXISTING_USER_PANEL_ONBOARDING_DESCRIPTION2=View all libraries in business storage here, and add them to your Adobe apps.
+DL_PANEL_TEAM_LIBRARY_ONBOARDING_TITLE1=Let only the right folks in
+DL_PANEL_TEAM_LIBRARY_ONBOARDING_DESCRIPTION1=Invite collaborators to your library even if they don't have access to the folder. Invite an organization member individually to change their permissions.
+DL_PANEL_TEAM_LIBRARY_ONBOARDING_TITLE2=Folder members will have access automatically
+DL_PANEL_TEAM_LIBRARY_ONBOARDING_DESCRIPTION2=Everyone with access to the folder will need to find and add libraries to their Adobe apps.
+DL_PANEL_TEAM_LIBRARY_ONBOARDING_DESCRIPTION1_PROJECTS=Invite collaborators to your library even if they don't have access to the project. Invite an organization member individually to change their permissions.
+DL_PANEL_TEAM_LIBRARY_ONBOARDING_TITLE2_PROJECTS=Project members will have access automatically
+DL_PANEL_TEAM_LIBRARY_ONBOARDING_DESCRIPTION2_PROJECTS=Everyone with access to the project will need to find and add libraries to their Adobe apps.
+
+
+DL_ONBOARDING_TOUR_NEXT=Next
+DL_ONBOARDING_TOUR_SKIP=Skip
+DL_ONBOARDING_TOUR_FINISH=Done
+
+DL_JUST_NOW=just now
+
+DL_QUOTA_WARNING_DIALOG_TITLE=Creative Cloud storage update
+DL_QUOTA_WARNING_DIALOG_BODY=Your libraries will start to count towards your Creative Cloud storage. You have used {{usedStorage}} out of {{totalStorage}} total storage. Your libraries will use an estimated {{librariesSize}}. Try clearing your deleted items to free up storage.
+DL_QUOTA_MANAGE_DELETED=Manage deleted items
+
+DL_OVER_QUOTA_LIBRARY_ERROR_TITLE=Can't sync {{libraryName}}
+DL_OVER_QUOTA_LIBRARIES_ERROR_TITLE=Can't sync libraries
+DL_OVER_QUOTA_LIBRARY_ERROR_BODY=Your Creative Cloud storage is full. Library updates for libraries that you own will not sync to the cloud until you free up some space. Try clearing your deleted items to free up storage.
+DL_OVER_QUOTA_SHARED_LIBRARIES_ERROR_TITLE=Can't sync shared libraries
+DL_OVER_QUOTA_SHARED_LIBRARY_ERROR_BODY=The owner of a library you updated has used all their Creative Cloud storage. We are unable to sync updates of that library to the cloud until the owner of the library frees up storage.
+DL_OVER_QUOTA_SHARED_LIBRARIES_ERROR_BODY=The owner of the libraries you updated has used all their Creative Cloud storage. We are unable to sync updates of those libraries to the cloud until the owner of the libraries frees up storage.
+
+DL_NEW_USER_TOUR_ADD_TITLE=Add elements
+DL_NEW_USER_TOUR_ADD_BODY=Add colors, graphics, type styles, and more based on your selection.
+DL_NEW_USER_TOUR_GROUP_TITLE=Create groups
+DL_NEW_USER_TOUR_GROUP_BODY=Stay organized by creating groups and arranging your elements.
+DL_NEW_USER_TOUR_INVITE_TITLE=Share with others
+DL_NEW_USER_TOUR_INVITE_BODY=Invite people to edit or use your library.
+
+MANAGER_TOUR_TITLE_1=Create linked library
+MANAGER_TOUR_BODY_1=Publish all document assets from this file to share and reuse with others.
+MANAGER_TOUR_TITLE_2=Library visiblity
+MANAGER_TOUR_BODY_2=Now you can control which libraries appear in XD.
+
+DL_CREATE_SUBGROUP=Create subgroup
+DL_GROUP_TOGETHER=New group from selection
+DL_GROUP_SINGLE_ELEMENT=New group from element
+DL_UNGROUP_NESTED_GROUPS=Ungroup
+DL_DELETE_NESTED_GROUPS=Delete
+DL_RENAME_GROUP=Rename group
+DL_EDIT_PATH=Edit path
+DL_NEW_GROUP=New group
+DL_REORDER=Reorder in group
+DL_CREATE_NEW_GROUP=Create new group
+DL_ADD_GROUP=Add group
+DL_UNGROUP=Ungroup
+DL_UNGROUP_SELECTED_ITEMS=Ungroup selected items
+DL_ADD_TO_GROUP=Add to group
+DL_ADD_SELECTED_ITEMS_TO_GROUP=Add selected items to group
+DL_UPLOAD=Upload
+DL_UPLOAD_FILE=Upload file
+DL_UPLOAD_WARNING_LARGE_UPLOAD=You're uploading a lot or some large files. It may take some time for everything to load.
+DL_EMPTY_GROUP_INSTRUCTIONS_NESTED=Drag and drop elements into this group or <a href="#action">create a subgroup</a>
+DL_EMPTY_GROUP_INSTRUCTIONS_READ_ONLY=There's nothing in this group.
+DL_EMPTY_LIBRARY_EXPANDED_VIEW=There's nothing here, yet
+DL_EMPTY_UNGROUP_INSTRUCTIONS=You grouped all of the items in this library.
+DL_MAX_DRAG_DISPLAY_COUNT={{maxCount}}+
+
+DL_LIST_VIEW_HEADER_NAME=NAME
+DL_LIST_VIEW_HEADER_MODIFIED=MODIFIED
+DL_LIST_VIEW_HEADER_SHARING=SHARING
+
+DL_GROUP_PATH_VIEW_ALL_GROUPS=All groups
+DL_GROUP_PATH_VIEW_EDIT_TOAST_MESSAGE=Editing group will update all subgroups.
+DL_GROUP_TREE_VIEW_EDIT_TOAST_MESSAGE=Using the '/' creates new groups. <a href="#learnMore">Learn more</a>.
+
+DL_LIBRARIES_PANEL_NAME=Libraries
+DL_LIBRARIES_PANEL_NAME_CC=CC Libraries
+DL_LIBRARIES_PANEL_NAME_YOUR_LIBRARIES=Your libraries
+DL_DEFAULT_LIBRARY_NAME=Your library
+DL_CAPTURE_DEFAULT_LIBRARY_NAME=Your Capture library
+
+DL_EDIT_ITEM=Edit
+DL_EDIT_COLOR=Edit color...
+DL_EDIT_COLOR_THEME=Edit color theme...
+DL_EDIT_FONT=Edit font...
+DL_EDIT_IN_SOURCE=Open source document
+DL_EDIT_COMPONENT=Edit Main component
+DL_EDIT_COMPONENT_IN_SOURCE=Edit Main in source
+DL_PUBLISH_LIBRARY_IN_SOURCE=Publish Library in source
+DL_DELETE_LIBRARY=Delete "{{name}}"
+DL_LEAVE_LIBRARY=Leave "{{name}}"
+DL_SHARE_LIBRARY=Invite people
+DL_UNPUBLISH_LIBRARY=Unpublish library
+DL_UNPUBLISH=Unpublish
+DL_RENAME_LIBRARY=Rename "{{name}}"
+DL_VERIFY_CONTENT_AUTHENTICITY=Generated content
+DL_TEAM_LIBRARY_ONBOARDING_HEADING=Folder members have access to this library
+DL_TEAM_LIBRARY_ONBOARDING_FIRST_MESSAGE=Everyone with access to the folder can find and add this library to their Adobe apps.
+DL_TEAM_LIBRARY_ONBOARDING_SECOND_MESSAGE=Invite collaborators to your library even if they don't have access to the folder. Invite an organization member individually to change their permissions.
+DL_TEAM_LIBRARY_ONBOARDING_HEADING_PROJECTS=Project members have access to this library
+DL_TEAM_LIBRARY_ONBOARDING_FIRST_MESSAGE_PROJECTS=Everyone with access to the project can find and add this library to their Adobe apps.
+DL_TEAM_LIBRARY_ONBOARDING_SECOND_MESSAGE_PROJECTS=Invite collaborators to your library even if they don't have access to the project. Invite an organization member individually to change their permissions.
+DL_TEAM_LIBRARY_ONBOARDING_THIRD_MESSAGE=Change the access settings to share a library in business storage with your entire organization.
+DL_DELETE_MESSAGE=Are you sure you want to delete "{{name}}"?
+DL_DELETE_MESSAGE_SHARED=Your collaborators will no longer have access to this library if you delete it. Are you sure you want to delete "{{name}}"?
+DL_LEAVE_MESSAGE=Are you sure you want to leave "{{name}}"?
+DL_UNFOLLOW_MESSAGE=Are you sure you want to remove "{{name}}"?
+DL_UNPUBLISH_MESSAGE_SHARING=Everyone will lose access to this library.
+DL_UNPUBLISH_MESSAGE_ELEMENTS=Elements placed in documents will remain but will no longer be linked.
+DL_CREATE_DESIGN_LIBRARY=Create new library
+DL_CREATE_NEW_BRAND_LIBRARY=Create new brand
+DL_CREATE_BRAND_LIBRARY=Create brand library
+DL_CREATE_BRAND=Create brand
+DL_CREATE_NEW_BRAND_PLACEHOLDER=Your brand name
+DL_CREATE_NEW_LIBRARY_PLACEHOLDER=Library name
+DL_REVEAL_ITEM=Open in library
+DL_REVEAL_LINKED_ITEM=Reveal in library
+DL_ADD_LIBRARY_TOOLTIP=Add library
+DL_ADD_BRAND_TOOLTIP=Add brand
+DL_ADD_GROUP_TOOLTIP=Add group
+DL_HIGHLIGHT_ON_CANVAS=Highlight on canvas
+DL_REPLACE_FONT=Replace font
+DL_RELINK_ASSET=Relink
+DL_UPDATE_ASSET=Update
+DL_UNLINK_ASSET=Make local
+DL_ADD_LIBRARIES_TOOLTIP=Add libraries
+DL_ASSET_INSTANCES_SINGULAR=1 instance
+DL_ASSET_INSTANCES_PLURAL={{instances}} instances
+DL_ASSET_NO_INSTANCES=No instances on canvas
+DL_XD_COMPONENT_NOT_SUPPORTED=Created with a newer version of XD. Update to use this component.
+
+DL_BACK_BUTTON_SEARCH=Back to search
+DL_BACK_BUTTON_LIBRARY=Back to library
+DL_BACK_BUTTON_ROOT=Back to libraries
+DL_BACK_BUTTON_ROOT_AH=Back to libraries & brands
+
+DL_LIBRARY_STATUS_TEAM=Library
+DL_LIBRARY_STATUS_PUBLIC=Public library
+DL_LIBRARY_STATUS_SHARED=Shared library
+DL_LIBRARY_STATUS_PERSONAL=Personal library
+DL_LIBRARY_TEAM_TOOLTIP=Library: {{name}}
+
+DL_DELETE_NESTED_TITLE=Delete group and contents
+DL_DELETE_NESTED_MESSAGE=This will delete the group and any subgroups or elements that it contains. To remove the group without deleting its elements, use the Ungroup action.
+
+DL_DISMISS_PERMANENTLY=Do not show this again
+
+DL_DELETE_ELEMENTS=Permanently delete
+DL_DELETE_ELEMENTS_MESSAGE=Are you sure you want to delete {{num}} items? This cannot be undone.
+
+DL_DELETE_ELEMENT_WITH_DEPENDENTS=There are other items in this library that depend on the selected item. Are you sure you want to delete it?
+DL_DELETE_ELEMENTS_WITH_DEPENDENTS=There are other items in this library that depend on the selected items. Are you sure you want to delete them?
+DL_DELETE_GROUP_WITH_DEPENDENTS=There are other items in this library that depend on the items in this group. Are you sure you want to delete it?
+DL_MOVE_ELEMENT_WITH_DEPENDENTS=There are other items in this library that depend on the selected item. Are you sure you want to move it?
+DL_MOVE_ELEMENTS_WITH_DEPENDENTS=There are other items in this library that depend on the selected items. Are you sure you want to move them?
+DL_MOVE_GROUP_WITH_DEPENDENTS=There are other items in this library that depend on the items in this group. Are you sure you want to move it?
+
+DL_MOVE_GROUP_WITH_DEPENDENCIES=There are other items in this library that the items in this group depend on. Are you sure you want to move it?
+DL_COPY_GROUP_WITH_DEPENDENCIES=There are other items in this library that the items in this group depend on. Are you sure you want to copy it?
+
+DL_EXPORT=Export
+DL_EXPORT_A_COPY=Export a copy
+DL_ELEMENT_EXPORTED=Item exported
+DL_ELEMENT_EXPORT_FAILED=Something went wrong
+DL_EXPORT_BROWSE_DEFAULT=Select folder
+DL_EXPORT_CANCELING=Canceling export...
+DL_EXPORT_CANCEL_COMPLETE=Library export canceled
+DL_EXPORT_DESCRIPTION=To back up or make a copy of this library, export it as a .cclibs file.
+DL_EXPORT_EXPORTING=Exporting library...
+DL_EXPORT_LIBRARY=Export library
+DL_EXPORT_LIBRARY_FLYOUT=Export "{{libraryName}}"
+DL_EXPORT_LIBRARY_SUCCESS=We exported your library.
+DL_EXPORT_LIBRARY_SUCCESS_TITLE=Library exported
+DL_EXPORT_ERROR_DISK_SPACE_HEADER=You don’t have enough disk space
+DL_EXPORT_ERROR_DISK_SPACE_BODY=Free up some space on your hard drive and try exporting again.
+DL_EXPORT_ERROR_ACCESS_HEADER=We can’t export to that location
+DL_EXPORT_ERROR_ACCESS_BODY=Change the permissions, or select a new destination. Then try again.
+DL_EXPORT_ERROR_INVALID_DATA_HEADER=Something went wrong
+DL_EXPORT_ERROR_INVALID_DATA_BODY=Please try again later.
+DL_EXPORT_ERROR_DESTINATION_PATH=Change the permissions, or select a new destination. Then try again.
+DL_EXPORT_ERROR_DESTINATION_PATH_HEADER=We can’t export to that location
+DL_IMPORT_ERROR_DESTINATION_PATH=Change the permissions, or select a new destination. Then try again.
+DL_IMPORT_ERROR_DESTINATION_PATH_HEADER=We can’t access that location
+
+DL_IMPORT=Import
+DL_IMPORT_BROWSE_DEFAULT=Select library
+DL_IMPORT_CANCELING=Canceling import...
+DL_IMPORT_CANCEL_COMPLETE=Library import canceled
+DL_IMPORT_DESCRIPTION=Import an existing .cclibs or .cclibc file to your Creative Cloud account.
+DL_IMPORT_ERROR_DISK_SPACE_HEADER=You don’t have enough disk space
+DL_IMPORT_ERROR_DISK_SPACE_BODY=Free up some space on your hard drive and try importing again.
+DL_IMPORT_ERROR_ACCESS_HEADER=We can’t access that location
+DL_IMPORT_ERROR_ACCESS_BODY=Change the permissions, or select a new destination. Then try again.
+DL_IMPORT_ERROR_INVALID_DATA_HEADER=Something went wrong
+DL_IMPORT_ERROR_INVALID_DATA_BODY=The library you're trying to import didn't work. The file might be corrupted.
+DL_IMPORT_IMPORTING=Importing library...
+DL_IMPORT_IMPORTING_PLURAL=Importing libraries ({{completed}}/{{total}})...
+DL_IMPORT_LIBRARY=Import library
+DL_IMPORT_LIBRARY_SUCCESS=We imported your library.
+DL_IMPORT_LIBRARY_SUCCESS_TITLE=Library imported
+DL_IMPORT_EXPORT_LOCATION=Location:
+DL_IMPORT_EXPORT_CONTACT_SUPPORT=Contact support
+DL_IMPORT_EXPORT_ERROR_CATCH_ALL_HEADER=Something went wrong
+DL_IMPORT_EXPORT_ERROR_CATCH_ALL_BODY=Please try again later.
+DL_IMPORT_CANCEL_HEADER=Import cancelled
+DL_IMPORT_CANCEL_BODY=The following libraries were not imported:
+
+DL_EDIT_NAME_PLACEHOLDER=Item name
+DL_EDIT_GROUP_NAME_PLACEHOLDER=Group name
+DL_EDIT_GROUP_NAME_PLACEHOLDER_ACCC=Name group
+DL_DESCRIPTION_PLACEHOLDER=Add a description...
+
+DL_CREATE_LIBRARY_HEADER_TITLE=Library name
+DL_CREATE_GROUP_HEADER_TITLE=Group name
+DL_CREATE_BRAND_HEADER_TITLE=Brand name
+
+DL_SHOW_MORE_ITEMS=Show {{count}} remaining
+DL_LOADING=Loading...
+DL_LOADING_LIBRARY=Loading Library...
+DL_LOADING_BRAND=Loading Brand...
+DL_SHOW_MORE_ITEMS_TOOLTIP=Show more items in the category
+DL_ITEM_LIBRARY_TOOLTIP=Library: {{libraryName}}
+
+DL_FOOTER_DELETE_TOOLTIP=Delete
+DL_FOOTER_READ_ONLY_TOOLTIP=Read-only
+DL_FOOTER_DOCUMENT_LIBRARY_TOOLTIP=Show edit options
+
+DL_INSERT_TOOLTIP=Add elements
+DL_INSERT_TOOLTIP_LIMIT=Your library is full. Remove items before adding more.
+DL_INSERT_ADD=Add
+DL_INSERT_CANCEL=Cancel
+DL_ADD_COLOR_NAME=Color
+DL_ADD_IMAGE_NAME=Graphic
+DL_ADD_TEXT_STYLE_NAME=Character style
+DL_ADD_PARA_STYLE_NAME=Paragraph style
+DL_ADD_LAYER_STYLE=Layer style
+DL_ADD_TEXT_NAME=Text
+DL_ADD_MODEL_NAME=Model
+DL_ADD_ALL=Add all
+DL_ADD_ELEMENTS_TO_GROUP=Add items to group
+
+DL_ADD_FILL_PATTERN=Fill Pattern
+DL_ADD_STROKE_PATTERN=Stroke Pattern
+DL_DEGREE={{degree}}°
+DL_COLOR=Color:
+DL_BRUSH=Brush:
+DL_LAYER_STYLE=Layer style:
+DL_TYPE=Type:
+DL_CREATED_IN=Created in:
+DL_OPACITY=Opacity:
+DL_SPOT_COLOR=Spot color:
+DL_INFO_CREATED=Created
+DL_INFO_MODIFIED=Modified
+DL_INFO_CREATED_DATE=Date created
+DL_INFO_DURATION=Duration
+DL_INFO_DIMENSIONS=Dimensions
+DL_INFO_FRAMERATE=Framerate
+DL_INFO_TYPE=Type
+DL_INFO_COLOR_VALUE=Color value
+DL_INFO_COLOR_PROFILE=Profile
+DL_INFO_COLOR_TYPE=Color type
+DL_INFO_SPOT_COLOR_TYPE=Spot
+DL_INFO_PROCESS_COLOR_TYPE=Process
+DL_INFO_GRADIENT_TYPE=Style
+DL_INFO_GRADIENT_ANGLE=Angle
+DL_INFO_GRADIENT_ASPECT_RATIO=Aspect ratio
+DL_INFO_GRADIENT_CENTER_POINT=Center point
+DL_INFO_GRADIENT_OFFSET=Location
+DL_INFO_GRADIENT_MIDPOINT=Midpoint
+DL_INFO_GRADIENT_STOPS=Stops
+DL_INFO_GRADIENT_STOP_NUMBER=Stop {{number}}
+DL_INFO_GRADIENT_STOP=Stop
+DL_INFO_COLOR_STOP=Color
+DL_INFO_OPACITY=Opacity
+DL_INFO_REGISTRATION_COLOR_TYPE=Registration
+DL_INFO_LIBRARY=Library
+DL_INFO_SOURCE=Source
+DL_INFO_SHARING=Sharing
+DL_INFO_SIZE=Size
+DL_INFO_PRIVATE=Private
+DL_INFO_ONLY_YOU=Personal
+DL_INFO_SHARED=Shared
+DL_INFO_SHARED_WITH_YOU=Shared with you
+DL_INFO_COLLABORATORS={{number}} Members
+DL_INFO_COLLABORATOR=1 Member
+DL_INFO_MORE_COLLABORATORS=+ {{number}} more
+DL_INFO_OWNER={{name}} (Owner)
+DL_INFO_PUBLIC=Public
+DL_INFO_TEAM=Folder
+DL_INFO_TEAM_PROJECT=Project
+DL_INFO_WIDTH=Width
+DL_INFO_HEIGHT=Height
+DL_INFO_FONT_SIZE=Size
+DL_INFO_FONT_STYLE=Style
+DL_INFO_FONT_FAMILY=Family
+DL_INFO_FONT_COLOR=Font color
+DL_INFO_ALIGNMENT=Alignment
+DL_INFO_TEXT_DECORATION=Decoration
+DL_INFO_LEFT_INDENT=Left indent
+DL_INFO_RIGHT_INDENT=Right indent
+DL_INFO_SPACE_BEFORE=Space above
+DL_INFO_SPACE_AFTER=Space below
+DL_INFO_FIRST_LINE_INDENT=First line indent
+DL_INFO_UNDERLINE=Underline
+DL_INFO_LINETHROUGH=Strikethrough
+DL_INFO_REGULAR=Regular
+DL_INFO_STOCK_ID=Stock ID
+DL_INFO_STOCK_AUTHOR=Author
+DL_INFO_STOCK_LICENSE=License
+DL_INFO_STOCK_LICENSE_UNLICENSED=Unlicensed
+DL_INFO_STOCK_LICENSE_STANDARD=Standard
+DL_INFO_STOCK_LICENSE_EXTENDED=Extended
+DL_INFO_STOCK_LICENSE_ENHANCED=Enhanced
+DL_INFO_STOCK_LICENSE_INTERNAL_USE=Internal use
+DL_INFO_STOCK_LICENSE_DIGITAL_USE=Digital use
+DL_INFO_STOCK_LICENSE_SOCIAL_MEDIA=Social media
+DL_INFO_STOCK_LICENSE_NA=Unknown
+DL_INFO_BUY_STOCK_LICENSE=Buy
+DL_INFO_STOCK_RESTRICTION=Restrictions
+DL_INFO_STOCK_RESTRICTION_EDITORIAL=Editorial use only
+DL_INFO_ACTIVATE_FONT=Add font
+DL_INFO_DEACTIVATE_FONT=Remove font
+DL_INFO_SUBSCRIBE_FONT=Available with Creative Cloud
+DL_INFO_UNAVAILABLE_FONT=Unavailable
+DL_INFO_STATUS=Status
+DL_INFO_INPUT_PAGINATION_COUNT=of {{totalPages}}
+DL_INFO_PAGINATION_COUNT={{currentPage}} of {{totalPages}}
+DL_INFO_ELEMENT_COUNT_PLURAL={{numElements}} items
+DL_INFO_ELEMENT_COUNT_SINGULAR=1 item
+DL_INFO_CHANGE_BY=by {{name}}
+DL_INFO_TILEABLE=Tileable
+DL_INFO_PROCEDURAL=Procedural
+DL_INFO_YES=Yes
+DL_INFO_NO=No
+
+DL_APP_PHOTOSHOP=Adobe Photoshop
+DL_APP_ILLUSTRATOR=Adobe Illustrator
+DL_APP_INDESIGN=Adobe InDesign
+DL_APP_MUSE=Adobe Muse
+DL_APP_SHAPE=Adobe Shape
+DL_APP_ANIMATE=Adobe Animate
+DL_APP_AE=Adobe After Effects
+DL_APP_PPRO=Adobe Premiere Pro
+DL_APP_XD=Adobe XD
+
+DL_TYPE_BRUSH=Brushes
+DL_TYPE_COLOR=Colors
+DL_TYPE_COLOR_THEME=Color themes
+DL_TYPE_CHANNEL=Channels
+DL_TYPE_TEXT_STYLE=Character styles
+DL_TYPE_PARA_STYLE=Paragraph styles
+DL_TYPE_FONT=Fonts
+DL_TYPE_IMAGE=Graphics
+DL_TYPE_IMAGE_GUIDELINE=Image Guidelines
+DL_TYPE_LAYER_STYLE=Layer styles
+DL_TYPE_LOOK=Looks
+DL_TYPE_CAPSULE=Motion graphics templates
+DL_TYPE_VIDEO=Videos
+DL_TYPE_3D=Models
+DL_TYPE_LIGHT=Lights
+DL_TYPE_MATERIAL=Materials
+DL_TYPE_UNKNOWN=Unsupported
+DL_TYPE_PATTERN=Patterns
+DL_TYPE_TEMPLATE=Templates
+DL_TYPE_TEXT=Text
+DL_TYPE_ANIMATION=Animations
+DL_TYPE_GRADIENT=Gradients
+DL_TYPE_COMPONENT=Components
+DL_TYPE_AUDIO=Audio
+DL_TYPE_CHANNEL_SINGULAR=Channel
+DL_TYPE_IMAGE_GUIDELINE_SINGULAR=Image Guideline
+DL_TYPE_BRUSH_SINGULAR=Brush
+DL_TYPE_COLOR_SINGULAR=Color
+DL_TYPE_COLOR_THEME_SINGULAR=Color theme
+DL_TYPE_TEXT_STYLE_SINGULAR=Character style
+DL_TYPE_PARA_STYLE_SINGULAR=Paragraph style
+DL_TYPE_FONT_SINGULAR=Font
+DL_TYPE_IMAGE_SINGULAR=Graphic
+DL_TYPE_LAYER_STYLE_SINGULAR=Layer style
+DL_TYPE_LOOK_SINGULAR=Look
+DL_TYPE_CAPSULE_SINGULAR=Motion graphics template
+DL_TYPE_VIDEO_SINGULAR=Video
+DL_TYPE_3D_SINGULAR=Model
+DL_TYPE_LIGHT_SINGULAR=Light
+DL_TYPE_MATERIAL_SINGULAR=Material
+DL_TYPE_PATTERN_SINGULAR=Pattern
+DL_TYPE_TEMPLATE_SINGULAR=Template
+DL_TYPE_TEXT_SINGULAR=Text
+DL_TYPE_ANIMATION_SINGULAR=Animation
+DL_TYPE_GRADIENT_SINGULAR=Gradient
+DL_TYPE_FILL_GRADIENT_SINGULAR=Fill Gradient
+DL_TYPE_STROKE_GRADIENT_SINGULAR=Stroke Gradient
+DL_TYPE_COMPONENT_SINGULAR=Component
+DL_TYPE_AUDIO_SINGULAR=Audio
+
+DL_ROLE_LOGO=Logos
+
+DL_REPRESENTATION_TYPE_BRUSH=Brush
+DL_REPRESENTATION_TYPE_COLOR=Color
+DL_REPRESENTATION_TYPE_CHANNEL=Channel
+DL_REPRESENTATION_TYPE_IMAGE_GUIDELINE=Image Guideline
+DL_REPRESENTATION_TYPE_TEXT_STYLE=Character style
+DL_REPRESENTATION_TYPE_PARA_STYLE=Paragraph style
+DL_REPRESENTATION_TYPE_FONT=Font
+DL_REPRESENTATION_TYPE_LAYER_STYLE=Layer style
+DL_REPRESENTATION_TYPE_CUBE_LUT=Cube LUT
+DL_REPRESENTATION_TYPE_LOOK=Look
+DL_REPRESENTATION_TYPE_CAPSULE=Capsule
+DL_REPRESENTATION_TYPE_MODEL=Model
+DL_REPRESENTATION_TYPE_LIGHT=Light
+DL_REPRESENTATION_TYPE_MATERIAL=Material
+DL_REPRESENTATION_TYPE_TEMPLATE=Template
+DL_REPRESENTATION_TYPE_TEXT=Text
+DL_REPRESENTATION_TYPE_ANIMATION=Animate
+DL_REPRESENTATION_TYPE_PHOTOSHOP=Photoshop
+DL_REPRESENTATION_TYPE_PHOTOSHOP_3D=Photoshop 3D
+DL_REPRESENTATION_TYPE_ILLUSTRATOR=Illustrator
+DL_REPRESENTATION_TYPE_INDESIGN=InDesign
+DL_REPRESENTATION_TYPE_XD=XD
+DL_REPRESENTATION_TYPE_XD_COMPONENT=XD component
+DL_REPRESENTATION_TYPE_MUSE=Muse
+DL_REPRESENTATION_TYPE_SHAPE=Shape
+DL_REPRESENTATION_TYPE_CHART=Chart
+DL_REPRESENTATION_TYPE_BITMAP_PATTERN=Bitmap pattern
+DL_REPRESENTATION_TYPE_VECTOR_PATTERN=Vector pattern
+DL_REPRESENTATION_TYPE_GRADIENT=Gradient
+DL_REPRESENTATION_TYPE_VIDEO=Video
+DL_REPRESENTATION_TYPE_COMPONENT=Component
+DL_REPRESENTATION_TYPE_AUDIO=Audio
+
+DL_AUTOGROUP_COLORS=Colors
+DL_AUTOGROUP_TYPOGRAPHY=Typography
+DL_AUTOGROUP_STYLES=Styles
+DL_AUTOGROUP_BRUSHES=Brushes
+DL_AUTOGROUP_VECTORS=Vector graphics
+DL_AUTOGROUP_IMAGES=Images
+DL_AUTOGROUP_MOTION=Motion
+DL_AUTOGROUP_3D=3D
+DL_AUTOGROUP_TEMPLATES=Templates
+DL_AUTOGROUP_UNKNOWN=Unsupported
+
+DL_TEXT_STYLE_DEFAULT_TEXT=Aa
+
+DL_MENU_CREATE_LIB=Create new library
+
+DL_SET_TEXT_STYLE_TOOLTIP=Apply character style
+DL_SET_PARA_STYLE_TOOLTIP=Apply paragraph style
+DL_SET_FONT_TOOLTIP=Apply font
+DL_CREATE_TEXT_LAYER_TOOLTIP=Use in document
+DL_ADD_AS_TEXT_STYLE_TOOLTIP=Add to character styles
+DL_ADD_AS_PARA_STYLE_TOOLTIP=Add to paragraph styles
+DL_SET_STROKE_COLOR_TOOLTIP=Apply stroke color
+DL_SET_BORDER_COLOR_TOOLTIP=Apply border color
+DL_SET_FILL_COLOR_TOOLTIP=Apply fill color
+DL_SET_FILL_GRADIENT_TOOLTIP=Apply gradient
+DL_SET_COLOR_OVERLAY_TOOLTIP=Apply color overlay
+DL_SET_COLOR_THEME=Apply color theme
+DL_SET_COLOR_TOOLTIP=Set color
+DL_COPY_RGB_COLOR_TOOLTIP=Copy RGB
+DL_COPY_HEX_COLOR_TOOLTIP=Copy hex
+DL_COPY_COLOR_TO_CLIPBOARD=Copy {{hex}}
+DL_ID_ADD_COLORS_TOOLTIP=Add color to swatches
+DL_ID_ADD_COLORTHEME_TOOLTIP=Add theme to swatches
+DL_MU_ADD_COLORS_TOOLTIP=Add to swatches
+DL_ID_ADD_GRADIENTS_TOOLTIP=Add gradient to swatches
+DL_ADD_TEXT_LINKED_ID=Place linked
+DL_ADD_TEXT_UNLINKED_ID_WIN=Place copy (Alt Drag)
+DL_ADD_TEXT_UNLINKED_ID_MAC=Place copy (⌥ Drag)
+DL_ADD_TEXT_UNLINKED_NOSTYLES_ID=Place without styles (⇧ Drag)
+DL_ADD_TEXT_INLINE_ID=Place inline
+DL_ADD_TEXT_UNLINKED_AI=Place copy
+DL_ADD_TEXT_UNLINKED_NOSTYLES_AI_WIN=Place without styles (Shift+Drag)
+DL_ADD_TEXT_UNLINKED_NOSTYLES_AI_MAC=Place without styles (⇧ Drag)
+DL_ADD_TEXT_UNLINKED_NOSTYLES=Place without styles
+DL_ADD_TEXT_INLINE_AI=Place inline
+DL_TEXT_EMPTY_CONTENT_TOOLTIP=No text
+DL_ADD_TEXT_ERROR_MAX_CHARACTER_LENGTH=Sorry, the text you are trying to add is too long. Try selecting fewer characters.
+
+DL_SEARCH_DROPDOWN_TITLE=Search in
+DL_SEARCH_LIBRARY=Current library
+DL_SEARCH_LIBRARIES=All libraries
+DL_SEARCH_DOCUMENT=Document Assets
+DL_SEARCH_STOCK=Adobe Stock
+DL_SEARCH_INPUT_BRANDS_PLACEHOLDER=Search all brands
+DL_SEARCH_INPUT_LIBRARY_PLACEHOLDER=Search current library
+DL_SEARCH_INPUT_LIBRARY_PLACEHOLDER_CCX=Search current view
+DL_SEARCH_INPUT_DOCUMENT_PLACEHOLDER=Search document assets
+DL_SEARCH_INPUT_LIBRARIES_PLACEHOLDER=Search all libraries
+DL_SEARCH_INPUT_LIBRARYNAME_PLACEHOLDER=Search all libraries
+DL_SEARCH_INPUT_LIBRARYNAME_PLACEHOLDER_CCX=Search all
+DL_SEARCH_INPUT_STOCK_PLACEHOLDER=Search Adobe Stock
+DL_SEARCH_INPUT_PLACEHOLDER=Search libraries and Adobe Stock
+DL_SEARCH_RESULT_DOCUMENT=1 result from document
+DL_SEARCH_RESULTS_DOCUMENT={{count}} results from document
+DL_SEARCH_RESULTS_LIBRARY={{count}} results for "{{query}}"
+DL_SEARCH_RESULT_LIBRARY=1 result for "{{query}}"
+DL_SEARCH_RESULTS_LIBRARIES={{count}} results from all libraries
+DL_SEARCH_RESULT_LIBRARIES=1 result from all libraries
+DL_SEARCH_RESULTS_FILTERED_LIBRARIES={{count}} results
+DL_SEARCH_RESULT_FILTERED_LIBRARIES=1 result
+DL_SEARCH_RESULTS_STOCK=0 results from Adobe Stock
+DL_SEARCH_SIMILAR_RESULTS_STOCK=Similar results from Adobe Stock
+DL_SEARCH_FILTERS=Filters ({{num}})
+DL_SEARCH_FILTERS_NONE_SELECTED=Filters
+DL_SEARCH_RESULTS={{count}} results
+DL_SEARCH_HEADER=Search
+DL_SEARCH_SCOPE_SUGGESTION_TITLE=Can't find what you're looking for?
+DL_SEARCH_SCOPE_SUGGESTION_ALL_LIBRARIES=Search all libraries
+DL_SEARCH_SCOPE_SUGGESTION_STOCK=Search Adobe Stock
+DL_SEARCH_LIBRARIES_NO_RESULTS_TITLE=No results found
+DL_SEARCH_LIBRARIES_NO_RESULTS_BODY=Try adjusting your search options to find what you're looking for.
+DL_SEARCH_CANCEL_TOOLTIP=Exit search
+DL_SEARCH_SELECT_SCOPE_TOOLTIP=Search in
+DL_SEARCH_FILTERS_TOOLTIP=Filter
+
+EMPTY_DOC_ASSETS_MESSAGE=Add your styles and components, or use elements from existing libraries.
+EMPTY_DOC_ASSETS_CTA=View libraries
+EMPTY_ROOT_VIEW_MESSAGE_XD=Kickstart your designs with ready-made UI kits and design libraries.
+EMPTY_ROOT_VIEW_CTA_XD=Get UI kits
+EMPTY_ROOT_VIEW_MESSAGE=Inspire and speed up your work with ready-made libraries.
+EMPTY_ROOT_VIEW_CTA=Explore libraries
+ROOT_VIEW_MESSAGE_LM=Libraries help you design quickly and stay connected to your team.
+ROOT_VIEW_CTA_LM=Manage libraries
+
+DL_SEARCH_RESULT=1 result
+DL_STOCK_PANEL_SEARCHING_MESSAGE=Searching Adobe Stock...
+DL_STOCK_PANEL_RESULT_COUNT={{count}} results found.
+DL_STOCK_PANEL_RESULT_TIPS_HEADER=Tips for better results:
+DL_STOCK_PANEL_RESULT_TIPS=Check the spelling of your query for typos. Try searching with fewer terms in your query.
+DL_STOCK_PANEL_SEARCH_ERROR=Sorry, something went wrong while searching Adobe Stock. Please try again.
+DL_STOCK_PANEL_NO_CONNECTION_MESSAGE=You're currently offline.<br/>Please establish a connection to search Adobe Stock.
+DL_STOCK_PANEL_SEARCH_ON_WEB=See more results on the web
+
+DL_LISTVIEW_TOOLTIP=List view
+DL_LISTVIEW_SHORT=List
+DL_GRIDVIEW_TOOLTIP=Grid view
+DL_GRIDVIEW_SHORT=Grid
+DL_SORT_ITEMS_BY_NAME_TOOLTIP=Sort alphabetically
+DL_SORT_ITEMS_BY_MOD_DATE_TOOLTIP=Sort by last modified
+DL_SORT_NAME=Name
+DL_SORT_DATE=Date
+DL_SORT_TOOLTIP=Sort options
+DL_SORT_REVERSE_ORDER=Reverse order
+
+DL_LIBRARY_PERMANENTLY_DELETED="{{libraryName}}" deleted permanently
+DL_DELETE_TOAST="{{libraryName}}" deleted
+DL_UNFOLLOW_TOAST="{{libraryName}}" removed
+DL_UNPUBLISH_TOAST="{{libraryName}}" unpublished
+DL_GROUPS_MERGED_TOAST=Groups at the same level with the same name have been merged.
+DL_ADD_TO_LIBRARY_TOAST="{{libraryName}}" added to your libraries
+DL_ADD_TO_LIBRARY_FAILURE_TOAST=Failed to add "{{libraryName}}" to your libraries
+DL_ITEMS_READY_TOAST=Your new items are ready, but aren’t visible in this view
+DL_REFRESH=Refresh
+DL_COLLAPSE_ALL=Collapse all groups
+DL_SHOW_NAMES_ALWAYS=Always show names
+DL_SHOW_TRANSPARENCY_GRID=Show transparency grid
+
+DL_VIEW_BY_TITLE=View by
+DL_VIEW_BY_TYPE=View by type
+DL_VIEW_BY_GROUP=View by group
+DL_VIEW_BY_TOOLTIP=View options
+DL_VIEW_BY_GROUP_SHORT=Custom group
+DL_VIEW_BY_TYPE_SHORT=Type
+DL_VIEW_BY_ROLE_SHORT=Brand
+DL_VIEW_BY_GROUP_TREE=Tree
+DL_VIEW_BY_GROUP_PATH=Path
+DL_CLEAR_FILTERS=Clear filters
+DL_VIEW_BY_GROUP_POPOVER_TITLE=Switch to custom groups
+DL_VIEW_BY_GROUP_POPOVER_BODY=Change view to "Custom groups" to organize elements.
+DL_VIEW_BY_GROUP_POPOVER_BODY_LINK=Change view to "Custom groups" to organize elements. <a>Learn more</a>
+DL_EDIT_NAME_INVALID_SLASH=Slashes can't be used in element names since they're used to organize groups
+
+DL_BRAND=Use as brand
+DL_UNBRAND=Use as library
+DL_BRAND_LIBRARIES=Brands
+
+DL_MIGRATE_LIBRARY_POPOVER_TITLE=Convert '/' to groups
+DL_MIGRATE_LIBRARY_POPOVER_BODY=This library contains a group or element with a '/' character in the name. The '/' character is now a reserved character for creating/specifying nested groups. You can replace your ( / ) with a dash ( - ) or convert the name to subgroups separated at the slash ( / ). <a href="#learnMore">Learn more</a>
+DL_MIGRATE_LIBRARY_POPOVER_CONVERT_TO_GROUPS=Convert to groups
+DL_MIGRATE_LIBRARY_POPOVER_REPLACE_SLASHES=Replace '/' characters
+DL_MIGRATE_LIBRARY_POPOVER_SUCCESS_TOAST_GROUP=New group structure created. Use '/' to quickly create subgroups. <a href="#learnMore">Learn more</a>
+DL_MIGRATE_LIBRARY_POPOVER_SUCCESS_TOAST_REPLACE=All slashes (/) replaced with dashes (-). Use '/' to quickly create subgroups. <a href="#learnMore">Learn more</a>
+DL_MIGRATE_LIBRARY_POPOVER_ERROR_TOAST=Could not convert groups in this library
+
+DL_CREATE_GROUP_TOOLTIP=Create new group
+DL_NEW_GROUP_NAME=New group
+DL_GROUP_ONBOARDING_POPOVER_TITLE=More ways to view and create groups
+DL_GROUP_ONBOARDING_POPOVER_BODY=Show groups as a tree or as a path. When naming groups, use the '/' character to quickly create subgroups
+
+DL_MY_TOOLKIT_UNLOCK_BUTTON_MESSAGE=Unlock to make changes
+DL_MY_TOOLKIT_UNLOCK_POPOVER_UNLOCK_BUTTON=Continue
+DL_MY_TOOLKIT_UNLOCK_TOAST_BUTTON=Unlock to edit
+
+DL_GENERIC_TOOLKIT_UNLOCK_POPOVER_TITLE=Edit {{toolkitName}}
+DL_GENERIC_TOOLKIT_UNLOCK_POPOVER_BODY=Unlock this library to make changes.
+DL_GENERIC_TOOLKIT_UNLOCK_TOAST_MESSAGE=Unlock this library to make changes.
+
+DL_GENERIC_MANAGER_DIALOG_ERROR=Sorry, something went wrong. Please try again later.
+
+DL_TOOLKIT_UNLOCK_POPOVER_TITLE=Edit {{toolkitName}}
+DL_PHOTOSHOP_SWATCHES_TOOLKIT_UNLOCK_POPOVER_TITLE=Edit your Photoshop swatches
+DL_PHOTOSHOP_SWATCHES_TOOLKIT_UNLOCK_POPOVER_BODY=Any changes you make will sync to your Photoshop swatches panel.
+DL_PHOTOSHOP_SWATCHES_TOOLKIT_UNLOCK_TOAST_MESSAGE=This library syncs with your Photoshop swatches panel.
+
+DL_PHOTOSHOP_BRUSHES_TOOLKIT_UNLOCK_POPOVER_TITLE=Edit your Photoshop brushes
+DL_PHOTOSHOP_BRUSHES_TOOLKIT_UNLOCK_POPOVER_BODY=Any changes you make will sync to your Photoshop brushes panel.
+DL_PHOTOSHOP_BRUSHES_TOOLKIT_UNLOCK_TOAST_MESSAGE=This library syncs with your Photoshop brushes panel.
+
+DL_PHOTOSHOP_GRADIENTS_TOOLKIT_UNLOCK_POPOVER_TITLE=Edit your Photoshop gradients
+DL_PHOTOSHOP_GRADIENTS_TOOLKIT_UNLOCK_POPOVER_BODY=Any changes you make will sync to your Photoshop gradients panel.
+DL_PHOTOSHOP_GRADIENTS_TOOLKIT_UNLOCK_TOAST_MESSAGE=This library syncs with your Photoshop gradients panel.
+
+DL_PHOTOSHOP_PATTERNS_TOOLKIT_UNLOCK_POPOVER_TITLE=Edit your Photoshop patterns
+DL_PHOTOSHOP_PATTERNS_TOOLKIT_UNLOCK_POPOVER_BODY=Any changes you make will sync to your Photoshop patterns panel.
+DL_PHOTOSHOP_PATTERNS_TOOLKIT_UNLOCK_TOAST_MESSAGE=This library syncs with your Photoshop patterns panel.
+
+DL_PHOTOSHOP_STYLES_TOOLKIT_UNLOCK_POPOVER_TITLE=Edit your Photoshop styles
+DL_PHOTOSHOP_STYLES_TOOLKIT_UNLOCK_POPOVER_BODY=Any changes you make will sync to your Photoshop styles panel.
+DL_PHOTOSHOP_STYLES_TOOLKIT_UNLOCK_TOAST_MESSAGE=This library syncs with your Photoshop styles panel.
+
+DL_PHOTOSHOP_SHAPES_TOOLKIT_UNLOCK_POPOVER_TITLE=Edit your Photoshop shapes
+DL_PHOTOSHOP_SHAPES_TOOLKIT_UNLOCK_POPOVER_BODY=Any changes you make will sync to your Photoshop shapes panel.
+DL_PHOTOSHOP_SHAPES_TOOLKIT_UNLOCK_TOAST_MESSAGE=This library syncs with your Photoshop shapes panel.
+
+DL_GROUP_UNGROUPED=Not grouped
+
+DL_IMPORT_IMAGE_TO_PROJECT=Import
+
+DL_XD_VIDEO_TYPE_TOOLTIP=Type: {{type}}
+DL_XD_VIDEO_DURATION_TOOLTIP=Duration: {{duration}}
+DL_XD_VIDEO_SIZE_TOOLTIP=Size: {{filesize}}
+DL_XD_ADD_VIDEO_FILE_TOO_BIG_TOOLTIP=The file size is bigger than the limit ({{filesize}}).
+DL_XD_ADD_VIDEO_FILE_FORMAT_NOT_SUPPORTED_TOOLTIP=This file format is not supported.
+
+DL_ADD_IMAGE_TO_DOC_AS_COPY=Place copy
+DL_ADD_IMAGE_TO_DOC_AS_GRAPHIC=Place graphic
+DL_ADD_IMAGE_TO_DOC_AS_LOGO=Place logo
+DL_ADD_IMAGE_TO_DOC_AS_VECTOR=Place as vector
+DL_ADD_IMAGE_TO_DOC_AS_LINKED=Place linked
+DL_ADD_AUDIO_TO_DOC=Place copy
+DL_ADD_COMPONENT_TO_DOC_AS_COPY=Place copy
+DL_ADD_COMPONENT_TO_DOC_AS_LINKED=Place linked
+DL_PREVIEW=Preview
+DL_INSERT_IMAGE_TO_DOC_AS_COPY=Insert unlinked
+DL_INSERT_IMAGE_TO_DOC_AS_LINKED=Insert linked
+DL_DOWNLOAD_IMAGE_AS_COPY=Download unlinked
+DL_DOWNLOAD_IMAGE_AS_LINKED=Download linked
+DL_ADD_IMAGE_TO_DOC_AS_LAYERS=Place layers
+DL_ADD_IMAGE_TO_DOC=Use in document
+DL_ADD_IMAGE_TO_PROJECT=Add to project
+DL_ADD_BRUSH_TO_DOC=Use in document
+DL_ADD_COLORTHEME_TO_SWATCHES=Add theme to swatches
+DL_ADD_GENERIC_TO_DOC=Use in document
+DL_ADD_PATTERN_TO_DOC_AS_IMAGE_AS_COPY=Place bitmap pattern tile
+DL_ADD_VECTOR_PATTERN_TILE_TO_DOC_AS_COPY=Place vector pattern tile
+DL_VECTOR_PATTERN_TYPE=Vector SVG
+DL_BITMAP_PATTERN_TYPE=Bitmap PNG
+
+DL_ADD_IMAGE_TO_ITEM_FILL_MU=Set as fill
+DL_ADD_IMAGE_TO_PAGE_FILL_MU=Set as page fill
+DL_ADD_IMAGE_TO_BROWSER_FILL_MU=Set as browser fill
+DL_SET_TEXT_COLOR_MU=Set text color
+DL_SET_STROKE_COLOR_MU=Set stroke color
+DL_SET_FILL_COLOR_MU=Set fill color
+DL_SET_PAGE_FILL_COLOR_MU=Set page fill color
+DL_SET_BROWSER_FILL_COLOR_MU=Set browser fill color
+
+DL_ADD_TO_PROJECT=Add to project
+
+DL_EMPTY_LIB_ACCC_TITLE=Build a library
+DL_EMPTY_LIB_STYG_TITLE=This library is empty
+DL_EMPTY_LIB_ACCC_READ_ONLY_HEADING=There’s nothing in this library
+DL_EMPTY_LIB_ACCC_READ_ONLY_MESSAGE=You can’t edit this library, but you can ask the owner for permission.
+DL_EMPTY_LIB_TRADITIONAL_LIBRARY_READ_ONLY_TITLE=This library is empty.
+DL_EMPTY_LIB_TRADITIONAL_LIBRARY_READ_ONLY_TEXT=Ask for edit access to add elements and share with others.
+DL_EMPTY_LIB_LINKED_LIBRARY_READ_ONLY_TITLE=This library is empty.
+DL_EMPTY_LIB_LINKED_LIBRARY_READ_ONLY_TEXT=Ask for edit access to publish elements from the source file to this library.
+DL_EMPTY_LIB_LINKED_LIBRARY_WRITE_TITLE=This library is empty.
+DL_EMPTY_LIB_LINKED_LIBRARY_WRITE_TEXT=Go to the source file to publish elements to this library.
+DL_EMPTY_LIB_LINKED_LIBRARY=Open source file
+DL_EMPTY_LIB_OFFICE_TITLE=Access your creative elements in Microsoft Office
+DL_EMPTY_LIB_DRAG_TITLE=Access your creative elements in every Adobe app
+DL_EMPTY_LIB_ACCESS_TITLE=Create creative elements at your fingertips with Creative Cloud libraries
+DL_EMPTY_LIB_PANEL_INSTRUCTION_PS=Drag and drop images or add colors, layer styles, and other creative elements from your file.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_AI=Drag and drop images or add colors, character styles, and other creative elements from your file.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_ID=Drag and drop images or add colors, character styles, and other creative elements from your file.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_PR=Drag and drop images or add videos, templates, and other creative elements from Adobe Stock.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_AE=Drag and drop images or add videos and other creative elements from Adobe Stock.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_DW=Get quick access to your images, colors and more in every Adobe app.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_FP=Drag and drop images or add animations, colors, and other creative elements from your file.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_SG=Get quick access to your images, colors and more in every Adobe app.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_XD=Add components, colors, and character styles from your file.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_BR=Drag and drop images to access them in every Adobe app.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_ACCC_1=Share and organize your elements in nested groups.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_ACCC_2=Browse your computer to add creative elements.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_ACCC_3=Use your libraries in all of your Adobe apps.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_WD=Add styles, colors, or text. Or go to an Adobe app to curate creative elements and reuse them in Word.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_PP=Go to an Adobe app to curate creative elements and reuse them in PowerPoint.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_STYG=Go to supported Creative Cloud desktop and mobile apps to add assets, styles, and more.
+DL_EMPTY_LIB_PANEL_GLOBAL_SEARCH=No results found. <br/><b>Tip: Please check your spelling or refine your keywords and filters.</b>
+DL_EMPTY_LIB_LEARN_MORE=Learn How to use libraries
+
+DL_EMPTY_LIB_ACCC_PRIMARY_ACTION=Upload a file
+
+DL_EMPTY_PUBLIC_LIBRARY_INSTRUCTION_AH=Add to receive updates as items are added
+DL_EMPTY_LIB_PANEL_HEADING_TRADITIONAL_AH=There's nothing in this library
+DL_EMPTY_LIB_PANEL_INSTRUCTION_EDIT_TRADITIONAL_AH=Copy or move items here from other libraries, or add them through the Libraries panel of your Adobe apps.
+DL_EMPTY_LIB_PANEL_HEADING_EDIT_TRADITIONAL=Start building a library
+DL_EMPTY_LIB_PANEL_HEADING=This library is empty
+DL_EMPTY_LIB_PANEL_INSTRUCTION_VIEW_TRADITIONAL=Ask for edit access to add elements and share with others.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_EDIT_TRADITIONAL=Add assets, styles, and more from a file. You can also drag and drop.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_EDIT_LINKED_LIB=Go to the source file to publish elements to this library.
+DL_EMPTY_LIB_PANEL_INSTRUCTION_VIEW_LINKED_LIB=Ask for edit access to publish elements from the source file to this library.
+DL_EMPTY_LIB_LINKED_LIBRARY=Open source file
+DL_EMPTY_LIB_ENGAGEMENT_TITLE=STARTER LIBRARIES
+DL_EMPTY_LIB_ENGAGEMENT_BY_OWNER=by <b>{{name}}</b>
+DL_EMPTY_LIB_ENGAGEMENT_VIEW_ON_WEBSITE=View library on website
+DL_EMPTY_LIB_ENGAGEMENT_FOLLOW_ERROR=Sorry, something went wrong while syncing the library.
+
+DL_LOADING_LIBRARY_COLLABORATORS=Loading list of collaborators...
+DL_DROP_MORE_FILES=and {{count}} more
+
+DL_NO_LIBS_MESSAGE=No libraries present
+DL_NO_LIBS_ERROR_CONNECTING=Sorry, we couldn't connect to the server
+DL_NO_LIBS_ERROR_SYNCING=Sorry, your libraries didn't sync
+DL_NO_LIBS_ERROR_INIT=Sorry, we couldn't initialize the panel
+DL_NO_LIBS_LOGGED_OUT=To use Creative Cloud libraries, <br/> please sign in to Creative Cloud
+DL_NO_LIBS_SYNCING=Fetching your libraries <br/> from Creative Cloud
+DL_NO_LIBS_CREATE_LIBRARY_BUTTON_TEXT=+ Create new library
+DL_NO_LIBS_RETRY=Retry
+DL_NO_LIBS_RETRY_INIT=Try again
+DL_NO_LIBS_NO_ACCESS=You do not have access to this service. You can use this service in offline mode.
+DL_NO_LIBS_APP_LOGGED_OUT=To use Creative Cloud libraries, you need to be logged into a Creative Cloud account.
+DL_NO_LIBS_SERVICE_NOT_INSTALLED=To use Creative Cloud libraries, <br/> please install the Creative Cloud app
+DL_NO_LIBS_SERVICE_NOT_RUNNING=Something went wrong initializing Creative Cloud libraries
+DL_NO_LIBS_SERVICE_MAC_ADDITIONAL_DETAILS=Mac OSX versions 26 and up: Adjust System Settings to allow permissions:<br> Open System Settings and turn on the "CCLibrary". Some features may not function properly without this setting enabled. <a class="panel-nolibs-link" href="https://www.adobe.com/go/libraries-login-items">Learn More</a>
+DL_NO_LIBS_UPDATE_CLIENT=Creative Cloud libraries needs to be updated to a newer version
+DL_NO_LIBS_UPDATE_SERVER=To use your libraries, please update to the latest version of Creative Cloud Libraries.
+DL_NO_LIBS_SYNC_DISABLED=Library syncing is paused. To fetch your libraries from Creative Cloud, please resume syncing.
+DL_NO_LIBS_NETWORK_PROBLEM=We have detected a problem with your network settings.
+DL_NO_LIBS_SOCKET_BLOCKED=Creative Cloud services are blocked. Please check your Firewall settings.
+DL_SYNC_REQUEST_ERROR=A problem occurred. Your library has been refreshed.
+DL_NO_LIBS_PAGE_NOT_AVAILABLE=Oops, page not available
+DL_LIB_LIST_ONBOARDING_CREATE_LIBRARY_BUTTON_TEXT=Create new library
+DL_LIB_LIST_ONBOARDING_FOLLOW_LIBRARY_BUTTON_TEXT=Find public libraries
+DL_LIB_LIST_ONBOARDING_FOLLOW_LIBRARY_WEB_ARICLE_HEADING=Find public libraries
+
+DL_OFFICE_LOGGED_OUT_TITLE=Welcome to Adobe Creative Cloud
+DL_OFFICE_LOGGED_OUT_DESCRIPTION=Access creative elements from your Creative Cloud libraries in Microsoft Office.
+DL_OFFICE_LOGGED_OUT_BUTTON=Sign in
+DL_OFFICE_ERROR_BACK_BUTTON=Back
+
+DL_OFFICE_NO_THOR_TITLE=You're not connected to Creative Cloud
+DL_OFFICE_NO_THOR_DESCRIPTION=Some things to try:
+DL_OFFICE_NO_THOR_LIST_VERIFY=Verify your network settings
+DL_OFFICE_NO_THOR_LIST_LEARN_MORE=<a>Get more help</a>
+
+DL_OFFICE_FIREFOX_ERROR_TITLE=Setup complete
+DL_OFFICE_FIREFOX_ERROR_DESCRIPTION=Please restart Firefox for the changes to take effect.
+
+DL_OFFICE_ADDIN_TITLE=Adobe Creative Cloud
+DL_OFFICE_ADDIN_DESCRIPTION=Access Creative Cloud libraries in Microsoft Office
+DL_OFFICE_ADDIN_BUTTON_TITLE=Creative Cloud
+DL_OFFICE_ADDIN_ONBOARDING_TITLE=Adobe Creative Cloud for Microsoft Office
+DL_OFFICE_ADDIN_ONBOARDING_DESCRIPTION=Access Creative Cloud libraries in Microsoft Office
+
+DL_OFFICE_IMAGE_APPLY_GENERIC_ERROR=Sorry, something went wrong while placing the image. Please try again.
+DL_OFFICE_IMAGE_APPLY_FILE_TOO_LARGE=Sorry, the image you are trying to place is too large. Try placing it using Microsoft Office desktop apps.
+DL_OFFICE_IMAGE_APPLY_SELECTION_NOT_WRITABLE=You can't place this image into the current selection. Please unselect the objects in your document and try again.
+
+DL_FIGMA_LOGGED_OUT_DESCRIPTION=Access creative elements from your Creative Cloud libraries in Figma.
+
+DL_SIGN_OUT=Sign out
+
+DL_OFFLINE_VIDEO_PREVIEW=Cannot retrieve video preview while offline
+
+DL_NO_LIBS_GET_IT=Get it now!
+DL_NO_LIBS_MORE_INFO=More information
+DL_TROUBLESHOOT_NETWORK_SETTINGS=Click here to troubleshoot
+
+DL_BRUSHTYPE_SCATTER=Photoshop brush
+DL_BRUSHTYPE_VECTOR=Vector brush
+DL_BRUSHTYPE_RIBBON=Sketch brush
+DL_BRUSHTYPE_UNKNOWN=Unknown brush
+
+DL_ERROR_BRUSH_NOT_SUPPORTED_PS=This brush format is not supported in Photoshop
+DL_ERROR_BRUSH_NOT_SUPPORTED_AI=This brush format is not supported in Illustrator
+DL_ERROR_BRUSH_NOT_SUPPORTED_FP=This brush format is not supported in Animate
+DL_ERROR_BRUSH_NOT_SUPPORTED_ID=Brushes are not supported in InDesign
+DL_ERROR_BRUSH_NOT_SUPPORTED_AE=Brushes are not supported in After Effects
+DL_ERROR_BRUSH_NOT_SUPPORTED_PR=Brushes are not supported in Premiere
+DL_ERROR_BRUSH_NOT_SUPPORTED_DW=Brushes are not supported in Dreamweaver
+DL_ERROR_BRUSH_NOT_SUPPORTED_SG=Brushes are not supported in Stager
+DL_ERROR_BRUSH_NOT_SUPPORTED_PP=Brushes are not supported in PowerPoint
+DL_ERROR_BRUSH_NOT_SUPPORTED_WD=Brushes are not supported in Word
+DL_ERROR_BRUSH_NOT_SUPPORTED_XD=Brushes are not supported in XD
+
+DL_ERROR_CAPSULE_NOT_SUPPORTED_PS=Motion graphics templates are not supported in Photoshop
+DL_ERROR_CAPSULE_NOT_SUPPORTED_AI=Motion graphics templates are not supported in Illustrator
+DL_ERROR_CAPSULE_NOT_SUPPORTED_FP=Motion graphics templates are not supported in Animate
+DL_ERROR_CAPSULE_NOT_SUPPORTED_ID=Motion graphics templates are not supported in InDesign
+DL_ERROR_CAPSULE_NOT_SUPPORTED_PR=This Motion graphics template is not supported in Premiere
+DL_ERROR_CAPSULE_NOT_SUPPORTED_AE=This Motion graphics template is not supported in After Effects
+DL_ERROR_CAPSULE_NOT_SUPPORTED_DW=Motion graphics templates are not supported in Dreamweaver
+DL_ERROR_CAPSULE_NOT_SUPPORTED_SG=Motion graphics templates are not supported in Stager
+DL_ERROR_CAPSULE_NOT_SUPPORTED_PP=Motion graphics templates are not supported in PowerPoint
+DL_ERROR_CAPSULE_NOT_SUPPORTED_WD=Motion graphics templates are not supported in Word
+DL_ERROR_CAPSULE_NOT_SUPPORTED_XD=Motion graphics templates are not supported in XD
+
+DL_ERROR_GRADIENT_NOT_SUPPORTED_XD=This gradient format is not supported in XD
+DL_ERROR_GRADIENT_NOT_SUPPORTED_PS=This gradient format is not supported in Photoshop
+DL_ERROR_GRADIENT_NOT_SUPPORTED_AI=Library gradients are not supported in Illustrator
+DL_ERROR_GRADIENT_NOT_SUPPORTED_ID=Library gradients are not supported in InDesign
+DL_ERROR_GRADIENT_NOT_SUPPORTED_FP=Gradients are not supported in Animate
+DL_ERROR_GRADIENT_NOT_SUPPORTED_AE=Gradients are not supported in After Effects
+DL_ERROR_GRADIENT_NOT_SUPPORTED_PR=Gradients are not supported in Premiere
+DL_ERROR_GRADIENT_NOT_SUPPORTED_DW=Gradients are not supported in Dreamweaver
+DL_ERROR_GRADIENT_NOT_SUPPORTED_SG=Gradients are not supported in Stager
+DL_ERROR_GRADIENT_NOT_SUPPORTED_BR=Gradients are not supported in Bridge
+DL_ERROR_GRADIENT_NOT_SUPPORTED_PP=Gradients are not supported in PowerPoint
+DL_ERROR_GRADIENT_NOT_SUPPORTED_WD=Gradients are not supported in Word
+
+DL_ERROR_LAYER_STYLE_NOT_SUPPORTED_AI=Layer styles are not supported in Illustrator
+DL_ERROR_LAYER_STYLE_NOT_SUPPORTED_ID=Layer styles are not supported in InDesign
+DL_ERROR_LAYER_STYLE_NOT_SUPPORTED_AE=Layer styles are not supported in After Effects
+DL_ERROR_LAYER_STYLE_NOT_SUPPORTED_FP=Layer styles are not supported in Animate
+DL_ERROR_LAYER_STYLE_NOT_SUPPORTED_DW=Layer styles are not supported in Dreamweaver
+DL_ERROR_LAYER_STYLE_NOT_SUPPORTED_SG=Layer styles are not supported in Stager
+DL_ERROR_LAYER_STYLE_NOT_SUPPORTED_PP=Layer styles are not supported in PowerPoint
+DL_ERROR_LAYER_STYLE_NOT_SUPPORTED_WD=Layer styles are not supported in Word
+DL_ERROR_LAYER_STYLE_NOT_SUPPORTED_XD=Layer styles are not supported in XD
+DL_ERROR_LAYER_STYLE_NOT_SUPPORTED_PR=Layer styles are not supported in Premiere
+
+DL_ERROR_TEMPLATE_NOT_SUPPORTED_PS=This template format is not supported in Photoshop
+DL_ERROR_TEMPLATE_NOT_SUPPORTED_AI=This template format is not supported in Illustrator
+DL_ERROR_TEMPLATE_NOT_SUPPORTED_ID=This template format is not supported in InDesign
+DL_ERROR_TEMPLATE_NOT_SUPPORTED_FP=Templates are not supported in Animate
+DL_ERROR_TEMPLATE_NOT_SUPPORTED_AE=Templates are not supported in After Effects
+DL_ERROR_TEMPLATE_NOT_SUPPORTED_PR=Templates are not supported in Premiere
+DL_ERROR_TEMPLATE_NOT_SUPPORTED_DW=Templates are not supported in Dreamweaver
+DL_ERROR_TEMPLATE_NOT_SUPPORTED_SG=Templates are not supported in Stager
+DL_ERROR_TEMPLATE_NOT_SUPPORTED_BR=Templates are not supported in Bridge
+DL_ERROR_TEMPLATE_NOT_SUPPORTED_PP=Templates are not supported in PowerPoint
+DL_ERROR_TEMPLATE_NOT_SUPPORTED_WD=Templates are not supported in Word
+DL_ERROR_TEMPLATE_NOT_SUPPORTED_XD=Templates are not supported in XD
+
+DL_ERROR_UNSUPPORTED_PS=This item is not supported in Photoshop
+DL_ERROR_UNSUPPORTED_AI=This item is not supported in Illustrator
+DL_ERROR_UNSUPPORTED_ID=This item is not supported in InDesign
+DL_ERROR_UNSUPPORTED_AE=This item is not supported in After Effects
+DL_ERROR_UNSUPPORTED_PR=This item is not supported in Premiere
+DL_ERROR_UNSUPPORTED_FP=This item is not supported in Animate
+DL_ERROR_UNSUPPORTED_DW=This item is not supported in Dreamweaver
+DL_ERROR_UNSUPPORTED_SG=This item is not supported in Stager
+DL_ERROR_UNSUPPORTED_BR=This item is not supported in Bridge
+DL_ERROR_UNSUPPORTED_PP=This item is not supported in PowerPoint
+DL_ERROR_UNSUPPORTED_WD=This item is not supported in Word
+DL_ERROR_UNSUPPORTED_XD=This item is not supported in XD
+DL_ERROR_UNSUPPORTED_GenStudio=This item is not supported in GenStudio
+DL_ERROR_UNSUPPORTED_ACCC=This item is not supported in Creative Cloud app
+
+DL_ERROR_MISSING_FONT=You do not have the required font
+
+DL_ERROR_INVALID_FILE_FORMAT_PS=This item isn’t directly editable in Photoshop, but it can be placed in a document. To place the item, drag it into an open document.
+DL_ERROR_INVALID_FILE_FORMAT_AI=This item isn’t directly editable in Illustrator, but it can be placed in a document. To place the item, drag it into an open document.
+DL_ERROR_INVALID_FILE_FORMAT_ID=This item isn’t directly editable in InDesign, but it can be placed in a document. To place the item, drag it into an open document.
+DL_ERROR_INVALID_FILE_FORMAT_FP=This item isn’t directly editable in Animate, but it can be placed in a document. To place the item, drag it into an open document.
+DL_ERROR_INVALID_FILE_FORMAT_DW=This item isn’t directly editable in Dreamweaver, but it can be placed in a document. To place the item, drag it into an open document.
+DL_ERROR_INVALID_FILE_FORMAT_AE=This item isn’t directly editable in After Effects, but it can be placed in a document. To place the item, drag it into an open document.
+DL_ERROR_INVALID_FILE_FORMAT_PR=This item isn’t directly editable in Premiere Pro, but it can be placed in a document. To place the item, drag it into an open document.
+DL_ERROR_INVALID_FILE_FORMAT_BR=This item isn’t directly usable in Bridge.
+DL_ERROR_INVALID_FILE_FORMAT_PP=This item isn’t directly usable in PowerPoint.
+DL_ERROR_INVALID_FILE_FORMAT_WD=This item isn’t directly usable in Word.
+DL_ERROR_INVALID_FILE_FORMAT_XD=This item isn’t directly editable in XD, but it can be placed in a document. To place the item, drag it into an open document.
+DL_ERROR_EDIT_FAILED=Sorry, it's taking a long time to edit this item. Something may have gone wrong.
+DL_ERROR_APP_LAUNCH_TAKING_TIME=Sorry, it's taking a long time to launch the editor app.
+DL_ERROR_UPDATE_NEEDED=To edit this item, please update {{app}} to the latest version. If you were trying to place the item, you can do so by dragging it into an open document.
+DL_ERROR_INSTALL_NEEDED=To edit this item, please install {{app}} on your computer. If you were trying to place the item, you can do so by dragging it into an open document.
+DL_ERROR_UPDATE_NEEDED_NO_PLACE=To edit this item, please update {{app}} to the latest version.
+DL_ERROR_INSTALL_NEEDED_NO_PLACE=To edit this item, please install {{app}} on your computer.
+DL_ERROR_EDIT_IN_SOURCE=Sorry, we were unable to open the source document. Something may have gone wrong.
+
+DL_CUSTOM_DROP_MESSAGE_ID_TEXT_MAC=Press Cmd and drop to add as a graphic
+DL_CUSTOM_DROP_MESSAGE_ID_TEXT_WIN=Press Ctrl and drop to add as a graphic
+DL_CUSTOM_PLACE_OVERLAY_MESSAGE_ID=Select a text or a graphic to place
+DL_CUSTOM_RELINK_TEXT_OVERLAY_MESSAGE_ID=Select a text to relink
+
+DL_ERROR_EDIT_READ_ONLY_LIBRARY="{{name}}" cannot be modified because it is a read-only library.
+DL_ERROR_EDIT_READ_ONLY_ELEMENT=This item cannot be edited because it is in a read-only library.
+DL_ERROR_EDIT_ELEMENT_DOWNLOADING=This item cannot be edited because it is still being downloaded.
+DL_ERROR_PLACE_TEMPLATE_DOWNLOADING=This template cannot be opened because it is still being downloaded.
+
+DL_ERROR_FILE_TOO_BIG=Sorry, Creative Cloud libraries doesn’t currently support graphics that are larger than 1GB.
+
+DL_3D_CHARACTER=Character
+
+DL_FLYOUT_RENAME_LIB=Rename "{{libraryName}}"
+DL_FLYOUT_REMOVE_LIB=Delete "{{libraryName}}"
+DL_FLYOUT_LEAVE_LIB=Leave "{{libraryName}}"
+DL_FLYOUT_AUTOGENERATE_GROUPS=Auto-generate groups for "{{libraryName}}"
+DL_FLYOUT_COLLABORATE=Invite people...
+DL_FLYOUT_COLLABORATE_DESCRIPTION=Give others access to edit this brand
+DL_FLYOUT_VIEW_ON_WEBSITE=View on website
+DL_FLYOUT_VIEW_ARCHIVE_ON_WEBSITE=View deleted items
+DL_FLYOUT_HOW_TO_USE=Learn more
+DL_FLYOUT_SHARE_LINK=Get link
+DL_FLYOUT_ADD_DOC_CONTENT=Create new library from document...
+DL_FLYOUT_ADD_DOC_CONTENT_MENU_ITEM=New library from document
+DL_FLYOUT_WHATS_NEW=What's new?
+DL_FLYOUT_FEEDBACK=Provide feedback
+DL_FLYOUT_PERSONAL_COPY_LIB=Save personal copy
+DL_FLYOUT_PROMOTE_LIB=Move...
+DL_FLYOUT_RELINK_LIB=Relink library
+DL_FLYOUT_ADD_STYLEGUIDE=Add guidelines
+DL_FLYOUT_VIEW_STYLEGUIDE=View guidelines
+
+DL_OFFICE_HEADER_LABEL=Libraries menu
+
+DL_ADD_DOC_CONTENT_BUTTON=Create new library from this file
+DL_ADD_DOC_CONTENT_BUTTON_TOOLTIP=Extract active document contents into a new library
+DL_ADD_DOC_CONTENT_ICON_TOOLTIP=New library from document...
+
+DL_NEW_USER_ADD_DOC_CONTENT_BUTTON=Build library from this file
+
+DL_ADD_ENTIRE_ANIMATION_TO_LIBRARY=Entire animation
+DL_OPEN_IN_NEW_DOCUMENT=Open in new document
+DL_ADD_ANIMATION_TO_DOC_AS_COPY=Place copy
+DL_ADD_ANIMATION_TO_DOC_AS_LINKED=Place linked
+DL_ADD_SYMBOL_TO_LIBRARY=Symbols
+DL_ADD_BRUSH_TO_LIBRARY=Brushes
+DL_ADD_BRUSH_TO_LIBRARY_ICON_TOOLTIP=Add brushes to library
+
+DL_ADD_ANIMATION_TO_DOC=Use in document
+DL_ADD_ANIMATION_NAME=Animation
+
+DL_ADD_CAPSULE_TO_DOC=Use in document
+
+DL_APPLY_LAYER_STYLE=Apply layer style
+DL_APPLY_LOOK=Apply look
+DL_APPLY_LOOK_REQUIRES_RGB=Please convert document to RGB to apply Looks.
+DL_APPLY_PATTERN=Apply pattern
+DL_ADD_PATTERN_TO_PRESETS=Create pattern preset
+DL_ADD_GRADIENT_TO_PRESETS=Create gradient preset
+DL_ADD_LOOK_NAME=Look
+
+DL_PERCENTAGE={{percent}}%
+DL_SYNCING=Syncing...
+DL_SYNC_OK=All up to date
+DL_SYNC_PROGRESS_PERCENT=Syncing ({{percent}}%)
+DL_SYNC_PROGRESS=Syncing...
+DL_SYNC_PROGRESS_NUM_LIBRARIES=Syncing ({{number}} remaining)
+DL_SYNC_ERROR_QUOTA_EXCEEDED=Sync error due to an issue with storage. Click for more information.
+DL_SYNC_ERROR_CONNECTING=Unable to connect to server
+DL_SYNC_ERROR_SERVER=We're experiencing server problems
+DL_SYNC_ERROR_LIBRARY=Failed to sync "{{name}}"
+DL_SYNC_ERROR=Failed to sync
+DL_SYNC_LOGGED_OUT=Signed out of Creative Cloud
+DL_SYNC_ERROR_NO_ACCESS=You do not have access to this service
+DL_SYNC_RETRY=Retrying in {{duration}}
+DL_SYNC_SERVICE_NOT_INSTALLED=Creative Cloud app not installed
+DL_SYNC_SERVICE_NOT_RUNNING=Failed to initialize
+DL_SYNC_UPDATE_CLIENT=Update required
+DL_SYNC_UPDATE_SERVER=Update required
+DL_SYNC_DISABLED=Library syncing is paused
+DL_SYNC_NETWORK_PROBLEM=Problem with network settings
+DL_SYNC_SOCKET_BLOCKED=Creative Cloud Services blocked
+
+DL_DOWNLOAD_LIBRARY_PERCENT=Downloading "{{name}}"... {{percent}}%
+DL_UPLOAD_LIBRARY_PERCENT=Uploading "{{name}}"... {{percent}}%
+DL_DOWNLOAD_NEW_LIBRARY_PERCENT=Downloading... {{percent}}%
+
+DL_FS_ERROR=Unable to write to disk
+DL_INIT_ERROR=Panel failed to initialize
+
+DL_UNSHARED=Sorry, you no longer have access to this shared library
+DL_DELETED_FROM_SERVER=This library was deleted from Creative Cloud
+DL_REMOVE_FROM_LIST=Remove from list
+
+DL_QUOTA_EXCEEDED_LIBRARY_MESSAGE=This library could not be synced because there is not enough Creative Cloud storage available.
+DL_QUOTA_EXCEEDED_LIBRARY_TIP=You can free up Creative Cloud storage space by permanently deleting items stored in your Creative Cloud archive or by deleting items in other libraries.
+
+DL_DESIGN_LIBRARY_READ_ONLY=This is a read-only library
+DL_DESIGN_LIBRARY_HAS_LIMIT=Your current library is full. Remove items before adding more, or choose another library.
+DL_DESIGN_LIBRARY_NATIVE_DROP=Add to library
+DL_DESIGN_LIBRARY_NATIVE_EXCEEDED_LIMIT_TITLE=Exceeded limit
+DL_DESIGN_LIBRARY_NATIVE_EXCEEDED_LIMIT_MESSAGE=Libraries can only contain {{num}} items at a time. Please reduce the number of items and upload again.
+DL_DESIGN_LIBRARY_NATIVE_UNSUPPORTED_ASSET_TITLE=File type(s) not supported
+DL_DESIGN_LIBRARY_NATIVE_UNSUPPORTED_ASSET_MESSAGE=We're working to support more file types, but for now, we require them to have these extensions: {{supportedExtensions}}.
+DL_DESIGN_LIBRARY_NATIVE_UNSUPPORTED_ASSET_MESSAGE_CONTINUE=Bulk upload only works with file types that have these extensions: {{supportedExtensions}}. You can still upload the remaining files in this bulk upload.
+DL_DESIGN_LIBRARY_NATIVE_FILE_SIZE_TITLE=File(s) too large
+DL_DESIGN_LIBRARY_NATIVE_FILE_SIZE_MESSAGE=Your files are over the maximum file size (1GB).
+DL_DESIGN_LIBRARY_NATIVE_FILE_SIZE_MESSAGE_CONTINUE=At least one of your files is over the maximum file size (1GB). You can still upload the remaining files in this bulk upload.
+DL_DESIGN_LIBRARY_NATIVE_LARGE_UPLOAD_TITLE=Large upload
+DL_DESIGN_LIBRARY_NATIVE_LARGE_UPLOAD_MESSAGE=You’re uploading some large files and/or a lot of them. This might take a little time.
+DL_DESIGN_LIBRARY_NATIVE_MULTIPLE_ERRORS_TITLE=Your attention, please
+DL_DESIGN_LIBRARY_NATIVE_EXCEEDED_FILE_COUNT_TITLE=Number of files exceeded
+DL_DESIGN_LIBRARY_NATIVE_EXCEEDED_FILE_COUNT_MESSAGE=The number of files you are trying to upload exceeds the number supported by this operation. Try adding fewer than {{limit}} files at a time.
+DL_FILE_REPLACE_GRAPHIC_UNSUPPORTED=Graphics can only be replaced with other graphic file types.
+DL_FILE_REPLACE_LOGO_UNSUPPORTED=Logos can only be replaced with other logo file types.
+DL_ARTWORK_LABEL=Artwork
+DL_CHART_LABEL=Chart
+DL_TEXT_LABEL=Text
+DL_IMPORT_ERROR=Import error
+DL_IMPORT_LIBRARY_ELEMENT_MIX_MESSAGE=We don't support adding files and importing libraries at the same time. Try to add the files first to the current library and then import library files with the .cclibs or .cclibc extension.
+
+DL_LAUNCH_CC_APP_TITLE=Syncing is paused
+DL_LAUNCH_CC_APP_MESSAGE=Resume syncing to update Libraries.
+DL_LAUNCH_CC_APP_ENABLE_BUTTON=Resume
+DL_LAUNCH_CC_APP_CANCEL_BUTTON=No thanks
+
+DL_ADD_COLOR_NAME_FILL=Fill color
+DL_ADD_COLOR_NAME_STROKE=Stroke color
+DL_ADD_COLOR_NAME_PS_FOREGROUND=Foreground color
+DL_ADD_COLOR_NAME_PS_TEXT=Text color
+DL_ADD_COLOR_NAME_PS_EFFECT_FILL=Layer effect overlay color
+DL_ADD_COLOR_NAME_PS_EFFECT_STROKE=Layer effect stroke color
+DL_ADD_COLOR_NAME_AI_TEXT_FILL=Text fill color
+DL_ADD_COLOR_NAME_AI_TEXT_STROKE=Text stroke color
+DL_ADD_COLOR_NAME_ID_TEXT_FILL=Text fill color
+DL_ADD_COLOR_NAME_ID_TEXT_STROKE=Text stroke color
+
+DL_ADD_COLOR_GOOGLE_BACKGROUND=Background color
+DL_ADD_COLOR_GOOGLE_FOREGROUND=Foreground color
+DL_ADD_CHARACTER_GOOGLE=Character style
+
+DL_CAPTURE=Extract from Image
+DL_CAPTURE_TOUR=Take a tour
+DL_CAPTURE_ONBOARDING_POPOVER_TITLE=Capture library assets
+DL_CAPTURE_ONBOARDING_POPOVER_BODY=Capture assets from your images and save them to your Creative Library.
+
+DL_OPEN_DOC_FROM_TEMPLATE=Open new document
+
+DL_ADOBE_STOCK_PHOTO=Adobe Stock image
+DL_ADOBE_STOCK_VIDEO=Adobe Stock video
+DL_ADOBE_STOCK_LIGHT=Adobe Stock light
+DL_ADOBE_STOCK_MATERIAL=Adobe Stock material
+DL_ADOBE_STOCK_MODEL=Adobe Stock model
+DL_ADOBE_STOCK_CAPSULE=Adobe Stock motion graphics template
+DL_ADOBE_STOCK_TEMPLATE=Adobe Stock template
+DL_ADOBE_STOCK_AUDIO=Adobe Stock audio
+DL_LICENSED=Licensed
+DL_UNLICENSED=Unlicensed
+DL_STOCK_LICENSE_MENU_PHOTO=License image...
+DL_STOCK_LICENSE_MENU_VIDEO=License video...
+DL_STOCK_LICENSE_MENU_TEMPLATE=License template...
+DL_STOCK_LICENSE_MENU_THREE_D=License asset...
+DL_STOCK_LICENSE_MENU_CAPSULE=License motion graphics template...
+DL_STOCK_LICENSE_MENU_AUDIO=License audio...
+DL_STOCK_SAVE_TO=Save to
+DL_STOCK_SAVE_PREVIEW_TO=Save preview to
+DL_STOCK_LICENSE_THEN_SAVE_TO=License and save to
+DL_STOCK_ASSET_TOOLTIP_TYPE_1=Type: Photo
+DL_STOCK_ASSET_TOOLTIP_TYPE_2=Type: Illustration
+DL_STOCK_ASSET_TOOLTIP_TYPE_3=Type: Vector
+DL_STOCK_ASSET_TOOLTIP_TYPE_4=Type: Video
+DL_STOCK_ASSET_TOOLTIP_TYPE_6=Type: 3D
+DL_STOCK_ASSET_TOOLTIP_TYPE_7=Type: Template
+DL_STOCK_ASSET_TOOLTIP_TYPE_9=Type: Audio
+DL_STOCK_ASSET_TOOLTIP_DESCRIPTION={{type}} - {{contentType}}
+DL_STOCK_SAVE_TO_TOOLTIP=Save to {{name}}
+DL_STOCK_SAVE_PREVIEW_TO_TOOLTIP=Save preview to {{name}}
+DL_STOCK_LICENSE_THEN_SAVE_TO_TOOLTIP=License and save to {{name}}
+DL_STOCK_LICENSE_TOOLTIP=License
+DL_STOCK_LICENSED_SEARCH_RESULT=You have already licensed this asset
+DL_STOCK_FIND_SIMILAR_MENU=Find similar...
+DL_STOCK_FIND_SIMILAR_PLACEHOLDER=<Find similar>
+DL_STOCK_VIEW_ON_WEB=View details on web...
+DL_STOCK_WATCH_VIDEO=Watch video on web...
+DL_STOCK_PURCHASE_DIALOG_TITLE_PHOTO=License Adobe Stock image
+DL_STOCK_PURCHASE_DIALOG_TITLE_SAVE_PHOTO=Save Adobe Stock image
+DL_STOCK_PURCHASE_DIALOG_TITLE_VIDEO=License Adobe Stock video
+DL_STOCK_PURCHASE_DIALOG_TITLE_TEMPLATE=License Adobe Stock template
+DL_STOCK_PURCHASE_DIALOG_TITLE_CAPSULE=License Adobe Stock motion graphics template
+DL_STOCK_PURCHASE_DIALOG_TITLE_THREE_D=License Adobe Stock asset
+DL_STOCK_PURCHASE_DIALOG_TITLE_SAVE_VIDEO=Save Adobe Stock video
+DL_STOCK_PURCHASE_DIALOG_PHOTO_TYPE_MESSAGE=Do you want to license the small or full resolution version?
+DL_STOCK_PURCHASE_DIALOG_PHOTO_TYPE_SAVE_MESSAGE=Do you want to save the small or full resolution version?
+DL_STOCK_PURCHASE_DIALOG_VIDEO_TYPE_MESSAGE=Do you want to license the HD or 4K version?
+DL_STOCK_PURCHASE_DIALOG_MANDATORY_REFERENCES=Mandatory references
+DL_STOCK_PURCHASE_DIALOG_OPTIONAL_REFERENCES=Optional references
+DL_STOCK_PURCHASE_DIALOG_VIDEO_SAVE_TYPE_MESSAGE=Do you want to save the HD or 4K version? (You can license either version later)
+DL_STOCK_PURCHASE_OFFLINE_ERROR_CAPSULE=You're currently offline, so we can't contact Adobe Stock to license the motion graphics template. Please try again when you're connected.
+DL_STOCK_PURCHASE_OFFLINE_ERROR_PHOTO=You're currently offline, so we can't contact Adobe Stock to license the image. Please try again when you're connected.
+DL_STOCK_PURCHASE_OFFLINE_ERROR_VIDEO=You're currently offline, so we can't contact Adobe Stock to license the video. Please try again when you're connected.
+DL_STOCK_PURCHASE_OFFLINE_ERROR_TEMPLATE=You're currently offline, so we can't contact Adobe Stock to license the template. Please try again when you're connected.
+DL_STOCK_PURCHASE_OFFLINE_ERROR_THREE_D=You're currently offline, so we can't contact Adobe Stock to license the asset. Please try again when you're connected.
+DL_STOCK_PURCHASE_UNKNOWN_ERROR_CAPSULE=Sorry, something went wrong while trying to license the motion graphics template. Please try again.
+DL_STOCK_PURCHASE_UNKNOWN_ERROR_PHOTO=Sorry, something went wrong while trying to license the image. Please try again.
+DL_STOCK_PURCHASE_UNKNOWN_ERROR_VIDEO=Sorry, something went wrong while trying to license the video. Please try again.
+DL_STOCK_PURCHASE_UNKNOWN_ERROR_TEMPLATE=Sorry, something went wrong while trying to license the template. Please try again.
+DL_STOCK_PURCHASE_UNKNOWN_ERROR_THREE_D=Sorry, something went wrong while trying to license the asset. Please try again.
+DL_STOCK_PURCHASE_SERVICE_UNAVAILABLE_ERROR_CAPSULE=Sorry, we weren't able to contact Adobe Stock to license the motion graphics template. Please try again later.
+DL_STOCK_PURCHASE_SERVICE_UNAVAILABLE_ERROR_PHOTO=Sorry, we weren't able to contact Adobe Stock to license the image. Please try again later.
+DL_STOCK_PURCHASE_SERVICE_UNAVAILABLE_ERROR_VIDEO=Sorry, we weren't able to contact Adobe Stock to license the video. Please try again later.
+DL_STOCK_PURCHASE_SERVICE_UNAVAILABLE_ERROR_TEMPLATE=Sorry, we weren't able to contact Adobe Stock to license the template. Please try again later.
+DL_STOCK_PURCHASE_SERVICE_UNAVAILABLE_ERROR_THREE_D=Sorry, we weren't able to contact Adobe Stock to license the asset. Please try again later.
+DL_STOCK_SAVE_UNKNOWN_ERROR_TITLE=Unknown error
+DL_STOCK_SAVE_UNKNOWN_ERROR=Sorry, something went wrong while trying to save to your library. Please try again.
+DL_STOCK_LICENSE_TO_EDIT_PHOTO=This Adobe Stock image has been licensed by one of your collaborators. You can edit the image if you license it.
+DL_STOCK_LICENSE_TO_USE_TEMPLATE_OWNED=This Adobe Stock template has been licensed by one of your collaborators. You can use the template if you license it.
+DL_STOCK_LICENSE_TO_USE_TEMPLATE=This Adobe Stock template has not been licensed. You can use the template if you license it.
+DL_STOCK_LICENSE_TO_EDIT_THREE_D=This Adobe Stock asset has been licensed by one of your collaborators. You can edit the asset if you license it.
+DL_STOCK_PURCHASE_ERROR_TITLE=Purchasing error
+DL_STOCK_PURCHASE_OFFLINE_ERROR_TITLE=Offline error
+DL_STOCK_PURCHASE_CHOOSE_LIB_TITLE=Choose a library
+DL_STOCK_PURCHASE_CHOOSE_LIB_MSG=Your target library is read-only. Please choose another library:
+DL_STOCK_DRAGDROP_READONLY_LIB_MSG=Assets cannot be added to a read-only library. Please select a different library.
+DL_STOCK_FOOTER_BAR_PREMIUM=PREMIUM
+DL_STOCK_FOOTER_BAR_FREE=FREE
+DL_STOCK_SEARCH_AUDIO_WEB=Search audio content in Adobe Stock
+
+DL_DESIGN_LIBRARY_HAS_LIMIT_TITLE=Library limit reached
+
+DL_STOCK_SEARCH_OPTION_PHOTO=Photos
+DL_STOCK_SEARCH_OPTION_ILLUSTRATION=Illustrations
+DL_STOCK_SEARCH_OPTION_VECTOR=Vectors
+DL_STOCK_SEARCH_OPTION_VIDEO=Videos
+DL_STOCK_SEARCH_OPTION_TEMPLATE=Templates
+DL_STOCK_SEARCH_OPTION_PREMIUM=Premium
+DL_STOCK_SEARCH_OPTION_3D=3D
+DL_STOCK_SEARCH_RESULT_EDITORIAL_LABEL=Editorial
+
+DL_STOCK_LICENSE_TITLE_MSG=License
+DL_STOCK_LICENSE_SAVE_TITLE_MSG=License and save
+
+DL_STOCK_LICENSE_TYPE_FULL=Full
+DL_STOCK_LICENSE_TYPE_SMALL=Small
+
+DL_PLACE=Place
+DL_RELINK=Relink
+DL_RELINK_RESOLVE_MESSAGE=Resolve: {{elementName}}
+DL_RELINK_REPLACE_MESSAGE=Replace: {{elementName}}
+DL_RELINK_RELINK_MESSAGE=Relink: {{elementName}}
+DL_RELINK_PLACE_MESSAGE=Place
+DL_RELINK_RELINK_OVERLAY_MESSAGE=Select a graphic to relink
+DL_RELINK_PLACE_OVERLAY_MESSAGE=Select a graphic to place
+DL_RELINK_NONE_AVAILABLE=There are no linkable graphics in this library. Please select a different library.
+
+DL_TEXT_ATTRIBUTE_UNDERLINE=Underline
+DL_TEXT_ATTRIBUTE_STRIKETHROUGH=Strikethrough
+DL_TEXT_ATTRIBUTE_LEADING=Leading: {{fontLeading}}
+DL_TEXT_ATTRIBUTE_PARAGRAPH_SPACING=Paragraph spacing: {{fontLeading}}
+DL_TEXT_ATTRIBUTE_KERNING=Kerning
+DL_TEXT_ATTRIBUTE_TRACKING=Tracking: {{fontTracking}}
+DL_TEXT_ATTRIBUTE_ALIGNMENT=Alignment
+DL_TEXT_ATTRIBUTE_HYPHENATE=Hyphenate
+DL_TEXT_ATTRIBUTE_TRACKING_XD=Character spacing: {{fontTracking}}
+DL_TEXT_ATTRIBUTE_LEADING_XD=Line spacing: {{fontLeading}}
+DL_TEXT_ATTRIBUTE_FONT_SIZE={{size}}{{type}}
+
+DL_TEXT_LEADING_AUTO=Auto
+DL_TEXT_KERNING_AUTO=Auto
+DL_TEXT_KERNING_OPTICAL=Optical
+DL_TEXT_KERNING_METRICSROMANONLY=Metrics - Roman only
+DL_TEXT_ALIGNMENT_LEFT=Left
+DL_TEXT_ALIGNMENT_CENTER=Center
+DL_TEXT_ALIGNMENT_RIGHT=Right
+DL_TEXT_ALIGNMENT_LEFT_JUSTIFY=Left justify
+DL_TEXT_ALIGNMENT_CENTER_JUSTIFY=Center justify
+DL_TEXT_ALIGNMENT_RIGHT_JUSTIFY=Right justify
+DL_TEXT_ALIGNMENT_FULL_JUSTIFY=Full justify
+
+DL_TYPEKIT_UPGRADE_TOOLTIP=Subscribe to add font
+DL_TYPEKIT_SYNC_TOOLTIP=Add font
+DL_TYPEKIT_UNSYNC_TOOLTIP=Remove font
+DL_TYPEKIT_SYNC_ERROR_TITLE=We can't add fonts right now
+DL_TYPEKIT_SYNC_ERROR_MESSAGE=Please try again later.
+DL_FONT_MISSING_TOOLTIP=Missing font
+DL_FONTS_MISSING_TOOLTIP=Missing fonts
+
+DL_TYPE_NEW_CHAR_STYLE=New character style
+DL_TYPE_NEW_PARA_STYLE=New paragraph style
+
+DL_GRADIENT_TYPE_LINEAR=Linear
+DL_GRADIENT_TYPE_RADIAL=Radial
+DL_GRADIENT_TYPE_NOISE=Noise
+
+DL_AUDIO_ARTIST=Artist
+DL_AUDIO_ALBUM=Album
+DL_AUDIO_TEMPO=Tempo
+
+DL_PHXS_HISTORY_ENTRY_CREATE_TEXT_LAYER=Create layer from character style
+DL_PHXS_HISTORY_ENTRY_SET_TEXT_STYLE=Apply character style
+DL_PHXS_HISTORY_ENTRY_SET_FONT=Apply font
+DL_PHXS_HISTORY_ENTRY_APPLY_PATTERN=New pattern fill layer
+
+DL_FILESIZE_B={{size}} B
+DL_FILESIZE_KB={{size}} KB
+DL_FILESIZE_MB={{size}} MB
+DL_FILESIZE_GB={{size}} GB
+DL_DURATION_S=00:{{seconds}} s
+DL_DURATION_MS={{minutes}}:{{seconds}}
+DL_DURATION_HMS={{hours}}:{{minutes}}:{{seconds}}
+DL_FRAMERATE={{framerate}} fps
+DL_TEMPO={{tempo}} bpm
+DL_DIMENSIONS={{width}} x {{height}} px
+DL_LENGTH={{length}}px
+DL_LINK_DOWNLOAD_TOOLTIP=Downloading...
+DL_LINK_DOWNLOAD_FAIL_TOOLTIP=Download failed. Click to try again.
+DL_LINK_DOWNLOAD_PROGRESS_TOOLTIP=Downloading... {{percent}}%
+
+DL_UNIT_PT=pt
+
+DL_RECOVERED_LIBRARY_NAME={{name}} (Recovered)
+DL_WARNING_RECOVERED_FROM_DELETED=The original library no longer exists. The updated item has been saved to "{{recoveryLibraryName}}".
+DL_WARNING_RECOVERED_FROM_READONLY="{{originalLibraryName}}" is no longer editable. The updated item has been saved to "{{recoveryLibraryName}}".
+
+DL_OVERFLOW_LIBRARY_NAME={{name}} (Overflow)
+
+DL_UNDO_DELETE=Undo
+DL_UNDO_DELETE_ITEM=Deleted "{{name}}".
+DL_UNDO_DELETE_ITEMS=Deleted {{num}} library items.
+DL_UNDO_DELETE_DESCRIPTION=Deleted description.
+
+DL_LIBRARY_DUPLICATED_SUCCESS_TOAST=Library duplicated
+DL_LIBRARY_DUPLICATED_ERROR_TOAST=Can't duplicate library
+DL_LIBRARY_LINK_COPIED_TOAST=Copied to clipboard
+DL_LIBRARY_LINK_COPY_FAILED_TOAST=Couldn't copy to clipboard. Opening link...
+DL_DUPLICATE_SUCCESS_TOAST=Item duplicated.
+DL_DUPLICATE_SUCCESS_TOAST_PLURAL={{num}} items duplicated.
+DL_RENAME_SUCCESS_TOAST=Item renamed.
+DL_RENAME_SUCCESS_TOAST_LIBRARY=Library renamed.
+DL_DELETE_SUCCESS_TOAST=Item deleted.
+DL_DELETE_SUCCESS_TOAST_PLURAL={{num}} items deleted.
+DL_MOVE_SUCCESS_TOAST=Item moved to {{libraryName}}.
+DL_MOVE_SUCCESS_TOAST_PLURAL={{num}} items moved to {{libraryName}}.
+DL_MOVE_COPY_FAILED_TOAST=Failed to copy or move element because of insufficient space.
+
+DL_UNDO_DELETED_GROUP_SINGULAR=Deleted group.
+DL_UNDO_DELETED_GROUP_PLURAL=Deleted {{num}} groups.
+DL_UNDO_UNGROUPED_GROUP_SINGULAR=Ungrouped group.
+DL_UNDO_UNGROUPED_GROUP_PLURAL=Ungrouped {{num}} groups.
+
+DL_REPLACE_LOGO=Replace logo
+DL_REPLACE_LOGO_SUCCESS=Logo replaced.
+DL_REPLACE_LOGO_ERROR=Unable to replace logo, please try again.
+
+DL_REPLACE_GRAPHIC=Replace graphic
+DL_REPLACE_GRAPHIC_SUCCESS=Graphic replaced.
+DL_REPLACE_GRAPHIC_ERROR=Unable to replace graphic, please try again.
+
+DL_ELEMENT_ADDED_SUCCESFUL=Added 1 element to {{libraryName}}.
+DL_ELEMENTS_ADDED_SUCCESFUL=Added {{numElements}} elements to {{libraryName}}.
+
+DL_MOVING_ITEMS=Moving {{numberElements}} items to {{libraryName}}.
+DL_COPYING_ITEMS=Copying {{numberElements}} items to {{libraryName}}.
+DL_DUPLICATING_ITEMS=Duplicating {{numberElements}} items.
+
+DL_WHATS_NEW_DATE=February 2026
+DL_WHATS_NEW_VERSION=Version {{num}}
+DL_WHATS_NEW_TITLE=What's new in Creative Cloud libraries:
+DL_WHATS_NEW_GENERAL=General bug fixes and performance updates.
+DL_WHATS_NEW_FONTS=Introducing Libraries in Adobe Fonts – You can now create and publicly share collection of font elements on fonts.adobe.com and use them across apps like Photoshop, Illustrator, and InDesign.
+DL_WHATS_NEW_BACKGROUND_SYNC=Performance improvements - Libraries will no longer continuously sync in the background - only while there is an active session in an application that is using Libraries.
+DL_WHATS_NEW_TRANSPARENCY=Toggle on the transparency grid from the menu to improve thumbnail readability.
+DL_WHATS_NEW_COLLAPSE_GROUPS=Quickly collapse groups by holding the option/alt key while toggling a group closed.
+DL_WHATS_NEW_XD_IMPROVEMENTS=Improved tooltips in XD, and enhancements for working with document assets.
+DL_WHATS_NEW_ONE_UP=Introducing the new expanded asset view. Dive into a full panel experience of any asset including all the details and metadata.
+DL_WHATS_NEW_RESPONSIVE_LAYOUT=Enjoy the new responsive behavior when resizing the panel.
+DL_WHATS_NEW_CCD_DRAG_OUT=Drag graphics, images, templates, videos, and audio files out of the Creative Cloud Desktop application to easily export them into other applications or your file system.
+DL_WHATS_NEW_QUOTA=Libraries will now count against your Creative Cloud Storage. You can manage your storage in the Your Work section of the Creative Cloud desktop application or assets.adobe.com on the web.
+DL_WHATS_NEW_PUBLISH=For published libraries linked to documents you now have the option to republish to a different library in the Library Manager in XD.
+DL_WHATS_NEW_NESTED_GROUPS=Introducing groups within groups. Organize your elements into subgroups as many levels deep as you need for your creative projects. Collaborators will see your groups when selecting group by "Custom group".
+DL_WHATS_NEW_QUOTA_2=Libraries will now count against your Creative Cloud Storage. You can manage your storage in the Files section of the Creative Cloud desktop application or assets.adobe.com on the web.
+DL_WHATS_NEW_PATH_VIEW=Libraries now offers subgroups in a condensed path view. Quickly create subgroups using the "/" character in a group name, and toggle back and forth between tree view and path view to see the expanded or condensed group structure.
+DL_WHATS_NEW_RELINK=You can now repair and relink missing library elements in your document assets in XD. Right click on an asset to manage the broken link.
+DL_WHATS_NEW_COLORS=Libraries now support Color Themes with up to 20 swatches. Colors Themes can be created at color.adobe.com.
+DL_WHATS_NEW_LIBRARY_DELETE=Libraries that are deleted can now be recovered after up to 30 days in assets.adobe.com.
+DL_WHATS_NEW_GRADIENTS_PATTERNS=Add your favorite gradient and pattern elements from Adobe Illustrator into Libraries. Enjoy creating and using gradients and patterns from Ai within the app and across other Creative Cloud products.
+DL_WHATS_NEW_PROJECTS=The destination for 'Libraries in business storage' will now refer to and surface as 'Projects'.
+
+DL_LIBRARY_LIST_ONBOARDING_HEADER=Work smarter with libraries
+DL_LIBRARY_LIST_ONBOARDING_BODY=Libraries let you share, reuse, and manage what you use most.
+DL_LIBRARY_LIST_ONBOARDING_LINK=Learn more
+
+DL_LOADING_LIBRARIES=Loading libraries...
+DL_LOADING_MORE_LIBRARIES=Loading more libraries
+DL_REPORT_ABUSE=Report abuse
+
+DL_LIBRARY_PERSONAL_COPY_TOAST=Personal copy saved
+DL_LIBRARY_COPYING_TOAST=Copying library...
+DL_PUBLIC_LIBRARY_COPY_TOAST=Library copied
+DL_LIBRARY_SAVE_PERSONAL_COPY=Save personal copy
+DL_OPEN_LIBRARY=Open Library
+DL_OPEN_LIBRARY_COPY=Open Copy
+
+DL_LICENSED_ADOBE_STOCK=Licensed Adobe Stock
+DL_UNLICENSED_ADOBE_STOCK=Unlicensed Adobe Stock
+
+DL_LIBRARY_NAME_INVALID=Invalid characters
+DL_LIBRARY_NAME_REMAINING_CHARACTERS={{charCount}} characters left
+DL_LIBRARY_NAME_PERIOD_END=Names can't end with a period
+DL_LIBRARY_NAME_DUPLICATE=A library with this name already exists
+DL_LIBRARY_RENAME_DUPLICATE=A library with this name already exists in this location. Try a different name.
+
+DL_GROUP_NAME_INVALID_SLASHES=Slashes are used to organize groups in path view.
+DL_GROUP_NAME_INVALID_SLASHES_ACCC=Slashes are used to organize groups in the path view which is available in the libraries panel.
+DL_GROUP_NAME_DUPLICATE=A group with the same name already exists at this level.
+
+DL_SELECT_LIBRARY_LIST_HEADER_RECENT=Recent
+DL_SELECT_LIBRARY_LIST_HEADER_ALL=All libraries
+
+DL_RECENT_SEARCH_OVERLAY_LIBRARY_HEADER=Recent
+DL_RECENT_SEARCH_OVERLAY_STOCK_HEADER=Adobe Stock
+DL_RECENT_SEARCH_OVERLAY_CLEAR_ALL=Clear all
+DL_RECENT_SEARCH_OVERLAY_LIBRARY_HEADER_CCX=Previous searches
+
+DL_SORT_BY_TITLE=Sort by
+DL_SEARCH_SORT_BY_LABEL_NAME=Sort by name
+DL_SEARCH_SORT_BY_LABEL_MODIFIED=Sort by date modified
+DL_SEARCH_SORT_BY_LABEL_RELEVANCE=Sort by relevance
+DL_SEARCH_SORT_BY_LABEL_CREATION=Sort by most recent
+DL_SEARCH_SORT_BY_LABEL_POPULARITY=Sort by popularity
+DL_SEARCH_SORT_BY_LABEL_NB_DOWNLOADS=Sort by downloads
+
+DL_GROUP_BY_TITLE=Group by
+
+DL_SEARCH_SORT_BY_OPTION_NAME=Name
+DL_SEARCH_SORT_BY_OPTION_MODIFIED=Date modified
+DL_SEARCH_SORT_BY_OPTION_CREATED=Date created
+DL_SEARCH_SORT_BY_OPTION_RELEVANCE=Relevance
+DL_SEARCH_SORT_BY_OPTION_CREATION=Most recent
+DL_SEARCH_SORT_BY_OPTION_POPULARITY=Popularity
+DL_SEARCH_SORT_BY_OPTION_NB_DOWNLOADS=Downloads
+DL_SEARCH_SORT_BY_OPTION_ORDER=Custom order
+
+DL_CREATED_MODIFIED_DATE_BY_USER={{date}} by {{user}}
+
+DL_BROWSE_LIBRARIES=Browse libraries
+DL_BROWSE_BRANDS=Browse brands
+DL_BROWSE_LIBRARY_MANAGER=Browse libraries
+DL_MORE_LIBRARY_BROWSE=Browse shared libraries
+DL_MORE_LIBRARY_BROWSE_ALL=Browse all
+DL_MORE_LIBRARY_BROWSE_ALL_OFFLINE=Browsing all libraries is not available offline
+DL_NEW_LIBRARY=New Library
+DL_MORE_LIBRARY_BROWSE_PUBLIC=Go to Stock & Marketplace
+DL_TEAM_LIBRARY_BROWSE_AUTH_ERROR=Unable to browse, please try again on {{assetsSite}}
+DL_TEAM_LIBRARY_PROMOTE_TITLE=Move to business storage
+DL_TEAM_LIBRARY_PROMOTE_TITLE_PROJECTS=Move
+DL_TEAM_BRAND_COPY_TITLE=Brand will be copied to project
+DL_TEAM_LIBRARY_COPY_TITLE=Library will be copied to project
+DL_TEAM_BRAND_COPY_BODY=We are <b>duplicating your brand</b> into the shared project. Move operation across users' storage will be supported soon!
+DL_TEAM_LIBRARY_COPY_BODY=We are <b>duplicating your library</b> into the shared project. Move operation across users' storage will be supported soon!
+
+DL_TEAM_LIBRARY_SAVE_TO=Save to
+DL_TEAM_LIBRARY_HELP=Libraries in personal storage can be shared with individuals. Business storage shares them with all team members automatically.
+DL_PROJECT_LIBRARY_HELP=Invite individuals directly to a library or save it to a project to easily share it with several others.
+DL_PROJECT_BRAND_HELP=Invite individuals directly to a brand or save it to a project to easily share it with several others.
+DL_TEAM_LIBRARY_HELP_PROJECTS=Libraries in personal storage are dependent on individuals. Libraries in business storage share ownership with other team members.
+DL_TEAM_LIBRARY_EMPTY_VIEW_HEADER=No libraries found
+DL_LIBRARY_AND_BRAND_EMPTY_VIEW_HEADER=Sorry, we didn't find anything!
+DL_BRANDS_EMPTY_SEARCH_HEADER=No matching results
+DL_LIBRARY_AND_BRAND_EMPTY_VIEW_SUBTITLE=We could not find any libraries or brands based on your current filter.
+DL_BRANDS_EMPTY_SEARCH_SUBTITLE=We couldn't find what you are searching for. Change your filters, check your spelling or change your keywords, then try again.
+DL_TEAM_LIBRARY_EMPTY_VIEW_SUBTITLE=We could not find any libraries based on your current filter.
+DL_TEAM_LIBRARY_EMPTY_VIEW_CLEAR_FILTER=Clear filter
+DL_TEAM_LIBRARY_EMPTY_VIEW_CLEAR_SEARCH=Clear search
+DL_MISSING_LIBRARY_REQUEST_HEADER=Request edit access
+DL_MISSING_LIBRARY_REQUEST_SUBTITLE=This brand or library is not available. If you believe you should have access, ask the owner to share it with you.
+DL_ERROR_NOT_FOUND_HEADER=Error 404: Asset not found
+DL_ERROR_NOT_FOUND_SUBTITLE=This asset isn’t available. Try checking the URL or visit a different page
+DL_GO_BACK=Go back
+DL_PERSONAL_STORAGE=Personal Storage
+DL_PERMISSION_TITLE=Anyone with access to the folder
+DL_PROJECT_PERMISSION_TITLE=Project member permissions
+DL_PROJECT_PERMISSION_SWITCH_LABEL=Restrict from editing
+DL_PROJECT_PERMISSION_SWITCH_INFO_BRAND=Allows project members to view and use the brand without editing elements. Toggling off will enable project permissions.
+DL_PROJECT_PERMISSION_SWITCH_INFO_LIBRARY=Allows project members to view and use the library without editing elements. Toggling off will enable project permissions.
+DL_PERMISSION_TITLE_PROJECTS=Anyone with access to the project
+DL_CAN_VIEW_AND_USE=Can view and use
+DL_CAN_EDIT=Can edit
+
+DL_TEAM_LIBRARY_ONBOARDING_LINK=Got it
+DL_PROMOTE_TEAM_WARN=Re-invite current collaborators to grant them access.
+DL_PROMOTE_TEAM_MESSAGE=By default, only members with access to the folder will have access to this library once it is moved to business storage.
+DL_PROMOTE_TEAM_MESSAGE_PROJECTS=By default, only members with access to the project will have access to this library once it is moved.
+DL_COPY_COLLABORATORS=Copy list of collaborators
+DL_TEAM_LIBRARY_COPY_FAILED=Unable to copy library.
+DL_TEAM_LIBRARY_MOVE_FAILED=Unable to move library
+DL_TEAM_LIBRARY_MOVING_TOAST=Moving to business storage
+DL_TEAM_LIBRARY_MOVING_TOAST_PROJECTS=Moving "{{libraryName}}" to "{{projectName}}"
+DL_TEAM_LIBRARY_SAVED_TOAST=Library moved to business storage
+DL_TEAM_LIBRARY_SAVED_TOAST_PROJECTS="{{libraryName}}" moved to "{{projectName}}"
+DL_CANNOT_UNDO_WARNING=Warning: You cannot undo this action.
+DL_TEAM_LIBRARY_COPYING_TOAST_PROJECTS=Copying "{{libraryName}}" to "{{projectName}}"
+DL_TEAM_LIBRARY_COPIED_TOAST_PROJECTS="{{libraryName}}" has successfully been copied to "{{projectName}}"
+
+DL_LEAVE_TEAM_LIBRARY_ACCESS=All library members will still have access.
+DL_LEAVE_TEAM_BRAND_ACCESS=All brand members will still have access.
+DL_LEAVE_TEAM_REJOIN=You can always add this library again from the library browser.
+DL_LEAVE_TEAM_REJOIN_BRAND=You can always add this brand again from the library browser.
+
+DL_CREATE_TEAM_LIBRARY=Create a library
+DL_BROWSE_TEAM_LIBRARY=Browse libraries
+DL_TEAM_LIBRARIES_EMPTY_VIEW_HEADING=What you need, when you need it
+DL_TEAM_LIBRARIES_EMPTY_VIEW_MESSAGE=Make sure everyone is using the most up-to-date colors, logos, and other creative elements. <a>Learn more</a>
+
+DL_DELETE_TEAM_LIBRARY_ACCESS=You and all members will lose access.
+DL_DELETE_LIBRARY_LINK=Elements placed in documents will remain but will no longer be linked.
+
+DL_LIBRARY_LIST_FILTER_BY_TYPE=Filter by type
+DL_LIBRARY_LIST_FILTER_BY_LIBRARY=Filter by library
+DL_LIBRARY_LIST_FILTER_BY_SOURCE=Filter by source
+DL_LIBRARY_LIST_FILTER_UNLINK_SOURCE_TOOLTIP=Unlink document
+DL_LIBRARY_LIST_FILTER_BY=Filter by
+DL_LIBRARY_LIST_FILTER_LIBS=Filter libraries
+DL_LIBRARY_LIST_FILTER_BRANDS=Filter brands
+DL_LIBRARY_LIST_FILTER_ALL=All
+DL_LIBRARY_LIST_FILTER_PERSONAL=Owned
+DL_LIBRARY_LIST_FILTER_YOURS=Yours
+DL_LIBRARY_LIST_FILTER_SHARED=Shared with you
+DL_LIBRARY_LIST_FILTER_TEAM=Business storage
+DL_LIBRARY_LIST_FILTER_PUBLIC=Public
+DL_LIBRARY_LIST_FILTER_CREATED=Created by you
+DL_LIBRARY_LIST_FILTER_PUBLISHED=Published
+DL_LIBRARY_LIST_FILTER_DRAFTS=Drafts
+DL_LIBRARY_LIST_EMPTY_FILTER_VIEW_TITLE=No libraries found
+DL_LIBRARY_LIST_EMPTY_FILTER_VIEW_BODY=We could not find any libraries based on your current filter.
+DL_LIBRARY_LIST_EMPTY_FILTER_VIEW_CTA=Clear filter
+
+DL_LIBRARY_TOGGLE_VIEW=Toggle view
+
+DL_LIBRARY_CONTENTS_TAB_ELEMENTS=Elements
+DL_LIBRARY_CONTENTS_TAB_PREVIEW=Preview
+
+DL_ARIA_LIBRARY_LIST_SORT_OPTIONS=Library options
+DL_ARIA_LIBRARY_LIST_TITLE=Libraries list
+DL_ARIA_FILTER_BUTTON_ALL=Filter libraries
+DL_ARIA_FILTER_OPTIONS=Filter options
+DL_ARIA_FILTER_BUTTON_SELECTED=Filtering by {{currentSelection}}
+
+DL_NAVIGATION_WARNING_SYNCING_IN_PROGRESS=We are processing your updates. Leaving now may result in unsaved work.
+
+DL_PUBLISH_LIBRARY_TITLE=Publish library
+DL_PUBLISH_LIBRARY_CONFIRM=Publish
+DL_PUBLISH_LIBRARY_FOLDER_PERSONAL=Personal
+DL_LIBRARY_MANAGER_SEARCH_INPUT_PLACEHOLDER_AW=Enter keyword
+DL_LIBRARY_MANAGER_TITLE=Libraries
+DL_LIBRARY_MANAGER_SEARCH_INPUT_PLACEHOLDER=Search libraries
+DL_LIBRARY_MANAGER_SEARCH_EMPTY_HEADING=No results found
+DL_LIBRARY_MANAGER_SEARCH_EMPTY_DESCRIPTION=We couldn't find any results for <b>{{searchText}}</b>.<br/> Check your spelling or try broadening your search.
+DL_LIBRARY_MANAGER_ACTION_HIDE_ALL=Switch all off
+DL_LIBRARY_MANAGER_ACTION_SHOW_ALL=Switch all on
+DL_LIBRARY_MANAGER_ACTION_CREATE_LIBRARY=Create new
+DL_LIBRARY_MANAGER_BROWSE_ORG=Browse
+DL_LIBRARY_MANAGER_MANAGE=Manage
+DL_LIBRARY_MANAGER_IMPORT_SKETCH=Convert Sketch library
+DL_LIBRARY_MANAGER_SECTION_CURRENT_FILE=Current file
+DL_LIBRARY_MANAGER_SECTION_FILE_LIBRARIES=Used in this file
+DL_LIBRARY_MANAGER_SECTION_ALL_LIBRARIES=All libraries
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_PUBLISH=Publish
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_UNPUBLISH=Unpublish
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_UPDATE=Update
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_SHARE=Share
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_UP_TO_DATE=Up to date
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_PUBLISHING=Publishing...
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_PUBLISHING_PROGRESS=Uploading ({{percent}}%)
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_SAVING=Saving...
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_EMPTY=You don’t have any document assets. Add assets to publish library.
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_UPGRADE=Upgrade
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_UPGRADE_TITLE=Get unlimited linked libraries
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_UPGRADE_BODY=Stay in sync and on-brand with your team. Upgrade to publish linked libraries and use other premium features.
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_UPGRADE_TOAST=Stay in sync and on-brand with your team. Upgrade to publish linked libraries and use other premium features.
+DL_UPGRADE_TOAST_LABEL=Upgrade
+DL_UPGRADE_TOAST_MESSAGE=Upgrade to continue publishing to your linked library.
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_UPGRADE_TOOLTIP=Upgrade to publish linked libraries
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_READ_ONLY=You don't have edit access to the library published from this document. Ask the owner to give you edit access.
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_OFFLINE=Unavailable while offline. Check your connection and try again.
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_CLOUD_DOC_NOT_SYNCED=This cloud document must be synced before you can publish a linked library.
+DL_LIBRARY_MANAGER_DOCUMENT_LIBRARY_COEDITOR_PUBLISHING=Another user is currently publishing this document's linked library.
+
+DL_SAVE_CLOUD_DOC_HEADING_SPRK=Save as an XD cloud document
+DL_SAVE_CLOUD_DOC_MESSAGE=To publish this as a Creative Cloud library, first save it as a cloud document. Then you can also access it on multiple devices.
+DL_SAVE_CLOUD_DOC_CONFIRM=Continue
+
+DL_NEW=New
+DL_CREATE_PUBLISH_CREATE_TITLE=Empty library
+DL_CREATE_PUBLISH_CREATE_BULLET_1=Add assets from any app.
+DL_CREATE_PUBLISH_CREATE_BULLET_2=Assets are not linked back to their original source document.
+DL_CREATE_PUBLISH_CREATE_MESSAGE=Components can only be published to linked libraries.
+DL_CREATE_PUBLISH_CREATE_ACTION=Create empty library
+DL_CREATE_PUBLISH_PUBLISH_TITLE=Linked library
+DL_CREATE_PUBLISH_PUBLISH_BULLET_1=Manage and share assets from a single XD document.
+DL_CREATE_PUBLISH_PUBLISH_BULLET_2=Assets are linked from their original source document.
+DL_CREATE_PUBLISH_PUBLISH_MESSAGE=Recommended for design systems.
+DL_CREATE_PUBLISH_PUBLISH_ACTION=Publish linked library
+
+DL_RELINK_DOCUMENT_LIBRARY_HEADING=Publish document assets to existing library
+DL_RELINK_DOCUMENT_LIBRARY_READ_ONLY_HEADING=You don't have permission to edit this library
+DL_RELINK_DOCUMENT_LIBRARY_CONTINUE=Continue
+DL_RELINK_DOCUMENT_LIBRARY_CREATE_NEW=Create new
+DL_RELINK_DOCUMENT_LIBRARY_INFO=There's already a library associated with another version of this file. You can publish to the library with elements from the current file, or create a new library.
+DL_RELINK_DOCUMENT_LIBRARY_WARNING=The document assets from the current file will replace the existing library elements. You'll only be able to edit the library from this version of the file.
+DL_RELINK_DOCUMENT_LIBRARY_READ_ONLY_INFO=There's already a library associated with another version of this file. Ask for edit access to the library, or create a new one.
+DL_RELINK_DOCUMENT_LIBRARY_PUBLISH=Publish
+DL_RELINK_DOCUMENT_LIBRARY_MISSING_LIBRARY_HEADING=You don't have access to the existing library
+DL_RELINK_DOCUMENT_LIBRARY_CREATE_NEW_MESSAGE=You don't have access to the library published from this file, or it may have been deleted. If you create a new library:
+DL_RELINK_DOCUMENT_LIBRARY_CREATE_NEW_OR_ORPHAN_MESSAGE=You don't have access to the library published from this file, or it may have been deleted. You can relink to a previously published library. If you create a new library:
+DL_RELINK_DOCUMENT_LIBRARY_MESSAGE_BROKEN_LINKS=Links may be broken.
+DL_RELINK_DOCUMENT_LIBRARY_MESSAGE_COLLABORATORS=Collaborators won't be able to update the original library.
+
+DL_PUBLISH_QUOTA_ERROR_HEADING=Can't publish library
+DL_PUBLISH_QUOTA_ERROR_BODY=Your Creative Cloud storage is full, so the library couldn't publish. Upgrade your storage or try removing files to <a>free up space</a>.
+DL_PUBLISH_QUOTA_ERROR_UPGRADE=Upgrade
+DL_PUBLISH_GENERAL_ERROR_TOAST=There was a problem publishing your library.
+
+DL_PUBLISH_UPDATES_QUOTA_ERROR_MESSAGE=<a>Storage full</a>
+DL_PUBLISH_UPDATES_ERROR_MESSAGE=Upload error
+DL_PUBLISH_UPDATES_QUOTA_ERROR_HEADING=Can't publish updates
+DL_PUBLISH_UPDATES_QUOTA_ERROR_BODY=Your Creative Cloud storage is full, so library updates can't sync. Updates will sync again automatically once space is available.
+DL_PUBLISH_UPDATES_SHARED_QUOTA_ERROR_BODY=The owner of this library has used all of their Creative Cloud storage, so library updates can't sync. Updates will sync again automatically once the owner frees up space.
+DL_PUBLISH_UPDATES_GENERAL_ERROR_TOAST=Could not sync updates.
+DL_PUBLISH_UPDATES_GENERAL_SYNC_ERROR=There was a problem syncing. Updates will sync again automatically once connection is restored.
+DL_PUBLISH_UPDATES_OFFLINE_ERROR_MESSAGE=Offline
+DL_PUBLISH_UPDATES_OFFLINE_ERROR_BODY=We've saved your changes locally. Updates will sync to the cloud when you're connected again.
+
+DIALOG_ORPHAN_SELECT_TITLE=Select library to relink
+DIALOG_ORPHAN_SELECT_RELINK=Relink
+DIALOG_ORPHAN_RELINK_TITLE=Link library to current document
+DIALOG_ORPHAN_RELINK_MESSAGE=The contents of this library will be overwritten with assets from the current document. Do you want to continue?
+DIALOG_ORPHAN_RELINK_CONTINUE=Continue
+
+DIALOG_ORPHAN_ASSET_RELINK_TITLE_LOADING=Searching for elements to relink
+DIALOG_ORPHAN_ASSET_RELINK_MESSAGE_LOADING=Looking through Your libraries to relink <b>{{name}}</b>...
+DIALOG_ORPHAN_ASSET_RELINK_MESSAGE_MATCH=<b>{{name}}</b> is found in the following libraries. Select a library to relink the element:
+DIALOG_ORPHAN_ASSET_RELINK_MESSAGE_NO_MATCH=<b>{{name}}</b> was not found in any of Your libraries. To resolve, make the element local to this file.
+DIALOG_ORPHAN_ASSET_RELINK_CONFIRM=Relink to library
+DIALOG_ORPHAN_ASSET_RELINK_ADDITIONAL=Relink additional broken links in my current file to the same library.
+DIALOG_ORPHAN_ASSET_RELINK_ADDITIONAL_SINGULAR=Relink 1 additional broken link in my current file to the same library.
+DIALOG_ORPHAN_ASSET_RELINK_ADDITIONAL_NUM=Relink {{count}} additional broken links in my current file to the same library.
+DIALOG_ORPHAN_ASSET_RELINK_BROKEN_LINKS_TOOLTIP=Number of assets with broken links in your file
+
+DIALOG_RESOLVE_BROKEN_LINK_TITLE=Resolve broken link
+DIALOG_RESOLVE_BROKEN_LINKS_TITLE=Resolve broken links
+DIALOG_RESOLVE_BROKEN_LINK_SOURCE_LIB=Source library:
+DIALOG_RESOLVE_BROKEN_LINK_SOURCE_FILE=Source file:
+DIALOG_RESOLVE_BROKEN_LINK_MESSAGE=You do not have access to the link, or it might have been deleted. Try asking collaborators to add you to missing libraries.
+DIALOG_RESOLVE_BROKEN_LINK_MESSAGE_RELINK_FILE=Linking from cloud documents is no longer supported. To relink, publish the source file as a linked library. If a linked library has already been published, make sure you have access.
+DIALOG_RESOLVE_BROKEN_LINK_CTA_RELINK_FILE=Open file
+DIALOG_RESOLVE_BROKEN_LINK_MESSAGE_ADD_LIB=To resolve broken link, try adding its source library to Your libraries.
+DIALOG_RESOLVE_BROKEN_CTA_ADD_LIBRARY=Add library
+DIALOG_RESOLVE_BROKEN_LINK_PENDING_MESSAGE=You do not have access to the link, or it might have been deleted. To resolve the broken link, try these steps:
+DIALOG_RESOLVE_BROKEN_LINK_STEP_ACCEPT_INVITATIONS=Accept pending library invitations
+DIALOG_RESOLVE_BROKEN_LINK_STEP_REQUEST_INVITATIONS=Ask collaborators to invite you to missing libraries
+DIALOG_RESOLVE_BROKEN_LINK_STEP_FOLLOW_LIBRARIES=Add the libraries you can already access to Your libraries
+DIALOG_RESOLVE_BROKEN_LINK_STEP_MAKE_LOCAL=Make asset local to this file to edit
+DIALOG_RESOLVE_BROKEN_LINK_STEP_OPEN_SOURCE=Open source files and publish linked libraries
+DIALOG_RESOLVE_BROKEN_LINK_MESSAGE_MULTIPLE_LINKS=This document includes linked elements that are broken or missing. To resolve broken links, try these steps:
+DIALOG_RESOLVE_BROKEN_LINK_ADD_LIBRARIES=Add libraries ({{count}})
+
+DL_RESOLVE_BROKEN_LINK_TOAST_SUCCESS=Resolved link.
+DL_RESOLVE_BROKEN_LINK_TOAST_SUCCESS_ADDITIONAL_NUM=Resolved link and {{count}} additional links.
+DL_RESOLVE_BROKEN_LINK_TOAST_SUCCESS_ADDITIONAL_SINGULAR=Resolved link and 1 additional link.
+DL_RESOLVE_BROKEN_LINK_TOAST_SUCCESS_NUM=Resolved {{count}} links.
+DL_RESOLVE_BROKEN_LINK_TOAST_ERROR=Link could not be resolved. Ask your collaborators for access.
+DL_RESOLVE_BROKEN_LINK_TOAST_ERROR_NUM={{count}} links could not be resolved. Ask your collaborators for access.
+DL_RESOLVE_BROKEN_LINK_TOAST_ERROR_MISSING_ELEMENT_NO_MATCH=Link to asset does not exist in library. Right-click link to make it local.
+DL_RESOLVE_BROKEN_LINK_TOAST_ERROR_MISSING_ELEMENT_MATCH=Link to asset does not exist in library. Right-click and relink to another library.
+
+DIALOG_CANT_RESOLVE_BROKEN_LINK_TITLE=Can't resolve broken link
+DIALOG_CANT_RESOLVE_BROKEN_LINK_MESSAGE=This link is missing. You may not have access to the link, or it might have been deleted. To resolve:
+ACCEPT_INVITES=Accept invites
+DIALOG_RESOLVE_BROKEN_LINK_NUM_INVITES={{num}} invites
+DIALOG_RESOLVE_BROKEN_LINK_INVITE=1 invite
+
+DOCUMENT_ASSETS=Document Assets
+DOCUMENT_ASSETS_FILTER=Local assets
+ASSETS_PANEL_COLOR_TITLE=Colors
+ASSETS_PANEL_CHARACTER_STYLE_TITLE=Character Styles
+ASSETS_PANEL_COMPONENT_TITLE=Components
+ASSETS_PANEL_VIDEO_TITLE=Videos
+ASSETS_PANEL_AUDIO_TITLE=Audio
+ASSETS_PANEL_IMAGE_TITLE=Graphics
+ASSETS_PANEL_MISSING_FONT_TITLE=Missing Fonts ({{count}})
+ASSET_LINK_UP_TO_DATE=Up-to-date
+ASSET_LINK_UPDATE=Click to update
+ASSET_LINK_RESOLVE=Click to resolve
+ASSET_LINK_RESTRICTED=Access required
+ASSET_LINK_MISSING_ELEMENT=Element is missing
+ASSET_LINK_MISSING_ASSET=Link unavailable
+ASSET_LINK_MISSING_LIBRARY=Library is missing
+ASSET_LINK_MISSING_LIBRARY_RESOLVE=Click to resolve
+ASSET_LINK_MISSING_SOURCE_DOCUMENT=Source document is missing
+ASSET_LINK_MISSING_PENDING_FOLLOW=Library has not been added
+ASSET_LINK_MISSING_ELEMENT_HAS_MATCH=Link to original element is missing.<br/> Click to relink a library.
+ASSET_LINK_RELINK=Click to relink
+ASSET_SOURCE_LIBRARY=Library: {{name}}
+ASSET_SOURCE_DOCUMENT=Document: {{name}}
+UPDATE_ASSETS=Update
+UPDATE_ALL_NUM=Update All ({{number}})
+UPDATE_ALL_MAX=Update All ({{number}}+)
+PENDING_UPDATE_TOAST_MESSAGE=Update your published library.
+PENDING_UPDATE_TOAST_ACTION_LABEL=Update now
+ASSET_SOURCE_DOCUMENT_DEPRECATED=No library is published
+DL_COPY_EMPTY_GROUP=Copy items here or create a subgroup
+DL_MOVE_EMPTY_GROUP=Move items here or create a subgroup
+DL_COPY_EMPTY_GROUP_DISABLED=Copy items here
+DL_MOVE_EMPTY_GROUP_DISABLED=Move items here
+DL_MERGE_EMPTY_GROUP=Merge with this group or create a subgroup
+DL_MERGE_HELP_TOOLTIP=A group with the same name already exists at this level. The groups will be merged.
+
+DL_TEAM_LIBRARIES_CREATE_DIALOG_TITLE=Sharing and updating assets?<br/> Let libraries do it for you
+DL_TEAM_LIBRARIES_CREATE_DIALOG_DESCRIPTION=Stay consistent across files and make sure everyone is working with the latest elements. Create a library in your business storage to automatically share it with all members. <a href="#learnMore">Learn More</a>
+DL_TEAM_LIBRARIES_CREATE_DIALOG_DESCRIPTION_PROJECTS=Stay consistent across files and make sure everyone is working with the latest elements. Create a library in your business storage to share ownership with other team members. <a href="#learnMore">Learn More</a>
+
+DL_COACHMARK_FIRST_HEADING=Manage in-app libraries
+DL_COACHMARK_SECOND_HEADING=Browse libraries that are shared with you
+DL_COACHMARK_THIRD_HEADING=Find even more (free!) libraries
+
+DL_COACHMARK_FIRST_MESSAGE=These libraries are available here and in your Adobe apps.
+DL_COACHMARK_SECOND_MESSAGE=If other people or teams share libraries with you, add them to your apps here.
+DL_COACHMARK_THIRD_MESSAGE=Add readymade libraries curated by Adobe from Stock & Marketplace.
+
+DL_OPEN_IN_APP_THREE_D_LIMIT_MESSAGE=Select {{maxItemLimit}} items or fewer.
+DL_THREE_D_APP_LAUNCH_FAILURE_TITLE=Couldn't launch {{name}}
+DL_THREE_D_APP_LAUNCH_FAILURE_DESCRIPTION=Your asset will not be sent. Please try again.
+DL_OPEN_IN_APP_MENU_ITEM=Open in app
+DL_OPEN_IN_APP_GET_APP=Get {{name}}
+
+UPDATE_COUNT={{number}}
+UPDATE_COUNT_MAX={{number}}+
+
+DL_GO_MARKETPLACE=Browse the Marketplace
+DL_GO_MARKETPLACE_AW=Go to Marketplace
+
+DL_ADD_TO_LIBRARY=Add to library
+DL_ADD_TO_YOUR_LIBRARIES=Add to Your libraries
+DL_ADD_TO_YOUR_LIBRARIES_SUCCESS=Successfully followed {{number}} library
+DL_ADD_TO_YOUR_LIBRARIES_ERROR=Could not add {{number}} library
+DL_REMOVE_SUCCESS=Successfully removed {{number}} library
+DL_REMOVE_ERROR=Could not remove {{number}} library
+DL_ADD=Add
+DL_ADD_IMAGE=Add graphic
+DL_ADD_LOGO=Add logo
+DL_ADD_COLOR=Add color
+DL_ADD_FONT=Add font
+DL_ADD_TEMPLATE=Add template
+DL_ADD_LOGOS=Add logos
+
+DL_GET_INFO=Get info
+
+DL_CREATE_ELEMENT_FROM_MESSAGE_SUCCESS=Saved to <a>{{libraryName}}</a>
+
+DELETE_BRAND=Delete brand
+BRAND_DELETED_SHORT=Brand was deleted
+DELETE_BRAND_YOURS="{{name}}" may be shared with others in your organization.
+DELETE_BRAND_DRAFT="{{name}}" is shared with others in your organization.
+DELETE_BRAND_RECOVER_MESSAGE=Deleted brand will be permanently removed from Adobe cloud storage after 30 days. <a>Learn more</a>
+DELETE_BRAND_SHARED_NUMBER="{{name}}" is currently shared with {{numUsers}} users.
+DELETE_BRAND_SHARED_SINGULAR="{{name}}" is currently shared with one user.
+DELETE_BRAND_PUBLISHED="{{name}}" is currently shared with your entire organization. If you delete it, people won’t be able to validate previously generated experiences.
+LEAVE_BRAND=Leave brand
+UPLOAD_BRAND_ADD=Add brand
+UPLOAD_BRAND_GUIDELINES=Add your brand guidelines
+UPLOAD_BRAND_GUIDELINES_BODY=Upload your channel, image, and brand voice guidelines for consistent messaging that effectively targets and engages your audience.
+BRAND_PUBLISHED_SUCCESS_TOAST=Brand published and available to use
+BRAND_PUBLISH_CHANGES_SUCCESS_TOAST=Changes have been published
+BRAND_UNPUBLISHED_SUCCESS_TOAST=Brand was unpublished
+BRAND_PUBLISHED_BADGE=Published
+BRAND_DRAFT_BADGE=Draft
+BRAND_CLOSE_DRAFT_ACTION=Close draft
+BRAND_EDIT_ACTION=Edit brand
+BRAND_DUPLICATE_ACTION_LONG=Duplicate brand
+BRAND_DUPLICATE_ACTION=Duplicate
+BRAND_DUPLICATE_BODY=You're duplicating this brand along with all of its existing content.
+BRAND_DUPLICATE_NAME=Copy of {{name}}
+BRAND_DUPLICATE_SUCCESS_TOAST=New brand created
+BRAND_DUPLICATE_ERROR_TOAST=Can't duplicate brand. Try again
+BRAND_DUPLICATE_INPUT_LABEL=Brand name
+BRAND_PUBLISH_ACTION=Publish
+BRAND_PUBLISH_CHANGES_ACTION=Publish changes
+BRAND_UNPUBLISH_ACTION=Unpublish
+BRAND_PUBLISH_ACTION_LONG=Publish brand
+BRAND_UNPUBLISH_ACTION_LONG=Unpublish brand
+BRAND_PUBLISH_DIALOG_PERMISSIONS=When you publish this brand, anyone in your organization can use it to create branded content. <a>Learn more about publishing</a>
+BRAND_PUBLISH_DIALOG_REVIEW_INFO=By clicking “Publish”, you confirm that you’ve reviewed your brand guidelines.
+BRAND_PUBLISH_DIALOG_INFO_ORG=Everyone at {{organization}}
+BRAND_PUBLISH_DIALOG_INFO_ORG_GENERIC=Everyone at your organization
+BRAND_PUBLISH_DIALOG_INFO_ROLE=Can view and use
+BRAND_PUBLISH_DIALOG_REVIEW_BANNER=Review this brand before you publish it
+BRAND_PUBLISH_DIALOG_REVIEW_BUTTON=Review
+BRAND_UNPUBLISH_DIALOG_BODY_PROJECTS=When you unpublish, people in the organization will no longer be able to use the brand for content generation.
+BRAND_PUBLISH_CHANGES_DIALOG_BODY=Your edits will merge with the published brand.
+BRAND_PUBLISH_CHANGES_DIALOG_INFO=By clicking “Publish changes”, you confirm that you’ve reviewed the changes you’ve made to your brand guidelines.
+BRAND_PUBLISH_SUCCESS_DONE=Done
+BRAND_PUBLISH_SUCCESS_BODY=People can now use this resource to create their branded content.
+BRAND_PUBLISH_SUCCESS_TITLE={{brand}} is now ready
+BRAND_PUBLISH_ERROR_TOAST=Can’t publish brand. Try again
+BRAND_UNPUBLISH_ERROR_TOAST=Can’t unpublish brand. Try again
+BRAND_PUBLISH_TIMEOUT_TOAST=Disconnected. Try publishing brand after you reconnect
+BRAND_UNPUBLISH_TIMEOUT_TOAST=Disconnected. Try unpublishing brand after you reconnect
+BRAND_DUPLICATE_TIMEOUT_TOAST=Disconnected. Try duplicating brand after you reconnect
+BRAND_CHANGELOG_ACTION=Change log
+BRAND_TUTORIAL_EDIT_TITLE=Need to make edits?
+BRAND_TUTORIAL_EDIT_BODY=Changes you make will be saved to a draft. Publish them when you are ready.
+BRAND_TUTORIAL_PUBLISH_CHANGES_TITLE=Ready when you are
+BRAND_TUTORIAL_PUBLISH_CHANGES_BODY=Changes looking good? Go ahead and publish them for others to use.
+BRAND_LAST_PUBLISHED_DATE=Last published {{date}}
+BRAND_LAST_PUBLISHED_DATE_WITH_NAME=Last published {{date}} by {{name}}
+BRAND_LAST_EDITED_DATE_WITH_NAME=Last edited {{date}} by {{name}}
+BRAND_LAST_EDITED_DATE_WITHOUT_NAME=Last edited {{date}}
+BRAND_NO_CHANGE_SINCE_PUBLISH=No edits since last publish
+BRAND_SORT_TOOLTIP=Sort brands
+BRAND_DRAFT_TOUR_STEP_ONE_TITLE=What is a draft?
+BRAND_DRAFT_TOUR_STEP_ONE_BODY=A draft contains the edits you make to a brand. Published edits will be available to users.
+BRAND_DRAFT_TOUR_STEP_TWO_TITLE=Edits auto-save
+BRAND_DRAFT_TOUR_STEP_TWO_BODY=Changes you make while in a draft are automatically saved while you work.
+BRAND_TOUR_SKIP=Skip tour
+BRAND_TOUR_NEXT=Next
+BRAND_SAVING=Saving
+BRAND_SAVED=Saved
+BRAND_SAVE_ERROR=Sync Error
+BRAND_ACTION_ERROR_TOAST=Brand failed to save. Please try again.
+BRAND_TIMEOUT_ERROR_TOAST=The brand is taking longer than expected to save. Please check your connection and try again.
+BRAND_NO_PROJECT_TITLE=No brands to use — yet
+BRAND_NO_PROJECT_BODY=An administrator is currently completing setup. Brands will appear here when available.
+BRAND_RENAME_DUPLICATE=Brand name already exists. Choose a different name
+BRAND_RENAME_OVER_MAX_LENGTH=Brand name is longer than {{charCount}} characters
+BRAND_NAME_INVALID_CHARACTERS=Brand name can't include the following symbols: /:*\?"|<>
+BRAND_NAME_PERIOD_END=Brand name can't end with a period
+BRAND_SORT_ORDER_NAME=Name
+BRAND_SORT_ORDER_CREATED=Created
+BRAND_SORT_ORDER_MODIFIED=Modified
+BRAND_ARIA_SEARCH_BRANDS=Search brands
+BRAND_SEARCH_TOOLTIP=Search brands
+BRAND_MODIFIER_UNKNOWN=Unknown
+BRAND_COACHMARK_STEP_COUNT={{currentStep}} of {{totalSteps}}
+BRAND_COLORS_GUIDELINE=Define your core colors to keep designs cohesive and maintain brand identity.
+BRAND_COLORS_ADD_BUTTON=Add color
+BRAND_COLORS_EMPTY_TITLE=Colors aren’t set up
+BRAND_ELEMENTS_EMPTY_SUBTITLE=Contact an admin to set up these assets.
+BRAND_LOGOS_GUIDELINE=Use brand logos as visual symbols to represent a company’s identity, values, and products.
+BRAND_LOGOS_ADD_BUTTON=Add logo
+BRAND_LOGOS_EMPTY_TITLE=Logos aren’t set up
+BRAND_COLORS_NAME_LABEL=Color name
+BRAND_COLORS_RGB=RGB
+BRAND_COLORS_HEX=Hex
+BRAND_COLORS_EDIT_TITLE=Edit color
+BRAND_RENAME_ELEMENT_INVALID_CHARS=Invalid characters
+BRAND_RENAME_ELEMENT_SAVE_BUTTON=Save
+BRAND_RENAME_ELEMENT_DIALOG_BODY_COLOR=Color name*
+BRAND_RENAME_ELEMENT_DIALOG_TITLE_COLOR=Rename color
+BRAND_RENAME_ELEMENT_SUCCESS_COLOR=Color renamed
+BRAND_RENAME_ELEMENT_DIALOG_BODY_LOGO=Logo name*
+BRAND_RENAME_ELEMENT_DIALOG_TITLE_LOGO=Rename logo
+BRAND_RENAME_ELEMENT_SUCCESS_LOGO=Logo renamed
+BRAND_COLORS_ADD_SUCCESS=Color added
+BRAND_COLORS_EDIT_SUCCESS=Color updated
+BRAND_UNDO_DELETE_COLORS='{{name}}' color deleted
+BRAND_COLORS_ADD_ERROR=Can’t add color. Try again
+BRAND_COLORS_EDIT_ERROR=Can’t update color. Try again
+BRAND_ADD_DROP_ZONE_TITLE_LOGOS=Drop your logos here
+BRAND_ADD_DROP_ZONE_SUBTITLE_LOGOS=Supported file formats: SVG, PNG, JPEG, and JPG.
+BRAND_ADD_DROP_ZONE_BUTTON=Browse
+BRAND_LOGO_ADD_SUCCESS=Logo added
+BRAND_LOGOS_ADD_SUCCESS=Logos added
+BRAND_DOWNLOAD_FAILED=Download failed. Please try again later.
+BRAND_COLORS_HEX_ERROR=Must be a valid 6 character Hex color.
+BRAND_COLORS_RGB_ERROR=Each value must be a number from 0 to 255.
+BRAND_VIEW_ASSET_DETAILS=View details
+BRAND_UNDO_DELETE=Undo
+BRAND_UNDO_DELETE_ITEM=Deleted '{{name}}'.
+BRAND_UNDO_DELETE_ITEMS=Deleted {{num}} brand items.
+BRANDS_UNKNOWN_FILE_TYPE=UNKNOWN
+BRAND_INVALID_FILE_TOAST={{fileExtension}} file format is not supported.
+BRAND_INVALID_FILES_TOAST={{fileExtensionList}} and {{lastFileExtension}} file formats are not supported.
+BRAND_LOCALIZED_COMMA=,
+BRAND_SET_LOGO_THUMBNAIL=Use as brand thumbnail
+BRAND_SET_LOGO_THUMBNAIL_IN_USE=This logo is currently being used as the brand's thumbnail.
+BRAND_CHANGE_THUMBNAIL=Change thumbnail
+BRAND_THUMBNAIL_PUBLISH_WARNING_TITLE=Publish changes when ready
+BRAND_THUMBNAIL_PUBLISH_WARNING=Clicking 'Publish changes' confirms you've reviewed all updates since the last publish, and all draft edits will merge with the published brand.
+BRAND_THUMBNAIL_UPDATE=Update
+BRAND_THUMBNAIL_SAVE_DRAFT=Save draft
+BRAND_THUMBNAIL_CHANGE_BUTTON=Change
+BRAND_THUMBNAIL_UPDATED_TOAST=Brand thumbnail updated.
+BRAND_THUMBNAIL_UPDATED_ERROR_TOAST=Can't update thumbnail. Try again
+BRAND_THUMBNAIL_UNAVAILABLE=Thumbnail unavailable
+BRAND_EDIT_UNAVAILABLE=Contact an admin for access to edit this brand.

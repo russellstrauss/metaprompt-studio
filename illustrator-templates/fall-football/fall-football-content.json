@@ -21,11 +21,12 @@
 			"outputFileName": "abilene-christian",
 			"images": {
 				"school_logo": "images/logos/Abilene_Christian_logo.png",
-				"school_mascot": "images/mascots/ABILENE_CHRISTIAN_mascot.png"
+				"school_mascot": "images/mascots/ABILENE_CHRISTIAN_mascot.png",
+				"bg_image": "images/backgrounds/abilene-christian_bg.jpg"
 			},
 			"text": {
 				"school_title": "ABILENE CHRISTIAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#4F2170",
@@ -35,11 +36,12 @@
 		{
 			"outputFileName": "adams-state",
 			"images": {
-				"school_logo": "images/logos/Adams_State_logo.png"
+				"school_logo": "images/logos/Adams_State_logo.png",
+				"bg_image": "images/backgrounds/adams-state_bg.jpg"
 			},
 			"text": {
 				"school_title": "ADAMS STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Grizzlies!!!"
 			},
 			"colors": {
 				"primary_color": "#124734",
@@ -53,7 +55,7 @@
 			},
 			"text": {
 				"school_title": "ADRIAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -68,7 +70,7 @@
 			},
 			"text": {
 				"school_title": "AIR FORCE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Falcons!!!"
 			},
 			"colors": {
 				"primary_color": "#003594",
@@ -83,7 +85,7 @@
 			},
 			"text": {
 				"school_title": "AKRON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Zips!!!"
 			},
 			"colors": {
 				"primary_color": "#041E42",
@@ -98,7 +100,7 @@
 			},
 			"text": {
 				"school_title": "ALABAMA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Crimson Tide!!!"
 			},
 			"colors": {
 				"primary_color": "#B30838",
@@ -113,7 +115,7 @@
 			},
 			"text": {
 				"school_title": "ALABAMA A&M",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#660000",
@@ -128,7 +130,7 @@
 			},
 			"text": {
 				"school_title": "ALABAMA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hornets!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -143,7 +145,7 @@
 			},
 			"text": {
 				"school_title": "ALBANY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Great Danes!!!"
 			},
 			"colors": {
 				"primary_color": "#46166B",
@@ -157,7 +159,7 @@
 			},
 			"text": {
 				"school_title": "ALBANY STATE (GA)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Rams!!!"
 			},
 			"colors": {
 				"primary_color": "#0039A6",
@@ -171,7 +173,7 @@
 			},
 			"text": {
 				"school_title": "ALBION",
-				"school_subtitle": ""
+				"school_subtitle": "Go Britons!!!"
 			},
 			"colors": {
 				"primary_color": "#512D6D",
@@ -185,7 +187,7 @@
 			},
 			"text": {
 				"school_title": "ALBRIGHT",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lions!!!"
 			},
 			"colors": {
 				"primary_color": "#BA0C2F",
@@ -200,7 +202,7 @@
 			},
 			"text": {
 				"school_title": "ALCORN STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Braves!!!"
 			},
 			"colors": {
 				"primary_color": "#512D6D",
@@ -214,7 +216,7 @@
 			},
 			"text": {
 				"school_title": "ALDERSON-BROADDUS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Battlers!!!"
 			},
 			"colors": {
 				"primary_color": "#003865",
@@ -228,7 +230,7 @@
 			},
 			"text": {
 				"school_title": "ALFRED",
-				"school_subtitle": ""
+				"school_subtitle": "Go Saxons!!!"
 			},
 			"colors": {
 				"primary_color": "#550D8A",
@@ -242,7 +244,7 @@
 			},
 			"text": {
 				"school_title": "ALFRED STATE COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pioneers!!!"
 			},
 			"colors": {
 				"primary_color": "#003C71",
@@ -256,7 +258,7 @@
 			},
 			"text": {
 				"school_title": "ALLEGHENY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Gators!!!"
 			},
 			"colors": {
 				"primary_color": "#0C2340",
@@ -270,7 +272,7 @@
 			},
 			"text": {
 				"school_title": "ALMA COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Scots!!!"
 			},
 			"colors": {
 				"primary_color": "#862633",
@@ -285,7 +287,7 @@
 			},
 			"text": {
 				"school_title": "AMERICAN INTERNATIONAL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Yellow Jackets!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -299,7 +301,7 @@
 			},
 			"text": {
 				"school_title": "AMHERST COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mammoths!!!"
 			},
 			"colors": {
 				"primary_color": "#3F1F69",
@@ -313,7 +315,7 @@
 			},
 			"text": {
 				"school_title": "ANDERSON (IN)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Ravens!!!"
 			},
 			"colors": {
 				"primary_color": "#FE5000",
@@ -327,7 +329,7 @@
 			},
 			"text": {
 				"school_title": "ANGELO STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rams!!!"
 			},
 			"colors": {
 				"primary_color": "#245397",
@@ -341,7 +343,7 @@
 			},
 			"text": {
 				"school_title": "ANNA MARIA COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Amcats!!!"
 			},
 			"colors": {
 				"primary_color": "#8A1538",
@@ -356,7 +358,7 @@
 			},
 			"text": {
 				"school_title": "APPALACHIAN STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mountaineers!!!"
 			},
 			"colors": {
 				"primary_color": "#222222",
@@ -371,7 +373,7 @@
 			},
 			"text": {
 				"school_title": "ARIZONA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#AB0520",
@@ -386,7 +388,7 @@
 			},
 			"text": {
 				"school_title": "ARIZONA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Sun Devils!!!"
 			},
 			"colors": {
 				"primary_color": "#7D2248",
@@ -401,7 +403,7 @@
 			},
 			"text": {
 				"school_title": "ARKANSAS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Razorbacks!!!"
 			},
 			"colors": {
 				"primary_color": "#A41F35",
@@ -415,7 +417,7 @@
 			},
 			"text": {
 				"school_title": "ARKANSAS-MONTICELLO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Weevils!!!"
 			},
 			"colors": {
 				"primary_color": "#00965E",
@@ -430,7 +432,7 @@
 			},
 			"text": {
 				"school_title": "ARKANSAS-PINE BLUFF",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Lions!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -445,7 +447,7 @@
 			},
 			"text": {
 				"school_title": "ARKANSAS STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Red Wolves!!!"
 			},
 			"colors": {
 				"primary_color": "#CC092F",
@@ -459,7 +461,7 @@
 			},
 			"text": {
 				"school_title": "ARKANSAS TECH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wonder Boys!!!"
 			},
 			"colors": {
 				"primary_color": "#115740",
@@ -474,7 +476,7 @@
 			},
 			"text": {
 				"school_title": "ARMY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Black Knights!!!"
 			},
 			"colors": {
 				"primary_color": "#2C2A29",
@@ -488,7 +490,7 @@
 			},
 			"text": {
 				"school_title": "ASHLAND",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#5C068C",
@@ -502,7 +504,7 @@
 			},
 			"text": {
 				"school_title": "ASSUMPTION",
-				"school_subtitle": ""
+				"school_subtitle": "Go Greyhounds!!!"
 			},
 			"colors": {
 				"primary_color": "#005B99",
@@ -517,7 +519,7 @@
 			},
 			"text": {
 				"school_title": "AUBURN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#03244D",
@@ -531,7 +533,7 @@
 			},
 			"text": {
 				"school_title": "AUGSBURG",
-				"school_subtitle": ""
+				"school_subtitle": "Go Auggies!!!"
 			},
 			"colors": {
 				"primary_color": "#75263B",
@@ -545,7 +547,7 @@
 			},
 			"text": {
 				"school_title": "AUGUSTANA (IL)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Vikings!!!"
 			},
 			"colors": {
 				"primary_color": "#002D62",
@@ -559,7 +561,7 @@
 			},
 			"text": {
 				"school_title": "AUGUSTANA (SD)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Vikings!!!"
 			},
 			"colors": {
 				"primary_color": "#002D62",
@@ -573,7 +575,7 @@
 			},
 			"text": {
 				"school_title": "AURORA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Spartans!!!"
 			},
 			"colors": {
 				"primary_color": "#003591",
@@ -587,7 +589,7 @@
 			},
 			"text": {
 				"school_title": "AUSTIN COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Kangaroos!!!"
 			},
 			"colors": {
 				"primary_color": "#9D2235",
@@ -602,7 +604,7 @@
 			},
 			"text": {
 				"school_title": "AUSTIN PEAY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Governors!!!"
 			},
 			"colors": {
 				"primary_color": "#C41E3A",
@@ -616,7 +618,7 @@
 			},
 			"text": {
 				"school_title": "AVERETT",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cougars!!!"
 			},
 			"colors": {
 				"primary_color": "#0C2340",
@@ -630,7 +632,7 @@
 			},
 			"text": {
 				"school_title": "BALDWIN-WALLACE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Yellow Jackets!!!"
 			},
 			"colors": {
 				"primary_color": "#4E3629",
@@ -645,7 +647,7 @@
 			},
 			"text": {
 				"school_title": "BALL STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cardinals!!!"
 			},
 			"colors": {
 				"primary_color": "#BA0C2F",
@@ -659,7 +661,7 @@
 			},
 			"text": {
 				"school_title": "BATES COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bobcats!!!"
 			},
 			"colors": {
 				"primary_color": "#B30838",
@@ -674,7 +676,7 @@
 			},
 			"text": {
 				"school_title": "BAYLOR",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#154734",
@@ -688,7 +690,7 @@
 			},
 			"text": {
 				"school_title": "BELOIT COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Buccaneers!!!"
 			},
 			"colors": {
 				"primary_color": "#003865",
@@ -703,7 +705,7 @@
 			},
 			"text": {
 				"school_title": "BEMIDJI STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Beavers!!!"
 			},
 			"colors": {
 				"primary_color": "#004D44",
@@ -717,7 +719,7 @@
 			},
 			"text": {
 				"school_title": "BENEDICT COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#4C145E",
@@ -731,7 +733,7 @@
 			},
 			"text": {
 				"school_title": "BENEDICTINE (IL)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#BA0C2F",
@@ -746,7 +748,7 @@
 			},
 			"text": {
 				"school_title": "BENTLEY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Falcons!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -761,7 +763,7 @@
 			},
 			"text": {
 				"school_title": "BERRY COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Vikings!!!"
 			},
 			"colors": {
 				"primary_color": "#00205B",
@@ -775,7 +777,7 @@
 			},
 			"text": {
 				"school_title": "BETHANY (WV)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bison!!!"
 			},
 			"colors": {
 				"primary_color": "#115740",
@@ -789,7 +791,7 @@
 			},
 			"text": {
 				"school_title": "BETHEL (MN)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Royals!!!"
 			},
 			"colors": {
 				"primary_color": "#002F5F",
@@ -803,7 +805,7 @@
 			},
 			"text": {
 				"school_title": "BETHEL (TN)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#5F249F",
@@ -818,7 +820,7 @@
 			},
 			"text": {
 				"school_title": "BETHUNE-COOKMAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#6F263D",
@@ -832,7 +834,7 @@
 			},
 			"text": {
 				"school_title": "BIRMINGHAM-SOUTHERN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -846,7 +848,7 @@
 			},
 			"text": {
 				"school_title": "BLACK HILLS STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Yellow Jackets!!!"
 			},
 			"colors": {
 				"primary_color": "#006233",
@@ -861,7 +863,7 @@
 			},
 			"text": {
 				"school_title": "BLOOMSBURG",
-				"school_subtitle": ""
+				"school_subtitle": "Go Huskies!!!"
 			},
 			"colors": {
 				"primary_color": "#6E121E",
@@ -875,7 +877,7 @@
 			},
 			"text": {
 				"school_title": "BLUFFTON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Beavers!!!"
 			},
 			"colors": {
 				"primary_color": "#512D6D",
@@ -890,7 +892,7 @@
 			},
 			"text": {
 				"school_title": "BOISE STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Broncos!!!"
 			},
 			"colors": {
 				"primary_color": "#0033A0",
@@ -905,7 +907,7 @@
 			},
 			"text": {
 				"school_title": "BOSTON COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#8C2232",
@@ -919,7 +921,7 @@
 			},
 			"text": {
 				"school_title": "BOWDOIN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Polar Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -934,7 +936,7 @@
 			},
 			"text": {
 				"school_title": "BOWLING GREEN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Falcons!!!"
 			},
 			"colors": {
 				"primary_color": "#4F2C1D",
@@ -948,7 +950,7 @@
 			},
 			"text": {
 				"school_title": "BRIDGEWATER STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#A6192E",
@@ -962,7 +964,7 @@
 			},
 			"text": {
 				"school_title": "BRIDGEWATER (VA)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#9D2235",
@@ -977,7 +979,7 @@
 			},
 			"text": {
 				"school_title": "BROCKPORT STATE (NY)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#00533E",
@@ -992,7 +994,7 @@
 			},
 			"text": {
 				"school_title": "BROWN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#4E3629",
@@ -1007,7 +1009,7 @@
 			},
 			"text": {
 				"school_title": "BRYANT",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#231F20",
@@ -1022,7 +1024,7 @@
 			},
 			"text": {
 				"school_title": "BUCKNELL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bison!!!"
 			},
 			"colors": {
 				"primary_color": "#003865",
@@ -1036,7 +1038,7 @@
 			},
 			"text": {
 				"school_title": "BUENA VISTA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Beavers!!!"
 			},
 			"colors": {
 				"primary_color": "#0C2340",
@@ -1051,7 +1053,7 @@
 			},
 			"text": {
 				"school_title": "BUFFALO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulls!!!"
 			},
 			"colors": {
 				"primary_color": "#005BBB",
@@ -1065,7 +1067,7 @@
 			},
 			"text": {
 				"school_title": "BUFFALO STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bengals!!!"
 			},
 			"colors": {
 				"primary_color": "#CC6600",
@@ -1080,7 +1082,7 @@
 			},
 			"text": {
 				"school_title": "BUTLER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#13294B",
@@ -1095,7 +1097,7 @@
 			},
 			"text": {
 				"school_title": "BYU",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cougars!!!"
 			},
 			"colors": {
 				"primary_color": "#003DA5",
@@ -1110,7 +1112,7 @@
 			},
 			"text": {
 				"school_title": "CALIFORNIA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#041E42",
@@ -1124,7 +1126,7 @@
 			},
 			"text": {
 				"school_title": "CALIFORNIA (PA)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Vulcans!!!"
 			},
 			"colors": {
 				"primary_color": "#DA291C",
@@ -1138,7 +1140,7 @@
 			},
 			"text": {
 				"school_title": "CAL LUTHERAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Kingsmen!!!"
 			},
 			"colors": {
 				"primary_color": "#2E1A47",
@@ -1153,7 +1155,7 @@
 			},
 			"text": {
 				"school_title": "CAL POLY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mustangs!!!"
 			},
 			"colors": {
 				"primary_color": "#154734",
@@ -1167,7 +1169,7 @@
 			},
 			"text": {
 				"school_title": "CAPITAL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Crusaders!!!"
 			},
 			"colors": {
 				"primary_color": "#330072",
@@ -1181,7 +1183,7 @@
 			},
 			"text": {
 				"school_title": "CARLETON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Knights!!!"
 			},
 			"colors": {
 				"primary_color": "#0B5091",
@@ -1195,7 +1197,7 @@
 			},
 			"text": {
 				"school_title": "CARNEGIE MELLON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tartans!!!"
 			},
 			"colors": {
 				"primary_color": "#990000",
@@ -1209,7 +1211,7 @@
 			},
 			"text": {
 				"school_title": "CARROLL (WI)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pioneers!!!"
 			},
 			"colors": {
 				"primary_color": "#E35205",
@@ -1223,7 +1225,7 @@
 			},
 			"text": {
 				"school_title": "CARSON-NEWMAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#FF671F",
@@ -1237,7 +1239,7 @@
 			},
 			"text": {
 				"school_title": "CASE WESTERN RESERVE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Spartans!!!"
 			},
 			"colors": {
 				"primary_color": "#003071",
@@ -1251,7 +1253,7 @@
 			},
 			"text": {
 				"school_title": "CATAWBA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Indians!!!"
 			},
 			"colors": {
 				"primary_color": "#13294E",
@@ -1265,7 +1267,7 @@
 			},
 			"text": {
 				"school_title": "CATHOLIC UNIVERSITY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cardinals!!!"
 			},
 			"colors": {
 				"primary_color": "#990000",
@@ -1279,7 +1281,7 @@
 			},
 			"text": {
 				"school_title": "CENTRAL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Dutch!!!"
 			},
 			"colors": {
 				"primary_color": "#E4002B",
@@ -1294,7 +1296,7 @@
 			},
 			"text": {
 				"school_title": "CENTRAL ARKANSAS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#582C83",
@@ -1309,7 +1311,7 @@
 			},
 			"text": {
 				"school_title": "CENTRAL CONNECTICUT",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blue Devils!!!"
 			},
 			"colors": {
 				"primary_color": "#1A4784",
@@ -1324,7 +1326,7 @@
 			},
 			"text": {
 				"school_title": "CENTRAL MICHIGAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Chippewas!!!"
 			},
 			"colors": {
 				"primary_color": "#6A0032",
@@ -1338,7 +1340,7 @@
 			},
 			"text": {
 				"school_title": "CENTRAL OKLAHOMA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bronchos!!!"
 			},
 			"colors": {
 				"primary_color": "#003366",
@@ -1352,7 +1354,7 @@
 			},
 			"text": {
 				"school_title": "CENTRAL STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Marauders!!!"
 			},
 			"colors": {
 				"primary_color": "#71273D",
@@ -1366,7 +1368,7 @@
 			},
 			"text": {
 				"school_title": "CENTRAL WASHINGTON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#AB0032",
@@ -1380,7 +1382,7 @@
 			},
 			"text": {
 				"school_title": "CENTRE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Colonels!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -1394,7 +1396,7 @@
 			},
 			"text": {
 				"school_title": "CHADRON STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#660033",
@@ -1408,7 +1410,7 @@
 			},
 			"text": {
 				"school_title": "CHAPMAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#862633",
@@ -1423,7 +1425,7 @@
 			},
 			"text": {
 				"school_title": "CHARLESTON SOUTHERN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Buccaneers!!!"
 			},
 			"colors": {
 				"primary_color": "#002855",
@@ -1437,7 +1439,7 @@
 			},
 			"text": {
 				"school_title": "CHARLESTON (WV)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#992244",
@@ -1452,7 +1454,7 @@
 			},
 			"text": {
 				"school_title": "CHARLOTTE",
-				"school_subtitle": ""
+				"school_subtitle": "Go 49ers!!!"
 			},
 			"colors": {
 				"primary_color": "#005035",
@@ -1467,7 +1469,7 @@
 			},
 			"text": {
 				"school_title": "CHATTANOOGA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mocs!!!"
 			},
 			"colors": {
 				"primary_color": "#00386B",
@@ -1481,7 +1483,7 @@
 			},
 			"text": {
 				"school_title": "CHICAGO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Maroons!!!"
 			},
 			"colors": {
 				"primary_color": "#800000",
@@ -1495,7 +1497,7 @@
 			},
 			"text": {
 				"school_title": "CHRISTOPHER NEWPORT",
-				"school_subtitle": ""
+				"school_subtitle": "Go Captains!!!"
 			},
 			"colors": {
 				"primary_color": "#0039A6",
@@ -1510,7 +1512,7 @@
 			},
 			"text": {
 				"school_title": "CINCINNATI",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bearcats!!!"
 			},
 			"colors": {
 				"primary_color": "#E00122",
@@ -1525,7 +1527,7 @@
 			},
 			"text": {
 				"school_title": "CLARION",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#003366",
@@ -1539,7 +1541,7 @@
 			},
 			"text": {
 				"school_title": "CLARK ATLANTA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#CE1126",
@@ -1554,7 +1556,7 @@
 			},
 			"text": {
 				"school_title": "CLEMSON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#F56600",
@@ -1569,7 +1571,7 @@
 			},
 			"text": {
 				"school_title": "COASTAL CAROLINA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Chanticleers!!!"
 			},
 			"colors": {
 				"primary_color": "#006F71",
@@ -1583,7 +1585,7 @@
 			},
 			"text": {
 				"school_title": "COAST GUARD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#2554C7",
@@ -1597,7 +1599,7 @@
 			},
 			"text": {
 				"school_title": "COE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Kohawks!!!"
 			},
 			"colors": {
 				"primary_color": "#93282C",
@@ -1612,7 +1614,7 @@
 			},
 			"text": {
 				"school_title": "COLGATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Raiders!!!"
 			},
 			"colors": {
 				"primary_color": "#821019",
@@ -1627,7 +1629,7 @@
 			},
 			"text": {
 				"school_title": "COLORADO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Buffaloes!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -1641,7 +1643,7 @@
 			},
 			"text": {
 				"school_title": "COLORADO COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -1655,7 +1657,7 @@
 			},
 			"text": {
 				"school_title": "COLORADO MESA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mavericks!!!"
 			},
 			"colors": {
 				"primary_color": "#5D0022",
@@ -1669,7 +1671,7 @@
 			},
 			"text": {
 				"school_title": "COLORADO MINES",
-				"school_subtitle": ""
+				"school_subtitle": "Go Orediggers!!!"
 			},
 			"colors": {
 				"primary_color": "#21314D",
@@ -1684,7 +1686,7 @@
 			},
 			"text": {
 				"school_title": "COLORADO STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rams!!!"
 			},
 			"colors": {
 				"primary_color": "#1E4D2B",
@@ -1699,7 +1701,7 @@
 			},
 			"text": {
 				"school_title": "COLUMBIA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lions!!!"
 			},
 			"colors": {
 				"primary_color": "#B9D9EB",
@@ -1713,7 +1715,7 @@
 			},
 			"text": {
 				"school_title": "CONCORD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mountain Lions!!!"
 			},
 			"colors": {
 				"primary_color": "#862633",
@@ -1727,7 +1729,7 @@
 			},
 			"text": {
 				"school_title": "CONCORDIA (IL)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cougars!!!"
 			},
 			"colors": {
 				"primary_color": "#9D2235",
@@ -1741,7 +1743,7 @@
 			},
 			"text": {
 				"school_title": "CONCORDIA (MN)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cobbers!!!"
 			},
 			"colors": {
 				"primary_color": "#7D0042",
@@ -1755,7 +1757,7 @@
 			},
 			"text": {
 				"school_title": "CONCORDIA (WI)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Falcons!!!"
 			},
 			"colors": {
 				"primary_color": "#005596",
@@ -1770,7 +1772,7 @@
 			},
 			"text": {
 				"school_title": "CONNECTICUT",
-				"school_subtitle": ""
+				"school_subtitle": "Go Huskies!!!"
 			},
 			"colors": {
 				"primary_color": "#000E2F",
@@ -1785,7 +1787,7 @@
 			},
 			"text": {
 				"school_title": "CORNELL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Big Red!!!"
 			},
 			"colors": {
 				"primary_color": "#B31B1B",
@@ -1799,7 +1801,7 @@
 			},
 			"text": {
 				"school_title": "CORNELL COLLEGE (IA)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rams!!!"
 			},
 			"colors": {
 				"primary_color": "#523178",
@@ -1813,7 +1815,7 @@
 			},
 			"text": {
 				"school_title": "CROWN COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Storm!!!"
 			},
 			"colors": {
 				"primary_color": "#3C1053",
@@ -1827,7 +1829,7 @@
 			},
 			"text": {
 				"school_title": "CURRY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Colonels!!!"
 			},
 			"colors": {
 				"primary_color": "#462C8D",
@@ -1841,7 +1843,7 @@
 			},
 			"text": {
 				"school_title": "DAKOTA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Trojans!!!"
 			},
 			"colors": {
 				"primary_color": "#004165",
@@ -1856,7 +1858,7 @@
 			},
 			"text": {
 				"school_title": "DARTMOUTH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Big Green!!!"
 			},
 			"colors": {
 				"primary_color": "#00693E",
@@ -1871,7 +1873,7 @@
 			},
 			"text": {
 				"school_title": "DAVIDSON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#D02139",
@@ -1886,7 +1888,7 @@
 			},
 			"text": {
 				"school_title": "DAYTON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Flyers!!!"
 			},
 			"colors": {
 				"primary_color": "#002F87",
@@ -1900,7 +1902,7 @@
 			},
 			"text": {
 				"school_title": "DEFIANCE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Yellow Jackets!!!"
 			},
 			"colors": {
 				"primary_color": "#512D6D",
@@ -1915,7 +1917,7 @@
 			},
 			"text": {
 				"school_title": "DELAWARE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blue Hens!!!"
 			},
 			"colors": {
 				"primary_color": "#033594",
@@ -1930,7 +1932,7 @@
 			},
 			"text": {
 				"school_title": "DELAWARE STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hornets!!!"
 			},
 			"colors": {
 				"primary_color": "#EE3124",
@@ -1944,7 +1946,7 @@
 			},
 			"text": {
 				"school_title": "DELAWARE VALLEY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Aggies!!!"
 			},
 			"colors": {
 				"primary_color": "#215732",
@@ -1958,7 +1960,7 @@
 			},
 			"text": {
 				"school_title": "DELTA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Statesmen!!!"
 			},
 			"colors": {
 				"primary_color": "#00753E",
@@ -1972,7 +1974,7 @@
 			},
 			"text": {
 				"school_title": "DENISON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Big Red!!!"
 			},
 			"colors": {
 				"primary_color": "#A6192E",
@@ -1986,7 +1988,7 @@
 			},
 			"text": {
 				"school_title": "DEPAUW",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#111C24",
@@ -2000,7 +2002,7 @@
 			},
 			"text": {
 				"school_title": "DICKINSON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Red Devils!!!"
 			},
 			"colors": {
 				"primary_color": "#E31837",
@@ -2015,7 +2017,7 @@
 			},
 			"text": {
 				"school_title": "DRAKE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#1B4677",
@@ -2029,7 +2031,7 @@
 			},
 			"text": {
 				"school_title": "DUBUQUE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Spartans!!!"
 			},
 			"colors": {
 				"primary_color": "#002D72",
@@ -2044,7 +2046,7 @@
 			},
 			"text": {
 				"school_title": "DUKE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blue Devils!!!"
 			},
 			"colors": {
 				"primary_color": "#013088",
@@ -2059,7 +2061,7 @@
 			},
 			"text": {
 				"school_title": "DUQUESNE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Dukes!!!"
 			},
 			"colors": {
 				"primary_color": "#041E42",
@@ -2074,7 +2076,7 @@
 			},
 			"text": {
 				"school_title": "EAST CAROLINA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pirates!!!"
 			},
 			"colors": {
 				"primary_color": "#582C83",
@@ -2088,7 +2090,7 @@
 			},
 			"text": {
 				"school_title": "EAST CENTRAL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -2103,7 +2105,7 @@
 			},
 			"text": {
 				"school_title": "EASTERN ILLINOIS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#004C97",
@@ -2118,7 +2120,7 @@
 			},
 			"text": {
 				"school_title": "EASTERN KENTUCKY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Colonels!!!"
 			},
 			"colors": {
 				"primary_color": "#861F41",
@@ -2133,7 +2135,7 @@
 			},
 			"text": {
 				"school_title": "EASTERN MICHIGAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#046A38",
@@ -2147,7 +2149,7 @@
 			},
 			"text": {
 				"school_title": "EASTERN NEW MEXICO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Greyhounds!!!"
 			},
 			"colors": {
 				"primary_color": "#006633",
@@ -2162,7 +2164,7 @@
 			},
 			"text": {
 				"school_title": "EASTERN WASHINGTON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#B7142E",
@@ -2176,7 +2178,7 @@
 			},
 			"text": {
 				"school_title": "EAST STROUDSBURG",
-				"school_subtitle": ""
+				"school_subtitle": "Go Warriors!!!"
 			},
 			"colors": {
 				"primary_color": "#DB0436",
@@ -2191,7 +2193,7 @@
 			},
 			"text": {
 				"school_title": "EAST TENNESSEE STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Buccaneers!!!"
 			},
 			"colors": {
 				"primary_color": "#00053E",
@@ -2205,7 +2207,7 @@
 			},
 			"text": {
 				"school_title": "EAST TEXAS BAPTIST",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#081F2C",
@@ -2220,7 +2222,7 @@
 			},
 			"text": {
 				"school_title": "EDINBORO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Fighting Scots!!!"
 			},
 			"colors": {
 				"primary_color": "#BB131A",
@@ -2234,7 +2236,7 @@
 			},
 			"text": {
 				"school_title": "ELIZABETH CITY STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Vikings!!!"
 			},
 			"colors": {
 				"primary_color": "#0032A0",
@@ -2249,7 +2251,7 @@
 			},
 			"text": {
 				"school_title": "ELON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Phoenix!!!"
 			},
 			"colors": {
 				"primary_color": "#73000A",
@@ -2263,7 +2265,7 @@
 			},
 			"text": {
 				"school_title": "EMORY & HENRY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wasps!!!"
 			},
 			"colors": {
 				"primary_color": "#1B3D75",
@@ -2277,7 +2279,7 @@
 			},
 			"text": {
 				"school_title": "EMPORIA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hornets!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -2291,7 +2293,7 @@
 			},
 			"text": {
 				"school_title": "ENDICOTT COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Gulls!!!"
 			},
 			"colors": {
 				"primary_color": "#00325B",
@@ -2305,7 +2307,7 @@
 			},
 			"text": {
 				"school_title": "EUREKA COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Red Devils!!!"
 			},
 			"colors": {
 				"primary_color": "#862633",
@@ -2319,7 +2321,7 @@
 			},
 			"text": {
 				"school_title": "FAYETTEVILLE STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Broncos!!!"
 			},
 			"colors": {
 				"primary_color": "#0067B1",
@@ -2334,7 +2336,7 @@
 			},
 			"text": {
 				"school_title": "FERRIS STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#BA0C2F",
@@ -2348,7 +2350,7 @@
 			},
 			"text": {
 				"school_title": "FERRUM",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#010101",
@@ -2362,7 +2364,7 @@
 			},
 			"text": {
 				"school_title": "FINDLAY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Oilers!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -2376,7 +2378,7 @@
 			},
 			"text": {
 				"school_title": "FITCHBURG STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Falcons!!!"
 			},
 			"colors": {
 				"primary_color": "#00563F",
@@ -2391,7 +2393,7 @@
 			},
 			"text": {
 				"school_title": "FLORIDA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Gators!!!"
 			},
 			"colors": {
 				"primary_color": "#003087",
@@ -2406,7 +2408,7 @@
 			},
 			"text": {
 				"school_title": "FLORIDA A&M",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rattlers!!!"
 			},
 			"colors": {
 				"primary_color": "#008344",
@@ -2421,7 +2423,7 @@
 			},
 			"text": {
 				"school_title": "FLORIDA ATLANTIC",
-				"school_subtitle": ""
+				"school_subtitle": "Go Owls!!!"
 			},
 			"colors": {
 				"primary_color": "#003366",
@@ -2436,7 +2438,7 @@
 			},
 			"text": {
 				"school_title": "FLORIDA INTERNATIONAL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#081E3F",
@@ -2451,7 +2453,7 @@
 			},
 			"text": {
 				"school_title": "FLORIDA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Seminoles!!!"
 			},
 			"colors": {
 				"primary_color": "#782F40",
@@ -2465,7 +2467,7 @@
 			},
 			"text": {
 				"school_title": "FLORIDA TECH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#770000",
@@ -2480,7 +2482,7 @@
 			},
 			"text": {
 				"school_title": "FORDHAM",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rams!!!"
 			},
 			"colors": {
 				"primary_color": "#72253D",
@@ -2494,7 +2496,7 @@
 			},
 			"text": {
 				"school_title": "FORT HAYS STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -2508,7 +2510,7 @@
 			},
 			"text": {
 				"school_title": "FORT LEWIS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Skyhawks!!!"
 			},
 			"colors": {
 				"primary_color": "#000066",
@@ -2522,7 +2524,7 @@
 			},
 			"text": {
 				"school_title": "FORT VALLEY STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#003087",
@@ -2536,7 +2538,7 @@
 			},
 			"text": {
 				"school_title": "FRAMINGHAM STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rams!!!"
 			},
 			"colors": {
 				"primary_color": "#EBAB00",
@@ -2550,7 +2552,7 @@
 			},
 			"text": {
 				"school_title": "FRANKLIN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Grizzlies!!!"
 			},
 			"colors": {
 				"primary_color": "#FFD100",
@@ -2565,7 +2567,7 @@
 			},
 			"text": {
 				"school_title": "FRANKLIN & MARSHALL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Diplomats!!!"
 			},
 			"colors": {
 				"primary_color": "#0035AD",
@@ -2580,7 +2582,7 @@
 			},
 			"text": {
 				"school_title": "FRESNO STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#C41230",
@@ -2594,7 +2596,7 @@
 			},
 			"text": {
 				"school_title": "FROSTBURG STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bobcats!!!"
 			},
 			"colors": {
 				"primary_color": "#BA0C2F",
@@ -2609,7 +2611,7 @@
 			},
 			"text": {
 				"school_title": "FURMAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Paladins!!!"
 			},
 			"colors": {
 				"primary_color": "#582C83",
@@ -2623,7 +2625,7 @@
 			},
 			"text": {
 				"school_title": "GALLAUDET",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bison!!!"
 			},
 			"colors": {
 				"primary_color": "#E8D4A2",
@@ -2637,7 +2639,7 @@
 			},
 			"text": {
 				"school_title": "GANNON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Knights!!!"
 			},
 			"colors": {
 				"primary_color": "#960A2C",
@@ -2652,7 +2654,7 @@
 			},
 			"text": {
 				"school_title": "GARDNER-WEBB",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#c12535",
@@ -2666,7 +2668,7 @@
 			},
 			"text": {
 				"school_title": "GENEVA COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Tornadoes!!!"
 			},
 			"colors": {
 				"primary_color": "#89734C",
@@ -2681,7 +2683,7 @@
 			},
 			"text": {
 				"school_title": "GEORGE MASON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Patriots!!!"
 			},
 			"colors": {
 				"primary_color": "#215732",
@@ -2696,7 +2698,7 @@
 			},
 			"text": {
 				"school_title": "GEORGETOWN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hoyas!!!"
 			},
 			"colors": {
 				"primary_color": "#041E42",
@@ -2711,7 +2713,7 @@
 			},
 			"text": {
 				"school_title": "GEORGIA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#BA0C2F",
@@ -2726,7 +2728,7 @@
 			},
 			"text": {
 				"school_title": "GEORGIA SOUTHERN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#041E42",
@@ -2741,7 +2743,7 @@
 			},
 			"text": {
 				"school_title": "GEORGIA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#0039A6",
@@ -2756,7 +2758,7 @@
 			},
 			"text": {
 				"school_title": "GEORGIA TECH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Yellow Jackets!!!"
 			},
 			"colors": {
 				"primary_color": "#B3A369",
@@ -2770,7 +2772,7 @@
 			},
 			"text": {
 				"school_title": "GLENVILLE STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pioneers!!!"
 			},
 			"colors": {
 				"primary_color": "#003DA5",
@@ -2785,7 +2787,7 @@
 			},
 			"text": {
 				"school_title": "GRAMBLING",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#ee8601",
@@ -2799,7 +2801,7 @@
 			},
 			"text": {
 				"school_title": "GRAND VALLEY STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lakers!!!"
 			},
 			"colors": {
 				"primary_color": "#0033A0",
@@ -2813,7 +2815,7 @@
 			},
 			"text": {
 				"school_title": "GREENSBORO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pride!!!"
 			},
 			"colors": {
 				"primary_color": "#007A53",
@@ -2828,7 +2830,7 @@
 			},
 			"text": {
 				"school_title": "GREENVILLE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#E35205",
@@ -2842,7 +2844,7 @@
 			},
 			"text": {
 				"school_title": "GRINNELL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pioneers!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -2856,7 +2858,7 @@
 			},
 			"text": {
 				"school_title": "GROVE CITY COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wolverines!!!"
 			},
 			"colors": {
 				"primary_color": "#DA291C",
@@ -2870,7 +2872,7 @@
 			},
 			"text": {
 				"school_title": "GUILFORD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Quakers!!!"
 			},
 			"colors": {
 				"primary_color": "#862633",
@@ -2885,7 +2887,7 @@
 			},
 			"text": {
 				"school_title": "GUSTAVUS ADOLPHUS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Gusties!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -2899,7 +2901,7 @@
 			},
 			"text": {
 				"school_title": "HAMILTON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Continentals!!!"
 			},
 			"colors": {
 				"primary_color": "#002F86",
@@ -2914,7 +2916,7 @@
 			},
 			"text": {
 				"school_title": "HAMLINE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Fighting Pipers!!!"
 			},
 			"colors": {
 				"primary_color": "#95021E",
@@ -2928,7 +2930,7 @@
 			},
 			"text": {
 				"school_title": "HAMPDEN-SYDNEY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#9D183D",
@@ -2943,7 +2945,7 @@
 			},
 			"text": {
 				"school_title": "HAMPTON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pirates!!!"
 			},
 			"colors": {
 				"primary_color": "#265198",
@@ -2957,7 +2959,7 @@
 			},
 			"text": {
 				"school_title": "HANOVER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#A6192E",
@@ -2971,7 +2973,7 @@
 			},
 			"text": {
 				"school_title": "HARDIN-SIMMONS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cowboys!!!"
 			},
 			"colors": {
 				"primary_color": "#581483",
@@ -2985,7 +2987,7 @@
 			},
 			"text": {
 				"school_title": "HARTWICK",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hawks!!!"
 			},
 			"colors": {
 				"primary_color": "#0033A1",
@@ -3000,7 +3002,7 @@
 			},
 			"text": {
 				"school_title": "HARVARD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Crimson!!!"
 			},
 			"colors": {
 				"primary_color": "#A31F36",
@@ -3015,7 +3017,7 @@
 			},
 			"text": {
 				"school_title": "HAWAI'I",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rainbow Warriors!!!"
 			},
 			"colors": {
 				"primary_color": "#003420",
@@ -3029,7 +3031,7 @@
 			},
 			"text": {
 				"school_title": "HEIDELBERG",
-				"school_subtitle": ""
+				"school_subtitle": "Go Student Princes!!!"
 			},
 			"colors": {
 				"primary_color": "#FA4616",
@@ -3043,7 +3045,7 @@
 			},
 			"text": {
 				"school_title": "HENDERSON STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Reddies!!!"
 			},
 			"colors": {
 				"primary_color": "#A91D36",
@@ -3057,7 +3059,7 @@
 			},
 			"text": {
 				"school_title": "HENDRIX COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Warriors!!!"
 			},
 			"colors": {
 				"primary_color": "#010101",
@@ -3071,7 +3073,7 @@
 			},
 			"text": {
 				"school_title": "HILLSDALE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Chargers!!!"
 			},
 			"colors": {
 				"primary_color": "#004678",
@@ -3085,7 +3087,7 @@
 			},
 			"text": {
 				"school_title": "HIRAM",
-				"school_subtitle": ""
+				"school_subtitle": "Go Terriers!!!"
 			},
 			"colors": {
 				"primary_color": "#003A70",
@@ -3100,7 +3102,7 @@
 			},
 			"text": {
 				"school_title": "HOBART",
-				"school_subtitle": ""
+				"school_subtitle": "Go Statesmen!!!"
 			},
 			"colors": {
 				"primary_color": "#472663",
@@ -3115,7 +3117,7 @@
 			},
 			"text": {
 				"school_title": "HOLY CROSS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Crusaders!!!"
 			},
 			"colors": {
 				"primary_color": "#602D89",
@@ -3129,7 +3131,7 @@
 			},
 			"text": {
 				"school_title": "HOPE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Flying Dutchmen!!!"
 			},
 			"colors": {
 				"primary_color": "#E35205",
@@ -3144,7 +3146,7 @@
 			},
 			"text": {
 				"school_title": "HOUSTON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cougars!!!"
 			},
 			"colors": {
 				"primary_color": "#C92A39",
@@ -3159,7 +3161,7 @@
 			},
 			"text": {
 				"school_title": "HOUSTON BAPTIST",
-				"school_subtitle": ""
+				"school_subtitle": "Go Huskies!!!"
 			},
 			"colors": {
 				"primary_color": "#062F87",
@@ -3174,7 +3176,7 @@
 			},
 			"text": {
 				"school_title": "HOWARD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bison!!!"
 			},
 			"colors": {
 				"primary_color": "#003A63",
@@ -3188,7 +3190,7 @@
 			},
 			"text": {
 				"school_title": "HOWARD PAYNE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Yellow Jackets!!!"
 			},
 			"colors": {
 				"primary_color": "#00205B",
@@ -3202,7 +3204,7 @@
 			},
 			"text": {
 				"school_title": "HUNTINGDON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hawks!!!"
 			},
 			"colors": {
 				"primary_color": "#C8102E",
@@ -3216,7 +3218,7 @@
 			},
 			"text": {
 				"school_title": "HUSSON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#004C45",
@@ -3231,7 +3233,7 @@
 			},
 			"text": {
 				"school_title": "IDAHO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Vandals!!!"
 			},
 			"colors": {
 				"primary_color": "#F1B300",
@@ -3246,7 +3248,7 @@
 			},
 			"text": {
 				"school_title": "IDAHO STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bengals!!!"
 			},
 			"colors": {
 				"primary_color": "#F47920",
@@ -3261,7 +3263,7 @@
 			},
 			"text": {
 				"school_title": "ILLINOIS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Fighting Illini!!!"
 			},
 			"colors": {
 				"primary_color": "#13294B",
@@ -3275,7 +3277,7 @@
 			},
 			"text": {
 				"school_title": "ILLINOIS COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blueboys!!!"
 			},
 			"colors": {
 				"primary_color": "#004A77",
@@ -3290,7 +3292,7 @@
 			},
 			"text": {
 				"school_title": "ILLINOIS STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Redbirds!!!"
 			},
 			"colors": {
 				"primary_color": "#CE142B",
@@ -3304,7 +3306,7 @@
 			},
 			"text": {
 				"school_title": "ILLINOIS WESLEYAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Titans!!!"
 			},
 			"colors": {
 				"primary_color": "#006747",
@@ -3319,7 +3321,7 @@
 			},
 			"text": {
 				"school_title": "INCARNATE WORD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cardinals!!!"
 			},
 			"colors": {
 				"primary_color": "#CB333B",
@@ -3334,7 +3336,7 @@
 			},
 			"text": {
 				"school_title": "INDIANA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hoosiers!!!"
 			},
 			"colors": {
 				"primary_color": "#990000",
@@ -3348,7 +3350,7 @@
 			},
 			"text": {
 				"school_title": "INDIANAPOLIS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Greyhounds!!!"
 			},
 			"colors": {
 				"primary_color": "#9D2136",
@@ -3363,7 +3365,7 @@
 			},
 			"text": {
 				"school_title": "INDIANA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Sycamores!!!"
 			},
 			"colors": {
 				"primary_color": "#224E92",
@@ -3378,7 +3380,7 @@
 			},
 			"text": {
 				"school_title": "IOWA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hawkeyes!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -3393,7 +3395,7 @@
 			},
 			"text": {
 				"school_title": "IOWA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cyclones!!!"
 			},
 			"colors": {
 				"primary_color": "#822433",
@@ -3407,7 +3409,7 @@
 			},
 			"text": {
 				"school_title": "ITHACA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bombers!!!"
 			},
 			"colors": {
 				"primary_color": "#003B71",
@@ -3422,7 +3424,7 @@
 			},
 			"text": {
 				"school_title": "JACKSON STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#002147",
@@ -3437,7 +3439,7 @@
 			},
 			"text": {
 				"school_title": "JACKSONVILLE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Dolphins!!!"
 			},
 			"colors": {
 				"primary_color": "#004E42",
@@ -3452,7 +3454,7 @@
 			},
 			"text": {
 				"school_title": "JACKSONVILLE STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Gamecocks!!!"
 			},
 			"colors": {
 				"primary_color": "#CA2026",
@@ -3467,7 +3469,7 @@
 			},
 			"text": {
 				"school_title": "JAMES MADISON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Dukes!!!"
 			},
 			"colors": {
 				"primary_color": "#450084",
@@ -3481,7 +3483,7 @@
 			},
 			"text": {
 				"school_title": "JOHN CARROLL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blue Streaks!!!"
 			},
 			"colors": {
 				"primary_color": "#28334A",
@@ -3496,7 +3498,7 @@
 			},
 			"text": {
 				"school_title": "JOHNS HOPKINS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blue Jays!!!"
 			},
 			"colors": {
 				"primary_color": "#68ACE5",
@@ -3510,7 +3512,7 @@
 			},
 			"text": {
 				"school_title": "JUNIATA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#1B365D",
@@ -3524,7 +3526,7 @@
 			},
 			"text": {
 				"school_title": "KALAMAZOO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hornets!!!"
 			},
 			"colors": {
 				"primary_color": "#EC6820",
@@ -3539,7 +3541,7 @@
 			},
 			"text": {
 				"school_title": "KANSAS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Jayhawks!!!"
 			},
 			"colors": {
 				"primary_color": "#0051BA",
@@ -3554,7 +3556,7 @@
 			},
 			"text": {
 				"school_title": "KANSAS STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#330A57",
@@ -3569,7 +3571,7 @@
 			},
 			"text": {
 				"school_title": "KENNESAW STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Owls!!!"
 			},
 			"colors": {
 				"primary_color": "#0B1315",
@@ -3584,7 +3586,7 @@
 			},
 			"text": {
 				"school_title": "KENT STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Flashes!!!"
 			},
 			"colors": {
 				"primary_color": "#002664",
@@ -3599,7 +3601,7 @@
 			},
 			"text": {
 				"school_title": "KENTUCKY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#0033A0",
@@ -3613,7 +3615,7 @@
 			},
 			"text": {
 				"school_title": "KENTUCKY STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Thorobreds!!!"
 			},
 			"colors": {
 				"primary_color": "#046A38",
@@ -3627,7 +3629,7 @@
 			},
 			"text": {
 				"school_title": "KENTUCKY WESLEYAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#392082",
@@ -3641,7 +3643,7 @@
 			},
 			"text": {
 				"school_title": "KENYON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lords!!!"
 			},
 			"colors": {
 				"primary_color": "#4B2E84",
@@ -3655,7 +3657,7 @@
 			},
 			"text": {
 				"school_title": "KING'S COLLEGE (PA)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Monarchs!!!"
 			},
 			"colors": {
 				"primary_color": "#CC0033",
@@ -3669,7 +3671,7 @@
 			},
 			"text": {
 				"school_title": "KUTZTOWN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#782F40",
@@ -3684,7 +3686,7 @@
 			},
 			"text": {
 				"school_title": "LAFAYETTE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Leopards!!!"
 			},
 			"colors": {
 				"primary_color": "#910029",
@@ -3698,7 +3700,7 @@
 			},
 			"text": {
 				"school_title": "LAGRANGE COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#C4203C",
@@ -3712,7 +3714,7 @@
 			},
 			"text": {
 				"school_title": "LAKE ERIE COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Storm!!!"
 			},
 			"colors": {
 				"primary_color": "#113D2A",
@@ -3726,7 +3728,7 @@
 			},
 			"text": {
 				"school_title": "LAKE FOREST",
-				"school_subtitle": ""
+				"school_subtitle": "Go Foresters!!!"
 			},
 			"colors": {
 				"primary_color": "#C8102E",
@@ -3741,7 +3743,7 @@
 			},
 			"text": {
 				"school_title": "LAMAR",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cardinals!!!"
 			},
 			"colors": {
 				"primary_color": "#E31937",
@@ -3755,7 +3757,7 @@
 			},
 			"text": {
 				"school_title": "LAWRENCE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Vikings!!!"
 			},
 			"colors": {
 				"primary_color": "#003D6A",
@@ -3769,7 +3771,7 @@
 			},
 			"text": {
 				"school_title": "LEBANON VALLEY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Flying Dutchmen!!!"
 			},
 			"colors": {
 				"primary_color": "#00305C",
@@ -3784,7 +3786,7 @@
 			},
 			"text": {
 				"school_title": "LEHIGH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mountain Hawks!!!"
 			},
 			"colors": {
 				"primary_color": "#653819",
@@ -3798,7 +3800,7 @@
 			},
 			"text": {
 				"school_title": "LENOIR-RHYNE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#89192C",
@@ -3812,7 +3814,7 @@
 			},
 			"text": {
 				"school_title": "LEWIS & CLARK",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pioneers!!!"
 			},
 			"colors": {
 				"primary_color": "#F36F21",
@@ -3827,7 +3829,7 @@
 			},
 			"text": {
 				"school_title": "LIBERTY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Flames!!!"
 			},
 			"colors": {
 				"primary_color": "#0A254E",
@@ -3841,7 +3843,7 @@
 			},
 			"text": {
 				"school_title": "LIMESTONE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Saints!!!"
 			},
 			"colors": {
 				"primary_color": "#0033A1",
@@ -3855,7 +3857,7 @@
 			},
 			"text": {
 				"school_title": "LINCOLN (MO)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blue Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#102548",
@@ -3869,7 +3871,7 @@
 			},
 			"text": {
 				"school_title": "LINCOLN (PA)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lions!!!"
 			},
 			"colors": {
 				"primary_color": "#003366",
@@ -3884,7 +3886,7 @@
 			},
 			"text": {
 				"school_title": "LINDENWOOD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lions!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -3898,7 +3900,7 @@
 			},
 			"text": {
 				"school_title": "LINFIELD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#470A68",
@@ -3912,7 +3914,7 @@
 			},
 			"text": {
 				"school_title": "LIVINGSTONE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blue Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#86B0C6",
@@ -3927,7 +3929,7 @@
 			},
 			"text": {
 				"school_title": "LOCK HAVEN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bald Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#7A0026",
@@ -3942,7 +3944,7 @@
 			},
 			"text": {
 				"school_title": "LOUISIANA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Ragin' Cajuns!!!"
 			},
 			"colors": {
 				"primary_color": "#CE181E",
@@ -3957,7 +3959,7 @@
 			},
 			"text": {
 				"school_title": "LOUISIANA MONROE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Warhawks!!!"
 			},
 			"colors": {
 				"primary_color": "#840029",
@@ -3972,7 +3974,7 @@
 			},
 			"text": {
 				"school_title": "LOUISIANA TECH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#003087",
@@ -3987,7 +3989,7 @@
 			},
 			"text": {
 				"school_title": "LOUISVILLE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cardinals!!!"
 			},
 			"colors": {
 				"primary_color": "#C9001F",
@@ -4002,7 +4004,7 @@
 			},
 			"text": {
 				"school_title": "LSU",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#461D7C",
@@ -4016,7 +4018,7 @@
 			},
 			"text": {
 				"school_title": "LUTHER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Norse!!!"
 			},
 			"colors": {
 				"primary_color": "#004C97",
@@ -4030,7 +4032,7 @@
 			},
 			"text": {
 				"school_title": "LYCOMING",
-				"school_subtitle": ""
+				"school_subtitle": "Go Warriors!!!"
 			},
 			"colors": {
 				"primary_color": "#00305C",
@@ -4044,7 +4046,7 @@
 			},
 			"text": {
 				"school_title": "MACALESTER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Scots!!!"
 			},
 			"colors": {
 				"primary_color": "#01426A",
@@ -4059,7 +4061,7 @@
 			},
 			"text": {
 				"school_title": "MAINE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Black Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#003263",
@@ -4073,7 +4075,7 @@
 			},
 			"text": {
 				"school_title": "MANCHESTER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Spartans!!!"
 			},
 			"colors": {
 				"primary_color": "#E0CC61",
@@ -4087,7 +4089,7 @@
 			},
 			"text": {
 				"school_title": "MANSFIELD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mountaineers!!!"
 			},
 			"colors": {
 				"primary_color": "#D3103E",
@@ -4101,7 +4103,7 @@
 			},
 			"text": {
 				"school_title": "MARIETTA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pioneers!!!"
 			},
 			"colors": {
 				"primary_color": "#00205B",
@@ -4116,7 +4118,7 @@
 			},
 			"text": {
 				"school_title": "MARIST",
-				"school_subtitle": ""
+				"school_subtitle": "Go Red Foxes!!!"
 			},
 			"colors": {
 				"primary_color": "#C8102E",
@@ -4131,7 +4133,7 @@
 			},
 			"text": {
 				"school_title": "MARSHALL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Thundering Herd!!!"
 			},
 			"colors": {
 				"primary_color": "#00B140",
@@ -4145,7 +4147,7 @@
 			},
 			"text": {
 				"school_title": "MARS HILL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lions!!!"
 			},
 			"colors": {
 				"primary_color": "#002D72",
@@ -4159,7 +4161,7 @@
 			},
 			"text": {
 				"school_title": "MARTIN LUTHER COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Knights!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -4173,7 +4175,7 @@
 			},
 			"text": {
 				"school_title": "MARY HARDIN-BAYLOR",
-				"school_subtitle": ""
+				"school_subtitle": "Go Crusaders!!!"
 			},
 			"colors": {
 				"primary_color": "#4F1F91",
@@ -4188,7 +4190,7 @@
 			},
 			"text": {
 				"school_title": "MARYLAND",
-				"school_subtitle": ""
+				"school_subtitle": "Go Terrapins!!!"
 			},
 			"colors": {
 				"primary_color": "#E21833",
@@ -4202,7 +4204,7 @@
 			},
 			"text": {
 				"school_title": "MCMURRY",
-				"school_subtitle": ""
+				"school_subtitle": "Go War Hawks!!!"
 			},
 			"colors": {
 				"primary_color": "#6F1830",
@@ -4217,7 +4219,7 @@
 			},
 			"text": {
 				"school_title": "MCNEESE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cowboys!!!"
 			},
 			"colors": {
 				"primary_color": "#00529B",
@@ -4232,7 +4234,7 @@
 			},
 			"text": {
 				"school_title": "MEMPHIS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#004991",
@@ -4247,7 +4249,7 @@
 			},
 			"text": {
 				"school_title": "MERCER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -4261,7 +4263,7 @@
 			},
 			"text": {
 				"school_title": "MERCHANT MARINE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mariners!!!"
 			},
 			"colors": {
 				"primary_color": "#093A88",
@@ -4276,7 +4278,7 @@
 			},
 			"text": {
 				"school_title": "MERCYHURST",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lakers!!!"
 			},
 			"colors": {
 				"primary_color": "#0F4F44",
@@ -4291,7 +4293,7 @@
 			},
 			"text": {
 				"school_title": "MERRIMACK",
-				"school_subtitle": ""
+				"school_subtitle": "Go Warriors!!!"
 			},
 			"colors": {
 				"primary_color": "#003768",
@@ -4305,7 +4307,7 @@
 			},
 			"text": {
 				"school_title": "METHODIST",
-				"school_subtitle": ""
+				"school_subtitle": "Go Monarchs!!!"
 			},
 			"colors": {
 				"primary_color": "#034D36",
@@ -4320,7 +4322,7 @@
 			},
 			"text": {
 				"school_title": "MIAMI",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hurricanes!!!"
 			},
 			"colors": {
 				"primary_color": "#005030",
@@ -4335,7 +4337,7 @@
 			},
 			"text": {
 				"school_title": "MIAMI (OH)",
-				"school_subtitle": ""
+				"school_subtitle": "Go RedHawks!!!"
 			},
 			"colors": {
 				"primary_color": "#B61E2E",
@@ -4350,7 +4352,7 @@
 			},
 			"text": {
 				"school_title": "MICHIGAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wolverines!!!"
 			},
 			"colors": {
 				"primary_color": "#00274C",
@@ -4365,7 +4367,7 @@
 			},
 			"text": {
 				"school_title": "MICHIGAN STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Spartans!!!"
 			},
 			"colors": {
 				"primary_color": "#173F35",
@@ -4380,7 +4382,7 @@
 			},
 			"text": {
 				"school_title": "MICHIGAN TECH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Huskies!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -4394,7 +4396,7 @@
 			},
 			"text": {
 				"school_title": "MIDDLEBURY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#003882",
@@ -4409,7 +4411,7 @@
 			},
 			"text": {
 				"school_title": "MIDDLE TENNESSEE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blue Raiders!!!"
 			},
 			"colors": {
 				"primary_color": "#0066CC",
@@ -4423,7 +4425,7 @@
 			},
 			"text": {
 				"school_title": "MILES",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#580D69",
@@ -4437,7 +4439,7 @@
 			},
 			"text": {
 				"school_title": "MILLERSVILLE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Marauders!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -4451,7 +4453,7 @@
 			},
 			"text": {
 				"school_title": "MILLIKIN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Big Blue!!!"
 			},
 			"colors": {
 				"primary_color": "#113C61",
@@ -4465,7 +4467,7 @@
 			},
 			"text": {
 				"school_title": "MILLSAPS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Majors!!!"
 			},
 			"colors": {
 				"primary_color": "#330066",
@@ -4480,7 +4482,7 @@
 			},
 			"text": {
 				"school_title": "MINNESOTA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Gophers!!!"
 			},
 			"colors": {
 				"primary_color": "#5B0013",
@@ -4495,7 +4497,7 @@
 			},
 			"text": {
 				"school_title": "MINNESOTA-DULUTH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#7A0019",
@@ -4509,7 +4511,7 @@
 			},
 			"text": {
 				"school_title": "MINNESOTA-MORRIS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cougars!!!"
 			},
 			"colors": {
 				"primary_color": "#8C1919",
@@ -4524,7 +4526,7 @@
 			},
 			"text": {
 				"school_title": "MINNESOTA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mavericks!!!"
 			},
 			"colors": {
 				"primary_color": "#480059",
@@ -4538,7 +4540,7 @@
 			},
 			"text": {
 				"school_title": "MINOT STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Beavers!!!"
 			},
 			"colors": {
 				"primary_color": "#006242",
@@ -4552,7 +4554,7 @@
 			},
 			"text": {
 				"school_title": "MISERICORDIA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cougars!!!"
 			},
 			"colors": {
 				"primary_color": "#0168B3",
@@ -4566,7 +4568,7 @@
 			},
 			"text": {
 				"school_title": "MISSISSIPPI COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Choctaws!!!"
 			},
 			"colors": {
 				"primary_color": "#003057",
@@ -4581,7 +4583,7 @@
 			},
 			"text": {
 				"school_title": "MISSISSIPPI STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#5D1725",
@@ -4596,7 +4598,7 @@
 			},
 			"text": {
 				"school_title": "MISSISSIPPI VALLEY STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Delta Devils!!!"
 			},
 			"colors": {
 				"primary_color": "#046A38",
@@ -4611,7 +4613,7 @@
 			},
 			"text": {
 				"school_title": "MISSOURI",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -4625,7 +4627,7 @@
 			},
 			"text": {
 				"school_title": "MISSOURI BAPTIST",
-				"school_subtitle": ""
+				"school_subtitle": "Go Spartans!!!"
 			},
 			"colors": {
 				"primary_color": "#002144",
@@ -4639,7 +4641,7 @@
 			},
 			"text": {
 				"school_title": "MISSOURI S&T",
-				"school_subtitle": ""
+				"school_subtitle": "Go Miners!!!"
 			},
 			"colors": {
 				"primary_color": "#154734",
@@ -4654,7 +4656,7 @@
 			},
 			"text": {
 				"school_title": "MISSOURI STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#5E0009",
@@ -4668,7 +4670,7 @@
 			},
 			"text": {
 				"school_title": "MISSOURI WESTERN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Griffons!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -4683,7 +4685,7 @@
 			},
 			"text": {
 				"school_title": "MONMOUTH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hawks!!!"
 			},
 			"colors": {
 				"primary_color": "#041E42",
@@ -4697,7 +4699,7 @@
 			},
 			"text": {
 				"school_title": "MONMOUTH (IL)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Fighting Scots!!!"
 			},
 			"colors": {
 				"primary_color": "#D3282F",
@@ -4712,7 +4714,7 @@
 			},
 			"text": {
 				"school_title": "MONTANA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Grizzlies!!!"
 			},
 			"colors": {
 				"primary_color": "#5E001D",
@@ -4727,7 +4729,7 @@
 			},
 			"text": {
 				"school_title": "MONTANA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bobcats!!!"
 			},
 			"colors": {
 				"primary_color": "#00205B",
@@ -4741,7 +4743,7 @@
 			},
 			"text": {
 				"school_title": "MONTANA-WESTERN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#CD262D",
@@ -4755,7 +4757,7 @@
 			},
 			"text": {
 				"school_title": "MONTCLAIR STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Red Hawks!!!"
 			},
 			"colors": {
 				"primary_color": "#D1190D",
@@ -4769,7 +4771,7 @@
 			},
 			"text": {
 				"school_title": "MORAVIAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Greyhounds!!!"
 			},
 			"colors": {
 				"primary_color": "#00267A",
@@ -4784,7 +4786,7 @@
 			},
 			"text": {
 				"school_title": "MOREHEAD STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#005EB8",
@@ -4799,7 +4801,7 @@
 			},
 			"text": {
 				"school_title": "MORGAN STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#002D74",
@@ -4813,7 +4815,7 @@
 			},
 			"text": {
 				"school_title": "MORRISVILLE STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mustangs!!!"
 			},
 			"colors": {
 				"primary_color": "#004730",
@@ -4827,7 +4829,7 @@
 			},
 			"text": {
 				"school_title": "MOUNT ST. JOSEPH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lions!!!"
 			},
 			"colors": {
 				"primary_color": "#003366",
@@ -4841,7 +4843,7 @@
 			},
 			"text": {
 				"school_title": "MUHLENBERG",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mules!!!"
 			},
 			"colors": {
 				"primary_color": "#A41D36",
@@ -4856,7 +4858,7 @@
 			},
 			"text": {
 				"school_title": "MURRAY STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Racers!!!"
 			},
 			"colors": {
 				"primary_color": "#002144",
@@ -4871,7 +4873,7 @@
 			},
 			"text": {
 				"school_title": "NAVY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Midshipmen!!!"
 			},
 			"colors": {
 				"primary_color": "#00225B",
@@ -4886,7 +4888,7 @@
 			},
 			"text": {
 				"school_title": "NC STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wolfpack!!!"
 			},
 			"colors": {
 				"primary_color": "#CC0000",
@@ -4901,7 +4903,7 @@
 			},
 			"text": {
 				"school_title": "NEBRASKA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cornhuskers!!!"
 			},
 			"colors": {
 				"primary_color": "#D00000",
@@ -4915,7 +4917,7 @@
 			},
 			"text": {
 				"school_title": "NEBRASKA-KEARNEY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lopers!!!"
 			},
 			"colors": {
 				"primary_color": "#004D86",
@@ -4929,7 +4931,7 @@
 			},
 			"text": {
 				"school_title": "NEBRASKA-OMAHA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mavericks!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -4944,7 +4946,7 @@
 			},
 			"text": {
 				"school_title": "NEVADA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wolf Pack!!!"
 			},
 			"colors": {
 				"primary_color": "#041E42",
@@ -4958,7 +4960,7 @@
 			},
 			"text": {
 				"school_title": "NEWBERRY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wolves!!!"
 			},
 			"colors": {
 				"primary_color": "#CE0E2D",
@@ -4973,7 +4975,7 @@
 			},
 			"text": {
 				"school_title": "NEW HAMPSHIRE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#041E42",
@@ -4988,7 +4990,7 @@
 			},
 			"text": {
 				"school_title": "NEW HAVEN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Chargers!!!"
 			},
 			"colors": {
 				"primary_color": "#004B8D",
@@ -5003,7 +5005,7 @@
 			},
 			"text": {
 				"school_title": "NEW MEXICO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lobos!!!"
 			},
 			"colors": {
 				"primary_color": "#BA0C2F",
@@ -5017,7 +5019,7 @@
 			},
 			"text": {
 				"school_title": "NEW MEXICO HIGHLANDS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cowboys!!!"
 			},
 			"colors": {
 				"primary_color": "#502D7F",
@@ -5032,7 +5034,7 @@
 			},
 			"text": {
 				"school_title": "NEW MEXICO STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Aggies!!!"
 			},
 			"colors": {
 				"primary_color": "#7E141B",
@@ -5047,7 +5049,7 @@
 			},
 			"text": {
 				"school_title": "NICHOLLS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Colonels!!!"
 			},
 			"colors": {
 				"primary_color": "#C41230",
@@ -5061,7 +5063,7 @@
 			},
 			"text": {
 				"school_title": "NICHOLS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bison!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -5076,7 +5078,7 @@
 			},
 			"text": {
 				"school_title": "NORFOLK STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Spartans!!!"
 			},
 			"colors": {
 				"primary_color": "#007B5E",
@@ -5091,7 +5093,7 @@
 			},
 			"text": {
 				"school_title": "NORTH ALABAMA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lions!!!"
 			},
 			"colors": {
 				"primary_color": "#592B8A",
@@ -5106,7 +5108,7 @@
 			},
 			"text": {
 				"school_title": "NORTH CAROLINA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tar Heels!!!"
 			},
 			"colors": {
 				"primary_color": "#7BAFD4",
@@ -5121,7 +5123,7 @@
 			},
 			"text": {
 				"school_title": "NORTH CAROLINA A&T",
-				"school_subtitle": ""
+				"school_subtitle": "Go Aggies!!!"
 			},
 			"colors": {
 				"primary_color": "#004684",
@@ -5136,7 +5138,7 @@
 			},
 			"text": {
 				"school_title": "NORTH CAROLINA CENTRAL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#862633",
@@ -5150,7 +5152,7 @@
 			},
 			"text": {
 				"school_title": "NORTH CENTRAL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cardinals!!!"
 			},
 			"colors": {
 				"primary_color": "#AB3541",
@@ -5165,7 +5167,7 @@
 			},
 			"text": {
 				"school_title": "NORTH DAKOTA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Fighting Hawks!!!"
 			},
 			"colors": {
 				"primary_color": "#009A44",
@@ -5180,7 +5182,7 @@
 			},
 			"text": {
 				"school_title": "NORTH DAKOTA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bison!!!"
 			},
 			"colors": {
 				"primary_color": "#005643",
@@ -5194,7 +5196,7 @@
 			},
 			"text": {
 				"school_title": "NORTHEASTERN STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go RiverHawks!!!"
 			},
 			"colors": {
 				"primary_color": "#008265",
@@ -5209,7 +5211,7 @@
 			},
 			"text": {
 				"school_title": "NORTHERN ARIZONA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lumberjacks!!!"
 			},
 			"colors": {
 				"primary_color": "#002454",
@@ -5224,7 +5226,7 @@
 			},
 			"text": {
 				"school_title": "NORTHERN COLORADO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#013C65",
@@ -5239,7 +5241,7 @@
 			},
 			"text": {
 				"school_title": "NORTHERN ILLINOIS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Huskies!!!"
 			},
 			"colors": {
 				"primary_color": "#BA0C2F",
@@ -5254,7 +5256,7 @@
 			},
 			"text": {
 				"school_title": "NORTHERN IOWA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#500778",
@@ -5269,7 +5271,7 @@
 			},
 			"text": {
 				"school_title": "NORTHERN MICHIGAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#095339",
@@ -5283,7 +5285,7 @@
 			},
 			"text": {
 				"school_title": "NORTH GREENVILLE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Crusaders!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -5297,7 +5299,7 @@
 			},
 			"text": {
 				"school_title": "NORTH PARK",
-				"school_subtitle": ""
+				"school_subtitle": "Go Vikings!!!"
 			},
 			"colors": {
 				"primary_color": "#0057A8",
@@ -5312,7 +5314,7 @@
 			},
 			"text": {
 				"school_title": "NORTH TEXAS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mean Green!!!"
 			},
 			"colors": {
 				"primary_color": "#00853E",
@@ -5327,7 +5329,7 @@
 			},
 			"text": {
 				"school_title": "NORTHWESTERN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#4E2A84",
@@ -5341,7 +5343,7 @@
 			},
 			"text": {
 				"school_title": "NORTHWESTERN (MN)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#3D1A54",
@@ -5355,7 +5357,7 @@
 			},
 			"text": {
 				"school_title": "NORTHWESTERN OKLAHOMA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rangers!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -5370,7 +5372,7 @@
 			},
 			"text": {
 				"school_title": "NORTHWESTERN STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Demons!!!"
 			},
 			"colors": {
 				"primary_color": "#492F92",
@@ -5384,7 +5386,7 @@
 			},
 			"text": {
 				"school_title": "NORTHWEST MISSOURI STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bearcats!!!"
 			},
 			"colors": {
 				"primary_color": "#006A4E",
@@ -5398,7 +5400,7 @@
 			},
 			"text": {
 				"school_title": "NORTHWOOD (MI)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Timberwolves!!!"
 			},
 			"colors": {
 				"primary_color": "#093161",
@@ -5412,7 +5414,7 @@
 			},
 			"text": {
 				"school_title": "NORWICH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cadets!!!"
 			},
 			"colors": {
 				"primary_color": "#87212E",
@@ -5427,7 +5429,7 @@
 			},
 			"text": {
 				"school_title": "NOTRE DAME",
-				"school_subtitle": ""
+				"school_subtitle": "Go Fighting Irish!!!"
 			},
 			"colors": {
 				"primary_color": "#0C2340",
@@ -5441,7 +5443,7 @@
 			},
 			"text": {
 				"school_title": "NOTRE DAME COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blue Falcons!!!"
 			},
 			"colors": {
 				"primary_color": "#0068B3",
@@ -5455,7 +5457,7 @@
 			},
 			"text": {
 				"school_title": "OBERLIN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Yeomen!!!"
 			},
 			"colors": {
 				"primary_color": "#CF102D",
@@ -5470,7 +5472,7 @@
 			},
 			"text": {
 				"school_title": "OHIO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bobcats!!!"
 			},
 			"colors": {
 				"primary_color": "#154734",
@@ -5484,7 +5486,7 @@
 			},
 			"text": {
 				"school_title": "OHIO NORTHERN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Polar Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#FF6600",
@@ -5499,7 +5501,7 @@
 			},
 			"text": {
 				"school_title": "OHIO STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Buckeyes!!!"
 			},
 			"colors": {
 				"primary_color": "#BA0C2F",
@@ -5513,7 +5515,7 @@
 			},
 			"text": {
 				"school_title": "OHIO WESLEYAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Battling Bishops!!!"
 			},
 			"colors": {
 				"primary_color": "#C51230",
@@ -5528,7 +5530,7 @@
 			},
 			"text": {
 				"school_title": "OKLAHOMA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Sooners!!!"
 			},
 			"colors": {
 				"primary_color": "#841617",
@@ -5542,7 +5544,7 @@
 			},
 			"text": {
 				"school_title": "OKLAHOMA BAPTIST",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bison!!!"
 			},
 			"colors": {
 				"primary_color": "#007934",
@@ -5557,7 +5559,7 @@
 			},
 			"text": {
 				"school_title": "OKLAHOMA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cowboys!!!"
 			},
 			"colors": {
 				"primary_color": "#FE5C00",
@@ -5572,7 +5574,7 @@
 			},
 			"text": {
 				"school_title": "OLD DOMINION",
-				"school_subtitle": ""
+				"school_subtitle": "Go Monarchs!!!"
 			},
 			"colors": {
 				"primary_color": "#003767",
@@ -5587,7 +5589,7 @@
 			},
 			"text": {
 				"school_title": "OLE MISS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rebels!!!"
 			},
 			"colors": {
 				"primary_color": "#14213D",
@@ -5601,7 +5603,7 @@
 			},
 			"text": {
 				"school_title": "OLIVET COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Comets!!!"
 			},
 			"colors": {
 				"primary_color": "#BD0034",
@@ -5616,7 +5618,7 @@
 			},
 			"text": {
 				"school_title": "OREGON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Ducks!!!"
 			},
 			"colors": {
 				"primary_color": "#007030",
@@ -5631,7 +5633,7 @@
 			},
 			"text": {
 				"school_title": "OREGON STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Beavers!!!"
 			},
 			"colors": {
 				"primary_color": "#D73F09",
@@ -5645,7 +5647,7 @@
 			},
 			"text": {
 				"school_title": "OTTERBEIN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cardinals!!!"
 			},
 			"colors": {
 				"primary_color": "#E21B23",
@@ -5659,7 +5661,7 @@
 			},
 			"text": {
 				"school_title": "OUACHITA BAPTIST",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#552988",
@@ -5673,7 +5675,7 @@
 			},
 			"text": {
 				"school_title": "PACE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Setters!!!"
 			},
 			"colors": {
 				"primary_color": "#00337F",
@@ -5687,7 +5689,7 @@
 			},
 			"text": {
 				"school_title": "PACIFIC LUTHERAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lutes!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -5701,7 +5703,7 @@
 			},
 			"text": {
 				"school_title": "PACIFIC (OR)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Boxers!!!"
 			},
 			"colors": {
 				"primary_color": "#B51217",
@@ -5716,7 +5718,7 @@
 			},
 			"text": {
 				"school_title": "PENN STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Nittany Lions!!!"
 			},
 			"colors": {
 				"primary_color": "#001E44",
@@ -5731,7 +5733,7 @@
 			},
 			"text": {
 				"school_title": "PENNSYLVANIA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Quakers!!!"
 			},
 			"colors": {
 				"primary_color": "#011F5B",
@@ -5746,7 +5748,7 @@
 			},
 			"text": {
 				"school_title": "PITTSBURGH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#003594",
@@ -5760,7 +5762,7 @@
 			},
 			"text": {
 				"school_title": "PITTSBURG STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Gorillas!!!"
 			},
 			"colors": {
 				"primary_color": "#CC0C2F",
@@ -5774,7 +5776,7 @@
 			},
 			"text": {
 				"school_title": "PLYMOUTH STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#135841",
@@ -5788,7 +5790,7 @@
 			},
 			"text": {
 				"school_title": "POMONA-PITZER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Sagehens!!!"
 			},
 			"colors": {
 				"primary_color": "#20438F",
@@ -5803,7 +5805,7 @@
 			},
 			"text": {
 				"school_title": "PORTLAND STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Vikings!!!"
 			},
 			"colors": {
 				"primary_color": "#154734",
@@ -5818,7 +5820,7 @@
 			},
 			"text": {
 				"school_title": "PRAIRIE VIEW",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#4F2582",
@@ -5833,7 +5835,7 @@
 			},
 			"text": {
 				"school_title": "PRESBYTERIAN COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blue Hose!!!"
 			},
 			"colors": {
 				"primary_color": "#0060A9",
@@ -5848,7 +5850,7 @@
 			},
 			"text": {
 				"school_title": "PRINCETON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -5862,7 +5864,7 @@
 			},
 			"text": {
 				"school_title": "PUGET SOUND",
-				"school_subtitle": ""
+				"school_subtitle": "Go Loggers!!!"
 			},
 			"colors": {
 				"primary_color": "#660000",
@@ -5877,7 +5879,7 @@
 			},
 			"text": {
 				"school_title": "PURDUE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Boilermakers!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -5891,7 +5893,7 @@
 			},
 			"text": {
 				"school_title": "QUINCY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hawks!!!"
 			},
 			"colors": {
 				"primary_color": "#581E00",
@@ -5905,7 +5907,7 @@
 			},
 			"text": {
 				"school_title": "RANDOLPH-MACON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Yellow Jackets!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -5919,7 +5921,7 @@
 			},
 			"text": {
 				"school_title": "REDLANDS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#7A2426",
@@ -5934,7 +5936,7 @@
 			},
 			"text": {
 				"school_title": "RENSSELAER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Engineers!!!"
 			},
 			"colors": {
 				"primary_color": "#E2231B",
@@ -5949,7 +5951,7 @@
 			},
 			"text": {
 				"school_title": "RHODE ISLAND",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rams!!!"
 			},
 			"colors": {
 				"primary_color": "#68ABE8",
@@ -5963,7 +5965,7 @@
 			},
 			"text": {
 				"school_title": "RHODES",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lynx!!!"
 			},
 			"colors": {
 				"primary_color": "#C4022B",
@@ -5978,7 +5980,7 @@
 			},
 			"text": {
 				"school_title": "RICE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Owls!!!"
 			},
 			"colors": {
 				"primary_color": "#00205B",
@@ -5993,7 +5995,7 @@
 			},
 			"text": {
 				"school_title": "RICHMOND",
-				"school_subtitle": ""
+				"school_subtitle": "Go Spiders!!!"
 			},
 			"colors": {
 				"primary_color": "#000066",
@@ -6008,7 +6010,7 @@
 			},
 			"text": {
 				"school_title": "ROBERT MORRIS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Colonials!!!"
 			},
 			"colors": {
 				"primary_color": "#001E41",
@@ -6022,7 +6024,7 @@
 			},
 			"text": {
 				"school_title": "ROCKFORD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Regents!!!"
 			},
 			"colors": {
 				"primary_color": "#522E91",
@@ -6037,7 +6039,7 @@
 			},
 			"text": {
 				"school_title": "RUTGERS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Scarlet Knights!!!"
 			},
 			"colors": {
 				"primary_color": "#CC0033",
@@ -6052,7 +6054,7 @@
 			},
 			"text": {
 				"school_title": "SACRAMENTO STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hornets!!!"
 			},
 			"colors": {
 				"primary_color": "#043927",
@@ -6067,7 +6069,7 @@
 			},
 			"text": {
 				"school_title": "SACRED HEART",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pioneers!!!"
 			},
 			"colors": {
 				"primary_color": "#CD1041",
@@ -6081,7 +6083,7 @@
 			},
 			"text": {
 				"school_title": "SALISBURY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Sea Gulls!!!"
 			},
 			"colors": {
 				"primary_color": "#8A0000",
@@ -6095,7 +6097,7 @@
 			},
 			"text": {
 				"school_title": "SALVE REGINA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Seahawks!!!"
 			},
 			"colors": {
 				"primary_color": "#00447C",
@@ -6110,7 +6112,7 @@
 			},
 			"text": {
 				"school_title": "SAMFORD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#0C2340",
@@ -6125,7 +6127,7 @@
 			},
 			"text": {
 				"school_title": "SAM HOUSTON STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bearkats!!!"
 			},
 			"colors": {
 				"primary_color": "#F56423",
@@ -6140,7 +6142,7 @@
 			},
 			"text": {
 				"school_title": "SAN DIEGO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Toreros!!!"
 			},
 			"colors": {
 				"primary_color": "#003B70",
@@ -6155,7 +6157,7 @@
 			},
 			"text": {
 				"school_title": "SAN DIEGO STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Aztecs!!!"
 			},
 			"colors": {
 				"primary_color": "#C41230",
@@ -6170,7 +6172,7 @@
 			},
 			"text": {
 				"school_title": "SAN JOS� STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Spartans!!!"
 			},
 			"colors": {
 				"primary_color": "#005893",
@@ -6184,7 +6186,7 @@
 			},
 			"text": {
 				"school_title": "SAVANNAH STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#002294",
@@ -6198,7 +6200,7 @@
 			},
 			"text": {
 				"school_title": "SETON HILL COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Griffins!!!"
 			},
 			"colors": {
 				"primary_color": "#BF0033",
@@ -6212,7 +6214,7 @@
 			},
 			"text": {
 				"school_title": "SHAW",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#671333",
@@ -6226,7 +6228,7 @@
 			},
 			"text": {
 				"school_title": "SHENANDOAH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hornets!!!"
 			},
 			"colors": {
 				"primary_color": "#98012D",
@@ -6240,7 +6242,7 @@
 			},
 			"text": {
 				"school_title": "SHEPHERD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rams!!!"
 			},
 			"colors": {
 				"primary_color": "#041E42",
@@ -6254,7 +6256,7 @@
 			},
 			"text": {
 				"school_title": "SHIPPENSBURG",
-				"school_subtitle": ""
+				"school_subtitle": "Go Raiders!!!"
 			},
 			"colors": {
 				"primary_color": "#001541",
@@ -6269,7 +6271,7 @@
 			},
 			"text": {
 				"school_title": "SIMPSON COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Storm!!!"
 			},
 			"colors": {
 				"primary_color": "#931A29",
@@ -6283,7 +6285,7 @@
 			},
 			"text": {
 				"school_title": "SLIPPERY ROCK",
-				"school_subtitle": ""
+				"school_subtitle": "Go The Rock!!!"
 			},
 			"colors": {
 				"primary_color": "#006951",
@@ -6298,7 +6300,7 @@
 			},
 			"text": {
 				"school_title": "SMU",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mustangs!!!"
 			},
 			"colors": {
 				"primary_color": "#CC0035",
@@ -6313,7 +6315,7 @@
 			},
 			"text": {
 				"school_title": "SOUTH ALABAMA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Jaguars!!!"
 			},
 			"colors": {
 				"primary_color": "#00205B",
@@ -6328,7 +6330,7 @@
 			},
 			"text": {
 				"school_title": "SOUTH CAROLINA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Gamecocks!!!"
 			},
 			"colors": {
 				"primary_color": "#73000A",
@@ -6343,7 +6345,7 @@
 			},
 			"text": {
 				"school_title": "SOUTH CAROLINA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#900028",
@@ -6358,7 +6360,7 @@
 			},
 			"text": {
 				"school_title": "SOUTH DAKOTA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Coyotes!!!"
 			},
 			"colors": {
 				"primary_color": "#AD0000",
@@ -6372,7 +6374,7 @@
 			},
 			"text": {
 				"school_title": "SOUTH DAKOTA MINES",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hardrockers!!!"
 			},
 			"colors": {
 				"primary_color": "#071D49",
@@ -6387,7 +6389,7 @@
 			},
 			"text": {
 				"school_title": "SOUTH DAKOTA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Jackrabbits!!!"
 			},
 			"colors": {
 				"primary_color": "#0032A0",
@@ -6402,7 +6404,7 @@
 			},
 			"text": {
 				"school_title": "SOUTHEASTERN LOUISIANA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lions!!!"
 			},
 			"colors": {
 				"primary_color": "#215732",
@@ -6417,7 +6419,7 @@
 			},
 			"text": {
 				"school_title": "SOUTHEAST MISSOURI STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Redhawks!!!"
 			},
 			"colors": {
 				"primary_color": "#CE1126",
@@ -6432,7 +6434,7 @@
 			},
 			"text": {
 				"school_title": "SOUTHERN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Jaguars!!!"
 			},
 			"colors": {
 				"primary_color": "#05356E",
@@ -6446,7 +6448,7 @@
 			},
 			"text": {
 				"school_title": "SOUTHERN ARKANSAS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Muleriders!!!"
 			},
 			"colors": {
 				"primary_color": "#003DA5",
@@ -6461,7 +6463,7 @@
 			},
 			"text": {
 				"school_title": "SOUTHERN ILLINOIS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Salukis!!!"
 			},
 			"colors": {
 				"primary_color": "#72253D",
@@ -6476,7 +6478,7 @@
 			},
 			"text": {
 				"school_title": "SOUTHERN MISSISSIPPI",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#FFAA3C",
@@ -6490,7 +6492,7 @@
 			},
 			"text": {
 				"school_title": "SOUTHERN NAZARENE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Crimson Storm!!!"
 			},
 			"colors": {
 				"primary_color": "#891717",
@@ -6504,7 +6506,7 @@
 			},
 			"text": {
 				"school_title": "SOUTHERN OREGON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Raiders!!!"
 			},
 			"colors": {
 				"primary_color": "#C8102E",
@@ -6519,7 +6521,7 @@
 			},
 			"text": {
 				"school_title": "SOUTHERN UTAH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Thunderbirds!!!"
 			},
 			"colors": {
 				"primary_color": "#E91D2D",
@@ -6533,7 +6535,7 @@
 			},
 			"text": {
 				"school_title": "SOUTHERN VIRGINIA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Knights!!!"
 			},
 			"colors": {
 				"primary_color": "#9E1B32",
@@ -6548,7 +6550,7 @@
 			},
 			"text": {
 				"school_title": "SOUTH FLORIDA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulls!!!"
 			},
 			"colors": {
 				"primary_color": "#006747",
@@ -6562,7 +6564,7 @@
 			},
 			"text": {
 				"school_title": "SOUTHWEST BAPTIST",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bearcats!!!"
 			},
 			"colors": {
 				"primary_color": "#4A217E",
@@ -6576,7 +6578,7 @@
 			},
 			"text": {
 				"school_title": "SOUTHWEST MINNESOTA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mustangs!!!"
 			},
 			"colors": {
 				"primary_color": "#3A1807",
@@ -6590,7 +6592,7 @@
 			},
 			"text": {
 				"school_title": "SPRINGFIELD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pride!!!"
 			},
 			"colors": {
 				"primary_color": "#862633",
@@ -6604,7 +6606,7 @@
 			},
 			"text": {
 				"school_title": "ST. AMBROSE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Fighting Bees!!!"
 			},
 			"colors": {
 				"primary_color": "#1E3D7D",
@@ -6619,7 +6621,7 @@
 			},
 			"text": {
 				"school_title": "STANFORD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cardinal!!!"
 			},
 			"colors": {
 				"primary_color": "#8C1515",
@@ -6633,7 +6635,7 @@
 			},
 			"text": {
 				"school_title": "ST. AUGUSTINE'S",
-				"school_subtitle": ""
+				"school_subtitle": "Go Falcons!!!"
 			},
 			"colors": {
 				"primary_color": "#003767",
@@ -6648,7 +6650,7 @@
 			},
 			"text": {
 				"school_title": "ST. CLOUD STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Huskies!!!"
 			},
 			"colors": {
 				"primary_color": "#A10209",
@@ -6663,7 +6665,7 @@
 			},
 			"text": {
 				"school_title": "STEPHEN F. AUSTIN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lumberjacks!!!"
 			},
 			"colors": {
 				"primary_color": "#5F259F",
@@ -6678,7 +6680,7 @@
 			},
 			"text": {
 				"school_title": "STETSON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hatters!!!"
 			},
 			"colors": {
 				"primary_color": "#006747",
@@ -6692,7 +6694,7 @@
 			},
 			"text": {
 				"school_title": "STEVENSON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mustangs!!!"
 			},
 			"colors": {
 				"primary_color": "#004E42",
@@ -6707,7 +6709,7 @@
 			},
 			"text": {
 				"school_title": "ST FRANCIS (PA)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Red Flash!!!"
 			},
 			"colors": {
 				"primary_color": "#a20012",
@@ -6721,7 +6723,7 @@
 			},
 			"text": {
 				"school_title": "ST. JOHN FISHER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cardinals!!!"
 			},
 			"colors": {
 				"primary_color": "#993333",
@@ -6735,7 +6737,7 @@
 			},
 			"text": {
 				"school_title": "ST. NORBERT",
-				"school_subtitle": ""
+				"school_subtitle": "Go Green Knights!!!"
 			},
 			"colors": {
 				"primary_color": "#1A472B",
@@ -6749,7 +6751,7 @@
 			},
 			"text": {
 				"school_title": "ST. OLAF COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Oles!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -6764,7 +6766,7 @@
 			},
 			"text": {
 				"school_title": "STONY BROOK",
-				"school_subtitle": ""
+				"school_subtitle": "Go Seawolves!!!"
 			},
 			"colors": {
 				"primary_color": "#990000",
@@ -6778,7 +6780,7 @@
 			},
 			"text": {
 				"school_title": "ST. PETER'S",
-				"school_subtitle": ""
+				"school_subtitle": "Go Peacocks!!!"
 			},
 			"colors": {
 				"primary_color": "#001555",
@@ -6793,7 +6795,7 @@
 			},
 			"text": {
 				"school_title": "ST. THOMAS (MN)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tommies!!!"
 			},
 			"colors": {
 				"primary_color": "#500878",
@@ -6807,7 +6809,7 @@
 			},
 			"text": {
 				"school_title": "SUNY MARITIME",
-				"school_subtitle": ""
+				"school_subtitle": "Go Privateers!!!"
 			},
 			"colors": {
 				"primary_color": "#62082C",
@@ -6822,7 +6824,7 @@
 			},
 			"text": {
 				"school_title": "SYRACUSE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Orange!!!"
 			},
 			"colors": {
 				"primary_color": "#FF431B",
@@ -6837,7 +6839,7 @@
 			},
 			"text": {
 				"school_title": "TARLETON STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Texans!!!"
 			},
 			"colors": {
 				"primary_color": "#4F2D7F",
@@ -6852,7 +6854,7 @@
 			},
 			"text": {
 				"school_title": "TCU",
-				"school_subtitle": ""
+				"school_subtitle": "Go Horned Frogs!!!"
 			},
 			"colors": {
 				"primary_color": "#4D1979",
@@ -6867,7 +6869,7 @@
 			},
 			"text": {
 				"school_title": "TEMPLE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Owls!!!"
 			},
 			"colors": {
 				"primary_color": "#990033",
@@ -6882,7 +6884,7 @@
 			},
 			"text": {
 				"school_title": "TENNESSEE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Volunteers!!!"
 			},
 			"colors": {
 				"primary_color": "#FF8200",
@@ -6897,7 +6899,7 @@
 			},
 			"text": {
 				"school_title": "TENNESSEE STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#171796",
@@ -6912,7 +6914,7 @@
 			},
 			"text": {
 				"school_title": "TENNESSEE TECH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#4F2984",
@@ -6927,7 +6929,7 @@
 			},
 			"text": {
 				"school_title": "TEXAS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Longhorns!!!"
 			},
 			"colors": {
 				"primary_color": "#BF5700",
@@ -6942,7 +6944,7 @@
 			},
 			"text": {
 				"school_title": "TEXAS A&M",
-				"school_subtitle": ""
+				"school_subtitle": "Go Aggies!!!"
 			},
 			"colors": {
 				"primary_color": "#500000",
@@ -6957,7 +6959,7 @@
 			},
 			"text": {
 				"school_title": "TEXAS A&M-COMMERCE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lions!!!"
 			},
 			"colors": {
 				"primary_color": "#0A2846",
@@ -6971,7 +6973,7 @@
 			},
 			"text": {
 				"school_title": "TEXAS A&M-KINGSVILLE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Javelinas!!!"
 			},
 			"colors": {
 				"primary_color": "#005DAA",
@@ -6985,7 +6987,7 @@
 			},
 			"text": {
 				"school_title": "TEXAS LUTHERAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -7000,7 +7002,7 @@
 			},
 			"text": {
 				"school_title": "TEXAS SOUTHERN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#6F263D",
@@ -7015,7 +7017,7 @@
 			},
 			"text": {
 				"school_title": "TEXAS STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bobcats!!!"
 			},
 			"colors": {
 				"primary_color": "#501214",
@@ -7030,7 +7032,7 @@
 			},
 			"text": {
 				"school_title": "TEXAS TECH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Red Raiders!!!"
 			},
 			"colors": {
 				"primary_color": "#E90802",
@@ -7045,7 +7047,7 @@
 			},
 			"text": {
 				"school_title": "THE CITADEL",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#002856",
@@ -7059,7 +7061,7 @@
 			},
 			"text": {
 				"school_title": "TIFFIN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Dragons!!!"
 			},
 			"colors": {
 				"primary_color": "#154734",
@@ -7074,7 +7076,7 @@
 			},
 			"text": {
 				"school_title": "TOLEDO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rockets!!!"
 			},
 			"colors": {
 				"primary_color": "#0B2240",
@@ -7089,7 +7091,7 @@
 			},
 			"text": {
 				"school_title": "TOWSON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -7103,7 +7105,7 @@
 			},
 			"text": {
 				"school_title": "TRINE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Thunder!!!"
 			},
 			"colors": {
 				"primary_color": "#00305C",
@@ -7117,7 +7119,7 @@
 			},
 			"text": {
 				"school_title": "TRINITY (CT)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bantams!!!"
 			},
 			"colors": {
 				"primary_color": "#00305C",
@@ -7131,7 +7133,7 @@
 			},
 			"text": {
 				"school_title": "TRINITY (TX)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#723130",
@@ -7146,7 +7148,7 @@
 			},
 			"text": {
 				"school_title": "TROY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Trojans!!!"
 			},
 			"colors": {
 				"primary_color": "#98002E",
@@ -7160,7 +7162,7 @@
 			},
 			"text": {
 				"school_title": "TUFTS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Jumbos!!!"
 			},
 			"colors": {
 				"primary_color": "#3E8EDE",
@@ -7175,7 +7177,7 @@
 			},
 			"text": {
 				"school_title": "TULANE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Green Wave!!!"
 			},
 			"colors": {
 				"primary_color": "#006548",
@@ -7190,7 +7192,7 @@
 			},
 			"text": {
 				"school_title": "TULSA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Hurricane!!!"
 			},
 			"colors": {
 				"primary_color": "#003595",
@@ -7204,7 +7206,7 @@
 			},
 			"text": {
 				"school_title": "TUSCULUM",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pioneers!!!"
 			},
 			"colors": {
 				"primary_color": "#FF651C",
@@ -7218,7 +7220,7 @@
 			},
 			"text": {
 				"school_title": "TUSKEGEE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#7B0707",
@@ -7233,7 +7235,7 @@
 			},
 			"text": {
 				"school_title": "UAB",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blazers!!!"
 			},
 			"colors": {
 				"primary_color": "#1A5632",
@@ -7248,7 +7250,7 @@
 			},
 			"text": {
 				"school_title": "UC DAVIS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Aggies!!!"
 			},
 			"colors": {
 				"primary_color": "#002855",
@@ -7263,7 +7265,7 @@
 			},
 			"text": {
 				"school_title": "UCF",
-				"school_subtitle": ""
+				"school_subtitle": "Go Knights!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -7278,7 +7280,7 @@
 			},
 			"text": {
 				"school_title": "UCLA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bruins!!!"
 			},
 			"colors": {
 				"primary_color": "#2774AE",
@@ -7293,7 +7295,7 @@
 			},
 			"text": {
 				"school_title": "UMASS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Minutemen!!!"
 			},
 			"colors": {
 				"primary_color": "#881C1C",
@@ -7307,7 +7309,7 @@
 			},
 			"text": {
 				"school_title": "UMASS DARTMOUTH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Corsairs!!!"
 			},
 			"colors": {
 				"primary_color": "#003764",
@@ -7321,7 +7323,7 @@
 			},
 			"text": {
 				"school_title": "UMASS LOWELL",
-				"school_subtitle": ""
+				"school_subtitle": "Go River Hawks!!!"
 			},
 			"colors": {
 				"primary_color": "#0067B1",
@@ -7335,7 +7337,7 @@
 			},
 			"text": {
 				"school_title": "UNC PEMBROKE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Braves!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -7350,7 +7352,7 @@
 			},
 			"text": {
 				"school_title": "UNION",
-				"school_subtitle": ""
+				"school_subtitle": "Go Dutchmen!!!"
 			},
 			"colors": {
 				"primary_color": "#822433",
@@ -7365,7 +7367,7 @@
 			},
 			"text": {
 				"school_title": "UNLV",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rebels!!!"
 			},
 			"colors": {
 				"primary_color": "#CF0A2C",
@@ -7379,7 +7381,7 @@
 			},
 			"text": {
 				"school_title": "UPPER IOWA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Peacocks!!!"
 			},
 			"colors": {
 				"primary_color": "#0D1030",
@@ -7394,7 +7396,7 @@
 			},
 			"text": {
 				"school_title": "URSINUS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#98012E",
@@ -7409,7 +7411,7 @@
 			},
 			"text": {
 				"school_title": "USC",
-				"school_subtitle": ""
+				"school_subtitle": "Go Trojans!!!"
 			},
 			"colors": {
 				"primary_color": "#9D2235",
@@ -7424,7 +7426,7 @@
 			},
 			"text": {
 				"school_title": "UTAH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Utes!!!"
 			},
 			"colors": {
 				"primary_color": "#BE0000",
@@ -7439,7 +7441,7 @@
 			},
 			"text": {
 				"school_title": "UTAH STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Aggies!!!"
 			},
 			"colors": {
 				"primary_color": "#00263A",
@@ -7454,7 +7456,7 @@
 			},
 			"text": {
 				"school_title": "UTEP",
-				"school_subtitle": ""
+				"school_subtitle": "Go Miners!!!"
 			},
 			"colors": {
 				"primary_color": "#041E42",
@@ -7468,7 +7470,7 @@
 			},
 			"text": {
 				"school_title": "UTICA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pioneers!!!"
 			},
 			"colors": {
 				"primary_color": "#0C223F",
@@ -7483,7 +7485,7 @@
 			},
 			"text": {
 				"school_title": "UT MARTIN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Skyhawks!!!"
 			},
 			"colors": {
 				"primary_color": "#0D223F",
@@ -7498,7 +7500,7 @@
 			},
 			"text": {
 				"school_title": "UT SAN ANTONIO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Roadrunners!!!"
 			},
 			"colors": {
 				"primary_color": "#002A5C",
@@ -7513,7 +7515,7 @@
 			},
 			"text": {
 				"school_title": "UW-OSHKOSH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Titans!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -7527,7 +7529,7 @@
 			},
 			"text": {
 				"school_title": "UW-RIVER FALLS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Falcons!!!"
 			},
 			"colors": {
 				"primary_color": "#C80F2E",
@@ -7542,7 +7544,7 @@
 			},
 			"text": {
 				"school_title": "UW-STOUT",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blue Devils!!!"
 			},
 			"colors": {
 				"primary_color": "#012169",
@@ -7556,7 +7558,7 @@
 			},
 			"text": {
 				"school_title": "VALDOSTA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blazers!!!"
 			},
 			"colors": {
 				"primary_color": "#CC0000",
@@ -7571,7 +7573,7 @@
 			},
 			"text": {
 				"school_title": "VALPARAISO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Crusaders!!!"
 			},
 			"colors": {
 				"primary_color": "#5C3000",
@@ -7586,7 +7588,7 @@
 			},
 			"text": {
 				"school_title": "VANDERBILT",
-				"school_subtitle": ""
+				"school_subtitle": "Go Commodores!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -7601,7 +7603,7 @@
 			},
 			"text": {
 				"school_title": "VILLANOVA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#00205B",
@@ -7616,7 +7618,7 @@
 			},
 			"text": {
 				"school_title": "VIRGINIA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cavaliers!!!"
 			},
 			"colors": {
 				"primary_color": "#232D4B",
@@ -7630,7 +7632,7 @@
 			},
 			"text": {
 				"school_title": "VIRGINIA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Trojans!!!"
 			},
 			"colors": {
 				"primary_color": "#1F3D7B",
@@ -7645,7 +7647,7 @@
 			},
 			"text": {
 				"school_title": "VIRGINIA TECH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hokies!!!"
 			},
 			"colors": {
 				"primary_color": "#861F41",
@@ -7660,7 +7662,7 @@
 			},
 			"text": {
 				"school_title": "VMI",
-				"school_subtitle": ""
+				"school_subtitle": "Go Keydets!!!"
 			},
 			"colors": {
 				"primary_color": "#AE122A",
@@ -7674,7 +7676,7 @@
 			},
 			"text": {
 				"school_title": "WABASH COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Little Giants!!!"
 			},
 			"colors": {
 				"primary_color": "#EC1C2C",
@@ -7689,7 +7691,7 @@
 			},
 			"text": {
 				"school_title": "WAGNER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Seahawks!!!"
 			},
 			"colors": {
 				"primary_color": "#004331",
@@ -7704,7 +7706,7 @@
 			},
 			"text": {
 				"school_title": "WAKE FOREST",
-				"school_subtitle": ""
+				"school_subtitle": "Go Demon Deacons!!!"
 			},
 			"colors": {
 				"primary_color": "#2C2A29",
@@ -7718,7 +7720,7 @@
 			},
 			"text": {
 				"school_title": "WARTBURG",
-				"school_subtitle": ""
+				"school_subtitle": "Go Knights!!!"
 			},
 			"colors": {
 				"primary_color": "#F58025",
@@ -7732,7 +7734,7 @@
 			},
 			"text": {
 				"school_title": "WASHBURN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Ichabods!!!"
 			},
 			"colors": {
 				"primary_color": "#002E5E",
@@ -7747,7 +7749,7 @@
 			},
 			"text": {
 				"school_title": "WASHINGTON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Huskies!!!"
 			},
 			"colors": {
 				"primary_color": "#33006F",
@@ -7761,7 +7763,7 @@
 			},
 			"text": {
 				"school_title": "WASHINGTON & JEFFERSON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Presidents!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -7775,7 +7777,7 @@
 			},
 			"text": {
 				"school_title": "WASHINGTON & LEE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Generals!!!"
 			},
 			"colors": {
 				"primary_color": "#003399",
@@ -7790,7 +7792,7 @@
 			},
 			"text": {
 				"school_title": "WASHINGTON STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cougars!!!"
 			},
 			"colors": {
 				"primary_color": "#981E32",
@@ -7804,7 +7806,7 @@
 			},
 			"text": {
 				"school_title": "WAYNESBURG",
-				"school_subtitle": ""
+				"school_subtitle": "Go Yellow Jackets!!!"
 			},
 			"colors": {
 				"primary_color": "#B95205",
@@ -7818,7 +7820,7 @@
 			},
 			"text": {
 				"school_title": "WAYNE STATE (MI)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Warriors!!!"
 			},
 			"colors": {
 				"primary_color": "#115E56",
@@ -7832,7 +7834,7 @@
 			},
 			"text": {
 				"school_title": "WAYNE STATE (NE)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -7847,7 +7849,7 @@
 			},
 			"text": {
 				"school_title": "WEBER STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wildcats!!!"
 			},
 			"colors": {
 				"primary_color": "#492365",
@@ -7861,7 +7863,7 @@
 			},
 			"text": {
 				"school_title": "WESLEYAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cardinals!!!"
 			},
 			"colors": {
 				"primary_color": "#D72121",
@@ -7875,7 +7877,7 @@
 			},
 			"text": {
 				"school_title": "WEST ALABAMA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#A6192E",
@@ -7889,7 +7891,7 @@
 			},
 			"text": {
 				"school_title": "WEST CHESTER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Rams!!!"
 			},
 			"colors": {
 				"primary_color": "#540E69",
@@ -7904,7 +7906,7 @@
 			},
 			"text": {
 				"school_title": "WESTERN CAROLINA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Catamounts!!!"
 			},
 			"colors": {
 				"primary_color": "#592C88",
@@ -7918,7 +7920,7 @@
 			},
 			"text": {
 				"school_title": "WESTERN CONNECTICUT STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Colonials!!!"
 			},
 			"colors": {
 				"primary_color": "#002856",
@@ -7933,7 +7935,7 @@
 			},
 			"text": {
 				"school_title": "WESTERN ILLINOIS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Leathernecks!!!"
 			},
 			"colors": {
 				"primary_color": "#663399",
@@ -7948,7 +7950,7 @@
 			},
 			"text": {
 				"school_title": "WESTERN KENTUCKY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hilltoppers!!!"
 			},
 			"colors": {
 				"primary_color": "#B01E24",
@@ -7963,7 +7965,7 @@
 			},
 			"text": {
 				"school_title": "WESTERN MICHIGAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Broncos!!!"
 			},
 			"colors": {
 				"primary_color": "#532E1F",
@@ -7977,7 +7979,7 @@
 			},
 			"text": {
 				"school_title": "WESTERN NEW ENGLAND",
-				"school_subtitle": ""
+				"school_subtitle": "Go Golden Bears!!!"
 			},
 			"colors": {
 				"primary_color": "#003082",
@@ -7991,7 +7993,7 @@
 			},
 			"text": {
 				"school_title": "WESTERN NEW MEXICO",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mustangs!!!"
 			},
 			"colors": {
 				"primary_color": "#42196F",
@@ -8005,7 +8007,7 @@
 			},
 			"text": {
 				"school_title": "WESTERN OREGON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wolves!!!"
 			},
 			"colors": {
 				"primary_color": "#E31837",
@@ -8019,7 +8021,7 @@
 			},
 			"text": {
 				"school_title": "WESTFIELD STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Owls!!!"
 			},
 			"colors": {
 				"primary_color": "#00247D",
@@ -8034,7 +8036,7 @@
 			},
 			"text": {
 				"school_title": "WEST GEORGIA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Wolves!!!"
 			},
 			"colors": {
 				"primary_color": "#0033A1",
@@ -8048,7 +8050,7 @@
 			},
 			"text": {
 				"school_title": "WEST LIBERTY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hilltoppers!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -8062,7 +8064,7 @@
 			},
 			"text": {
 				"school_title": "WESTMINSTER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blue Jays!!!"
 			},
 			"colors": {
 				"primary_color": "#002F56",
@@ -8076,7 +8078,7 @@
 			},
 			"text": {
 				"school_title": "WEST TEXAS A&M",
-				"school_subtitle": ""
+				"school_subtitle": "Go Buffaloes!!!"
 			},
 			"colors": {
 				"primary_color": "#581818",
@@ -8091,7 +8093,7 @@
 			},
 			"text": {
 				"school_title": "WEST VIRGINIA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Mountaineers!!!"
 			},
 			"colors": {
 				"primary_color": "#002855",
@@ -8105,7 +8107,7 @@
 			},
 			"text": {
 				"school_title": "WHEATON COLLEGE (ILL)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Thunder!!!"
 			},
 			"colors": {
 				"primary_color": "#00447C",
@@ -8119,7 +8121,7 @@
 			},
 			"text": {
 				"school_title": "WHITTIER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Poets!!!"
 			},
 			"colors": {
 				"primary_color": "#661C78",
@@ -8133,7 +8135,7 @@
 			},
 			"text": {
 				"school_title": "WHITWORTH",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pirates!!!"
 			},
 			"colors": {
 				"primary_color": "#C22033",
@@ -8147,7 +8149,7 @@
 			},
 			"text": {
 				"school_title": "WIDENER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pride!!!"
 			},
 			"colors": {
 				"primary_color": "#0057B8",
@@ -8161,7 +8163,7 @@
 			},
 			"text": {
 				"school_title": "WILKES",
-				"school_subtitle": ""
+				"school_subtitle": "Go Colonels!!!"
 			},
 			"colors": {
 				"primary_color": "#002855",
@@ -8175,7 +8177,7 @@
 			},
 			"text": {
 				"school_title": "WILLAMETTE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bearcats!!!"
 			},
 			"colors": {
 				"primary_color": "#98002E",
@@ -8189,7 +8191,7 @@
 			},
 			"text": {
 				"school_title": "WILLIAM JEWELL COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cardinals!!!"
 			},
 			"colors": {
 				"primary_color": "#E4002B",
@@ -8204,7 +8206,7 @@
 			},
 			"text": {
 				"school_title": "WILLIAM & MARY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tribe!!!"
 			},
 			"colors": {
 				"primary_color": "#115740",
@@ -8218,7 +8220,7 @@
 			},
 			"text": {
 				"school_title": "WILLIAM PATERSON",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pioneers!!!"
 			},
 			"colors": {
 				"primary_color": "#F06023",
@@ -8232,7 +8234,7 @@
 			},
 			"text": {
 				"school_title": "WILLIAMS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Ephs!!!"
 			},
 			"colors": {
 				"primary_color": "#512698",
@@ -8246,7 +8248,7 @@
 			},
 			"text": {
 				"school_title": "WILMINGTON (OH)",
-				"school_subtitle": ""
+				"school_subtitle": "Go Quakers!!!"
 			},
 			"colors": {
 				"primary_color": "#024E43",
@@ -8260,7 +8262,7 @@
 			},
 			"text": {
 				"school_title": "WINGATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#00205B",
@@ -8275,7 +8277,7 @@
 			},
 			"text": {
 				"school_title": "WINONA STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Warriors!!!"
 			},
 			"colors": {
 				"primary_color": "#4B08A1",
@@ -8289,7 +8291,7 @@
 			},
 			"text": {
 				"school_title": "WINSTON-SALEM",
-				"school_subtitle": ""
+				"school_subtitle": "Go Rams!!!"
 			},
 			"colors": {
 				"primary_color": "#bb0100",
@@ -8304,7 +8306,7 @@
 			},
 			"text": {
 				"school_title": "WISCONSIN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Badgers!!!"
 			},
 			"colors": {
 				"primary_color": "#C5050C",
@@ -8319,7 +8321,7 @@
 			},
 			"text": {
 				"school_title": "WISCONSIN-EAU CLAIRE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blugolds!!!"
 			},
 			"colors": {
 				"primary_color": "#2B3E85",
@@ -8334,7 +8336,7 @@
 			},
 			"text": {
 				"school_title": "WISCONSIN-LA CROSSE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Eagles!!!"
 			},
 			"colors": {
 				"primary_color": "#830019",
@@ -8348,7 +8350,7 @@
 			},
 			"text": {
 				"school_title": "WISCONSIN LUTHERAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Warriors!!!"
 			},
 			"colors": {
 				"primary_color": "#006643",
@@ -8362,7 +8364,7 @@
 			},
 			"text": {
 				"school_title": "WISCONSIN-PLATTEVILLE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pioneers!!!"
 			},
 			"colors": {
 				"primary_color": "#FF5800",
@@ -8376,7 +8378,7 @@
 			},
 			"text": {
 				"school_title": "WISCONSIN-STEVENS POINT",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pointers!!!"
 			},
 			"colors": {
 				"primary_color": "#59178A",
@@ -8390,7 +8392,7 @@
 			},
 			"text": {
 				"school_title": "WITTENBERG",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tigers!!!"
 			},
 			"colors": {
 				"primary_color": "#C51F35",
@@ -8405,7 +8407,7 @@
 			},
 			"text": {
 				"school_title": "WOFFORD",
-				"school_subtitle": ""
+				"school_subtitle": "Go Terriers!!!"
 			},
 			"colors": {
 				"primary_color": "#282829",
@@ -8419,7 +8421,7 @@
 			},
 			"text": {
 				"school_title": "WOOSTER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Fighting Scots!!!"
 			},
 			"colors": {
 				"primary_color": "#000000",
@@ -8433,7 +8435,7 @@
 			},
 			"text": {
 				"school_title": "WORCESTER STATE COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Lancers!!!"
 			},
 			"colors": {
 				"primary_color": "#003896",
@@ -8447,7 +8449,7 @@
 			},
 			"text": {
 				"school_title": "WRIGHT STATE UNIVERSITY",
-				"school_subtitle": ""
+				"school_subtitle": "Go Raiders!!!"
 			},
 			"colors": {
 				"primary_color": "#a36209",
@@ -8462,7 +8464,7 @@
 			},
 			"text": {
 				"school_title": "WYOMING",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cowboys!!!"
 			},
 			"colors": {
 				"primary_color": "#492F24",
@@ -8477,7 +8479,7 @@
 			},
 			"text": {
 				"school_title": "YALE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#0A2240",
@@ -8492,7 +8494,7 @@
 			},
 			"text": {
 				"school_title": "YOUNGSTOWN STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Penguins!!!"
 			},
 			"colors": {
 				"primary_color": "#CE0E2D",
@@ -8506,7 +8508,7 @@
 			},
 			"text": {
 				"school_title": "BELHAVEN COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Blazers!!!"
 			},
 			"colors": {
 				"primary_color": "#1D3C34",
@@ -8520,7 +8522,7 @@
 			},
 			"text": {
 				"school_title": "BOWIE STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bulldogs!!!"
 			},
 			"colors": {
 				"primary_color": "#1D252C",
@@ -8534,7 +8536,7 @@
 			},
 			"text": {
 				"school_title": "CHOWAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Braves!!!"
 			},
 			"colors": {
 				"primary_color": "#003087",
@@ -8549,7 +8551,7 @@
 			},
 			"text": {
 				"school_title": "DIXIE STATE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Red Storm!!!"
 			},
 			"colors": {
 				"primary_color": "#003058",
@@ -8563,7 +8565,7 @@
 			},
 			"text": {
 				"school_title": "HOFSTRA",
-				"school_subtitle": ""
+				"school_subtitle": "Go Pride!!!"
 			},
 			"colors": {
 				"primary_color": "#003591",
@@ -8577,7 +8579,7 @@
 			},
 			"text": {
 				"school_title": "KEAN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cougars!!!"
 			},
 			"colors": {
 				"primary_color": "#003057",
@@ -8591,7 +8593,7 @@
 			},
 			"text": {
 				"school_title": "KNOX COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Prairie Fire!!!"
 			},
 			"colors": {
 				"primary_color": "#5B2B82",
@@ -8605,7 +8607,7 @@
 			},
 			"text": {
 				"school_title": "LANE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Dragons!!!"
 			},
 			"colors": {
 				"primary_color": "#000080",
@@ -8619,7 +8621,7 @@
 			},
 			"text": {
 				"school_title": "LORAS COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Duhawks!!!"
 			},
 			"colors": {
 				"primary_color": "#442D7D",
@@ -8633,7 +8635,7 @@
 			},
 			"text": {
 				"school_title": "MCKENDREE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Bearcats!!!"
 			},
 			"colors": {
 				"primary_color": "#470A68",
@@ -8647,7 +8649,7 @@
 			},
 			"text": {
 				"school_title": "MIT",
-				"school_subtitle": ""
+				"school_subtitle": "Go Engineers!!!"
 			},
 			"colors": {
 				"primary_color": "#A31F34",
@@ -8661,7 +8663,7 @@
 			},
 			"text": {
 				"school_title": "NORTHEASTERN",
-				"school_subtitle": ""
+				"school_subtitle": "Go Huskies!!!"
 			},
 			"colors": {
 				"primary_color": "#D41B2C",
@@ -8675,7 +8677,7 @@
 			},
 			"text": {
 				"school_title": "SHORTER",
-				"school_subtitle": ""
+				"school_subtitle": "Go Hawks!!!"
 			},
 			"colors": {
 				"primary_color": "#0068B3",
@@ -8689,7 +8691,7 @@
 			},
 			"text": {
 				"school_title": "SIOUX FALLS",
-				"school_subtitle": ""
+				"school_subtitle": "Go Cougars!!!"
 			},
 			"colors": {
 				"primary_color": "#492F91",
@@ -8703,7 +8705,7 @@
 			},
 			"text": {
 				"school_title": "THIEL COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Tomcats!!!"
 			},
 			"colors": {
 				"primary_color": "#998643",
@@ -8717,7 +8719,7 @@
 			},
 			"text": {
 				"school_title": "UNION COLLEGE",
-				"school_subtitle": ""
+				"school_subtitle": "Go Dutchmen!!!"
 			},
 			"colors": {
 				"primary_color": "#822433",
@@ -8731,7 +8733,7 @@
 			},
 			"text": {
 				"school_title": "VIRGINIA UNION",
-				"school_subtitle": ""
+				"school_subtitle": "Go Panthers!!!"
 			},
 			"colors": {
 				"primary_color": "#8F012D",
