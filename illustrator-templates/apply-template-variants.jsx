@@ -11,6 +11,8 @@
  * Usage (interactive): Leave both paths empty. Open your template in Illustrator, run this script,
  * then choose the content JSON in the file dialog.
  *
+ * Testing: Set VARIANT_LIMIT (e.g. 20) at the top to process only the first N variants.
+ *
  * JSON format: { "variants": [ { "outputFileName": "...", "images": {...}, "text": {...}, "colors": {...} }, ... ] }
  * Requires: Named layers in the .ai template matching the keys in each variant.
  */
@@ -21,6 +23,8 @@
 // EDIT THESE TWO PATHS (or leave empty to use interactive mode):
 var STORED_TEMPLATE_PATH = './fall-football-template.ai';  // e.g. "fall-football-template.ai"
 var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g. "fall-football/fall-football-content.json"
+// Limit variants for quick testing (e.g. 20). Set to 0 or delete the line to process all.
+var VARIANT_LIMIT = 20;
 
 (function () {
   'use strict';
@@ -29,6 +33,17 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
   var scriptFolder = scriptFile.parent;
   var argsFile = new File(scriptFolder.fullName + '/apply-template-args.txt');
   var batchMode = argsFile.exists;
+  var errorLogFile = new File(scriptFolder.fullName + '/apply-template-errors.log');
+
+  function logError(message) {
+    try {
+      var line = '[' + new Date().toString() + '] ' + (message || '') + '\n';
+      errorLogFile.open('a');
+      errorLogFile.encoding = 'UTF-8';
+      errorLogFile.write(line);
+      errorLogFile.close();
+    } catch (e) {}
+  }
 
   function resolvePath(pathStr) {
     if (!pathStr || !String(pathStr).length) return null;
@@ -52,14 +67,14 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
 
     configFile = new File(jsonPath);
     if (!configFile.exists) {
-      alert('Batch mode: JSON file not found: ' + jsonPath);
+      logError('Batch mode: JSON file not found: ' + jsonPath);
       try { if (argsFile.exists) argsFile.remove(); } catch (e) {}
       app.quit();
       return;
     }
     var templateFileObj = new File(templatePath);
     if (!templateFileObj.exists) {
-      alert('Batch mode: Template file not found: ' + templatePath);
+      logError('Batch mode: Template file not found: ' + templatePath);
       try { if (argsFile.exists) argsFile.remove(); } catch (e) {}
       app.quit();
       return;
@@ -74,15 +89,15 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
       app.open(storedTemplate);
     } else {
       if (!storedTemplate || !storedTemplate.exists) {
-        alert('Stored template path not found: ' + STORED_TEMPLATE_PATH);
+        logError('Stored template path not found: ' + STORED_TEMPLATE_PATH);
       } else {
-        alert('Stored JSON path not found: ' + STORED_JSON_PATH);
+        logError('Stored JSON path not found: ' + STORED_JSON_PATH);
       }
       return;
     }
   } else {
     if (!app.documents.length) {
-      alert('Please open your template document first, or set STORED_TEMPLATE_PATH and STORED_JSON_PATH at the top of this script.');
+      logError('Please open your template document first, or set STORED_TEMPLATE_PATH and STORED_JSON_PATH at the top of this script.');
       return;
     }
     configFile = File.openDialog('Select content JSON (one file, many variants)', '*.json', false);
@@ -96,7 +111,7 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
 
   var jsonStr = readFile(configFile);
   if (!jsonStr) {
-    alert('Could not read config file.');
+    logError('Could not read config file.');
     if (batchMode) quitBatch();
     return;
   }
@@ -105,7 +120,7 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
   try {
     data = parseJSON(jsonStr);
   } catch (e) {
-    alert('Invalid JSON in config file: ' + (e.message || e.toString()));
+    logError('Invalid JSON in config file: ' + (e.message || e.toString()));
     if (batchMode) quitBatch();
     return;
   }
@@ -128,10 +143,13 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
     if (data.outputFileName || data.images || data.text || data.colors) {
       variants = [data];
     } else {
-      alert('Content JSON must contain a "variants" array or a single variant (outputFileName, images, text, colors).');
+      logError('Content JSON must contain a "variants" array or a single variant (outputFileName, images, text, colors).');
       if (batchMode) quitBatch();
       return;
     }
+  }
+  if (typeof VARIANT_LIMIT === 'number' && VARIANT_LIMIT > 0 && variants.length > VARIANT_LIMIT) {
+    variants = variants.slice(0, VARIANT_LIMIT);
   }
 
   var templateFile = new File(app.activeDocument.fullName);
@@ -170,23 +188,17 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
 
   function main() {
     var exportedFiles = [];
+    // Process all variants on the same in-memory document without closing/reopening.
+    // The template's year_overlay_image layer only exists in the unsaved in-memory
+    // document — it is absent from the saved .ai file on disk. Closing and reopening
+    // loses it, so each variant's changes are applied directly over the previous one.
+    // Each call to applyOneVariant overwrites colors, text, and images in-place.
     var doc = app.activeDocument;
 
     for (var i = 0; i < variants.length; i++) {
       var config = variants[i];
       var outFile = applyOneVariant(doc, config, basePath);
       exportedFiles.push(outFile.fullName);
-
-      if (i < variants.length - 1) {
-        doc.close(SaveOptions.DONOTSAVECHANGES);
-        doc = app.open(templateFile);
-      }
-    }
-
-    // Reopen template so user has it open after batch (skip if batch mode; we're quitting)
-    if (!batchMode && variants.length > 1) {
-      doc.close(SaveOptions.DONOTSAVECHANGES);
-      app.open(templateFile);
     }
 
     if (!batchMode) {
@@ -238,6 +250,38 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
 
   function getLayerByName(doc, name) {
     return findLayerInContainer(doc, name);
+  }
+
+  // Find a named container (layer OR GroupItem) at any nesting depth.
+  // Checks container.layers by name, then container.pageItems by name, recursing into both.
+  // This handles cases where Illustrator treats a sublayer as a GroupItem on reopen.
+  function findContainerByName(container, name) {
+    if (!container) return null;
+    var layers = null;
+    try { layers = container.layers; } catch (e1) {}
+    if (layers && layers.length) {
+      for (var j = 0; j < layers.length; j++) {
+        try {
+          if (layers[j].name === name) return layers[j];
+          var r = findContainerByName(layers[j], name);
+          if (r) return r;
+        } catch (e2) {}
+      }
+    }
+    var items = null;
+    try { items = container.pageItems; } catch (e3) {}
+    if (items && items.length) {
+      for (var i = 0; i < items.length; i++) {
+        try {
+          if (items[i].name === name) return items[i];
+          if (items[i].typename === 'GroupItem') {
+            var r2 = findContainerByName(items[i], name);
+            if (r2) return r2;
+          }
+        } catch (e4) {}
+      }
+    }
+    return null;
   }
 
   // Collect all layers whose name starts with "school_title" (e.g. school_title, school_title_2, school_title copy).
@@ -476,19 +520,29 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
         var it = items[i];
         if (it.typename === 'TextFrame') {
           try {
-            // Set stroke on the text frame itself
             it.stroked = true;
             it.strokeColor = color;
           } catch (e2) {}
 
-          // Also set stroke via textRange character attributes, which is how
-          // Illustrator actually stores text appearance for live type.
           try {
             var tr = it.textRange;
             var ca = tr.characterAttributes;
             ca.strokeColor = color;
             ca.stroked = true;
           } catch (e3) {}
+
+          try {
+            var chars = tr.characters;
+            if (chars && chars.length) {
+              for (var c = 0; c < chars.length; c++) {
+                var charRange = chars[c];
+                if (charRange && charRange.characterAttributes) {
+                  charRange.characterAttributes.strokeColor = color;
+                  charRange.characterAttributes.stroked = true;
+                }
+              }
+            }
+          } catch (e4) {}
         }
         if (it.typename === 'GroupItem') {
           setStrokeColorOnTextFrames(it, color);
@@ -564,26 +618,52 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
 
       var layer = getLayerByName(doc, layerName);
       if (!layer) {
-        alert('Layer not found: ' + layerName);
+        logError('Layer not found: ' + layerName);
         continue;
       }
 
       var file = resolveFile(pathOrUrl, basePath);
       if (!file || !file.exists) {
-        alert('Image file not found for layer "' + layerName + '": ' + pathOrUrl);
+        logError('Image file not found for layer "' + layerName + '": ' + pathOrUrl);
+        continue;
+      }
+      if (!isValidPlacedImageFile(file)) {
+        logError('Image file is not a valid PNG/JPEG (or is corrupt); skipping to avoid plug-in error. Layer: "' + layerName + '", path: ' + pathOrUrl);
         continue;
       }
 
       // Raster/placed (JPG/PNG/etc). Use recursive search so we correctly handle
       // images inside clipping groups and sublayers (e.g. year_overlay_image masks, bg_image, etc.).
-      // For most layers we keep the existing bounds and just swap the file.
-      // For school_logo and school_mascot we fit the image into a bounding box while preserving aspect ratio.
+      // Prefer relink() when we have an existing PlacedItem (avoids Error 9080 on .file assignment).
       var allExisting = findAllImageItemsInContainer(layer);
       var item = null;
 
+      function placeFileAndPosition(placeItem, parent, left, top, width, height) {
+        try {
+          placeItem.file = file;
+        } catch (e9080) {
+          // Do NOT use app.open(file) as fallback: Illustrator shows a blocking dialog
+          // ("Could not read the file because the plug-in could not understand this file")
+          // for unsupported/corrupt images, which stops the script until user clicks OK.
+          placeItem.remove();
+          logError('Could not place image (relink/place failed); skipping. Layer: ' + layerName + ', path: ' + (file.fsName || pathOrUrl));
+          return null;
+        }
+        placeItem.move(parent, ElementPlacement.PLACEATEND);
+        if (left !== undefined && top !== undefined) {
+          placeItem.left = left;
+          placeItem.top = top;
+        }
+        if (width && height) {
+          placeItem.width = width;
+          placeItem.height = height;
+        }
+        return placeItem;
+      }
+
       if (layerName !== 'school_logo' && layerName !== 'school_mascot') {
-        // Generic case (bg_image, year_overlay_image, etc.): replace every image in the layer
-        // so duplicate layers / multiple placed images all get the same file.
+        // Generic case: replace every image in the layer with the new file.
+        var relinkedFirst = false;
         for (var idx = 0; idx < allExisting.length; idx++) {
           var existing = allExisting[idx];
           var parent = existing.parent;
@@ -591,48 +671,82 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
           var top = existing.top;
           var width = existing.width;
           var height = existing.height;
-          // PlacedItem.file is read-only, so remove and re-place with the new file.
-          try {
-            existing.remove();
-          } catch (eRem) {}
-          var repl = doc.placedItems.add();
-          repl.file = file;
-          repl.left = left;
-          repl.top = top;
-          if (width && height) {
-            repl.width = width;
-            repl.height = height;
+          if (idx === 0 && existing.typename === 'PlacedItem') {
+            try {
+              existing.relink(file);
+              existing.left = left;
+              existing.top = top;
+              if (width && height) {
+                existing.width = width;
+                existing.height = height;
+              }
+              existing.move(parent, ElementPlacement.PLACEATEND);
+              item = existing;
+              relinkedFirst = true;
+            } catch (eRelink) {}
           }
-          repl.move(parent, ElementPlacement.PLACEATEND);
-          item = repl;
+          if (!relinkedFirst || idx > 0) {
+            try {
+              existing.remove();
+            } catch (eRem) {}
+            var repl = doc.placedItems.add();
+            repl = placeFileAndPosition(repl, parent, left, top, width, height);
+            if (repl) item = repl;
+          }
         }
       } else if (allExisting.length) {
-        // Logo/mascot: only one image; remove and place fresh, then fit into bounding box.
+        // Logo/mascot: one image; relink if PlacedItem, else remove and place.
         var existing = allExisting[0];
         var parent = existing.parent;
-        try {
-          existing.remove();
-        } catch (eRem2) {}
-        var logoItem = doc.placedItems.add();
-        logoItem.file = file;
-        logoItem.move(parent, ElementPlacement.PLACEATEND);
-        var bbPath = findBoundsPathInContainer(layer);
-        if (bbPath) {
-          fitItemIntoBounds(logoItem, bbPath, layerName === 'school_mascot' ? 'bottom' : undefined);
+        if (existing.typename === 'PlacedItem') {
+          try {
+            existing.relink(file);
+            existing.move(parent, ElementPlacement.PLACEATEND);
+            item = existing;
+          } catch (eRelink) {
+            try {
+              existing.remove();
+            } catch (eRem2) {}
+            var logoItem = doc.placedItems.add();
+            item = placeFileAndPosition(logoItem, parent, 0, 0, undefined, undefined);
+          }
+        } else {
+          try {
+            existing.remove();
+          } catch (eRem2) {}
+          var logoItem = doc.placedItems.add();
+          item = placeFileAndPosition(logoItem, parent, 0, 0, undefined, undefined);
         }
-        item = logoItem;
+        var bbPath = findBoundsPathInContainer(layer);
+        if (bbPath && item) {
+          fitItemIntoBounds(item, bbPath, layerName === 'school_mascot' ? 'bottom' : undefined);
+        }
       }
 
       if (!allExisting.length) {
-        // No existing image found: place a new one on this layer.
+        // No existing image: place a new one on this layer.
         var placeItem = doc.placedItems.add();
-        placeItem.file = file;
-        placeItem.left = 0;
-        placeItem.top = 0;
-        placeItem.move(layer, ElementPlacement.PLACEATEND);
-        item = placeItem;
+        var placed = false;
+        try {
+          placeItem.file = file;
+          placed = true;
+          item = placeItem;
+        } catch (e9080) {
+          placeItem.remove();
+          // Do NOT use app.open(file) as fallback: Illustrator shows a blocking dialog
+          // for unsupported/corrupt images, which stops the script until user clicks OK.
+          logError('Could not place image for layer "' + layerName + '". Check that the file is a valid PNG/JPG and the path is not too long. Path: ' + (file.fsName || pathOrUrl));
+          continue;
+        }
+        if (item) {
+          if (item === placeItem) {
+            placeItem.left = 0;
+            placeItem.top = 0;
+            placeItem.move(layer, ElementPlacement.PLACEATEND);
+          }
+        }
 
-        if (layerName === 'school_logo' || layerName === 'school_mascot') {
+        if (item && (layerName === 'school_logo' || layerName === 'school_mascot')) {
           var bbPath2 = findBoundsPathInContainer(layer);
           if (bbPath2) {
             fitItemIntoBounds(item, bbPath2, layerName === 'school_mascot' ? 'bottom' : undefined);
@@ -642,13 +756,40 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
     }
   }
 
+  /**
+   * Return true if the file looks like a valid PNG or JPEG (by header).
+   * Use this before place/relink to avoid Illustrator's blocking "plug-in could not understand this file" dialog.
+   */
+  function isValidPlacedImageFile(file) {
+    if (!file || !file.exists) return false;
+    try {
+      file.open('r');
+      file.encoding = 'BINARY';
+      var head = file.read(12);
+      file.close();
+      if (!head || head.length < 8) return false;
+      // PNG: 89 50 4E 47 0D 0A 1A 0A
+      if (head.charCodeAt(0) === 0x89 && head.charCodeAt(1) === 0x50 && head.charCodeAt(2) === 0x4E && head.charCodeAt(3) === 0x47) return true;
+      // JPEG: FF D8 FF
+      if (head.charCodeAt(0) === 0xFF && head.charCodeAt(1) === 0xD8 && head.charCodeAt(2) === 0xFF) return true;
+      return false;
+    } catch (e) {
+      try { file.close(); } catch (e2) {}
+      return false;
+    }
+  }
+
   function resolveFile(pathOrUrl, basePath) {
     pathOrUrl = String(pathOrUrl || '').replace(/^file:\/\//i, '').replace(/%20/g, ' ');
+    var sep = (typeof $.os !== 'undefined' && $.os.indexOf('Windows') !== -1) ? '\\' : '/';
+    var pathNormalized = pathOrUrl.replace(/\//g, sep);
     var f = new File(pathOrUrl);
-    if (f.exists) return f;
-    if (basePath && !pathOrUrl.match(/^[a-z]:/i) && pathOrUrl.indexOf('/') !== 0) {
-      var combined = new File(basePath.fullName + '/' + pathOrUrl);
-      if (combined.exists) return combined;
+    if (f.exists) return new File(f.fsName);
+    if (basePath && !pathOrUrl.match(/^[a-z]:/i) && pathOrUrl.indexOf('/') !== 0 && pathOrUrl.indexOf('\\') !== 0) {
+      var baseStr = String(basePath.fullName).replace(/[\/\\]+$/, '');
+      var combinedPath = baseStr + sep + pathNormalized;
+      var combined = new File(combinedPath);
+      if (combined.exists) return new File(combined.fsName);
     }
     return null;
   }
@@ -855,17 +996,9 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
       }
     }
 
-    // 2) Stroke color of numbers in year_overlay_image should be secondary_color.
-    if (secondaryRgb) {
-      var yearLayer = getLayerByName(doc, 'year_overlay_image');
-      if (yearLayer) {
-        setStrokeColorOnTextFrames(yearLayer, secondaryRgb);
-        setStrokeColorOnPaths(yearLayer, secondaryRgb);
-      }
-    }
-
-    // 3) Gradient colors
-    // bg_gradient: bottom (start) = primary_color, top (end) = secondary_color.
+    // 2) Gradient colors
+    // bg_gradient: bottom = primary_color, top = secondary_color.
+    // In the template, stop 0 is typically at top (0%) and last stop at bottom (100%); assign accordingly.
     if (primaryRgb || secondaryRgb) {
       var bgGradItem = findPageItemByNameInContainer(doc, 'bg_gradient');
       if (bgGradItem && bgGradItem.fillColor && bgGradItem.fillColor.typename === 'GradientColor') {
@@ -873,29 +1006,38 @@ var STORED_JSON_PATH = './fall-football/fall-football-content.json';      // e.g
         var grad = gc.gradient;
         var stops = grad.gradientStops;
         if (stops.length >= 2) {
-          if (primaryRgb) {
-            stops[0].color = primaryRgb;
-          }
           if (secondaryRgb) {
-            stops[stops.length - 1].color = secondaryRgb;
+            stops[0].color = secondaryRgb;  // top (first stop)
+          }
+          if (primaryRgb) {
+            stops[stops.length - 1].color = primaryRgb;  // bottom (last stop)
           }
         }
         bgGradItem.fillColor = gc;
       }
 
-      // overlay_gradient: top color = primary_color (first stop). Duplicate gradient so the change applies (shared swatches may not update otherwise).
+      // overlay_gradient: top color = secondary_color (first stop). Duplicate gradient so the change applies (shared swatches may not update otherwise).
       var overlayGradItem = findPageItemByNameInContainer(doc, 'overlay_gradient');
       if (!overlayGradItem && getLayerByName(doc, 'overlay_gradient')) {
         overlayGradItem = findFirstItemWithGradientFill(getLayerByName(doc, 'overlay_gradient'));
       }
-      if (overlayGradItem && primaryRgb) {
+      if (overlayGradItem && secondaryRgb) {
         var gradientTarget = getGradientFillTarget(overlayGradItem);
         if (gradientTarget) {
-          var newGc = duplicateGradientAndSetFirstStopColor(doc, gradientTarget.fillColor, primaryRgb);
+          var newGc = duplicateGradientAndSetFirstStopColor(doc, gradientTarget.fillColor, secondaryRgb);
           if (newGc) {
             gradientTarget.item.fillColor = newGc;
           }
         }
+      }
+    }
+
+    // 3) Stroke color of numbers in year_overlay_image should be secondary_color.
+    if (secondaryRgb) {
+      var yearContainer = findContainerByName(doc, 'year_overlay_image');
+      if (yearContainer) {
+        setStrokeColorOnTextFrames(yearContainer, secondaryRgb);
+        setStrokeColorOnPaths(yearContainer, secondaryRgb);
       }
     }
   }

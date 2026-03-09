@@ -25,6 +25,40 @@ Create an `.ai` template with these layer names (or subset). The script matches 
 
 Save the template as e.g. `fall-football-template.ai`. Open this file in Illustrator before running the script and selecting a variant JSON.
 
+## Building content from logos.csv
+
+To populate **`fall-football-content.json`** from **`logos.csv`** (school name, two colors, logo URL):
+
+1. From this folder, run:
+   ```bash
+   node build-from-logos-csv.mjs
+   ```
+   Or with a limit for testing: `node build-from-logos-csv.mjs --limit 20`
+
+2. The script downloads each logo **once** into **`images/`** with filenames like `University_of_Kansas_logo.png`, then writes `fall-football-content.json` with one variant per school (school_title, primary_color, secondary_color, school_logo path). Existing image files are skipped.
+
+3. Use the generated `fall-football-content.json` with `apply-template-variants.jsx` as below.
+
+## Pulling mascot imagery from Sportradar Images v3
+
+To fill the **`school_mascot`** layer from [Sportradar Images v3](https://developer.sportradar.com/images-and-editorials/reference/images-overview):
+
+1. Get an API key for Sportradar Images (trial or production) from the [Sportradar Marketplace](https://marketplace.sportradar.com/).
+2. Set it in the environment or pass it on the command line:
+   ```bash
+   set SPORTRADAR_IMAGES_API_KEY=your_key_here
+   node fetch-mascots-sportradar.mjs
+   ```
+   Or: `node fetch-mascots-sportradar.mjs --api-key=your_key_here`
+3. The script fetches the logo manifest for NCAA football, matches teams to your content by school name, downloads images into `images/` (e.g. `Alabama_mascot.png`), and adds `school_mascot` paths to `fall-football-content.json`. It follows 302 redirects as required by the API.
+4. Optional: use `sportradar-team-ids.csv` with columns `school,sportradar_team_id` to map school names to Sportradar team UUIDs if name matching is insufficient.
+5. Options:
+   - `--limit N` — process only the first N variants (for testing).
+   - `--dry-run` — show what would be matched and downloaded without writing files.
+   - `--manifest-only` — fetch and print the manifest JSON (to verify the API key and inspect response structure).
+
+Environment variables (optional): `SPORTRADAR_ACCESS_LEVEL` (default `p`), `SPORTRADAR_IMAGES_PROVIDER` (default `usat`), `SPORTRADAR_IMAGES_YEAR` (default current year).
+
 ## One content JSON, one template
 
 Use **one** content file for this template: **`fall-football-content.json`** in this folder. It contains a **variants** array with one object per school. The script reads this file and exports one JPEG per variant (same folder as the JSON).
