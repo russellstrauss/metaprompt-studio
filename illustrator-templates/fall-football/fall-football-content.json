@@ -20,7 +20,7 @@
 		{
 			"outputFileName": "abilene-christian",
 			"images": {
-				"school_logo": "images/Abilene_Christian_logo.png",
+				"school_logo": "images/logos/Abilene_Christian_logo.png",
 				"school_mascot": "images/mascots/ABILENE_CHRISTIAN_mascot.png"
 			},
 			"text": {
@@ -35,8 +35,7 @@
 		{
 			"outputFileName": "adams-state",
 			"images": {
-				"school_logo": "images/Adams_State_logo.png",
-				"school_mascot": "images/mascots/ADAMS_STATE_mascot.png"
+				"school_logo": "images/logos/Adams_State_logo.png"
 			},
 			"text": {
 				"school_title": "ADAMS STATE",
@@ -50,8 +49,7 @@
 		{
 			"outputFileName": "adrian",
 			"images": {
-				"school_logo": "images/Adrian_logo.png",
-				"school_mascot": "images/mascots/ADRIAN_mascot.png"
+				"school_logo": "images/logos/Adrian_logo.png"
 			},
 			"text": {
 				"school_title": "ADRIAN",
@@ -65,7 +63,7 @@
 		{
 			"outputFileName": "air-force",
 			"images": {
-				"school_logo": "images/Air_Force_logo.png",
+				"school_logo": "images/logos/Air_Force_logo.png",
 				"school_mascot": "images/mascots/AIR_FORCE_mascot.png"
 			},
 			"text": {
@@ -80,7 +78,7 @@
 		{
 			"outputFileName": "akron",
 			"images": {
-				"school_logo": "images/Akron_logo.png",
+				"school_logo": "images/logos/Akron_logo.png",
 				"school_mascot": "images/mascots/AKRON_mascot.png"
 			},
 			"text": {
@@ -95,7 +93,7 @@
 		{
 			"outputFileName": "alabama",
 			"images": {
-				"school_logo": "images/Alabama_logo.png",
+				"school_logo": "images/logos/Alabama_logo.png",
 				"school_mascot": "images/mascots/ALABAMA_mascot.png"
 			},
 			"text": {
@@ -110,7 +108,7 @@
 		{
 			"outputFileName": "alabama-am",
 			"images": {
-				"school_logo": "images/Alabama_AM_logo.png",
+				"school_logo": "images/logos/Alabama_AM_logo.png",
 				"school_mascot": "images/mascots/ALABAMA_AM_mascot.png"
 			},
 			"text": {
@@ -125,7 +123,7 @@
 		{
 			"outputFileName": "alabama-state",
 			"images": {
-				"school_logo": "images/Alabama_State_logo.png",
+				"school_logo": "images/logos/Alabama_State_logo.png",
 				"school_mascot": "images/mascots/ALABAMA_STATE_mascot.png"
 			},
 			"text": {
@@ -140,7 +138,7 @@
 		{
 			"outputFileName": "albany",
 			"images": {
-				"school_logo": "images/Albany_logo.png",
+				"school_logo": "images/logos/Albany_logo.png",
 				"school_mascot": "images/mascots/ALBANY_mascot.png"
 			},
 			"text": {
@@ -155,8 +153,7 @@
 		{
 			"outputFileName": "albany-state-ga",
 			"images": {
-				"school_logo": "images/Albany_State_GA_logo.png",
-				"school_mascot": "images/mascots/ALBANY_STATE_GA_mascot.png"
+				"school_logo": "images/logos/Albany_State_GA_logo.png"
 			},
 			"text": {
 				"school_title": "ALBANY STATE (GA)",
@@ -170,8 +167,7 @@
 		{
 			"outputFileName": "albion",
 			"images": {
-				"school_logo": "images/Albion_logo.png",
-				"school_mascot": "images/mascots/ALBION_mascot.png"
+				"school_logo": "images/logos/Albion_logo.png"
 			},
 			"text": {
 				"school_title": "ALBION",
@@ -185,8 +181,7 @@
 		{
 			"outputFileName": "albright",
 			"images": {
-				"school_logo": "images/Albright_logo.png",
-				"school_mascot": "images/mascots/ALBRIGHT_mascot.png"
+				"school_logo": "images/logos/Albright_logo.png"
 			},
 			"text": {
 				"school_title": "ALBRIGHT",
@@ -200,7 +195,7 @@
 		{
 			"outputFileName": "alcorn-state",
 			"images": {
-				"school_logo": "images/Alcorn_State_logo.png",
+				"school_logo": "images/logos/Alcorn_State_logo.png",
 				"school_mascot": "images/mascots/ALCORN_STATE_mascot.png"
 			},
 			"text": {
@@ -215,8 +210,7 @@
 		{
 			"outputFileName": "alderson-broaddus",
 			"images": {
-				"school_logo": "images/Alderson-Broaddus_logo.png",
-				"school_mascot": "images/mascots/ALDERSON-BROADDUS_mascot.png"
+				"school_logo": "images/logos/Alderson-Broaddus_logo.png"
 			},
 			"text": {
 				"school_title": "ALDERSON-BROADDUS",
@@ -230,8 +224,7 @@
 		{
 			"outputFileName": "alfred",
 			"images": {
-				"school_logo": "images/Alfred_logo.png",
-				"school_mascot": "images/mascots/ALFRED_mascot.png"
+				"school_logo": "images/logos/Alfred_logo.png"
 			},
 			"text": {
 				"school_title": "ALFRED",
@@ -245,8 +238,7 @@
 		{
 			"outputFileName": "alfred-state-college",
 			"images": {
-				"school_logo": "images/Alfred_State_College_logo.png",
-				"school_mascot": "images/mascots/ALFRED_STATE_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Alfred_State_College_logo.png"
 			},
 			"text": {
 				"school_title": "ALFRED STATE COLLEGE",
@@ -260,8 +252,7 @@
 		{
 			"outputFileName": "allegheny",
 			"images": {
-				"school_logo": "images/Allegheny_logo.png",
-				"school_mascot": "images/mascots/ALLEGHENY_mascot.png"
+				"school_logo": "images/logos/Allegheny_logo.png"
 			},
 			"text": {
 				"school_title": "ALLEGHENY",
@@ -275,8 +266,7 @@
 		{
 			"outputFileName": "alma-college",
 			"images": {
-				"school_logo": "images/Alma_College_logo.png",
-				"school_mascot": "images/mascots/ALMA_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Alma_College_logo.png"
 			},
 			"text": {
 				"school_title": "ALMA COLLEGE",
@@ -290,7 +280,7 @@
 		{
 			"outputFileName": "american-international",
 			"images": {
-				"school_logo": "images/American_International_logo.png",
+				"school_logo": "images/logos/American_International_logo.png",
 				"school_mascot": "images/mascots/AMERICAN_INTERNATIONAL_mascot.png"
 			},
 			"text": {
@@ -305,8 +295,7 @@
 		{
 			"outputFileName": "amherst-college",
 			"images": {
-				"school_logo": "images/Amherst_College_logo.png",
-				"school_mascot": "images/mascots/AMHERST_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Amherst_College_logo.png"
 			},
 			"text": {
 				"school_title": "AMHERST COLLEGE",
@@ -320,8 +309,7 @@
 		{
 			"outputFileName": "anderson-in",
 			"images": {
-				"school_logo": "images/Anderson_IN_logo.png",
-				"school_mascot": "images/mascots/ANDERSON_IN_mascot.png"
+				"school_logo": "images/logos/Anderson_IN_logo.png"
 			},
 			"text": {
 				"school_title": "ANDERSON (IN)",
@@ -335,8 +323,7 @@
 		{
 			"outputFileName": "angelo-state",
 			"images": {
-				"school_logo": "images/Angelo_State_logo.png",
-				"school_mascot": "images/mascots/ANGELO_STATE_mascot.png"
+				"school_logo": "images/logos/Angelo_State_logo.png"
 			},
 			"text": {
 				"school_title": "ANGELO STATE",
@@ -350,8 +337,7 @@
 		{
 			"outputFileName": "anna-maria-college",
 			"images": {
-				"school_logo": "images/Anna_Maria_College_logo.png",
-				"school_mascot": "images/mascots/ANNA_MARIA_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Anna_Maria_College_logo.png"
 			},
 			"text": {
 				"school_title": "ANNA MARIA COLLEGE",
@@ -365,7 +351,7 @@
 		{
 			"outputFileName": "appalachian-state",
 			"images": {
-				"school_logo": "images/Appalachian_State_logo.png",
+				"school_logo": "images/logos/Appalachian_State_logo.png",
 				"school_mascot": "images/mascots/APPALACHIAN_STATE_mascot.png"
 			},
 			"text": {
@@ -380,7 +366,7 @@
 		{
 			"outputFileName": "arizona",
 			"images": {
-				"school_logo": "images/Arizona_logo.png",
+				"school_logo": "images/logos/Arizona_logo.png",
 				"school_mascot": "images/mascots/ARIZONA_mascot.png"
 			},
 			"text": {
@@ -395,7 +381,7 @@
 		{
 			"outputFileName": "arizona-state",
 			"images": {
-				"school_logo": "images/Arizona_State_logo.png",
+				"school_logo": "images/logos/Arizona_State_logo.png",
 				"school_mascot": "images/mascots/ARIZONA_STATE_mascot.png"
 			},
 			"text": {
@@ -410,7 +396,7 @@
 		{
 			"outputFileName": "arkansas",
 			"images": {
-				"school_logo": "images/Arkansas_logo.png",
+				"school_logo": "images/logos/Arkansas_logo.png",
 				"school_mascot": "images/mascots/ARKANSAS_mascot.png"
 			},
 			"text": {
@@ -425,8 +411,7 @@
 		{
 			"outputFileName": "arkansas-monticello",
 			"images": {
-				"school_logo": "images/Arkansas-Monticello_logo.png",
-				"school_mascot": "images/mascots/ARKANSAS-MONTICELLO_mascot.png"
+				"school_logo": "images/logos/Arkansas-Monticello_logo.png"
 			},
 			"text": {
 				"school_title": "ARKANSAS-MONTICELLO",
@@ -440,7 +425,7 @@
 		{
 			"outputFileName": "arkansas-pine-bluff",
 			"images": {
-				"school_logo": "images/Arkansas-Pine_Bluff_logo.png",
+				"school_logo": "images/logos/Arkansas-Pine_Bluff_logo.png",
 				"school_mascot": "images/mascots/ARKANSAS-PINE_BLUFF_mascot.png"
 			},
 			"text": {
@@ -455,7 +440,7 @@
 		{
 			"outputFileName": "arkansas-state",
 			"images": {
-				"school_logo": "images/Arkansas_State_logo.png",
+				"school_logo": "images/logos/Arkansas_State_logo.png",
 				"school_mascot": "images/mascots/ARKANSAS_STATE_mascot.png"
 			},
 			"text": {
@@ -470,8 +455,7 @@
 		{
 			"outputFileName": "arkansas-tech",
 			"images": {
-				"school_logo": "images/Arkansas_Tech_logo.png",
-				"school_mascot": "images/mascots/ARKANSAS_TECH_mascot.png"
+				"school_logo": "images/logos/Arkansas_Tech_logo.png"
 			},
 			"text": {
 				"school_title": "ARKANSAS TECH",
@@ -485,7 +469,7 @@
 		{
 			"outputFileName": "army",
 			"images": {
-				"school_logo": "images/Army_logo.png",
+				"school_logo": "images/logos/Army_logo.png",
 				"school_mascot": "images/mascots/ARMY_mascot.png"
 			},
 			"text": {
@@ -500,8 +484,7 @@
 		{
 			"outputFileName": "ashland",
 			"images": {
-				"school_logo": "images/Ashland_logo.png",
-				"school_mascot": "images/mascots/ASHLAND_mascot.png"
+				"school_logo": "images/logos/Ashland_logo.png"
 			},
 			"text": {
 				"school_title": "ASHLAND",
@@ -515,8 +498,7 @@
 		{
 			"outputFileName": "assumption",
 			"images": {
-				"school_logo": "images/Assumption_logo.png",
-				"school_mascot": "images/mascots/ASSUMPTION_mascot.png"
+				"school_logo": "images/logos/Assumption_logo.png"
 			},
 			"text": {
 				"school_title": "ASSUMPTION",
@@ -530,7 +512,7 @@
 		{
 			"outputFileName": "auburn",
 			"images": {
-				"school_logo": "images/Auburn_logo.png",
+				"school_logo": "images/logos/Auburn_logo.png",
 				"school_mascot": "images/mascots/AUBURN_mascot.png"
 			},
 			"text": {
@@ -545,8 +527,7 @@
 		{
 			"outputFileName": "augsburg",
 			"images": {
-				"school_logo": "images/Augsburg_logo.png",
-				"school_mascot": "images/mascots/AUGSBURG_mascot.png"
+				"school_logo": "images/logos/Augsburg_logo.png"
 			},
 			"text": {
 				"school_title": "AUGSBURG",
@@ -560,8 +541,7 @@
 		{
 			"outputFileName": "augustana-il",
 			"images": {
-				"school_logo": "images/Augustana_IL_logo.png",
-				"school_mascot": "images/mascots/AUGUSTANA_IL_mascot.png"
+				"school_logo": "images/logos/Augustana_IL_logo.png"
 			},
 			"text": {
 				"school_title": "AUGUSTANA (IL)",
@@ -575,8 +555,7 @@
 		{
 			"outputFileName": "augustana-sd",
 			"images": {
-				"school_logo": "images/Augustana_SD_logo.png",
-				"school_mascot": "images/mascots/AUGUSTANA_SD_mascot.png"
+				"school_logo": "images/logos/Augustana_SD_logo.png"
 			},
 			"text": {
 				"school_title": "AUGUSTANA (SD)",
@@ -590,8 +569,7 @@
 		{
 			"outputFileName": "aurora",
 			"images": {
-				"school_logo": "images/Aurora_logo.png",
-				"school_mascot": "images/mascots/AURORA_mascot.png"
+				"school_logo": "images/logos/Aurora_logo.png"
 			},
 			"text": {
 				"school_title": "AURORA",
@@ -605,8 +583,7 @@
 		{
 			"outputFileName": "austin-college",
 			"images": {
-				"school_logo": "images/Austin_College_logo.png",
-				"school_mascot": "images/mascots/AUSTIN_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Austin_College_logo.png"
 			},
 			"text": {
 				"school_title": "AUSTIN COLLEGE",
@@ -620,7 +597,7 @@
 		{
 			"outputFileName": "austin-peay",
 			"images": {
-				"school_logo": "images/Austin_Peay_logo.png",
+				"school_logo": "images/logos/Austin_Peay_logo.png",
 				"school_mascot": "images/mascots/AUSTIN_PEAY_mascot.png"
 			},
 			"text": {
@@ -635,8 +612,7 @@
 		{
 			"outputFileName": "averett",
 			"images": {
-				"school_logo": "images/Averett_logo.png",
-				"school_mascot": "images/mascots/AVERETT_mascot.png"
+				"school_logo": "images/logos/Averett_logo.png"
 			},
 			"text": {
 				"school_title": "AVERETT",
@@ -650,8 +626,7 @@
 		{
 			"outputFileName": "baldwin-wallace",
 			"images": {
-				"school_logo": "images/Baldwin-Wallace_logo.png",
-				"school_mascot": "images/mascots/BALDWIN-WALLACE_mascot.png"
+				"school_logo": "images/logos/Baldwin-Wallace_logo.png"
 			},
 			"text": {
 				"school_title": "BALDWIN-WALLACE",
@@ -665,7 +640,7 @@
 		{
 			"outputFileName": "ball-state",
 			"images": {
-				"school_logo": "images/Ball_State_logo.png",
+				"school_logo": "images/logos/Ball_State_logo.png",
 				"school_mascot": "images/mascots/BALL_STATE_mascot.png"
 			},
 			"text": {
@@ -680,8 +655,7 @@
 		{
 			"outputFileName": "bates-college",
 			"images": {
-				"school_logo": "images/Bates_College_logo.png",
-				"school_mascot": "images/mascots/BATES_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Bates_College_logo.png"
 			},
 			"text": {
 				"school_title": "BATES COLLEGE",
@@ -695,7 +669,7 @@
 		{
 			"outputFileName": "baylor",
 			"images": {
-				"school_logo": "images/Baylor_logo.png",
+				"school_logo": "images/logos/Baylor_logo.png",
 				"school_mascot": "images/mascots/BAYLOR_mascot.png"
 			},
 			"text": {
@@ -710,8 +684,7 @@
 		{
 			"outputFileName": "beloit-college",
 			"images": {
-				"school_logo": "images/Beloit_College_logo.png",
-				"school_mascot": "images/mascots/BELOIT_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Beloit_College_logo.png"
 			},
 			"text": {
 				"school_title": "BELOIT COLLEGE",
@@ -725,7 +698,7 @@
 		{
 			"outputFileName": "bemidji-state",
 			"images": {
-				"school_logo": "images/Bemidji_State_logo.png",
+				"school_logo": "images/logos/Bemidji_State_logo.png",
 				"school_mascot": "images/mascots/BEMIDJI_STATE_mascot.png"
 			},
 			"text": {
@@ -740,8 +713,7 @@
 		{
 			"outputFileName": "benedict-college",
 			"images": {
-				"school_logo": "images/Benedict_College_logo.png",
-				"school_mascot": "images/mascots/BENEDICT_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Benedict_College_logo.png"
 			},
 			"text": {
 				"school_title": "BENEDICT COLLEGE",
@@ -755,8 +727,7 @@
 		{
 			"outputFileName": "benedictine-il",
 			"images": {
-				"school_logo": "images/Benedictine_IL_logo.png",
-				"school_mascot": "images/mascots/BENEDICTINE_IL_mascot.png"
+				"school_logo": "images/logos/Benedictine_IL_logo.png"
 			},
 			"text": {
 				"school_title": "BENEDICTINE (IL)",
@@ -770,7 +741,7 @@
 		{
 			"outputFileName": "bentley",
 			"images": {
-				"school_logo": "images/Bentley_logo.png",
+				"school_logo": "images/logos/Bentley_logo.png",
 				"school_mascot": "images/mascots/BENTLEY_mascot.png"
 			},
 			"text": {
@@ -785,7 +756,7 @@
 		{
 			"outputFileName": "berry-college",
 			"images": {
-				"school_logo": "images/Berry_College_logo.png",
+				"school_logo": "images/logos/Berry_College_logo.png",
 				"school_mascot": "images/mascots/BERRY_COLLEGE_mascot.png"
 			},
 			"text": {
@@ -800,8 +771,7 @@
 		{
 			"outputFileName": "bethany-wv",
 			"images": {
-				"school_logo": "images/Bethany_WV_logo.png",
-				"school_mascot": "images/mascots/BETHANY_WV_mascot.png"
+				"school_logo": "images/logos/Bethany_WV_logo.png"
 			},
 			"text": {
 				"school_title": "BETHANY (WV)",
@@ -815,8 +785,7 @@
 		{
 			"outputFileName": "bethel-mn",
 			"images": {
-				"school_logo": "images/Bethel_MN_logo.png",
-				"school_mascot": "images/mascots/BETHEL_MN_mascot.png"
+				"school_logo": "images/logos/Bethel_MN_logo.png"
 			},
 			"text": {
 				"school_title": "BETHEL (MN)",
@@ -830,8 +799,7 @@
 		{
 			"outputFileName": "bethel-tn",
 			"images": {
-				"school_logo": "images/Bethel_TN_logo.png",
-				"school_mascot": "images/mascots/BETHEL_TN_mascot.png"
+				"school_logo": "images/logos/Bethel_TN_logo.png"
 			},
 			"text": {
 				"school_title": "BETHEL (TN)",
@@ -845,7 +813,7 @@
 		{
 			"outputFileName": "bethune-cookman",
 			"images": {
-				"school_logo": "images/Bethune-Cookman_logo.png",
+				"school_logo": "images/logos/Bethune-Cookman_logo.png",
 				"school_mascot": "images/mascots/BETHUNE-COOKMAN_mascot.png"
 			},
 			"text": {
@@ -860,8 +828,7 @@
 		{
 			"outputFileName": "birmingham-southern",
 			"images": {
-				"school_logo": "images/Birmingham-Southern_logo.png",
-				"school_mascot": "images/mascots/BIRMINGHAM-SOUTHERN_mascot.png"
+				"school_logo": "images/logos/Birmingham-Southern_logo.png"
 			},
 			"text": {
 				"school_title": "BIRMINGHAM-SOUTHERN",
@@ -875,8 +842,7 @@
 		{
 			"outputFileName": "black-hills-state",
 			"images": {
-				"school_logo": "images/Black_Hills_State_logo.png",
-				"school_mascot": "images/mascots/BLACK_HILLS_STATE_mascot.png"
+				"school_logo": "images/logos/Black_Hills_State_logo.png"
 			},
 			"text": {
 				"school_title": "BLACK HILLS STATE",
@@ -890,7 +856,7 @@
 		{
 			"outputFileName": "bloomsburg",
 			"images": {
-				"school_logo": "images/Bloomsburg_logo.png",
+				"school_logo": "images/logos/Bloomsburg_logo.png",
 				"school_mascot": "images/mascots/BLOOMSBURG_mascot.png"
 			},
 			"text": {
@@ -905,8 +871,7 @@
 		{
 			"outputFileName": "bluffton",
 			"images": {
-				"school_logo": "images/Bluffton_logo.png",
-				"school_mascot": "images/mascots/BLUFFTON_mascot.png"
+				"school_logo": "images/logos/Bluffton_logo.png"
 			},
 			"text": {
 				"school_title": "BLUFFTON",
@@ -920,7 +885,7 @@
 		{
 			"outputFileName": "boise-state",
 			"images": {
-				"school_logo": "images/Boise_State_logo.png",
+				"school_logo": "images/logos/Boise_State_logo.png",
 				"school_mascot": "images/mascots/BOISE_STATE_mascot.png"
 			},
 			"text": {
@@ -935,7 +900,7 @@
 		{
 			"outputFileName": "boston-college",
 			"images": {
-				"school_logo": "images/Boston_College_logo.png",
+				"school_logo": "images/logos/Boston_College_logo.png",
 				"school_mascot": "images/mascots/BOSTON_COLLEGE_mascot.png"
 			},
 			"text": {
@@ -950,8 +915,7 @@
 		{
 			"outputFileName": "bowdoin",
 			"images": {
-				"school_logo": "images/Bowdoin_logo.png",
-				"school_mascot": "images/mascots/BOWDOIN_mascot.png"
+				"school_logo": "images/logos/Bowdoin_logo.png"
 			},
 			"text": {
 				"school_title": "BOWDOIN",
@@ -965,7 +929,7 @@
 		{
 			"outputFileName": "bowling-green",
 			"images": {
-				"school_logo": "images/Bowling_Green_logo.png",
+				"school_logo": "images/logos/Bowling_Green_logo.png",
 				"school_mascot": "images/mascots/BOWLING_GREEN_mascot.png"
 			},
 			"text": {
@@ -980,8 +944,7 @@
 		{
 			"outputFileName": "bridgewater-state",
 			"images": {
-				"school_logo": "images/Bridgewater_State_logo.png",
-				"school_mascot": "images/mascots/BRIDGEWATER_STATE_mascot.png"
+				"school_logo": "images/logos/Bridgewater_State_logo.png"
 			},
 			"text": {
 				"school_title": "BRIDGEWATER STATE",
@@ -995,8 +958,7 @@
 		{
 			"outputFileName": "bridgewater-va",
 			"images": {
-				"school_logo": "images/Bridgewater_VA_logo.png",
-				"school_mascot": "images/mascots/BRIDGEWATER_VA_mascot.png"
+				"school_logo": "images/logos/Bridgewater_VA_logo.png"
 			},
 			"text": {
 				"school_title": "BRIDGEWATER (VA)",
@@ -1010,7 +972,7 @@
 		{
 			"outputFileName": "brockport-state-ny",
 			"images": {
-				"school_logo": "images/Brockport_State_NY_logo.png",
+				"school_logo": "images/logos/Brockport_State_NY_logo.png",
 				"school_mascot": "images/mascots/BROCKPORT_STATE_NY_mascot.png"
 			},
 			"text": {
@@ -1025,7 +987,7 @@
 		{
 			"outputFileName": "brown",
 			"images": {
-				"school_logo": "images/Brown_logo.png",
+				"school_logo": "images/logos/Brown_logo.png",
 				"school_mascot": "images/mascots/BROWN_mascot.png"
 			},
 			"text": {
@@ -1040,7 +1002,7 @@
 		{
 			"outputFileName": "bryant",
 			"images": {
-				"school_logo": "images/Bryant_logo.png",
+				"school_logo": "images/logos/Bryant_logo.png",
 				"school_mascot": "images/mascots/BRYANT_mascot.png"
 			},
 			"text": {
@@ -1055,7 +1017,7 @@
 		{
 			"outputFileName": "bucknell",
 			"images": {
-				"school_logo": "images/Bucknell_logo.png",
+				"school_logo": "images/logos/Bucknell_logo.png",
 				"school_mascot": "images/mascots/BUCKNELL_mascot.png"
 			},
 			"text": {
@@ -1070,8 +1032,7 @@
 		{
 			"outputFileName": "buena-vista",
 			"images": {
-				"school_logo": "images/Buena_Vista_logo.png",
-				"school_mascot": "images/mascots/BUENA_VISTA_mascot.png"
+				"school_logo": "images/logos/Buena_Vista_logo.png"
 			},
 			"text": {
 				"school_title": "BUENA VISTA",
@@ -1085,7 +1046,7 @@
 		{
 			"outputFileName": "buffalo",
 			"images": {
-				"school_logo": "images/Buffalo_logo.png",
+				"school_logo": "images/logos/Buffalo_logo.png",
 				"school_mascot": "images/mascots/BUFFALO_mascot.png"
 			},
 			"text": {
@@ -1100,8 +1061,7 @@
 		{
 			"outputFileName": "buffalo-state",
 			"images": {
-				"school_logo": "images/Buffalo_State_logo.png",
-				"school_mascot": "images/mascots/BUFFALO_STATE_mascot.png"
+				"school_logo": "images/logos/Buffalo_State_logo.png"
 			},
 			"text": {
 				"school_title": "BUFFALO STATE",
@@ -1115,7 +1075,7 @@
 		{
 			"outputFileName": "butler",
 			"images": {
-				"school_logo": "images/Butler_logo.png",
+				"school_logo": "images/logos/Butler_logo.png",
 				"school_mascot": "images/mascots/BUTLER_mascot.png"
 			},
 			"text": {
@@ -1130,7 +1090,7 @@
 		{
 			"outputFileName": "byu",
 			"images": {
-				"school_logo": "images/BYU_logo.png",
+				"school_logo": "images/logos/BYU_logo.png",
 				"school_mascot": "images/mascots/BYU_mascot.png"
 			},
 			"text": {
@@ -1145,7 +1105,7 @@
 		{
 			"outputFileName": "california",
 			"images": {
-				"school_logo": "images/California_logo.png",
+				"school_logo": "images/logos/California_logo.png",
 				"school_mascot": "images/mascots/CALIFORNIA_mascot.png"
 			},
 			"text": {
@@ -1160,8 +1120,7 @@
 		{
 			"outputFileName": "california-pa",
 			"images": {
-				"school_logo": "images/California_PA_logo.png",
-				"school_mascot": "images/mascots/CALIFORNIA_PA_mascot.png"
+				"school_logo": "images/logos/California_PA_logo.png"
 			},
 			"text": {
 				"school_title": "CALIFORNIA (PA)",
@@ -1175,8 +1134,7 @@
 		{
 			"outputFileName": "cal-lutheran",
 			"images": {
-				"school_logo": "images/Cal_Lutheran_logo.png",
-				"school_mascot": "images/mascots/CAL_LUTHERAN_mascot.png"
+				"school_logo": "images/logos/Cal_Lutheran_logo.png"
 			},
 			"text": {
 				"school_title": "CAL LUTHERAN",
@@ -1190,7 +1148,7 @@
 		{
 			"outputFileName": "cal-poly",
 			"images": {
-				"school_logo": "images/Cal_Poly_logo.png",
+				"school_logo": "images/logos/Cal_Poly_logo.png",
 				"school_mascot": "images/mascots/CAL_POLY_mascot.png"
 			},
 			"text": {
@@ -1205,8 +1163,7 @@
 		{
 			"outputFileName": "capital",
 			"images": {
-				"school_logo": "images/Capital_logo.png",
-				"school_mascot": "images/mascots/CAPITAL_mascot.png"
+				"school_logo": "images/logos/Capital_logo.png"
 			},
 			"text": {
 				"school_title": "CAPITAL",
@@ -1220,8 +1177,7 @@
 		{
 			"outputFileName": "carleton",
 			"images": {
-				"school_logo": "images/Carleton_logo.png",
-				"school_mascot": "images/mascots/CARLETON_mascot.png"
+				"school_logo": "images/logos/Carleton_logo.png"
 			},
 			"text": {
 				"school_title": "CARLETON",
@@ -1235,8 +1191,7 @@
 		{
 			"outputFileName": "carnegie-mellon",
 			"images": {
-				"school_logo": "images/Carnegie_Mellon_logo.png",
-				"school_mascot": "images/mascots/CARNEGIE_MELLON_mascot.png"
+				"school_logo": "images/logos/Carnegie_Mellon_logo.png"
 			},
 			"text": {
 				"school_title": "CARNEGIE MELLON",
@@ -1250,8 +1205,7 @@
 		{
 			"outputFileName": "carroll-wi",
 			"images": {
-				"school_logo": "images/Carroll_WI_logo.png",
-				"school_mascot": "images/mascots/CARROLL_WI_mascot.png"
+				"school_logo": "images/logos/Carroll_WI_logo.png"
 			},
 			"text": {
 				"school_title": "CARROLL (WI)",
@@ -1265,8 +1219,7 @@
 		{
 			"outputFileName": "carson-newman",
 			"images": {
-				"school_logo": "images/Carson-Newman_logo.png",
-				"school_mascot": "images/mascots/CARSON-NEWMAN_mascot.png"
+				"school_logo": "images/logos/Carson-Newman_logo.png"
 			},
 			"text": {
 				"school_title": "CARSON-NEWMAN",
@@ -1280,8 +1233,7 @@
 		{
 			"outputFileName": "case-western-reserve",
 			"images": {
-				"school_logo": "images/Case_Western_Reserve_logo.png",
-				"school_mascot": "images/mascots/CASE_WESTERN_RESERVE_mascot.png"
+				"school_logo": "images/logos/Case_Western_Reserve_logo.png"
 			},
 			"text": {
 				"school_title": "CASE WESTERN RESERVE",
@@ -1295,8 +1247,7 @@
 		{
 			"outputFileName": "catawba",
 			"images": {
-				"school_logo": "images/Catawba_logo.png",
-				"school_mascot": "images/mascots/CATAWBA_mascot.png"
+				"school_logo": "images/logos/Catawba_logo.png"
 			},
 			"text": {
 				"school_title": "CATAWBA",
@@ -1310,8 +1261,7 @@
 		{
 			"outputFileName": "catholic-university",
 			"images": {
-				"school_logo": "images/Catholic_University_logo.png",
-				"school_mascot": "images/mascots/CATHOLIC_UNIVERSITY_mascot.png"
+				"school_logo": "images/logos/Catholic_University_logo.png"
 			},
 			"text": {
 				"school_title": "CATHOLIC UNIVERSITY",
@@ -1325,8 +1275,7 @@
 		{
 			"outputFileName": "central",
 			"images": {
-				"school_logo": "images/Central_logo.png",
-				"school_mascot": "images/mascots/CENTRAL_mascot.png"
+				"school_logo": "images/logos/Central_logo.png"
 			},
 			"text": {
 				"school_title": "CENTRAL",
@@ -1340,7 +1289,7 @@
 		{
 			"outputFileName": "central-arkansas",
 			"images": {
-				"school_logo": "images/Central_Arkansas_logo.png",
+				"school_logo": "images/logos/Central_Arkansas_logo.png",
 				"school_mascot": "images/mascots/CENTRAL_ARKANSAS_mascot.png"
 			},
 			"text": {
@@ -1355,7 +1304,7 @@
 		{
 			"outputFileName": "central-connecticut",
 			"images": {
-				"school_logo": "images/Central_Connecticut_logo.png",
+				"school_logo": "images/logos/Central_Connecticut_logo.png",
 				"school_mascot": "images/mascots/CENTRAL_CONNECTICUT_mascot.png"
 			},
 			"text": {
@@ -1370,7 +1319,7 @@
 		{
 			"outputFileName": "central-michigan",
 			"images": {
-				"school_logo": "images/Central_Michigan_logo.png",
+				"school_logo": "images/logos/Central_Michigan_logo.png",
 				"school_mascot": "images/mascots/CENTRAL_MICHIGAN_mascot.png"
 			},
 			"text": {
@@ -1385,8 +1334,7 @@
 		{
 			"outputFileName": "central-oklahoma",
 			"images": {
-				"school_logo": "images/Central_Oklahoma_logo.png",
-				"school_mascot": "images/mascots/CENTRAL_OKLAHOMA_mascot.png"
+				"school_logo": "images/logos/Central_Oklahoma_logo.png"
 			},
 			"text": {
 				"school_title": "CENTRAL OKLAHOMA",
@@ -1400,8 +1348,7 @@
 		{
 			"outputFileName": "central-state",
 			"images": {
-				"school_logo": "images/Central_State_logo.png",
-				"school_mascot": "images/mascots/CENTRAL_STATE_mascot.png"
+				"school_logo": "images/logos/Central_State_logo.png"
 			},
 			"text": {
 				"school_title": "CENTRAL STATE",
@@ -1415,8 +1362,7 @@
 		{
 			"outputFileName": "central-washington",
 			"images": {
-				"school_logo": "images/Central_Washington_logo.png",
-				"school_mascot": "images/mascots/CENTRAL_WASHINGTON_mascot.png"
+				"school_logo": "images/logos/Central_Washington_logo.png"
 			},
 			"text": {
 				"school_title": "CENTRAL WASHINGTON",
@@ -1430,8 +1376,7 @@
 		{
 			"outputFileName": "centre",
 			"images": {
-				"school_logo": "images/Centre_logo.png",
-				"school_mascot": "images/mascots/CENTRE_mascot.png"
+				"school_logo": "images/logos/Centre_logo.png"
 			},
 			"text": {
 				"school_title": "CENTRE",
@@ -1445,8 +1390,7 @@
 		{
 			"outputFileName": "chadron-state",
 			"images": {
-				"school_logo": "images/Chadron_State_logo.png",
-				"school_mascot": "images/mascots/CHADRON_STATE_mascot.png"
+				"school_logo": "images/logos/Chadron_State_logo.png"
 			},
 			"text": {
 				"school_title": "CHADRON STATE",
@@ -1460,8 +1404,7 @@
 		{
 			"outputFileName": "chapman",
 			"images": {
-				"school_logo": "images/Chapman_logo.png",
-				"school_mascot": "images/mascots/CHAPMAN_mascot.png"
+				"school_logo": "images/logos/Chapman_logo.png"
 			},
 			"text": {
 				"school_title": "CHAPMAN",
@@ -1475,7 +1418,7 @@
 		{
 			"outputFileName": "charleston-southern",
 			"images": {
-				"school_logo": "images/Charleston_Southern_logo.png",
+				"school_logo": "images/logos/Charleston_Southern_logo.png",
 				"school_mascot": "images/mascots/CHARLESTON_SOUTHERN_mascot.png"
 			},
 			"text": {
@@ -1490,8 +1433,7 @@
 		{
 			"outputFileName": "charleston-wv",
 			"images": {
-				"school_logo": "images/Charleston_WV_logo.png",
-				"school_mascot": "images/mascots/CHARLESTON_WV_mascot.png"
+				"school_logo": "images/logos/Charleston_WV_logo.png"
 			},
 			"text": {
 				"school_title": "CHARLESTON (WV)",
@@ -1505,7 +1447,7 @@
 		{
 			"outputFileName": "charlotte",
 			"images": {
-				"school_logo": "images/Charlotte_logo.png",
+				"school_logo": "images/logos/Charlotte_logo.png",
 				"school_mascot": "images/mascots/CHARLOTTE_mascot.png"
 			},
 			"text": {
@@ -1520,7 +1462,7 @@
 		{
 			"outputFileName": "chattanooga",
 			"images": {
-				"school_logo": "images/Chattanooga_logo.png",
+				"school_logo": "images/logos/Chattanooga_logo.png",
 				"school_mascot": "images/mascots/CHATTANOOGA_mascot.png"
 			},
 			"text": {
@@ -1535,8 +1477,7 @@
 		{
 			"outputFileName": "chicago",
 			"images": {
-				"school_logo": "images/Chicago_logo.png",
-				"school_mascot": "images/mascots/CHICAGO_mascot.png"
+				"school_logo": "images/logos/Chicago_logo.png"
 			},
 			"text": {
 				"school_title": "CHICAGO",
@@ -1550,8 +1491,7 @@
 		{
 			"outputFileName": "christopher-newport",
 			"images": {
-				"school_logo": "images/Christopher_Newport_logo.png",
-				"school_mascot": "images/mascots/CHRISTOPHER_NEWPORT_mascot.png"
+				"school_logo": "images/logos/Christopher_Newport_logo.png"
 			},
 			"text": {
 				"school_title": "CHRISTOPHER NEWPORT",
@@ -1565,7 +1505,7 @@
 		{
 			"outputFileName": "cincinnati",
 			"images": {
-				"school_logo": "images/Cincinnati_logo.png",
+				"school_logo": "images/logos/Cincinnati_logo.png",
 				"school_mascot": "images/mascots/CINCINNATI_mascot.png"
 			},
 			"text": {
@@ -1580,7 +1520,7 @@
 		{
 			"outputFileName": "clarion",
 			"images": {
-				"school_logo": "images/Clarion_logo.png",
+				"school_logo": "images/logos/Clarion_logo.png",
 				"school_mascot": "images/mascots/CLARION_mascot.png"
 			},
 			"text": {
@@ -1595,8 +1535,7 @@
 		{
 			"outputFileName": "clark-atlanta",
 			"images": {
-				"school_logo": "images/Clark_Atlanta_logo.png",
-				"school_mascot": "images/mascots/CLARK_ATLANTA_mascot.png"
+				"school_logo": "images/logos/Clark_Atlanta_logo.png"
 			},
 			"text": {
 				"school_title": "CLARK ATLANTA",
@@ -1610,7 +1549,7 @@
 		{
 			"outputFileName": "clemson",
 			"images": {
-				"school_logo": "images/Clemson_logo.png",
+				"school_logo": "images/logos/Clemson_logo.png",
 				"school_mascot": "images/mascots/CLEMSON_mascot.png"
 			},
 			"text": {
@@ -1625,7 +1564,7 @@
 		{
 			"outputFileName": "coastal-carolina",
 			"images": {
-				"school_logo": "images/Coastal_Carolina_logo.png",
+				"school_logo": "images/logos/Coastal_Carolina_logo.png",
 				"school_mascot": "images/mascots/COASTAL_CAROLINA_mascot.png"
 			},
 			"text": {
@@ -1640,8 +1579,7 @@
 		{
 			"outputFileName": "coast-guard",
 			"images": {
-				"school_logo": "images/Coast_Guard_logo.png",
-				"school_mascot": "images/mascots/COAST_GUARD_mascot.png"
+				"school_logo": "images/logos/Coast_Guard_logo.png"
 			},
 			"text": {
 				"school_title": "COAST GUARD",
@@ -1655,8 +1593,7 @@
 		{
 			"outputFileName": "coe",
 			"images": {
-				"school_logo": "images/Coe_logo.png",
-				"school_mascot": "images/mascots/COE_mascot.png"
+				"school_logo": "images/logos/Coe_logo.png"
 			},
 			"text": {
 				"school_title": "COE",
@@ -1670,7 +1607,7 @@
 		{
 			"outputFileName": "colgate",
 			"images": {
-				"school_logo": "images/Colgate_logo.png",
+				"school_logo": "images/logos/Colgate_logo.png",
 				"school_mascot": "images/mascots/COLGATE_mascot.png"
 			},
 			"text": {
@@ -1685,7 +1622,7 @@
 		{
 			"outputFileName": "colorado",
 			"images": {
-				"school_logo": "images/Colorado_logo.png",
+				"school_logo": "images/logos/Colorado_logo.png",
 				"school_mascot": "images/mascots/COLORADO_mascot.png"
 			},
 			"text": {
@@ -1700,8 +1637,7 @@
 		{
 			"outputFileName": "colorado-college",
 			"images": {
-				"school_logo": "images/Colorado_College_logo.png",
-				"school_mascot": "images/mascots/COLORADO_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Colorado_College_logo.png"
 			},
 			"text": {
 				"school_title": "COLORADO COLLEGE",
@@ -1715,8 +1651,7 @@
 		{
 			"outputFileName": "colorado-mesa",
 			"images": {
-				"school_logo": "images/Colorado_Mesa_logo.png",
-				"school_mascot": "images/mascots/COLORADO_MESA_mascot.png"
+				"school_logo": "images/logos/Colorado_Mesa_logo.png"
 			},
 			"text": {
 				"school_title": "COLORADO MESA",
@@ -1730,8 +1665,7 @@
 		{
 			"outputFileName": "colorado-mines",
 			"images": {
-				"school_logo": "images/Colorado_Mines_logo.png",
-				"school_mascot": "images/mascots/COLORADO_MINES_mascot.png"
+				"school_logo": "images/logos/Colorado_Mines_logo.png"
 			},
 			"text": {
 				"school_title": "COLORADO MINES",
@@ -1745,7 +1679,7 @@
 		{
 			"outputFileName": "colorado-state",
 			"images": {
-				"school_logo": "images/Colorado_State_logo.png",
+				"school_logo": "images/logos/Colorado_State_logo.png",
 				"school_mascot": "images/mascots/COLORADO_STATE_mascot.png"
 			},
 			"text": {
@@ -1760,7 +1694,7 @@
 		{
 			"outputFileName": "columbia",
 			"images": {
-				"school_logo": "images/Columbia_logo.png",
+				"school_logo": "images/logos/Columbia_logo.png",
 				"school_mascot": "images/mascots/COLUMBIA_mascot.png"
 			},
 			"text": {
@@ -1775,8 +1709,7 @@
 		{
 			"outputFileName": "concord",
 			"images": {
-				"school_logo": "images/Concord_logo.png",
-				"school_mascot": "images/mascots/CONCORD_mascot.png"
+				"school_logo": "images/logos/Concord_logo.png"
 			},
 			"text": {
 				"school_title": "CONCORD",
@@ -1790,8 +1723,7 @@
 		{
 			"outputFileName": "concordia-il",
 			"images": {
-				"school_logo": "images/Concordia_IL_logo.png",
-				"school_mascot": "images/mascots/CONCORDIA_IL_mascot.png"
+				"school_logo": "images/logos/Concordia_IL_logo.png"
 			},
 			"text": {
 				"school_title": "CONCORDIA (IL)",
@@ -1805,8 +1737,7 @@
 		{
 			"outputFileName": "concordia-mn",
 			"images": {
-				"school_logo": "images/Concordia_MN_logo.png",
-				"school_mascot": "images/mascots/CONCORDIA_MN_mascot.png"
+				"school_logo": "images/logos/Concordia_MN_logo.png"
 			},
 			"text": {
 				"school_title": "CONCORDIA (MN)",
@@ -1820,8 +1751,7 @@
 		{
 			"outputFileName": "concordia-wi",
 			"images": {
-				"school_logo": "images/Concordia_WI_logo.png",
-				"school_mascot": "images/mascots/CONCORDIA_WI_mascot.png"
+				"school_logo": "images/logos/Concordia_WI_logo.png"
 			},
 			"text": {
 				"school_title": "CONCORDIA (WI)",
@@ -1835,7 +1765,7 @@
 		{
 			"outputFileName": "connecticut",
 			"images": {
-				"school_logo": "images/Connecticut_logo.png",
+				"school_logo": "images/logos/Connecticut_logo.png",
 				"school_mascot": "images/mascots/CONNECTICUT_mascot.png"
 			},
 			"text": {
@@ -1850,7 +1780,7 @@
 		{
 			"outputFileName": "cornell",
 			"images": {
-				"school_logo": "images/Cornell_logo.png",
+				"school_logo": "images/logos/Cornell_logo.png",
 				"school_mascot": "images/mascots/CORNELL_mascot.png"
 			},
 			"text": {
@@ -1865,8 +1795,7 @@
 		{
 			"outputFileName": "cornell-college-ia",
 			"images": {
-				"school_logo": "images/Cornell_College_IA_logo.png",
-				"school_mascot": "images/mascots/CORNELL_COLLEGE_IA_mascot.png"
+				"school_logo": "images/logos/Cornell_College_IA_logo.png"
 			},
 			"text": {
 				"school_title": "CORNELL COLLEGE (IA)",
@@ -1880,8 +1809,7 @@
 		{
 			"outputFileName": "crown-college",
 			"images": {
-				"school_logo": "images/Crown_College_logo.png",
-				"school_mascot": "images/mascots/CROWN_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Crown_College_logo.png"
 			},
 			"text": {
 				"school_title": "CROWN COLLEGE",
@@ -1895,8 +1823,7 @@
 		{
 			"outputFileName": "curry",
 			"images": {
-				"school_logo": "images/Curry_logo.png",
-				"school_mascot": "images/mascots/CURRY_mascot.png"
+				"school_logo": "images/logos/Curry_logo.png"
 			},
 			"text": {
 				"school_title": "CURRY",
@@ -1910,8 +1837,7 @@
 		{
 			"outputFileName": "dakota-state",
 			"images": {
-				"school_logo": "images/Dakota_State_logo.png",
-				"school_mascot": "images/mascots/DAKOTA_STATE_mascot.png"
+				"school_logo": "images/logos/Dakota_State_logo.png"
 			},
 			"text": {
 				"school_title": "DAKOTA STATE",
@@ -1925,7 +1851,7 @@
 		{
 			"outputFileName": "dartmouth",
 			"images": {
-				"school_logo": "images/Dartmouth_logo.png",
+				"school_logo": "images/logos/Dartmouth_logo.png",
 				"school_mascot": "images/mascots/DARTMOUTH_mascot.png"
 			},
 			"text": {
@@ -1940,7 +1866,7 @@
 		{
 			"outputFileName": "davidson",
 			"images": {
-				"school_logo": "images/Davidson_logo.png",
+				"school_logo": "images/logos/Davidson_logo.png",
 				"school_mascot": "images/mascots/DAVIDSON_mascot.png"
 			},
 			"text": {
@@ -1955,7 +1881,7 @@
 		{
 			"outputFileName": "dayton",
 			"images": {
-				"school_logo": "images/Dayton_logo.png",
+				"school_logo": "images/logos/Dayton_logo.png",
 				"school_mascot": "images/mascots/DAYTON_mascot.png"
 			},
 			"text": {
@@ -1970,8 +1896,7 @@
 		{
 			"outputFileName": "defiance",
 			"images": {
-				"school_logo": "images/Defiance_logo.png",
-				"school_mascot": "images/mascots/DEFIANCE_mascot.png"
+				"school_logo": "images/logos/Defiance_logo.png"
 			},
 			"text": {
 				"school_title": "DEFIANCE",
@@ -1985,7 +1910,7 @@
 		{
 			"outputFileName": "delaware",
 			"images": {
-				"school_logo": "images/Delaware_logo.png",
+				"school_logo": "images/logos/Delaware_logo.png",
 				"school_mascot": "images/mascots/DELAWARE_mascot.png"
 			},
 			"text": {
@@ -2000,7 +1925,7 @@
 		{
 			"outputFileName": "delaware-state",
 			"images": {
-				"school_logo": "images/Delaware_State_logo.png",
+				"school_logo": "images/logos/Delaware_State_logo.png",
 				"school_mascot": "images/mascots/DELAWARE_STATE_mascot.png"
 			},
 			"text": {
@@ -2015,8 +1940,7 @@
 		{
 			"outputFileName": "delaware-valley",
 			"images": {
-				"school_logo": "images/Delaware_Valley_logo.png",
-				"school_mascot": "images/mascots/DELAWARE_VALLEY_mascot.png"
+				"school_logo": "images/logos/Delaware_Valley_logo.png"
 			},
 			"text": {
 				"school_title": "DELAWARE VALLEY",
@@ -2030,8 +1954,7 @@
 		{
 			"outputFileName": "delta-state",
 			"images": {
-				"school_logo": "images/Delta_State_logo.png",
-				"school_mascot": "images/mascots/DELTA_STATE_mascot.png"
+				"school_logo": "images/logos/Delta_State_logo.png"
 			},
 			"text": {
 				"school_title": "DELTA STATE",
@@ -2045,8 +1968,7 @@
 		{
 			"outputFileName": "denison",
 			"images": {
-				"school_logo": "images/Denison_logo.png",
-				"school_mascot": "images/mascots/DENISON_mascot.png"
+				"school_logo": "images/logos/Denison_logo.png"
 			},
 			"text": {
 				"school_title": "DENISON",
@@ -2060,8 +1982,7 @@
 		{
 			"outputFileName": "depauw",
 			"images": {
-				"school_logo": "images/DePauw_logo.png",
-				"school_mascot": "images/mascots/DEPAUW_mascot.png"
+				"school_logo": "images/logos/DePauw_logo.png"
 			},
 			"text": {
 				"school_title": "DEPAUW",
@@ -2075,8 +1996,7 @@
 		{
 			"outputFileName": "dickinson",
 			"images": {
-				"school_logo": "images/Dickinson_logo.png",
-				"school_mascot": "images/mascots/DICKINSON_mascot.png"
+				"school_logo": "images/logos/Dickinson_logo.png"
 			},
 			"text": {
 				"school_title": "DICKINSON",
@@ -2090,7 +2010,7 @@
 		{
 			"outputFileName": "drake",
 			"images": {
-				"school_logo": "images/Drake_logo.png",
+				"school_logo": "images/logos/Drake_logo.png",
 				"school_mascot": "images/mascots/DRAKE_mascot.png"
 			},
 			"text": {
@@ -2105,8 +2025,7 @@
 		{
 			"outputFileName": "dubuque",
 			"images": {
-				"school_logo": "images/Dubuque_logo.png",
-				"school_mascot": "images/mascots/DUBUQUE_mascot.png"
+				"school_logo": "images/logos/Dubuque_logo.png"
 			},
 			"text": {
 				"school_title": "DUBUQUE",
@@ -2120,7 +2039,7 @@
 		{
 			"outputFileName": "duke",
 			"images": {
-				"school_logo": "images/Duke_logo.png",
+				"school_logo": "images/logos/Duke_logo.png",
 				"school_mascot": "images/mascots/DUKE_mascot.png"
 			},
 			"text": {
@@ -2135,7 +2054,7 @@
 		{
 			"outputFileName": "duquesne",
 			"images": {
-				"school_logo": "images/Duquesne_logo.png",
+				"school_logo": "images/logos/Duquesne_logo.png",
 				"school_mascot": "images/mascots/DUQUESNE_mascot.png"
 			},
 			"text": {
@@ -2150,7 +2069,7 @@
 		{
 			"outputFileName": "east-carolina",
 			"images": {
-				"school_logo": "images/East_Carolina_logo.png",
+				"school_logo": "images/logos/East_Carolina_logo.png",
 				"school_mascot": "images/mascots/EAST_CAROLINA_mascot.png"
 			},
 			"text": {
@@ -2165,8 +2084,7 @@
 		{
 			"outputFileName": "east-central",
 			"images": {
-				"school_logo": "images/East_Central_logo.png",
-				"school_mascot": "images/mascots/EAST_CENTRAL_mascot.png"
+				"school_logo": "images/logos/East_Central_logo.png"
 			},
 			"text": {
 				"school_title": "EAST CENTRAL",
@@ -2180,7 +2098,7 @@
 		{
 			"outputFileName": "eastern-illinois",
 			"images": {
-				"school_logo": "images/Eastern_Illinois_logo.png",
+				"school_logo": "images/logos/Eastern_Illinois_logo.png",
 				"school_mascot": "images/mascots/EASTERN_ILLINOIS_mascot.png"
 			},
 			"text": {
@@ -2195,7 +2113,7 @@
 		{
 			"outputFileName": "eastern-kentucky",
 			"images": {
-				"school_logo": "images/Eastern_Kentucky_logo.png",
+				"school_logo": "images/logos/Eastern_Kentucky_logo.png",
 				"school_mascot": "images/mascots/EASTERN_KENTUCKY_mascot.png"
 			},
 			"text": {
@@ -2210,7 +2128,7 @@
 		{
 			"outputFileName": "eastern-michigan",
 			"images": {
-				"school_logo": "images/Eastern_Michigan_logo.png",
+				"school_logo": "images/logos/Eastern_Michigan_logo.png",
 				"school_mascot": "images/mascots/EASTERN_MICHIGAN_mascot.png"
 			},
 			"text": {
@@ -2225,8 +2143,7 @@
 		{
 			"outputFileName": "eastern-new-mexico",
 			"images": {
-				"school_logo": "images/Eastern_New_Mexico_logo.png",
-				"school_mascot": "images/mascots/EASTERN_NEW_MEXICO_mascot.png"
+				"school_logo": "images/logos/Eastern_New_Mexico_logo.png"
 			},
 			"text": {
 				"school_title": "EASTERN NEW MEXICO",
@@ -2240,7 +2157,7 @@
 		{
 			"outputFileName": "eastern-washington",
 			"images": {
-				"school_logo": "images/Eastern_Washington_logo.png",
+				"school_logo": "images/logos/Eastern_Washington_logo.png",
 				"school_mascot": "images/mascots/EASTERN_WASHINGTON_mascot.png"
 			},
 			"text": {
@@ -2255,8 +2172,7 @@
 		{
 			"outputFileName": "east-stroudsburg",
 			"images": {
-				"school_logo": "images/East_Stroudsburg_logo.png",
-				"school_mascot": "images/mascots/EAST_STROUDSBURG_mascot.png"
+				"school_logo": "images/logos/East_Stroudsburg_logo.png"
 			},
 			"text": {
 				"school_title": "EAST STROUDSBURG",
@@ -2270,7 +2186,7 @@
 		{
 			"outputFileName": "east-tennessee-state",
 			"images": {
-				"school_logo": "images/East_Tennessee_State_logo.png",
+				"school_logo": "images/logos/East_Tennessee_State_logo.png",
 				"school_mascot": "images/mascots/EAST_TENNESSEE_STATE_mascot.png"
 			},
 			"text": {
@@ -2285,8 +2201,7 @@
 		{
 			"outputFileName": "east-texas-baptist",
 			"images": {
-				"school_logo": "images/East_Texas_Baptist_logo.png",
-				"school_mascot": "images/mascots/EAST_TEXAS_BAPTIST_mascot.png"
+				"school_logo": "images/logos/East_Texas_Baptist_logo.png"
 			},
 			"text": {
 				"school_title": "EAST TEXAS BAPTIST",
@@ -2300,7 +2215,7 @@
 		{
 			"outputFileName": "edinboro",
 			"images": {
-				"school_logo": "images/Edinboro_logo.png",
+				"school_logo": "images/logos/Edinboro_logo.png",
 				"school_mascot": "images/mascots/EDINBORO_mascot.png"
 			},
 			"text": {
@@ -2315,8 +2230,7 @@
 		{
 			"outputFileName": "elizabeth-city-state",
 			"images": {
-				"school_logo": "images/Elizabeth_City_State_logo.png",
-				"school_mascot": "images/mascots/ELIZABETH_CITY_STATE_mascot.png"
+				"school_logo": "images/logos/Elizabeth_City_State_logo.png"
 			},
 			"text": {
 				"school_title": "ELIZABETH CITY STATE",
@@ -2330,7 +2244,7 @@
 		{
 			"outputFileName": "elon",
 			"images": {
-				"school_logo": "images/Elon_logo.png",
+				"school_logo": "images/logos/Elon_logo.png",
 				"school_mascot": "images/mascots/ELON_mascot.png"
 			},
 			"text": {
@@ -2345,8 +2259,7 @@
 		{
 			"outputFileName": "emory--henry",
 			"images": {
-				"school_logo": "images/Emory__Henry_logo.png",
-				"school_mascot": "images/mascots/EMORY__HENRY_mascot.png"
+				"school_logo": "images/logos/Emory__Henry_logo.png"
 			},
 			"text": {
 				"school_title": "EMORY & HENRY",
@@ -2360,8 +2273,7 @@
 		{
 			"outputFileName": "emporia-state",
 			"images": {
-				"school_logo": "images/Emporia_State_logo.png",
-				"school_mascot": "images/mascots/EMPORIA_STATE_mascot.png"
+				"school_logo": "images/logos/Emporia_State_logo.png"
 			},
 			"text": {
 				"school_title": "EMPORIA STATE",
@@ -2375,8 +2287,7 @@
 		{
 			"outputFileName": "endicott-college",
 			"images": {
-				"school_logo": "images/Endicott_College_logo.png",
-				"school_mascot": "images/mascots/ENDICOTT_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Endicott_College_logo.png"
 			},
 			"text": {
 				"school_title": "ENDICOTT COLLEGE",
@@ -2390,8 +2301,7 @@
 		{
 			"outputFileName": "eureka-college",
 			"images": {
-				"school_logo": "images/Eureka_College_logo.png",
-				"school_mascot": "images/mascots/EUREKA_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Eureka_College_logo.png"
 			},
 			"text": {
 				"school_title": "EUREKA COLLEGE",
@@ -2405,8 +2315,7 @@
 		{
 			"outputFileName": "fayetteville-state",
 			"images": {
-				"school_logo": "images/Fayetteville_State_logo.png",
-				"school_mascot": "images/mascots/FAYETTEVILLE_STATE_mascot.png"
+				"school_logo": "images/logos/Fayetteville_State_logo.png"
 			},
 			"text": {
 				"school_title": "FAYETTEVILLE STATE",
@@ -2420,7 +2329,7 @@
 		{
 			"outputFileName": "ferris-state",
 			"images": {
-				"school_logo": "images/Ferris_State_logo.png",
+				"school_logo": "images/logos/Ferris_State_logo.png",
 				"school_mascot": "images/mascots/FERRIS_STATE_mascot.png"
 			},
 			"text": {
@@ -2435,8 +2344,7 @@
 		{
 			"outputFileName": "ferrum",
 			"images": {
-				"school_logo": "images/Ferrum_logo.png",
-				"school_mascot": "images/mascots/FERRUM_mascot.png"
+				"school_logo": "images/logos/Ferrum_logo.png"
 			},
 			"text": {
 				"school_title": "FERRUM",
@@ -2450,8 +2358,7 @@
 		{
 			"outputFileName": "findlay",
 			"images": {
-				"school_logo": "images/Findlay_logo.png",
-				"school_mascot": "images/mascots/FINDLAY_mascot.png"
+				"school_logo": "images/logos/Findlay_logo.png"
 			},
 			"text": {
 				"school_title": "FINDLAY",
@@ -2465,8 +2372,7 @@
 		{
 			"outputFileName": "fitchburg-state",
 			"images": {
-				"school_logo": "images/Fitchburg_State_logo.png",
-				"school_mascot": "images/mascots/FITCHBURG_STATE_mascot.png"
+				"school_logo": "images/logos/Fitchburg_State_logo.png"
 			},
 			"text": {
 				"school_title": "FITCHBURG STATE",
@@ -2480,7 +2386,7 @@
 		{
 			"outputFileName": "florida",
 			"images": {
-				"school_logo": "images/Florida_logo.png",
+				"school_logo": "images/logos/Florida_logo.png",
 				"school_mascot": "images/mascots/FLORIDA_mascot.png"
 			},
 			"text": {
@@ -2495,7 +2401,7 @@
 		{
 			"outputFileName": "florida-am",
 			"images": {
-				"school_logo": "images/Florida_AM_logo.png",
+				"school_logo": "images/logos/Florida_AM_logo.png",
 				"school_mascot": "images/mascots/FLORIDA_AM_mascot.png"
 			},
 			"text": {
@@ -2510,7 +2416,7 @@
 		{
 			"outputFileName": "florida-atlantic",
 			"images": {
-				"school_logo": "images/Florida_Atlantic_logo.png",
+				"school_logo": "images/logos/Florida_Atlantic_logo.png",
 				"school_mascot": "images/mascots/FLORIDA_ATLANTIC_mascot.png"
 			},
 			"text": {
@@ -2525,7 +2431,7 @@
 		{
 			"outputFileName": "florida-international",
 			"images": {
-				"school_logo": "images/Florida_International_logo.png",
+				"school_logo": "images/logos/Florida_International_logo.png",
 				"school_mascot": "images/mascots/FLORIDA_INTERNATIONAL_mascot.png"
 			},
 			"text": {
@@ -2540,7 +2446,7 @@
 		{
 			"outputFileName": "florida-state",
 			"images": {
-				"school_logo": "images/Florida_State_logo.png",
+				"school_logo": "images/logos/Florida_State_logo.png",
 				"school_mascot": "images/mascots/FLORIDA_STATE_mascot.png"
 			},
 			"text": {
@@ -2555,8 +2461,7 @@
 		{
 			"outputFileName": "florida-tech",
 			"images": {
-				"school_logo": "images/Florida_Tech_logo.png",
-				"school_mascot": "images/mascots/FLORIDA_TECH_mascot.png"
+				"school_logo": "images/logos/Florida_Tech_logo.png"
 			},
 			"text": {
 				"school_title": "FLORIDA TECH",
@@ -2570,7 +2475,7 @@
 		{
 			"outputFileName": "fordham",
 			"images": {
-				"school_logo": "images/Fordham_logo.png",
+				"school_logo": "images/logos/Fordham_logo.png",
 				"school_mascot": "images/mascots/FORDHAM_mascot.png"
 			},
 			"text": {
@@ -2585,8 +2490,7 @@
 		{
 			"outputFileName": "fort-hays-state",
 			"images": {
-				"school_logo": "images/Fort_Hays_State_logo.png",
-				"school_mascot": "images/mascots/FORT_HAYS_STATE_mascot.png"
+				"school_logo": "images/logos/Fort_Hays_State_logo.png"
 			},
 			"text": {
 				"school_title": "FORT HAYS STATE",
@@ -2600,8 +2504,7 @@
 		{
 			"outputFileName": "fort-lewis",
 			"images": {
-				"school_logo": "images/Fort_Lewis_logo.png",
-				"school_mascot": "images/mascots/FORT_LEWIS_mascot.png"
+				"school_logo": "images/logos/Fort_Lewis_logo.png"
 			},
 			"text": {
 				"school_title": "FORT LEWIS",
@@ -2615,8 +2518,7 @@
 		{
 			"outputFileName": "fort-valley-state",
 			"images": {
-				"school_logo": "images/Fort_Valley_State_logo.png",
-				"school_mascot": "images/mascots/FORT_VALLEY_STATE_mascot.png"
+				"school_logo": "images/logos/Fort_Valley_State_logo.png"
 			},
 			"text": {
 				"school_title": "FORT VALLEY STATE",
@@ -2630,8 +2532,7 @@
 		{
 			"outputFileName": "framingham-state",
 			"images": {
-				"school_logo": "images/Framingham_State_logo.png",
-				"school_mascot": "images/mascots/FRAMINGHAM_STATE_mascot.png"
+				"school_logo": "images/logos/Framingham_State_logo.png"
 			},
 			"text": {
 				"school_title": "FRAMINGHAM STATE",
@@ -2645,8 +2546,7 @@
 		{
 			"outputFileName": "franklin",
 			"images": {
-				"school_logo": "images/Franklin_logo.png",
-				"school_mascot": "images/mascots/FRANKLIN_mascot.png"
+				"school_logo": "images/logos/Franklin_logo.png"
 			},
 			"text": {
 				"school_title": "FRANKLIN",
@@ -2660,7 +2560,7 @@
 		{
 			"outputFileName": "franklin--marshall",
 			"images": {
-				"school_logo": "images/Franklin__Marshall_logo.png",
+				"school_logo": "images/logos/Franklin__Marshall_logo.png",
 				"school_mascot": "images/mascots/FRANKLIN__MARSHALL_mascot.png"
 			},
 			"text": {
@@ -2675,7 +2575,7 @@
 		{
 			"outputFileName": "fresno-state",
 			"images": {
-				"school_logo": "images/Fresno_State_logo.png",
+				"school_logo": "images/logos/Fresno_State_logo.png",
 				"school_mascot": "images/mascots/FRESNO_STATE_mascot.png"
 			},
 			"text": {
@@ -2690,8 +2590,7 @@
 		{
 			"outputFileName": "frostburg-state",
 			"images": {
-				"school_logo": "images/Frostburg_State_logo.png",
-				"school_mascot": "images/mascots/FROSTBURG_STATE_mascot.png"
+				"school_logo": "images/logos/Frostburg_State_logo.png"
 			},
 			"text": {
 				"school_title": "FROSTBURG STATE",
@@ -2705,7 +2604,7 @@
 		{
 			"outputFileName": "furman",
 			"images": {
-				"school_logo": "images/Furman_logo.png",
+				"school_logo": "images/logos/Furman_logo.png",
 				"school_mascot": "images/mascots/FURMAN_mascot.png"
 			},
 			"text": {
@@ -2720,8 +2619,7 @@
 		{
 			"outputFileName": "gallaudet",
 			"images": {
-				"school_logo": "images/Gallaudet_logo.png",
-				"school_mascot": "images/mascots/GALLAUDET_mascot.png"
+				"school_logo": "images/logos/Gallaudet_logo.png"
 			},
 			"text": {
 				"school_title": "GALLAUDET",
@@ -2735,8 +2633,7 @@
 		{
 			"outputFileName": "gannon",
 			"images": {
-				"school_logo": "images/Gannon_logo.png",
-				"school_mascot": "images/mascots/GANNON_mascot.png"
+				"school_logo": "images/logos/Gannon_logo.png"
 			},
 			"text": {
 				"school_title": "GANNON",
@@ -2750,7 +2647,7 @@
 		{
 			"outputFileName": "gardner-webb",
 			"images": {
-				"school_logo": "images/Gardner-Webb_logo.png",
+				"school_logo": "images/logos/Gardner-Webb_logo.png",
 				"school_mascot": "images/mascots/GARDNER-WEBB_mascot.png"
 			},
 			"text": {
@@ -2765,8 +2662,7 @@
 		{
 			"outputFileName": "geneva-college",
 			"images": {
-				"school_logo": "images/Geneva_College_logo.png",
-				"school_mascot": "images/mascots/GENEVA_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Geneva_College_logo.png"
 			},
 			"text": {
 				"school_title": "GENEVA COLLEGE",
@@ -2780,7 +2676,7 @@
 		{
 			"outputFileName": "george-mason",
 			"images": {
-				"school_logo": "images/George_Mason_logo.png",
+				"school_logo": "images/logos/George_Mason_logo.png",
 				"school_mascot": "images/mascots/GEORGE_MASON_mascot.png"
 			},
 			"text": {
@@ -2795,7 +2691,7 @@
 		{
 			"outputFileName": "georgetown",
 			"images": {
-				"school_logo": "images/Georgetown_logo.png",
+				"school_logo": "images/logos/Georgetown_logo.png",
 				"school_mascot": "images/mascots/GEORGETOWN_mascot.png"
 			},
 			"text": {
@@ -2810,7 +2706,7 @@
 		{
 			"outputFileName": "georgia",
 			"images": {
-				"school_logo": "images/Georgia_logo.png",
+				"school_logo": "images/logos/Georgia_logo.png",
 				"school_mascot": "images/mascots/GEORGIA_mascot.png"
 			},
 			"text": {
@@ -2825,7 +2721,7 @@
 		{
 			"outputFileName": "georgia-southern",
 			"images": {
-				"school_logo": "images/Georgia_Southern_logo.png",
+				"school_logo": "images/logos/Georgia_Southern_logo.png",
 				"school_mascot": "images/mascots/GEORGIA_SOUTHERN_mascot.png"
 			},
 			"text": {
@@ -2840,7 +2736,7 @@
 		{
 			"outputFileName": "georgia-state",
 			"images": {
-				"school_logo": "images/Georgia_State_logo.png",
+				"school_logo": "images/logos/Georgia_State_logo.png",
 				"school_mascot": "images/mascots/GEORGIA_STATE_mascot.png"
 			},
 			"text": {
@@ -2855,7 +2751,7 @@
 		{
 			"outputFileName": "georgia-tech",
 			"images": {
-				"school_logo": "images/Georgia_Tech_logo.png",
+				"school_logo": "images/logos/Georgia_Tech_logo.png",
 				"school_mascot": "images/mascots/GEORGIA_TECH_mascot.png"
 			},
 			"text": {
@@ -2870,8 +2766,7 @@
 		{
 			"outputFileName": "glenville-state",
 			"images": {
-				"school_logo": "images/Glenville_State_logo.png",
-				"school_mascot": "images/mascots/GLENVILLE_STATE_mascot.png"
+				"school_logo": "images/logos/Glenville_State_logo.png"
 			},
 			"text": {
 				"school_title": "GLENVILLE STATE",
@@ -2885,7 +2780,7 @@
 		{
 			"outputFileName": "grambling",
 			"images": {
-				"school_logo": "images/Grambling_logo.png",
+				"school_logo": "images/logos/Grambling_logo.png",
 				"school_mascot": "images/mascots/GRAMBLING_mascot.png"
 			},
 			"text": {
@@ -2900,8 +2795,7 @@
 		{
 			"outputFileName": "grand-valley-state",
 			"images": {
-				"school_logo": "images/Grand_Valley_State_logo.png",
-				"school_mascot": "images/mascots/GRAND_VALLEY_STATE_mascot.png"
+				"school_logo": "images/logos/Grand_Valley_State_logo.png"
 			},
 			"text": {
 				"school_title": "GRAND VALLEY STATE",
@@ -2915,8 +2809,7 @@
 		{
 			"outputFileName": "greensboro",
 			"images": {
-				"school_logo": "images/Greensboro_logo.png",
-				"school_mascot": "images/mascots/GREENSBORO_mascot.png"
+				"school_logo": "images/logos/Greensboro_logo.png"
 			},
 			"text": {
 				"school_title": "GREENSBORO",
@@ -2930,7 +2823,7 @@
 		{
 			"outputFileName": "greenville",
 			"images": {
-				"school_logo": "images/Greenville_logo.png",
+				"school_logo": "images/logos/Greenville_logo.png",
 				"school_mascot": "images/mascots/GREENVILLE_mascot.png"
 			},
 			"text": {
@@ -2945,8 +2838,7 @@
 		{
 			"outputFileName": "grinnell",
 			"images": {
-				"school_logo": "images/Grinnell_logo.png",
-				"school_mascot": "images/mascots/GRINNELL_mascot.png"
+				"school_logo": "images/logos/Grinnell_logo.png"
 			},
 			"text": {
 				"school_title": "GRINNELL",
@@ -2960,8 +2852,7 @@
 		{
 			"outputFileName": "grove-city-college",
 			"images": {
-				"school_logo": "images/Grove_City_College_logo.png",
-				"school_mascot": "images/mascots/GROVE_CITY_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Grove_City_College_logo.png"
 			},
 			"text": {
 				"school_title": "GROVE CITY COLLEGE",
@@ -2975,8 +2866,7 @@
 		{
 			"outputFileName": "guilford",
 			"images": {
-				"school_logo": "images/Guilford_logo.png",
-				"school_mascot": "images/mascots/GUILFORD_mascot.png"
+				"school_logo": "images/logos/Guilford_logo.png"
 			},
 			"text": {
 				"school_title": "GUILFORD",
@@ -2990,7 +2880,7 @@
 		{
 			"outputFileName": "gustavus-adolphus",
 			"images": {
-				"school_logo": "images/Gustavus_Adolphus_logo.png",
+				"school_logo": "images/logos/Gustavus_Adolphus_logo.png",
 				"school_mascot": "images/mascots/GUSTAVUS_ADOLPHUS_mascot.png"
 			},
 			"text": {
@@ -3005,8 +2895,7 @@
 		{
 			"outputFileName": "hamilton",
 			"images": {
-				"school_logo": "images/Hamilton_logo.png",
-				"school_mascot": "images/mascots/HAMILTON_mascot.png"
+				"school_logo": "images/logos/Hamilton_logo.png"
 			},
 			"text": {
 				"school_title": "HAMILTON",
@@ -3020,7 +2909,7 @@
 		{
 			"outputFileName": "hamline",
 			"images": {
-				"school_logo": "images/Hamline_logo.png",
+				"school_logo": "images/logos/Hamline_logo.png",
 				"school_mascot": "images/mascots/HAMLINE_mascot.png"
 			},
 			"text": {
@@ -3035,8 +2924,7 @@
 		{
 			"outputFileName": "hampden-sydney",
 			"images": {
-				"school_logo": "images/Hampden-Sydney_logo.png",
-				"school_mascot": "images/mascots/HAMPDEN-SYDNEY_mascot.png"
+				"school_logo": "images/logos/Hampden-Sydney_logo.png"
 			},
 			"text": {
 				"school_title": "HAMPDEN-SYDNEY",
@@ -3050,7 +2938,7 @@
 		{
 			"outputFileName": "hampton",
 			"images": {
-				"school_logo": "images/Hampton_logo.png",
+				"school_logo": "images/logos/Hampton_logo.png",
 				"school_mascot": "images/mascots/HAMPTON_mascot.png"
 			},
 			"text": {
@@ -3065,8 +2953,7 @@
 		{
 			"outputFileName": "hanover",
 			"images": {
-				"school_logo": "images/Hanover_logo.png",
-				"school_mascot": "images/mascots/HANOVER_mascot.png"
+				"school_logo": "images/logos/Hanover_logo.png"
 			},
 			"text": {
 				"school_title": "HANOVER",
@@ -3080,8 +2967,7 @@
 		{
 			"outputFileName": "hardin-simmons",
 			"images": {
-				"school_logo": "images/Hardin-Simmons_logo.png",
-				"school_mascot": "images/mascots/HARDIN-SIMMONS_mascot.png"
+				"school_logo": "images/logos/Hardin-Simmons_logo.png"
 			},
 			"text": {
 				"school_title": "HARDIN-SIMMONS",
@@ -3095,8 +2981,7 @@
 		{
 			"outputFileName": "hartwick",
 			"images": {
-				"school_logo": "images/Hartwick_logo.png",
-				"school_mascot": "images/mascots/HARTWICK_mascot.png"
+				"school_logo": "images/logos/Hartwick_logo.png"
 			},
 			"text": {
 				"school_title": "HARTWICK",
@@ -3110,7 +2995,7 @@
 		{
 			"outputFileName": "harvard",
 			"images": {
-				"school_logo": "images/Harvard_logo.png",
+				"school_logo": "images/logos/Harvard_logo.png",
 				"school_mascot": "images/mascots/HARVARD_mascot.png"
 			},
 			"text": {
@@ -3125,7 +3010,7 @@
 		{
 			"outputFileName": "hawaii",
 			"images": {
-				"school_logo": "images/Hawaii_logo.png",
+				"school_logo": "images/logos/Hawaii_logo.png",
 				"school_mascot": "images/mascots/HAWAII_mascot.png"
 			},
 			"text": {
@@ -3140,8 +3025,7 @@
 		{
 			"outputFileName": "heidelberg",
 			"images": {
-				"school_logo": "images/Heidelberg_logo.png",
-				"school_mascot": "images/mascots/HEIDELBERG_mascot.png"
+				"school_logo": "images/logos/Heidelberg_logo.png"
 			},
 			"text": {
 				"school_title": "HEIDELBERG",
@@ -3155,8 +3039,7 @@
 		{
 			"outputFileName": "henderson-state",
 			"images": {
-				"school_logo": "images/Henderson_State_logo.png",
-				"school_mascot": "images/mascots/HENDERSON_STATE_mascot.png"
+				"school_logo": "images/logos/Henderson_State_logo.png"
 			},
 			"text": {
 				"school_title": "HENDERSON STATE",
@@ -3170,8 +3053,7 @@
 		{
 			"outputFileName": "hendrix-college",
 			"images": {
-				"school_logo": "images/Hendrix_College_logo.png",
-				"school_mascot": "images/mascots/HENDRIX_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Hendrix_College_logo.png"
 			},
 			"text": {
 				"school_title": "HENDRIX COLLEGE",
@@ -3185,8 +3067,7 @@
 		{
 			"outputFileName": "hillsdale",
 			"images": {
-				"school_logo": "images/Hillsdale_logo.png",
-				"school_mascot": "images/mascots/HILLSDALE_mascot.png"
+				"school_logo": "images/logos/Hillsdale_logo.png"
 			},
 			"text": {
 				"school_title": "HILLSDALE",
@@ -3200,8 +3081,7 @@
 		{
 			"outputFileName": "hiram",
 			"images": {
-				"school_logo": "images/Hiram_logo.png",
-				"school_mascot": "images/mascots/HIRAM_mascot.png"
+				"school_logo": "images/logos/Hiram_logo.png"
 			},
 			"text": {
 				"school_title": "HIRAM",
@@ -3215,7 +3095,7 @@
 		{
 			"outputFileName": "hobart",
 			"images": {
-				"school_logo": "images/Hobart_logo.png",
+				"school_logo": "images/logos/Hobart_logo.png",
 				"school_mascot": "images/mascots/HOBART_mascot.png"
 			},
 			"text": {
@@ -3230,7 +3110,7 @@
 		{
 			"outputFileName": "holy-cross",
 			"images": {
-				"school_logo": "images/Holy_Cross_logo.png",
+				"school_logo": "images/logos/Holy_Cross_logo.png",
 				"school_mascot": "images/mascots/HOLY_CROSS_mascot.png"
 			},
 			"text": {
@@ -3245,8 +3125,7 @@
 		{
 			"outputFileName": "hope",
 			"images": {
-				"school_logo": "images/Hope_logo.png",
-				"school_mascot": "images/mascots/HOPE_mascot.png"
+				"school_logo": "images/logos/Hope_logo.png"
 			},
 			"text": {
 				"school_title": "HOPE",
@@ -3260,7 +3139,7 @@
 		{
 			"outputFileName": "houston",
 			"images": {
-				"school_logo": "images/Houston_logo.png",
+				"school_logo": "images/logos/Houston_logo.png",
 				"school_mascot": "images/mascots/HOUSTON_mascot.png"
 			},
 			"text": {
@@ -3275,7 +3154,7 @@
 		{
 			"outputFileName": "houston-baptist",
 			"images": {
-				"school_logo": "images/Houston_Baptist_logo.png",
+				"school_logo": "images/logos/Houston_Baptist_logo.png",
 				"school_mascot": "images/mascots/HOUSTON_BAPTIST_mascot.png"
 			},
 			"text": {
@@ -3290,7 +3169,7 @@
 		{
 			"outputFileName": "howard",
 			"images": {
-				"school_logo": "images/Howard_logo.png",
+				"school_logo": "images/logos/Howard_logo.png",
 				"school_mascot": "images/mascots/HOWARD_mascot.png"
 			},
 			"text": {
@@ -3305,8 +3184,7 @@
 		{
 			"outputFileName": "howard-payne",
 			"images": {
-				"school_logo": "images/Howard_Payne_logo.png",
-				"school_mascot": "images/mascots/HOWARD_PAYNE_mascot.png"
+				"school_logo": "images/logos/Howard_Payne_logo.png"
 			},
 			"text": {
 				"school_title": "HOWARD PAYNE",
@@ -3320,8 +3198,7 @@
 		{
 			"outputFileName": "huntingdon",
 			"images": {
-				"school_logo": "images/Huntingdon_logo.png",
-				"school_mascot": "images/mascots/HUNTINGDON_mascot.png"
+				"school_logo": "images/logos/Huntingdon_logo.png"
 			},
 			"text": {
 				"school_title": "HUNTINGDON",
@@ -3335,8 +3212,7 @@
 		{
 			"outputFileName": "husson",
 			"images": {
-				"school_logo": "images/Husson_logo.png",
-				"school_mascot": "images/mascots/HUSSON_mascot.png"
+				"school_logo": "images/logos/Husson_logo.png"
 			},
 			"text": {
 				"school_title": "HUSSON",
@@ -3350,7 +3226,7 @@
 		{
 			"outputFileName": "idaho",
 			"images": {
-				"school_logo": "images/Idaho_logo.png",
+				"school_logo": "images/logos/Idaho_logo.png",
 				"school_mascot": "images/mascots/IDAHO_mascot.png"
 			},
 			"text": {
@@ -3365,7 +3241,7 @@
 		{
 			"outputFileName": "idaho-state",
 			"images": {
-				"school_logo": "images/Idaho_State_logo.png",
+				"school_logo": "images/logos/Idaho_State_logo.png",
 				"school_mascot": "images/mascots/IDAHO_STATE_mascot.png"
 			},
 			"text": {
@@ -3380,7 +3256,7 @@
 		{
 			"outputFileName": "illinois",
 			"images": {
-				"school_logo": "images/Illinois_logo.png",
+				"school_logo": "images/logos/Illinois_logo.png",
 				"school_mascot": "images/mascots/ILLINOIS_mascot.png"
 			},
 			"text": {
@@ -3395,8 +3271,7 @@
 		{
 			"outputFileName": "illinois-college",
 			"images": {
-				"school_logo": "images/Illinois_College_logo.png",
-				"school_mascot": "images/mascots/ILLINOIS_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Illinois_College_logo.png"
 			},
 			"text": {
 				"school_title": "ILLINOIS COLLEGE",
@@ -3410,7 +3285,7 @@
 		{
 			"outputFileName": "illinois-state",
 			"images": {
-				"school_logo": "images/Illinois_State_logo.png",
+				"school_logo": "images/logos/Illinois_State_logo.png",
 				"school_mascot": "images/mascots/ILLINOIS_STATE_mascot.png"
 			},
 			"text": {
@@ -3425,8 +3300,7 @@
 		{
 			"outputFileName": "illinois-wesleyan",
 			"images": {
-				"school_logo": "images/Illinois_Wesleyan_logo.png",
-				"school_mascot": "images/mascots/ILLINOIS_WESLEYAN_mascot.png"
+				"school_logo": "images/logos/Illinois_Wesleyan_logo.png"
 			},
 			"text": {
 				"school_title": "ILLINOIS WESLEYAN",
@@ -3440,7 +3314,7 @@
 		{
 			"outputFileName": "incarnate-word",
 			"images": {
-				"school_logo": "images/Incarnate_Word_logo.png",
+				"school_logo": "images/logos/Incarnate_Word_logo.png",
 				"school_mascot": "images/mascots/INCARNATE_WORD_mascot.png"
 			},
 			"text": {
@@ -3455,7 +3329,7 @@
 		{
 			"outputFileName": "indiana",
 			"images": {
-				"school_logo": "images/Indiana_logo.png",
+				"school_logo": "images/logos/Indiana_logo.png",
 				"school_mascot": "images/mascots/INDIANA_mascot.png"
 			},
 			"text": {
@@ -3470,8 +3344,7 @@
 		{
 			"outputFileName": "indianapolis",
 			"images": {
-				"school_logo": "images/Indianapolis_logo.png",
-				"school_mascot": "images/mascots/INDIANAPOLIS_mascot.png"
+				"school_logo": "images/logos/Indianapolis_logo.png"
 			},
 			"text": {
 				"school_title": "INDIANAPOLIS",
@@ -3485,7 +3358,7 @@
 		{
 			"outputFileName": "indiana-state",
 			"images": {
-				"school_logo": "images/Indiana_State_logo.png",
+				"school_logo": "images/logos/Indiana_State_logo.png",
 				"school_mascot": "images/mascots/INDIANA_STATE_mascot.png"
 			},
 			"text": {
@@ -3500,7 +3373,7 @@
 		{
 			"outputFileName": "iowa",
 			"images": {
-				"school_logo": "images/Iowa_logo.png",
+				"school_logo": "images/logos/Iowa_logo.png",
 				"school_mascot": "images/mascots/IOWA_mascot.png"
 			},
 			"text": {
@@ -3515,7 +3388,7 @@
 		{
 			"outputFileName": "iowa-state",
 			"images": {
-				"school_logo": "images/Iowa_State_logo.png",
+				"school_logo": "images/logos/Iowa_State_logo.png",
 				"school_mascot": "images/mascots/IOWA_STATE_mascot.png"
 			},
 			"text": {
@@ -3530,8 +3403,7 @@
 		{
 			"outputFileName": "ithaca",
 			"images": {
-				"school_logo": "images/Ithaca_logo.png",
-				"school_mascot": "images/mascots/ITHACA_mascot.png"
+				"school_logo": "images/logos/Ithaca_logo.png"
 			},
 			"text": {
 				"school_title": "ITHACA",
@@ -3545,7 +3417,7 @@
 		{
 			"outputFileName": "jackson-state",
 			"images": {
-				"school_logo": "images/Jackson_State_logo.png",
+				"school_logo": "images/logos/Jackson_State_logo.png",
 				"school_mascot": "images/mascots/JACKSON_STATE_mascot.png"
 			},
 			"text": {
@@ -3560,7 +3432,7 @@
 		{
 			"outputFileName": "jacksonville",
 			"images": {
-				"school_logo": "images/Jacksonville_logo.png",
+				"school_logo": "images/logos/Jacksonville_logo.png",
 				"school_mascot": "images/mascots/JACKSONVILLE_mascot.png"
 			},
 			"text": {
@@ -3575,7 +3447,7 @@
 		{
 			"outputFileName": "jacksonville-state",
 			"images": {
-				"school_logo": "images/Jacksonville_State_logo.png",
+				"school_logo": "images/logos/Jacksonville_State_logo.png",
 				"school_mascot": "images/mascots/JACKSONVILLE_STATE_mascot.png"
 			},
 			"text": {
@@ -3590,7 +3462,7 @@
 		{
 			"outputFileName": "james-madison",
 			"images": {
-				"school_logo": "images/James_Madison_logo.png",
+				"school_logo": "images/logos/James_Madison_logo.png",
 				"school_mascot": "images/mascots/JAMES_MADISON_mascot.png"
 			},
 			"text": {
@@ -3605,8 +3477,7 @@
 		{
 			"outputFileName": "john-carroll",
 			"images": {
-				"school_logo": "images/John_Carroll_logo.png",
-				"school_mascot": "images/mascots/JOHN_CARROLL_mascot.png"
+				"school_logo": "images/logos/John_Carroll_logo.png"
 			},
 			"text": {
 				"school_title": "JOHN CARROLL",
@@ -3620,7 +3491,7 @@
 		{
 			"outputFileName": "johns-hopkins",
 			"images": {
-				"school_logo": "images/Johns_Hopkins_logo.png",
+				"school_logo": "images/logos/Johns_Hopkins_logo.png",
 				"school_mascot": "images/mascots/JOHNS_HOPKINS_mascot.png"
 			},
 			"text": {
@@ -3635,8 +3506,7 @@
 		{
 			"outputFileName": "juniata",
 			"images": {
-				"school_logo": "images/Juniata_logo.png",
-				"school_mascot": "images/mascots/JUNIATA_mascot.png"
+				"school_logo": "images/logos/Juniata_logo.png"
 			},
 			"text": {
 				"school_title": "JUNIATA",
@@ -3650,8 +3520,7 @@
 		{
 			"outputFileName": "kalamazoo",
 			"images": {
-				"school_logo": "images/Kalamazoo_logo.png",
-				"school_mascot": "images/mascots/KALAMAZOO_mascot.png"
+				"school_logo": "images/logos/Kalamazoo_logo.png"
 			},
 			"text": {
 				"school_title": "KALAMAZOO",
@@ -3665,7 +3534,7 @@
 		{
 			"outputFileName": "kansas",
 			"images": {
-				"school_logo": "images/Kansas_logo.png",
+				"school_logo": "images/logos/Kansas_logo.png",
 				"school_mascot": "images/mascots/KANSAS_mascot.png"
 			},
 			"text": {
@@ -3680,7 +3549,7 @@
 		{
 			"outputFileName": "kansas-state",
 			"images": {
-				"school_logo": "images/Kansas_State_logo.png",
+				"school_logo": "images/logos/Kansas_State_logo.png",
 				"school_mascot": "images/mascots/KANSAS_STATE_mascot.png"
 			},
 			"text": {
@@ -3695,7 +3564,7 @@
 		{
 			"outputFileName": "kennesaw-state",
 			"images": {
-				"school_logo": "images/Kennesaw_State_logo.png",
+				"school_logo": "images/logos/Kennesaw_State_logo.png",
 				"school_mascot": "images/mascots/KENNESAW_STATE_mascot.png"
 			},
 			"text": {
@@ -3710,7 +3579,7 @@
 		{
 			"outputFileName": "kent-state",
 			"images": {
-				"school_logo": "images/Kent_State_logo.png",
+				"school_logo": "images/logos/Kent_State_logo.png",
 				"school_mascot": "images/mascots/KENT_STATE_mascot.png"
 			},
 			"text": {
@@ -3725,7 +3594,7 @@
 		{
 			"outputFileName": "kentucky",
 			"images": {
-				"school_logo": "images/Kentucky_logo.png",
+				"school_logo": "images/logos/Kentucky_logo.png",
 				"school_mascot": "images/mascots/KENTUCKY_mascot.png"
 			},
 			"text": {
@@ -3740,8 +3609,7 @@
 		{
 			"outputFileName": "kentucky-state",
 			"images": {
-				"school_logo": "images/Kentucky_State_logo.png",
-				"school_mascot": "images/mascots/KENTUCKY_STATE_mascot.png"
+				"school_logo": "images/logos/Kentucky_State_logo.png"
 			},
 			"text": {
 				"school_title": "KENTUCKY STATE",
@@ -3755,8 +3623,7 @@
 		{
 			"outputFileName": "kentucky-wesleyan",
 			"images": {
-				"school_logo": "images/Kentucky_Wesleyan_logo.png",
-				"school_mascot": "images/mascots/KENTUCKY_WESLEYAN_mascot.png"
+				"school_logo": "images/logos/Kentucky_Wesleyan_logo.png"
 			},
 			"text": {
 				"school_title": "KENTUCKY WESLEYAN",
@@ -3770,8 +3637,7 @@
 		{
 			"outputFileName": "kenyon",
 			"images": {
-				"school_logo": "images/Kenyon_logo.png",
-				"school_mascot": "images/mascots/KENYON_mascot.png"
+				"school_logo": "images/logos/Kenyon_logo.png"
 			},
 			"text": {
 				"school_title": "KENYON",
@@ -3785,8 +3651,7 @@
 		{
 			"outputFileName": "kings-college-pa",
 			"images": {
-				"school_logo": "images/Kings_College_PA_logo.png",
-				"school_mascot": "images/mascots/KINGS_COLLEGE_PA_mascot.png"
+				"school_logo": "images/logos/Kings_College_PA_logo.png"
 			},
 			"text": {
 				"school_title": "KING'S COLLEGE (PA)",
@@ -3800,8 +3665,7 @@
 		{
 			"outputFileName": "kutztown",
 			"images": {
-				"school_logo": "images/Kutztown_logo.png",
-				"school_mascot": "images/mascots/KUTZTOWN_mascot.png"
+				"school_logo": "images/logos/Kutztown_logo.png"
 			},
 			"text": {
 				"school_title": "KUTZTOWN",
@@ -3815,7 +3679,7 @@
 		{
 			"outputFileName": "lafayette",
 			"images": {
-				"school_logo": "images/Lafayette_logo.png",
+				"school_logo": "images/logos/Lafayette_logo.png",
 				"school_mascot": "images/mascots/LAFAYETTE_mascot.png"
 			},
 			"text": {
@@ -3830,8 +3694,7 @@
 		{
 			"outputFileName": "lagrange-college",
 			"images": {
-				"school_logo": "images/LaGrange_College_logo.png",
-				"school_mascot": "images/mascots/LAGRANGE_COLLEGE_mascot.png"
+				"school_logo": "images/logos/LaGrange_College_logo.png"
 			},
 			"text": {
 				"school_title": "LAGRANGE COLLEGE",
@@ -3845,8 +3708,7 @@
 		{
 			"outputFileName": "lake-erie-college",
 			"images": {
-				"school_logo": "images/Lake_Erie_College_logo.png",
-				"school_mascot": "images/mascots/LAKE_ERIE_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Lake_Erie_College_logo.png"
 			},
 			"text": {
 				"school_title": "LAKE ERIE COLLEGE",
@@ -3860,8 +3722,7 @@
 		{
 			"outputFileName": "lake-forest",
 			"images": {
-				"school_logo": "images/Lake_Forest_logo.png",
-				"school_mascot": "images/mascots/LAKE_FOREST_mascot.png"
+				"school_logo": "images/logos/Lake_Forest_logo.png"
 			},
 			"text": {
 				"school_title": "LAKE FOREST",
@@ -3875,7 +3736,7 @@
 		{
 			"outputFileName": "lamar",
 			"images": {
-				"school_logo": "images/Lamar_logo.png",
+				"school_logo": "images/logos/Lamar_logo.png",
 				"school_mascot": "images/mascots/LAMAR_mascot.png"
 			},
 			"text": {
@@ -3890,8 +3751,7 @@
 		{
 			"outputFileName": "lawrence",
 			"images": {
-				"school_logo": "images/Lawrence_logo.png",
-				"school_mascot": "images/mascots/LAWRENCE_mascot.png"
+				"school_logo": "images/logos/Lawrence_logo.png"
 			},
 			"text": {
 				"school_title": "LAWRENCE",
@@ -3905,8 +3765,7 @@
 		{
 			"outputFileName": "lebanon-valley",
 			"images": {
-				"school_logo": "images/Lebanon_Valley_logo.png",
-				"school_mascot": "images/mascots/LEBANON_VALLEY_mascot.png"
+				"school_logo": "images/logos/Lebanon_Valley_logo.png"
 			},
 			"text": {
 				"school_title": "LEBANON VALLEY",
@@ -3920,7 +3779,7 @@
 		{
 			"outputFileName": "lehigh",
 			"images": {
-				"school_logo": "images/Lehigh_logo.png",
+				"school_logo": "images/logos/Lehigh_logo.png",
 				"school_mascot": "images/mascots/LEHIGH_mascot.png"
 			},
 			"text": {
@@ -3935,8 +3794,7 @@
 		{
 			"outputFileName": "lenoir-rhyne",
 			"images": {
-				"school_logo": "images/Lenoir-Rhyne_logo.png",
-				"school_mascot": "images/mascots/LENOIR-RHYNE_mascot.png"
+				"school_logo": "images/logos/Lenoir-Rhyne_logo.png"
 			},
 			"text": {
 				"school_title": "LENOIR-RHYNE",
@@ -3950,8 +3808,7 @@
 		{
 			"outputFileName": "lewis--clark",
 			"images": {
-				"school_logo": "images/Lewis__Clark_logo.png",
-				"school_mascot": "images/mascots/LEWIS__CLARK_mascot.png"
+				"school_logo": "images/logos/Lewis__Clark_logo.png"
 			},
 			"text": {
 				"school_title": "LEWIS & CLARK",
@@ -3965,7 +3822,7 @@
 		{
 			"outputFileName": "liberty",
 			"images": {
-				"school_logo": "images/Liberty_logo.png",
+				"school_logo": "images/logos/Liberty_logo.png",
 				"school_mascot": "images/mascots/LIBERTY_mascot.png"
 			},
 			"text": {
@@ -3980,8 +3837,7 @@
 		{
 			"outputFileName": "limestone",
 			"images": {
-				"school_logo": "images/Limestone_logo.png",
-				"school_mascot": "images/mascots/LIMESTONE_mascot.png"
+				"school_logo": "images/logos/Limestone_logo.png"
 			},
 			"text": {
 				"school_title": "LIMESTONE",
@@ -3995,8 +3851,7 @@
 		{
 			"outputFileName": "lincoln-mo",
 			"images": {
-				"school_logo": "images/Lincoln_MO_logo.png",
-				"school_mascot": "images/mascots/LINCOLN_MO_mascot.png"
+				"school_logo": "images/logos/Lincoln_MO_logo.png"
 			},
 			"text": {
 				"school_title": "LINCOLN (MO)",
@@ -4010,8 +3865,7 @@
 		{
 			"outputFileName": "lincoln-pa",
 			"images": {
-				"school_logo": "images/Lincoln_PA_logo.png",
-				"school_mascot": "images/mascots/LINCOLN_PA_mascot.png"
+				"school_logo": "images/logos/Lincoln_PA_logo.png"
 			},
 			"text": {
 				"school_title": "LINCOLN (PA)",
@@ -4025,7 +3879,7 @@
 		{
 			"outputFileName": "lindenwood",
 			"images": {
-				"school_logo": "images/Lindenwood_logo.png",
+				"school_logo": "images/logos/Lindenwood_logo.png",
 				"school_mascot": "images/mascots/LINDENWOOD_mascot.png"
 			},
 			"text": {
@@ -4040,8 +3894,7 @@
 		{
 			"outputFileName": "linfield",
 			"images": {
-				"school_logo": "images/Linfield_logo.png",
-				"school_mascot": "images/mascots/LINFIELD_mascot.png"
+				"school_logo": "images/logos/Linfield_logo.png"
 			},
 			"text": {
 				"school_title": "LINFIELD",
@@ -4055,8 +3908,7 @@
 		{
 			"outputFileName": "livingstone",
 			"images": {
-				"school_logo": "images/Livingstone_logo.png",
-				"school_mascot": "images/mascots/LIVINGSTONE_mascot.png"
+				"school_logo": "images/logos/Livingstone_logo.png"
 			},
 			"text": {
 				"school_title": "LIVINGSTONE",
@@ -4070,7 +3922,7 @@
 		{
 			"outputFileName": "lock-haven",
 			"images": {
-				"school_logo": "images/Lock_Haven_logo.png",
+				"school_logo": "images/logos/Lock_Haven_logo.png",
 				"school_mascot": "images/mascots/LOCK_HAVEN_mascot.png"
 			},
 			"text": {
@@ -4085,7 +3937,7 @@
 		{
 			"outputFileName": "louisiana",
 			"images": {
-				"school_logo": "images/Louisiana_logo.png",
+				"school_logo": "images/logos/Louisiana_logo.png",
 				"school_mascot": "images/mascots/LOUISIANA_mascot.png"
 			},
 			"text": {
@@ -4100,7 +3952,7 @@
 		{
 			"outputFileName": "louisiana-monroe",
 			"images": {
-				"school_logo": "images/Louisiana_Monroe_logo.png",
+				"school_logo": "images/logos/Louisiana_Monroe_logo.png",
 				"school_mascot": "images/mascots/LOUISIANA_MONROE_mascot.png"
 			},
 			"text": {
@@ -4115,7 +3967,7 @@
 		{
 			"outputFileName": "louisiana-tech",
 			"images": {
-				"school_logo": "images/Louisiana_Tech_logo.png",
+				"school_logo": "images/logos/Louisiana_Tech_logo.png",
 				"school_mascot": "images/mascots/LOUISIANA_TECH_mascot.png"
 			},
 			"text": {
@@ -4130,7 +3982,7 @@
 		{
 			"outputFileName": "louisville",
 			"images": {
-				"school_logo": "images/Louisville_logo.png",
+				"school_logo": "images/logos/Louisville_logo.png",
 				"school_mascot": "images/mascots/LOUISVILLE_mascot.png"
 			},
 			"text": {
@@ -4145,7 +3997,7 @@
 		{
 			"outputFileName": "lsu",
 			"images": {
-				"school_logo": "images/LSU_logo.png",
+				"school_logo": "images/logos/LSU_logo.png",
 				"school_mascot": "images/mascots/LSU_mascot.png"
 			},
 			"text": {
@@ -4160,8 +4012,7 @@
 		{
 			"outputFileName": "luther",
 			"images": {
-				"school_logo": "images/Luther_logo.png",
-				"school_mascot": "images/mascots/LUTHER_mascot.png"
+				"school_logo": "images/logos/Luther_logo.png"
 			},
 			"text": {
 				"school_title": "LUTHER",
@@ -4175,8 +4026,7 @@
 		{
 			"outputFileName": "lycoming",
 			"images": {
-				"school_logo": "images/Lycoming_logo.png",
-				"school_mascot": "images/mascots/LYCOMING_mascot.png"
+				"school_logo": "images/logos/Lycoming_logo.png"
 			},
 			"text": {
 				"school_title": "LYCOMING",
@@ -4190,8 +4040,7 @@
 		{
 			"outputFileName": "macalester",
 			"images": {
-				"school_logo": "images/Macalester_logo.png",
-				"school_mascot": "images/mascots/MACALESTER_mascot.png"
+				"school_logo": "images/logos/Macalester_logo.png"
 			},
 			"text": {
 				"school_title": "MACALESTER",
@@ -4205,7 +4054,7 @@
 		{
 			"outputFileName": "maine",
 			"images": {
-				"school_logo": "images/Maine_logo.png",
+				"school_logo": "images/logos/Maine_logo.png",
 				"school_mascot": "images/mascots/MAINE_mascot.png"
 			},
 			"text": {
@@ -4220,8 +4069,7 @@
 		{
 			"outputFileName": "manchester",
 			"images": {
-				"school_logo": "images/Manchester_logo.png",
-				"school_mascot": "images/mascots/MANCHESTER_mascot.png"
+				"school_logo": "images/logos/Manchester_logo.png"
 			},
 			"text": {
 				"school_title": "MANCHESTER",
@@ -4235,8 +4083,7 @@
 		{
 			"outputFileName": "mansfield",
 			"images": {
-				"school_logo": "images/Mansfield_logo.png",
-				"school_mascot": "images/mascots/MANSFIELD_mascot.png"
+				"school_logo": "images/logos/Mansfield_logo.png"
 			},
 			"text": {
 				"school_title": "MANSFIELD",
@@ -4250,8 +4097,7 @@
 		{
 			"outputFileName": "marietta",
 			"images": {
-				"school_logo": "images/Marietta_logo.png",
-				"school_mascot": "images/mascots/MARIETTA_mascot.png"
+				"school_logo": "images/logos/Marietta_logo.png"
 			},
 			"text": {
 				"school_title": "MARIETTA",
@@ -4265,7 +4111,7 @@
 		{
 			"outputFileName": "marist",
 			"images": {
-				"school_logo": "images/Marist_logo.png",
+				"school_logo": "images/logos/Marist_logo.png",
 				"school_mascot": "images/mascots/MARIST_mascot.png"
 			},
 			"text": {
@@ -4280,7 +4126,7 @@
 		{
 			"outputFileName": "marshall",
 			"images": {
-				"school_logo": "images/Marshall_logo.png",
+				"school_logo": "images/logos/Marshall_logo.png",
 				"school_mascot": "images/mascots/MARSHALL_mascot.png"
 			},
 			"text": {
@@ -4295,8 +4141,7 @@
 		{
 			"outputFileName": "mars-hill",
 			"images": {
-				"school_logo": "images/Mars_Hill_logo.png",
-				"school_mascot": "images/mascots/MARS_HILL_mascot.png"
+				"school_logo": "images/logos/Mars_Hill_logo.png"
 			},
 			"text": {
 				"school_title": "MARS HILL",
@@ -4310,8 +4155,7 @@
 		{
 			"outputFileName": "martin-luther-college",
 			"images": {
-				"school_logo": "images/Martin_Luther_College_logo.png",
-				"school_mascot": "images/mascots/MARTIN_LUTHER_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Martin_Luther_College_logo.png"
 			},
 			"text": {
 				"school_title": "MARTIN LUTHER COLLEGE",
@@ -4325,8 +4169,7 @@
 		{
 			"outputFileName": "mary-hardin-baylor",
 			"images": {
-				"school_logo": "images/Mary_Hardin-Baylor_logo.png",
-				"school_mascot": "images/mascots/MARY_HARDIN-BAYLOR_mascot.png"
+				"school_logo": "images/logos/Mary_Hardin-Baylor_logo.png"
 			},
 			"text": {
 				"school_title": "MARY HARDIN-BAYLOR",
@@ -4340,7 +4183,7 @@
 		{
 			"outputFileName": "maryland",
 			"images": {
-				"school_logo": "images/Maryland_logo.png",
+				"school_logo": "images/logos/Maryland_logo.png",
 				"school_mascot": "images/mascots/MARYLAND_mascot.png"
 			},
 			"text": {
@@ -4355,8 +4198,7 @@
 		{
 			"outputFileName": "mcmurry",
 			"images": {
-				"school_logo": "images/McMurry_logo.png",
-				"school_mascot": "images/mascots/MCMURRY_mascot.png"
+				"school_logo": "images/logos/McMurry_logo.png"
 			},
 			"text": {
 				"school_title": "MCMURRY",
@@ -4370,7 +4212,7 @@
 		{
 			"outputFileName": "mcneese",
 			"images": {
-				"school_logo": "images/McNeese_logo.png",
+				"school_logo": "images/logos/McNeese_logo.png",
 				"school_mascot": "images/mascots/MCNEESE_mascot.png"
 			},
 			"text": {
@@ -4385,7 +4227,7 @@
 		{
 			"outputFileName": "memphis",
 			"images": {
-				"school_logo": "images/Memphis_logo.png",
+				"school_logo": "images/logos/Memphis_logo.png",
 				"school_mascot": "images/mascots/MEMPHIS_mascot.png"
 			},
 			"text": {
@@ -4400,7 +4242,7 @@
 		{
 			"outputFileName": "mercer",
 			"images": {
-				"school_logo": "images/Mercer_logo.png",
+				"school_logo": "images/logos/Mercer_logo.png",
 				"school_mascot": "images/mascots/MERCER_mascot.png"
 			},
 			"text": {
@@ -4415,8 +4257,7 @@
 		{
 			"outputFileName": "merchant-marine",
 			"images": {
-				"school_logo": "images/Merchant_Marine_logo.png",
-				"school_mascot": "images/mascots/MERCHANT_MARINE_mascot.png"
+				"school_logo": "images/logos/Merchant_Marine_logo.png"
 			},
 			"text": {
 				"school_title": "MERCHANT MARINE",
@@ -4430,7 +4271,7 @@
 		{
 			"outputFileName": "mercyhurst",
 			"images": {
-				"school_logo": "images/Mercyhurst_logo.png",
+				"school_logo": "images/logos/Mercyhurst_logo.png",
 				"school_mascot": "images/mascots/MERCYHURST_mascot.png"
 			},
 			"text": {
@@ -4445,7 +4286,7 @@
 		{
 			"outputFileName": "merrimack",
 			"images": {
-				"school_logo": "images/Merrimack_logo.png",
+				"school_logo": "images/logos/Merrimack_logo.png",
 				"school_mascot": "images/mascots/MERRIMACK_mascot.png"
 			},
 			"text": {
@@ -4460,8 +4301,7 @@
 		{
 			"outputFileName": "methodist",
 			"images": {
-				"school_logo": "images/Methodist_logo.png",
-				"school_mascot": "images/mascots/METHODIST_mascot.png"
+				"school_logo": "images/logos/Methodist_logo.png"
 			},
 			"text": {
 				"school_title": "METHODIST",
@@ -4475,7 +4315,7 @@
 		{
 			"outputFileName": "miami",
 			"images": {
-				"school_logo": "images/Miami_logo.png",
+				"school_logo": "images/logos/Miami_logo.png",
 				"school_mascot": "images/mascots/MIAMI_mascot.png"
 			},
 			"text": {
@@ -4490,7 +4330,7 @@
 		{
 			"outputFileName": "miami-oh",
 			"images": {
-				"school_logo": "images/Miami_OH_logo.png",
+				"school_logo": "images/logos/Miami_OH_logo.png",
 				"school_mascot": "images/mascots/MIAMI_OH_mascot.png"
 			},
 			"text": {
@@ -4505,7 +4345,7 @@
 		{
 			"outputFileName": "michigan",
 			"images": {
-				"school_logo": "images/Michigan_logo.png",
+				"school_logo": "images/logos/Michigan_logo.png",
 				"school_mascot": "images/mascots/MICHIGAN_mascot.png"
 			},
 			"text": {
@@ -4520,7 +4360,7 @@
 		{
 			"outputFileName": "michigan-state",
 			"images": {
-				"school_logo": "images/Michigan_State_logo.png",
+				"school_logo": "images/logos/Michigan_State_logo.png",
 				"school_mascot": "images/mascots/MICHIGAN_STATE_mascot.png"
 			},
 			"text": {
@@ -4535,7 +4375,7 @@
 		{
 			"outputFileName": "michigan-tech",
 			"images": {
-				"school_logo": "images/Michigan_Tech_logo.png",
+				"school_logo": "images/logos/Michigan_Tech_logo.png",
 				"school_mascot": "images/mascots/MICHIGAN_TECH_mascot.png"
 			},
 			"text": {
@@ -4550,8 +4390,7 @@
 		{
 			"outputFileName": "middlebury",
 			"images": {
-				"school_logo": "images/Middlebury_logo.png",
-				"school_mascot": "images/mascots/MIDDLEBURY_mascot.png"
+				"school_logo": "images/logos/Middlebury_logo.png"
 			},
 			"text": {
 				"school_title": "MIDDLEBURY",
@@ -4565,7 +4404,7 @@
 		{
 			"outputFileName": "middle-tennessee",
 			"images": {
-				"school_logo": "images/Middle_Tennessee_logo.png",
+				"school_logo": "images/logos/Middle_Tennessee_logo.png",
 				"school_mascot": "images/mascots/MIDDLE_TENNESSEE_mascot.png"
 			},
 			"text": {
@@ -4580,8 +4419,7 @@
 		{
 			"outputFileName": "miles",
 			"images": {
-				"school_logo": "images/Miles_logo.png",
-				"school_mascot": "images/mascots/MILES_mascot.png"
+				"school_logo": "images/logos/Miles_logo.png"
 			},
 			"text": {
 				"school_title": "MILES",
@@ -4595,8 +4433,7 @@
 		{
 			"outputFileName": "millersville",
 			"images": {
-				"school_logo": "images/Millersville_logo.png",
-				"school_mascot": "images/mascots/MILLERSVILLE_mascot.png"
+				"school_logo": "images/logos/Millersville_logo.png"
 			},
 			"text": {
 				"school_title": "MILLERSVILLE",
@@ -4610,8 +4447,7 @@
 		{
 			"outputFileName": "millikin",
 			"images": {
-				"school_logo": "images/Millikin_logo.png",
-				"school_mascot": "images/mascots/MILLIKIN_mascot.png"
+				"school_logo": "images/logos/Millikin_logo.png"
 			},
 			"text": {
 				"school_title": "MILLIKIN",
@@ -4625,8 +4461,7 @@
 		{
 			"outputFileName": "millsaps",
 			"images": {
-				"school_logo": "images/Millsaps_logo.png",
-				"school_mascot": "images/mascots/MILLSAPS_mascot.png"
+				"school_logo": "images/logos/Millsaps_logo.png"
 			},
 			"text": {
 				"school_title": "MILLSAPS",
@@ -4640,7 +4475,7 @@
 		{
 			"outputFileName": "minnesota",
 			"images": {
-				"school_logo": "images/Minnesota_logo.png",
+				"school_logo": "images/logos/Minnesota_logo.png",
 				"school_mascot": "images/mascots/MINNESOTA_mascot.png"
 			},
 			"text": {
@@ -4655,7 +4490,7 @@
 		{
 			"outputFileName": "minnesota-duluth",
 			"images": {
-				"school_logo": "images/Minnesota-Duluth_logo.png",
+				"school_logo": "images/logos/Minnesota-Duluth_logo.png",
 				"school_mascot": "images/mascots/MINNESOTA-DULUTH_mascot.png"
 			},
 			"text": {
@@ -4670,8 +4505,7 @@
 		{
 			"outputFileName": "minnesota-morris",
 			"images": {
-				"school_logo": "images/Minnesota-Morris_logo.png",
-				"school_mascot": "images/mascots/MINNESOTA-MORRIS_mascot.png"
+				"school_logo": "images/logos/Minnesota-Morris_logo.png"
 			},
 			"text": {
 				"school_title": "MINNESOTA-MORRIS",
@@ -4685,7 +4519,7 @@
 		{
 			"outputFileName": "minnesota-state",
 			"images": {
-				"school_logo": "images/Minnesota_State_logo.png",
+				"school_logo": "images/logos/Minnesota_State_logo.png",
 				"school_mascot": "images/mascots/MINNESOTA_STATE_mascot.png"
 			},
 			"text": {
@@ -4700,8 +4534,7 @@
 		{
 			"outputFileName": "minot-state",
 			"images": {
-				"school_logo": "images/Minot_State_logo.png",
-				"school_mascot": "images/mascots/MINOT_STATE_mascot.png"
+				"school_logo": "images/logos/Minot_State_logo.png"
 			},
 			"text": {
 				"school_title": "MINOT STATE",
@@ -4715,8 +4548,7 @@
 		{
 			"outputFileName": "misericordia",
 			"images": {
-				"school_logo": "images/Misericordia_logo.png",
-				"school_mascot": "images/mascots/MISERICORDIA_mascot.png"
+				"school_logo": "images/logos/Misericordia_logo.png"
 			},
 			"text": {
 				"school_title": "MISERICORDIA",
@@ -4730,8 +4562,7 @@
 		{
 			"outputFileName": "mississippi-college",
 			"images": {
-				"school_logo": "images/Mississippi_College_logo.png",
-				"school_mascot": "images/mascots/MISSISSIPPI_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Mississippi_College_logo.png"
 			},
 			"text": {
 				"school_title": "MISSISSIPPI COLLEGE",
@@ -4745,7 +4576,7 @@
 		{
 			"outputFileName": "mississippi-state",
 			"images": {
-				"school_logo": "images/Mississippi_State_logo.png",
+				"school_logo": "images/logos/Mississippi_State_logo.png",
 				"school_mascot": "images/mascots/MISSISSIPPI_STATE_mascot.png"
 			},
 			"text": {
@@ -4760,7 +4591,7 @@
 		{
 			"outputFileName": "mississippi-valley-state",
 			"images": {
-				"school_logo": "images/Mississippi_Valley_State_logo.png",
+				"school_logo": "images/logos/Mississippi_Valley_State_logo.png",
 				"school_mascot": "images/mascots/MISSISSIPPI_VALLEY_STATE_mascot.png"
 			},
 			"text": {
@@ -4775,7 +4606,7 @@
 		{
 			"outputFileName": "missouri",
 			"images": {
-				"school_logo": "images/Missouri_logo.png",
+				"school_logo": "images/logos/Missouri_logo.png",
 				"school_mascot": "images/mascots/MISSOURI_mascot.png"
 			},
 			"text": {
@@ -4790,8 +4621,7 @@
 		{
 			"outputFileName": "missouri-baptist",
 			"images": {
-				"school_logo": "images/Missouri_Baptist_logo.png",
-				"school_mascot": "images/mascots/MISSOURI_BAPTIST_mascot.png"
+				"school_logo": "images/logos/Missouri_Baptist_logo.png"
 			},
 			"text": {
 				"school_title": "MISSOURI BAPTIST",
@@ -4805,8 +4635,7 @@
 		{
 			"outputFileName": "missouri-st",
 			"images": {
-				"school_logo": "images/Missouri_ST_logo.png",
-				"school_mascot": "images/mascots/MISSOURI_ST_mascot.png"
+				"school_logo": "images/logos/Missouri_ST_logo.png"
 			},
 			"text": {
 				"school_title": "MISSOURI S&T",
@@ -4820,7 +4649,7 @@
 		{
 			"outputFileName": "missouri-state",
 			"images": {
-				"school_logo": "images/Missouri_State_logo.png",
+				"school_logo": "images/logos/Missouri_State_logo.png",
 				"school_mascot": "images/mascots/MISSOURI_STATE_mascot.png"
 			},
 			"text": {
@@ -4835,8 +4664,7 @@
 		{
 			"outputFileName": "missouri-western",
 			"images": {
-				"school_logo": "images/Missouri_Western_logo.png",
-				"school_mascot": "images/mascots/MISSOURI_WESTERN_mascot.png"
+				"school_logo": "images/logos/Missouri_Western_logo.png"
 			},
 			"text": {
 				"school_title": "MISSOURI WESTERN",
@@ -4850,7 +4678,7 @@
 		{
 			"outputFileName": "monmouth",
 			"images": {
-				"school_logo": "images/Monmouth_logo.png",
+				"school_logo": "images/logos/Monmouth_logo.png",
 				"school_mascot": "images/mascots/MONMOUTH_mascot.png"
 			},
 			"text": {
@@ -4865,8 +4693,7 @@
 		{
 			"outputFileName": "monmouth-il",
 			"images": {
-				"school_logo": "images/Monmouth_IL_logo.png",
-				"school_mascot": "images/mascots/MONMOUTH_IL_mascot.png"
+				"school_logo": "images/logos/Monmouth_IL_logo.png"
 			},
 			"text": {
 				"school_title": "MONMOUTH (IL)",
@@ -4880,7 +4707,7 @@
 		{
 			"outputFileName": "montana",
 			"images": {
-				"school_logo": "images/Montana_logo.png",
+				"school_logo": "images/logos/Montana_logo.png",
 				"school_mascot": "images/mascots/MONTANA_mascot.png"
 			},
 			"text": {
@@ -4895,7 +4722,7 @@
 		{
 			"outputFileName": "montana-state",
 			"images": {
-				"school_logo": "images/Montana_State_logo.png",
+				"school_logo": "images/logos/Montana_State_logo.png",
 				"school_mascot": "images/mascots/MONTANA_STATE_mascot.png"
 			},
 			"text": {
@@ -4910,8 +4737,7 @@
 		{
 			"outputFileName": "montana-western",
 			"images": {
-				"school_logo": "images/Montana-Western_logo.png",
-				"school_mascot": "images/mascots/MONTANA-WESTERN_mascot.png"
+				"school_logo": "images/logos/Montana-Western_logo.png"
 			},
 			"text": {
 				"school_title": "MONTANA-WESTERN",
@@ -4925,8 +4751,7 @@
 		{
 			"outputFileName": "montclair-state",
 			"images": {
-				"school_logo": "images/Montclair_State_logo.png",
-				"school_mascot": "images/mascots/MONTCLAIR_STATE_mascot.png"
+				"school_logo": "images/logos/Montclair_State_logo.png"
 			},
 			"text": {
 				"school_title": "MONTCLAIR STATE",
@@ -4940,8 +4765,7 @@
 		{
 			"outputFileName": "moravian",
 			"images": {
-				"school_logo": "images/Moravian_logo.png",
-				"school_mascot": "images/mascots/MORAVIAN_mascot.png"
+				"school_logo": "images/logos/Moravian_logo.png"
 			},
 			"text": {
 				"school_title": "MORAVIAN",
@@ -4955,7 +4779,7 @@
 		{
 			"outputFileName": "morehead-state",
 			"images": {
-				"school_logo": "images/Morehead_State_logo.png",
+				"school_logo": "images/logos/Morehead_State_logo.png",
 				"school_mascot": "images/mascots/MOREHEAD_STATE_mascot.png"
 			},
 			"text": {
@@ -4970,7 +4794,7 @@
 		{
 			"outputFileName": "morgan-state",
 			"images": {
-				"school_logo": "images/Morgan_State_logo.png",
+				"school_logo": "images/logos/Morgan_State_logo.png",
 				"school_mascot": "images/mascots/MORGAN_STATE_mascot.png"
 			},
 			"text": {
@@ -4985,8 +4809,7 @@
 		{
 			"outputFileName": "morrisville-state",
 			"images": {
-				"school_logo": "images/Morrisville_State_logo.png",
-				"school_mascot": "images/mascots/MORRISVILLE_STATE_mascot.png"
+				"school_logo": "images/logos/Morrisville_State_logo.png"
 			},
 			"text": {
 				"school_title": "MORRISVILLE STATE",
@@ -5000,8 +4823,7 @@
 		{
 			"outputFileName": "mount-st-joseph",
 			"images": {
-				"school_logo": "images/Mount_St._Joseph_logo.png",
-				"school_mascot": "images/mascots/MOUNT_ST._JOSEPH_mascot.png"
+				"school_logo": "images/logos/Mount_St._Joseph_logo.png"
 			},
 			"text": {
 				"school_title": "MOUNT ST. JOSEPH",
@@ -5015,8 +4837,7 @@
 		{
 			"outputFileName": "muhlenberg",
 			"images": {
-				"school_logo": "images/Muhlenberg_logo.png",
-				"school_mascot": "images/mascots/MUHLENBERG_mascot.png"
+				"school_logo": "images/logos/Muhlenberg_logo.png"
 			},
 			"text": {
 				"school_title": "MUHLENBERG",
@@ -5030,7 +4851,7 @@
 		{
 			"outputFileName": "murray-state",
 			"images": {
-				"school_logo": "images/Murray_State_logo.png",
+				"school_logo": "images/logos/Murray_State_logo.png",
 				"school_mascot": "images/mascots/MURRAY_STATE_mascot.png"
 			},
 			"text": {
@@ -5045,7 +4866,7 @@
 		{
 			"outputFileName": "navy",
 			"images": {
-				"school_logo": "images/Navy_logo.png",
+				"school_logo": "images/logos/Navy_logo.png",
 				"school_mascot": "images/mascots/NAVY_mascot.png"
 			},
 			"text": {
@@ -5060,7 +4881,7 @@
 		{
 			"outputFileName": "nc-state",
 			"images": {
-				"school_logo": "images/NC_State_logo.png",
+				"school_logo": "images/logos/NC_State_logo.png",
 				"school_mascot": "images/mascots/NC_STATE_mascot.png"
 			},
 			"text": {
@@ -5075,7 +4896,7 @@
 		{
 			"outputFileName": "nebraska",
 			"images": {
-				"school_logo": "images/Nebraska_logo.png",
+				"school_logo": "images/logos/Nebraska_logo.png",
 				"school_mascot": "images/mascots/NEBRASKA_mascot.png"
 			},
 			"text": {
@@ -5090,8 +4911,7 @@
 		{
 			"outputFileName": "nebraska-kearney",
 			"images": {
-				"school_logo": "images/Nebraska-Kearney_logo.png",
-				"school_mascot": "images/mascots/NEBRASKA-KEARNEY_mascot.png"
+				"school_logo": "images/logos/Nebraska-Kearney_logo.png"
 			},
 			"text": {
 				"school_title": "NEBRASKA-KEARNEY",
@@ -5105,8 +4925,7 @@
 		{
 			"outputFileName": "nebraska-omaha",
 			"images": {
-				"school_logo": "images/Nebraska-Omaha_logo.png",
-				"school_mascot": "images/mascots/NEBRASKA-OMAHA_mascot.png"
+				"school_logo": "images/logos/Nebraska-Omaha_logo.png"
 			},
 			"text": {
 				"school_title": "NEBRASKA-OMAHA",
@@ -5120,7 +4939,7 @@
 		{
 			"outputFileName": "nevada",
 			"images": {
-				"school_logo": "images/Nevada_logo.png",
+				"school_logo": "images/logos/Nevada_logo.png",
 				"school_mascot": "images/mascots/NEVADA_mascot.png"
 			},
 			"text": {
@@ -5135,8 +4954,7 @@
 		{
 			"outputFileName": "newberry",
 			"images": {
-				"school_logo": "images/Newberry_logo.png",
-				"school_mascot": "images/mascots/NEWBERRY_mascot.png"
+				"school_logo": "images/logos/Newberry_logo.png"
 			},
 			"text": {
 				"school_title": "NEWBERRY",
@@ -5150,7 +4968,7 @@
 		{
 			"outputFileName": "new-hampshire",
 			"images": {
-				"school_logo": "images/New_Hampshire_logo.png",
+				"school_logo": "images/logos/New_Hampshire_logo.png",
 				"school_mascot": "images/mascots/NEW_HAMPSHIRE_mascot.png"
 			},
 			"text": {
@@ -5165,7 +4983,7 @@
 		{
 			"outputFileName": "new-haven",
 			"images": {
-				"school_logo": "images/New_Haven_logo.png",
+				"school_logo": "images/logos/New_Haven_logo.png",
 				"school_mascot": "images/mascots/NEW_HAVEN_mascot.png"
 			},
 			"text": {
@@ -5180,7 +4998,7 @@
 		{
 			"outputFileName": "new-mexico",
 			"images": {
-				"school_logo": "images/New_Mexico_logo.png",
+				"school_logo": "images/logos/New_Mexico_logo.png",
 				"school_mascot": "images/mascots/NEW_MEXICO_mascot.png"
 			},
 			"text": {
@@ -5195,8 +5013,7 @@
 		{
 			"outputFileName": "new-mexico-highlands",
 			"images": {
-				"school_logo": "images/New_Mexico_Highlands_logo.png",
-				"school_mascot": "images/mascots/NEW_MEXICO_HIGHLANDS_mascot.png"
+				"school_logo": "images/logos/New_Mexico_Highlands_logo.png"
 			},
 			"text": {
 				"school_title": "NEW MEXICO HIGHLANDS",
@@ -5210,7 +5027,7 @@
 		{
 			"outputFileName": "new-mexico-state",
 			"images": {
-				"school_logo": "images/New_Mexico_State_logo.png",
+				"school_logo": "images/logos/New_Mexico_State_logo.png",
 				"school_mascot": "images/mascots/NEW_MEXICO_STATE_mascot.png"
 			},
 			"text": {
@@ -5225,7 +5042,7 @@
 		{
 			"outputFileName": "nicholls",
 			"images": {
-				"school_logo": "images/Nicholls_logo.png",
+				"school_logo": "images/logos/Nicholls_logo.png",
 				"school_mascot": "images/mascots/NICHOLLS_mascot.png"
 			},
 			"text": {
@@ -5240,8 +5057,7 @@
 		{
 			"outputFileName": "nichols",
 			"images": {
-				"school_logo": "images/Nichols_logo.png",
-				"school_mascot": "images/mascots/NICHOLS_mascot.png"
+				"school_logo": "images/logos/Nichols_logo.png"
 			},
 			"text": {
 				"school_title": "NICHOLS",
@@ -5255,7 +5071,7 @@
 		{
 			"outputFileName": "norfolk-state",
 			"images": {
-				"school_logo": "images/Norfolk_State_logo.png",
+				"school_logo": "images/logos/Norfolk_State_logo.png",
 				"school_mascot": "images/mascots/NORFOLK_STATE_mascot.png"
 			},
 			"text": {
@@ -5270,7 +5086,7 @@
 		{
 			"outputFileName": "north-alabama",
 			"images": {
-				"school_logo": "images/North_Alabama_logo.png",
+				"school_logo": "images/logos/North_Alabama_logo.png",
 				"school_mascot": "images/mascots/NORTH_ALABAMA_mascot.png"
 			},
 			"text": {
@@ -5285,7 +5101,7 @@
 		{
 			"outputFileName": "north-carolina",
 			"images": {
-				"school_logo": "images/North_Carolina_logo.png",
+				"school_logo": "images/logos/North_Carolina_logo.png",
 				"school_mascot": "images/mascots/NORTH_CAROLINA_mascot.png"
 			},
 			"text": {
@@ -5300,7 +5116,7 @@
 		{
 			"outputFileName": "north-carolina-at",
 			"images": {
-				"school_logo": "images/North_Carolina_AT_logo.png",
+				"school_logo": "images/logos/North_Carolina_AT_logo.png",
 				"school_mascot": "images/mascots/NORTH_CAROLINA_AT_mascot.png"
 			},
 			"text": {
@@ -5315,7 +5131,7 @@
 		{
 			"outputFileName": "north-carolina-central",
 			"images": {
-				"school_logo": "images/North_Carolina_Central_logo.png",
+				"school_logo": "images/logos/North_Carolina_Central_logo.png",
 				"school_mascot": "images/mascots/NORTH_CAROLINA_CENTRAL_mascot.png"
 			},
 			"text": {
@@ -5330,8 +5146,7 @@
 		{
 			"outputFileName": "north-central",
 			"images": {
-				"school_logo": "images/North_Central_logo.png",
-				"school_mascot": "images/mascots/NORTH_CENTRAL_mascot.png"
+				"school_logo": "images/logos/North_Central_logo.png"
 			},
 			"text": {
 				"school_title": "NORTH CENTRAL",
@@ -5345,7 +5160,7 @@
 		{
 			"outputFileName": "north-dakota",
 			"images": {
-				"school_logo": "images/North_Dakota_logo.png",
+				"school_logo": "images/logos/North_Dakota_logo.png",
 				"school_mascot": "images/mascots/NORTH_DAKOTA_mascot.png"
 			},
 			"text": {
@@ -5360,7 +5175,7 @@
 		{
 			"outputFileName": "north-dakota-state",
 			"images": {
-				"school_logo": "images/North_Dakota_State_logo.png",
+				"school_logo": "images/logos/North_Dakota_State_logo.png",
 				"school_mascot": "images/mascots/NORTH_DAKOTA_STATE_mascot.png"
 			},
 			"text": {
@@ -5375,8 +5190,7 @@
 		{
 			"outputFileName": "northeastern-state",
 			"images": {
-				"school_logo": "images/Northeastern_State_logo.png",
-				"school_mascot": "images/mascots/NORTHEASTERN_STATE_mascot.png"
+				"school_logo": "images/logos/Northeastern_State_logo.png"
 			},
 			"text": {
 				"school_title": "NORTHEASTERN STATE",
@@ -5390,7 +5204,7 @@
 		{
 			"outputFileName": "northern-arizona",
 			"images": {
-				"school_logo": "images/Northern_Arizona_logo.png",
+				"school_logo": "images/logos/Northern_Arizona_logo.png",
 				"school_mascot": "images/mascots/NORTHERN_ARIZONA_mascot.png"
 			},
 			"text": {
@@ -5405,7 +5219,7 @@
 		{
 			"outputFileName": "northern-colorado",
 			"images": {
-				"school_logo": "images/Northern_Colorado_logo.png",
+				"school_logo": "images/logos/Northern_Colorado_logo.png",
 				"school_mascot": "images/mascots/NORTHERN_COLORADO_mascot.png"
 			},
 			"text": {
@@ -5420,7 +5234,7 @@
 		{
 			"outputFileName": "northern-illinois",
 			"images": {
-				"school_logo": "images/Northern_Illinois_logo.png",
+				"school_logo": "images/logos/Northern_Illinois_logo.png",
 				"school_mascot": "images/mascots/NORTHERN_ILLINOIS_mascot.png"
 			},
 			"text": {
@@ -5435,7 +5249,7 @@
 		{
 			"outputFileName": "northern-iowa",
 			"images": {
-				"school_logo": "images/Northern_Iowa_logo.png",
+				"school_logo": "images/logos/Northern_Iowa_logo.png",
 				"school_mascot": "images/mascots/NORTHERN_IOWA_mascot.png"
 			},
 			"text": {
@@ -5450,7 +5264,7 @@
 		{
 			"outputFileName": "northern-michigan",
 			"images": {
-				"school_logo": "images/Northern_Michigan_logo.png",
+				"school_logo": "images/logos/Northern_Michigan_logo.png",
 				"school_mascot": "images/mascots/NORTHERN_MICHIGAN_mascot.png"
 			},
 			"text": {
@@ -5465,8 +5279,7 @@
 		{
 			"outputFileName": "north-greenville",
 			"images": {
-				"school_logo": "images/North_Greenville_logo.png",
-				"school_mascot": "images/mascots/NORTH_GREENVILLE_mascot.png"
+				"school_logo": "images/logos/North_Greenville_logo.png"
 			},
 			"text": {
 				"school_title": "NORTH GREENVILLE",
@@ -5480,8 +5293,7 @@
 		{
 			"outputFileName": "north-park",
 			"images": {
-				"school_logo": "images/North_Park_logo.png",
-				"school_mascot": "images/mascots/NORTH_PARK_mascot.png"
+				"school_logo": "images/logos/North_Park_logo.png"
 			},
 			"text": {
 				"school_title": "NORTH PARK",
@@ -5495,7 +5307,7 @@
 		{
 			"outputFileName": "north-texas",
 			"images": {
-				"school_logo": "images/North_Texas_logo.png",
+				"school_logo": "images/logos/North_Texas_logo.png",
 				"school_mascot": "images/mascots/NORTH_TEXAS_mascot.png"
 			},
 			"text": {
@@ -5510,7 +5322,7 @@
 		{
 			"outputFileName": "northwestern",
 			"images": {
-				"school_logo": "images/Northwestern_logo.png",
+				"school_logo": "images/logos/Northwestern_logo.png",
 				"school_mascot": "images/mascots/NORTHWESTERN_mascot.png"
 			},
 			"text": {
@@ -5525,8 +5337,7 @@
 		{
 			"outputFileName": "northwestern-mn",
 			"images": {
-				"school_logo": "images/Northwestern_MN_logo.png",
-				"school_mascot": "images/mascots/NORTHWESTERN_MN_mascot.png"
+				"school_logo": "images/logos/Northwestern_MN_logo.png"
 			},
 			"text": {
 				"school_title": "NORTHWESTERN (MN)",
@@ -5540,8 +5351,7 @@
 		{
 			"outputFileName": "northwestern-oklahoma-state",
 			"images": {
-				"school_logo": "images/Northwestern_Oklahoma_State_logo.png",
-				"school_mascot": "images/mascots/NORTHWESTERN_OKLAHOMA_STATE_mascot.png"
+				"school_logo": "images/logos/Northwestern_Oklahoma_State_logo.png"
 			},
 			"text": {
 				"school_title": "NORTHWESTERN OKLAHOMA STATE",
@@ -5555,7 +5365,7 @@
 		{
 			"outputFileName": "northwestern-state",
 			"images": {
-				"school_logo": "images/Northwestern_State_logo.png",
+				"school_logo": "images/logos/Northwestern_State_logo.png",
 				"school_mascot": "images/mascots/NORTHWESTERN_STATE_mascot.png"
 			},
 			"text": {
@@ -5570,8 +5380,7 @@
 		{
 			"outputFileName": "northwest-missouri-state",
 			"images": {
-				"school_logo": "images/Northwest_Missouri_State_logo.png",
-				"school_mascot": "images/mascots/NORTHWEST_MISSOURI_STATE_mascot.png"
+				"school_logo": "images/logos/Northwest_Missouri_State_logo.png"
 			},
 			"text": {
 				"school_title": "NORTHWEST MISSOURI STATE",
@@ -5585,8 +5394,7 @@
 		{
 			"outputFileName": "northwood-mi",
 			"images": {
-				"school_logo": "images/Northwood_MI_logo.png",
-				"school_mascot": "images/mascots/NORTHWOOD_MI_mascot.png"
+				"school_logo": "images/logos/Northwood_MI_logo.png"
 			},
 			"text": {
 				"school_title": "NORTHWOOD (MI)",
@@ -5600,8 +5408,7 @@
 		{
 			"outputFileName": "norwich",
 			"images": {
-				"school_logo": "images/Norwich_logo.png",
-				"school_mascot": "images/mascots/NORWICH_mascot.png"
+				"school_logo": "images/logos/Norwich_logo.png"
 			},
 			"text": {
 				"school_title": "NORWICH",
@@ -5615,7 +5422,7 @@
 		{
 			"outputFileName": "notre-dame",
 			"images": {
-				"school_logo": "images/Notre_Dame_logo.png",
+				"school_logo": "images/logos/Notre_Dame_logo.png",
 				"school_mascot": "images/mascots/NOTRE_DAME_mascot.png"
 			},
 			"text": {
@@ -5630,8 +5437,7 @@
 		{
 			"outputFileName": "notre-dame-college",
 			"images": {
-				"school_logo": "images/Notre_Dame_College_logo.png",
-				"school_mascot": "images/mascots/NOTRE_DAME_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Notre_Dame_College_logo.png"
 			},
 			"text": {
 				"school_title": "NOTRE DAME COLLEGE",
@@ -5645,8 +5451,7 @@
 		{
 			"outputFileName": "oberlin",
 			"images": {
-				"school_logo": "images/Oberlin_logo.png",
-				"school_mascot": "images/mascots/OBERLIN_mascot.png"
+				"school_logo": "images/logos/Oberlin_logo.png"
 			},
 			"text": {
 				"school_title": "OBERLIN",
@@ -5660,7 +5465,7 @@
 		{
 			"outputFileName": "ohio",
 			"images": {
-				"school_logo": "images/Ohio_logo.png",
+				"school_logo": "images/logos/Ohio_logo.png",
 				"school_mascot": "images/mascots/OHIO_mascot.png"
 			},
 			"text": {
@@ -5675,8 +5480,7 @@
 		{
 			"outputFileName": "ohio-northern",
 			"images": {
-				"school_logo": "images/Ohio_Northern_logo.png",
-				"school_mascot": "images/mascots/OHIO_NORTHERN_mascot.png"
+				"school_logo": "images/logos/Ohio_Northern_logo.png"
 			},
 			"text": {
 				"school_title": "OHIO NORTHERN",
@@ -5690,7 +5494,7 @@
 		{
 			"outputFileName": "ohio-state",
 			"images": {
-				"school_logo": "images/Ohio_State_logo.png",
+				"school_logo": "images/logos/Ohio_State_logo.png",
 				"school_mascot": "images/mascots/OHIO_STATE_mascot.png"
 			},
 			"text": {
@@ -5705,8 +5509,7 @@
 		{
 			"outputFileName": "ohio-wesleyan",
 			"images": {
-				"school_logo": "images/Ohio_Wesleyan_logo.png",
-				"school_mascot": "images/mascots/OHIO_WESLEYAN_mascot.png"
+				"school_logo": "images/logos/Ohio_Wesleyan_logo.png"
 			},
 			"text": {
 				"school_title": "OHIO WESLEYAN",
@@ -5720,7 +5523,7 @@
 		{
 			"outputFileName": "oklahoma",
 			"images": {
-				"school_logo": "images/Oklahoma_logo.png",
+				"school_logo": "images/logos/Oklahoma_logo.png",
 				"school_mascot": "images/mascots/OKLAHOMA_mascot.png"
 			},
 			"text": {
@@ -5735,8 +5538,7 @@
 		{
 			"outputFileName": "oklahoma-baptist",
 			"images": {
-				"school_logo": "images/Oklahoma_Baptist_logo.png",
-				"school_mascot": "images/mascots/OKLAHOMA_BAPTIST_mascot.png"
+				"school_logo": "images/logos/Oklahoma_Baptist_logo.png"
 			},
 			"text": {
 				"school_title": "OKLAHOMA BAPTIST",
@@ -5750,7 +5552,7 @@
 		{
 			"outputFileName": "oklahoma-state",
 			"images": {
-				"school_logo": "images/Oklahoma_State_logo.png",
+				"school_logo": "images/logos/Oklahoma_State_logo.png",
 				"school_mascot": "images/mascots/OKLAHOMA_STATE_mascot.png"
 			},
 			"text": {
@@ -5765,7 +5567,7 @@
 		{
 			"outputFileName": "old-dominion",
 			"images": {
-				"school_logo": "images/Old_Dominion_logo.png",
+				"school_logo": "images/logos/Old_Dominion_logo.png",
 				"school_mascot": "images/mascots/OLD_DOMINION_mascot.png"
 			},
 			"text": {
@@ -5780,7 +5582,7 @@
 		{
 			"outputFileName": "ole-miss",
 			"images": {
-				"school_logo": "images/Ole_Miss_logo.png",
+				"school_logo": "images/logos/Ole_Miss_logo.png",
 				"school_mascot": "images/mascots/OLE_MISS_mascot.png"
 			},
 			"text": {
@@ -5795,8 +5597,7 @@
 		{
 			"outputFileName": "olivet-college",
 			"images": {
-				"school_logo": "images/Olivet_College_logo.png",
-				"school_mascot": "images/mascots/OLIVET_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Olivet_College_logo.png"
 			},
 			"text": {
 				"school_title": "OLIVET COLLEGE",
@@ -5810,7 +5611,7 @@
 		{
 			"outputFileName": "oregon",
 			"images": {
-				"school_logo": "images/Oregon_logo.png",
+				"school_logo": "images/logos/Oregon_logo.png",
 				"school_mascot": "images/mascots/OREGON_mascot.png"
 			},
 			"text": {
@@ -5825,7 +5626,7 @@
 		{
 			"outputFileName": "oregon-state",
 			"images": {
-				"school_logo": "images/Oregon_State_logo.png",
+				"school_logo": "images/logos/Oregon_State_logo.png",
 				"school_mascot": "images/mascots/OREGON_STATE_mascot.png"
 			},
 			"text": {
@@ -5840,8 +5641,7 @@
 		{
 			"outputFileName": "otterbein",
 			"images": {
-				"school_logo": "images/Otterbein_logo.png",
-				"school_mascot": "images/mascots/OTTERBEIN_mascot.png"
+				"school_logo": "images/logos/Otterbein_logo.png"
 			},
 			"text": {
 				"school_title": "OTTERBEIN",
@@ -5855,8 +5655,7 @@
 		{
 			"outputFileName": "ouachita-baptist",
 			"images": {
-				"school_logo": "images/Ouachita_Baptist_logo.png",
-				"school_mascot": "images/mascots/OUACHITA_BAPTIST_mascot.png"
+				"school_logo": "images/logos/Ouachita_Baptist_logo.png"
 			},
 			"text": {
 				"school_title": "OUACHITA BAPTIST",
@@ -5870,8 +5669,7 @@
 		{
 			"outputFileName": "pace",
 			"images": {
-				"school_logo": "images/Pace_logo.png",
-				"school_mascot": "images/mascots/PACE_mascot.png"
+				"school_logo": "images/logos/Pace_logo.png"
 			},
 			"text": {
 				"school_title": "PACE",
@@ -5885,8 +5683,7 @@
 		{
 			"outputFileName": "pacific-lutheran",
 			"images": {
-				"school_logo": "images/Pacific_Lutheran_logo.png",
-				"school_mascot": "images/mascots/PACIFIC_LUTHERAN_mascot.png"
+				"school_logo": "images/logos/Pacific_Lutheran_logo.png"
 			},
 			"text": {
 				"school_title": "PACIFIC LUTHERAN",
@@ -5900,8 +5697,7 @@
 		{
 			"outputFileName": "pacific-or",
 			"images": {
-				"school_logo": "images/Pacific_OR_logo.png",
-				"school_mascot": "images/mascots/PACIFIC_OR_mascot.png"
+				"school_logo": "images/logos/Pacific_OR_logo.png"
 			},
 			"text": {
 				"school_title": "PACIFIC (OR)",
@@ -5915,7 +5711,7 @@
 		{
 			"outputFileName": "penn-state",
 			"images": {
-				"school_logo": "images/Penn_State_logo.png",
+				"school_logo": "images/logos/Penn_State_logo.png",
 				"school_mascot": "images/mascots/PENN_STATE_mascot.png"
 			},
 			"text": {
@@ -5930,7 +5726,7 @@
 		{
 			"outputFileName": "pennsylvania",
 			"images": {
-				"school_logo": "images/Pennsylvania_logo.png",
+				"school_logo": "images/logos/Pennsylvania_logo.png",
 				"school_mascot": "images/mascots/PENNSYLVANIA_mascot.png"
 			},
 			"text": {
@@ -5945,7 +5741,7 @@
 		{
 			"outputFileName": "pittsburgh",
 			"images": {
-				"school_logo": "images/Pittsburgh_logo.png",
+				"school_logo": "images/logos/Pittsburgh_logo.png",
 				"school_mascot": "images/mascots/PITTSBURGH_mascot.png"
 			},
 			"text": {
@@ -5960,8 +5756,7 @@
 		{
 			"outputFileName": "pittsburg-state",
 			"images": {
-				"school_logo": "images/Pittsburg_State_logo.png",
-				"school_mascot": "images/mascots/PITTSBURG_STATE_mascot.png"
+				"school_logo": "images/logos/Pittsburg_State_logo.png"
 			},
 			"text": {
 				"school_title": "PITTSBURG STATE",
@@ -5975,8 +5770,7 @@
 		{
 			"outputFileName": "plymouth-state",
 			"images": {
-				"school_logo": "images/Plymouth_State_logo.png",
-				"school_mascot": "images/mascots/PLYMOUTH_STATE_mascot.png"
+				"school_logo": "images/logos/Plymouth_State_logo.png"
 			},
 			"text": {
 				"school_title": "PLYMOUTH STATE",
@@ -5990,8 +5784,7 @@
 		{
 			"outputFileName": "pomona-pitzer",
 			"images": {
-				"school_logo": "images/Pomona-Pitzer_logo.png",
-				"school_mascot": "images/mascots/POMONA-PITZER_mascot.png"
+				"school_logo": "images/logos/Pomona-Pitzer_logo.png"
 			},
 			"text": {
 				"school_title": "POMONA-PITZER",
@@ -6005,7 +5798,7 @@
 		{
 			"outputFileName": "portland-state",
 			"images": {
-				"school_logo": "images/Portland_State_logo.png",
+				"school_logo": "images/logos/Portland_State_logo.png",
 				"school_mascot": "images/mascots/PORTLAND_STATE_mascot.png"
 			},
 			"text": {
@@ -6020,7 +5813,7 @@
 		{
 			"outputFileName": "prairie-view",
 			"images": {
-				"school_logo": "images/Prairie_View_logo.png",
+				"school_logo": "images/logos/Prairie_View_logo.png",
 				"school_mascot": "images/mascots/PRAIRIE_VIEW_mascot.png"
 			},
 			"text": {
@@ -6035,7 +5828,7 @@
 		{
 			"outputFileName": "presbyterian-college",
 			"images": {
-				"school_logo": "images/Presbyterian_College_logo.png",
+				"school_logo": "images/logos/Presbyterian_College_logo.png",
 				"school_mascot": "images/mascots/PRESBYTERIAN_COLLEGE_mascot.png"
 			},
 			"text": {
@@ -6050,7 +5843,7 @@
 		{
 			"outputFileName": "princeton",
 			"images": {
-				"school_logo": "images/Princeton_logo.png",
+				"school_logo": "images/logos/Princeton_logo.png",
 				"school_mascot": "images/mascots/PRINCETON_mascot.png"
 			},
 			"text": {
@@ -6065,8 +5858,7 @@
 		{
 			"outputFileName": "puget-sound",
 			"images": {
-				"school_logo": "images/Puget_Sound_logo.png",
-				"school_mascot": "images/mascots/PUGET_SOUND_mascot.png"
+				"school_logo": "images/logos/Puget_Sound_logo.png"
 			},
 			"text": {
 				"school_title": "PUGET SOUND",
@@ -6080,7 +5872,7 @@
 		{
 			"outputFileName": "purdue",
 			"images": {
-				"school_logo": "images/Purdue_logo.png",
+				"school_logo": "images/logos/Purdue_logo.png",
 				"school_mascot": "images/mascots/PURDUE_mascot.png"
 			},
 			"text": {
@@ -6095,8 +5887,7 @@
 		{
 			"outputFileName": "quincy",
 			"images": {
-				"school_logo": "images/Quincy_logo.png",
-				"school_mascot": "images/mascots/QUINCY_mascot.png"
+				"school_logo": "images/logos/Quincy_logo.png"
 			},
 			"text": {
 				"school_title": "QUINCY",
@@ -6110,8 +5901,7 @@
 		{
 			"outputFileName": "randolph-macon",
 			"images": {
-				"school_logo": "images/Randolph-Macon_logo.png",
-				"school_mascot": "images/mascots/RANDOLPH-MACON_mascot.png"
+				"school_logo": "images/logos/Randolph-Macon_logo.png"
 			},
 			"text": {
 				"school_title": "RANDOLPH-MACON",
@@ -6125,8 +5915,7 @@
 		{
 			"outputFileName": "redlands",
 			"images": {
-				"school_logo": "images/Redlands_logo.png",
-				"school_mascot": "images/mascots/REDLANDS_mascot.png"
+				"school_logo": "images/logos/Redlands_logo.png"
 			},
 			"text": {
 				"school_title": "REDLANDS",
@@ -6140,7 +5929,7 @@
 		{
 			"outputFileName": "rensselaer",
 			"images": {
-				"school_logo": "images/Rensselaer_logo.png",
+				"school_logo": "images/logos/Rensselaer_logo.png",
 				"school_mascot": "images/mascots/RENSSELAER_mascot.png"
 			},
 			"text": {
@@ -6155,7 +5944,7 @@
 		{
 			"outputFileName": "rhode-island",
 			"images": {
-				"school_logo": "images/Rhode_Island_logo.png",
+				"school_logo": "images/logos/Rhode_Island_logo.png",
 				"school_mascot": "images/mascots/RHODE_ISLAND_mascot.png"
 			},
 			"text": {
@@ -6170,8 +5959,7 @@
 		{
 			"outputFileName": "rhodes",
 			"images": {
-				"school_logo": "images/Rhodes_logo.png",
-				"school_mascot": "images/mascots/RHODES_mascot.png"
+				"school_logo": "images/logos/Rhodes_logo.png"
 			},
 			"text": {
 				"school_title": "RHODES",
@@ -6185,7 +5973,7 @@
 		{
 			"outputFileName": "rice",
 			"images": {
-				"school_logo": "images/Rice_logo.png",
+				"school_logo": "images/logos/Rice_logo.png",
 				"school_mascot": "images/mascots/RICE_mascot.png"
 			},
 			"text": {
@@ -6200,7 +5988,7 @@
 		{
 			"outputFileName": "richmond",
 			"images": {
-				"school_logo": "images/Richmond_logo.png",
+				"school_logo": "images/logos/Richmond_logo.png",
 				"school_mascot": "images/mascots/RICHMOND_mascot.png"
 			},
 			"text": {
@@ -6215,7 +6003,7 @@
 		{
 			"outputFileName": "robert-morris",
 			"images": {
-				"school_logo": "images/Robert_Morris_logo.png",
+				"school_logo": "images/logos/Robert_Morris_logo.png",
 				"school_mascot": "images/mascots/ROBERT_MORRIS_mascot.png"
 			},
 			"text": {
@@ -6230,8 +6018,7 @@
 		{
 			"outputFileName": "rockford",
 			"images": {
-				"school_logo": "images/Rockford_logo.png",
-				"school_mascot": "images/mascots/ROCKFORD_mascot.png"
+				"school_logo": "images/logos/Rockford_logo.png"
 			},
 			"text": {
 				"school_title": "ROCKFORD",
@@ -6245,7 +6032,7 @@
 		{
 			"outputFileName": "rutgers",
 			"images": {
-				"school_logo": "images/Rutgers_logo.png",
+				"school_logo": "images/logos/Rutgers_logo.png",
 				"school_mascot": "images/mascots/RUTGERS_mascot.png"
 			},
 			"text": {
@@ -6260,7 +6047,7 @@
 		{
 			"outputFileName": "sacramento-state",
 			"images": {
-				"school_logo": "images/Sacramento_State_logo.png",
+				"school_logo": "images/logos/Sacramento_State_logo.png",
 				"school_mascot": "images/mascots/SACRAMENTO_STATE_mascot.png"
 			},
 			"text": {
@@ -6275,7 +6062,7 @@
 		{
 			"outputFileName": "sacred-heart",
 			"images": {
-				"school_logo": "images/Sacred_Heart_logo.png",
+				"school_logo": "images/logos/Sacred_Heart_logo.png",
 				"school_mascot": "images/mascots/SACRED_HEART_mascot.png"
 			},
 			"text": {
@@ -6290,8 +6077,7 @@
 		{
 			"outputFileName": "salisbury",
 			"images": {
-				"school_logo": "images/Salisbury_logo.png",
-				"school_mascot": "images/mascots/SALISBURY_mascot.png"
+				"school_logo": "images/logos/Salisbury_logo.png"
 			},
 			"text": {
 				"school_title": "SALISBURY",
@@ -6305,8 +6091,7 @@
 		{
 			"outputFileName": "salve-regina",
 			"images": {
-				"school_logo": "images/Salve_Regina_logo.png",
-				"school_mascot": "images/mascots/SALVE_REGINA_mascot.png"
+				"school_logo": "images/logos/Salve_Regina_logo.png"
 			},
 			"text": {
 				"school_title": "SALVE REGINA",
@@ -6320,7 +6105,7 @@
 		{
 			"outputFileName": "samford",
 			"images": {
-				"school_logo": "images/Samford_logo.png",
+				"school_logo": "images/logos/Samford_logo.png",
 				"school_mascot": "images/mascots/SAMFORD_mascot.png"
 			},
 			"text": {
@@ -6335,7 +6120,7 @@
 		{
 			"outputFileName": "sam-houston-state",
 			"images": {
-				"school_logo": "images/Sam_Houston_State_logo.png",
+				"school_logo": "images/logos/Sam_Houston_State_logo.png",
 				"school_mascot": "images/mascots/SAM_HOUSTON_STATE_mascot.png"
 			},
 			"text": {
@@ -6350,7 +6135,7 @@
 		{
 			"outputFileName": "san-diego",
 			"images": {
-				"school_logo": "images/San_Diego_logo.png",
+				"school_logo": "images/logos/San_Diego_logo.png",
 				"school_mascot": "images/mascots/SAN_DIEGO_mascot.png"
 			},
 			"text": {
@@ -6365,7 +6150,7 @@
 		{
 			"outputFileName": "san-diego-state",
 			"images": {
-				"school_logo": "images/San_Diego_State_logo.png",
+				"school_logo": "images/logos/San_Diego_State_logo.png",
 				"school_mascot": "images/mascots/SAN_DIEGO_STATE_mascot.png"
 			},
 			"text": {
@@ -6380,7 +6165,7 @@
 		{
 			"outputFileName": "san-jos-state",
 			"images": {
-				"school_logo": "images/San_Jos_State_logo.png",
+				"school_logo": "images/logos/San_Jos_State_logo.png",
 				"school_mascot": "images/mascots/SAN_JOS_STATE_mascot.png"
 			},
 			"text": {
@@ -6395,8 +6180,7 @@
 		{
 			"outputFileName": "savannah-state",
 			"images": {
-				"school_logo": "images/Savannah_State_logo.png",
-				"school_mascot": "images/mascots/SAVANNAH_STATE_mascot.png"
+				"school_logo": "images/logos/Savannah_State_logo.png"
 			},
 			"text": {
 				"school_title": "SAVANNAH STATE",
@@ -6410,8 +6194,7 @@
 		{
 			"outputFileName": "seton-hill-college",
 			"images": {
-				"school_logo": "images/Seton_Hill_College_logo.png",
-				"school_mascot": "images/mascots/SETON_HILL_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Seton_Hill_College_logo.png"
 			},
 			"text": {
 				"school_title": "SETON HILL COLLEGE",
@@ -6425,8 +6208,7 @@
 		{
 			"outputFileName": "shaw",
 			"images": {
-				"school_logo": "images/Shaw_logo.png",
-				"school_mascot": "images/mascots/SHAW_mascot.png"
+				"school_logo": "images/logos/Shaw_logo.png"
 			},
 			"text": {
 				"school_title": "SHAW",
@@ -6440,8 +6222,7 @@
 		{
 			"outputFileName": "shenandoah",
 			"images": {
-				"school_logo": "images/Shenandoah_logo.png",
-				"school_mascot": "images/mascots/SHENANDOAH_mascot.png"
+				"school_logo": "images/logos/Shenandoah_logo.png"
 			},
 			"text": {
 				"school_title": "SHENANDOAH",
@@ -6455,8 +6236,7 @@
 		{
 			"outputFileName": "shepherd",
 			"images": {
-				"school_logo": "images/Shepherd_logo.png",
-				"school_mascot": "images/mascots/SHEPHERD_mascot.png"
+				"school_logo": "images/logos/Shepherd_logo.png"
 			},
 			"text": {
 				"school_title": "SHEPHERD",
@@ -6470,8 +6250,7 @@
 		{
 			"outputFileName": "shippensburg",
 			"images": {
-				"school_logo": "images/Shippensburg_logo.png",
-				"school_mascot": "images/mascots/SHIPPENSBURG_mascot.png"
+				"school_logo": "images/logos/Shippensburg_logo.png"
 			},
 			"text": {
 				"school_title": "SHIPPENSBURG",
@@ -6485,7 +6264,7 @@
 		{
 			"outputFileName": "simpson-college",
 			"images": {
-				"school_logo": "images/Simpson_College_logo.png",
+				"school_logo": "images/logos/Simpson_College_logo.png",
 				"school_mascot": "images/mascots/SIMPSON_COLLEGE_mascot.png"
 			},
 			"text": {
@@ -6500,8 +6279,7 @@
 		{
 			"outputFileName": "slippery-rock",
 			"images": {
-				"school_logo": "images/Slippery_Rock_logo.png",
-				"school_mascot": "images/mascots/SLIPPERY_ROCK_mascot.png"
+				"school_logo": "images/logos/Slippery_Rock_logo.png"
 			},
 			"text": {
 				"school_title": "SLIPPERY ROCK",
@@ -6515,7 +6293,7 @@
 		{
 			"outputFileName": "smu",
 			"images": {
-				"school_logo": "images/SMU_logo.png",
+				"school_logo": "images/logos/SMU_logo.png",
 				"school_mascot": "images/mascots/SMU_mascot.png"
 			},
 			"text": {
@@ -6530,7 +6308,7 @@
 		{
 			"outputFileName": "south-alabama",
 			"images": {
-				"school_logo": "images/South_Alabama_logo.png",
+				"school_logo": "images/logos/South_Alabama_logo.png",
 				"school_mascot": "images/mascots/SOUTH_ALABAMA_mascot.png"
 			},
 			"text": {
@@ -6545,7 +6323,7 @@
 		{
 			"outputFileName": "south-carolina",
 			"images": {
-				"school_logo": "images/South_Carolina_logo.png",
+				"school_logo": "images/logos/South_Carolina_logo.png",
 				"school_mascot": "images/mascots/SOUTH_CAROLINA_mascot.png"
 			},
 			"text": {
@@ -6560,7 +6338,7 @@
 		{
 			"outputFileName": "south-carolina-state",
 			"images": {
-				"school_logo": "images/South_Carolina_State_logo.png",
+				"school_logo": "images/logos/South_Carolina_State_logo.png",
 				"school_mascot": "images/mascots/SOUTH_CAROLINA_STATE_mascot.png"
 			},
 			"text": {
@@ -6575,7 +6353,7 @@
 		{
 			"outputFileName": "south-dakota",
 			"images": {
-				"school_logo": "images/South_Dakota_logo.png",
+				"school_logo": "images/logos/South_Dakota_logo.png",
 				"school_mascot": "images/mascots/SOUTH_DAKOTA_mascot.png"
 			},
 			"text": {
@@ -6590,8 +6368,7 @@
 		{
 			"outputFileName": "south-dakota-mines",
 			"images": {
-				"school_logo": "images/South_Dakota_Mines_logo.png",
-				"school_mascot": "images/mascots/SOUTH_DAKOTA_MINES_mascot.png"
+				"school_logo": "images/logos/South_Dakota_Mines_logo.png"
 			},
 			"text": {
 				"school_title": "SOUTH DAKOTA MINES",
@@ -6605,7 +6382,7 @@
 		{
 			"outputFileName": "south-dakota-state",
 			"images": {
-				"school_logo": "images/South_Dakota_State_logo.png",
+				"school_logo": "images/logos/South_Dakota_State_logo.png",
 				"school_mascot": "images/mascots/SOUTH_DAKOTA_STATE_mascot.png"
 			},
 			"text": {
@@ -6620,7 +6397,7 @@
 		{
 			"outputFileName": "southeastern-louisiana",
 			"images": {
-				"school_logo": "images/Southeastern_Louisiana_logo.png",
+				"school_logo": "images/logos/Southeastern_Louisiana_logo.png",
 				"school_mascot": "images/mascots/SOUTHEASTERN_LOUISIANA_mascot.png"
 			},
 			"text": {
@@ -6635,7 +6412,7 @@
 		{
 			"outputFileName": "southeast-missouri-state",
 			"images": {
-				"school_logo": "images/Southeast_Missouri_State_logo.png",
+				"school_logo": "images/logos/Southeast_Missouri_State_logo.png",
 				"school_mascot": "images/mascots/SOUTHEAST_MISSOURI_STATE_mascot.png"
 			},
 			"text": {
@@ -6650,7 +6427,7 @@
 		{
 			"outputFileName": "southern",
 			"images": {
-				"school_logo": "images/Southern_logo.png",
+				"school_logo": "images/logos/Southern_logo.png",
 				"school_mascot": "images/mascots/SOUTHERN_mascot.png"
 			},
 			"text": {
@@ -6665,8 +6442,7 @@
 		{
 			"outputFileName": "southern-arkansas",
 			"images": {
-				"school_logo": "images/Southern_Arkansas_logo.png",
-				"school_mascot": "images/mascots/SOUTHERN_ARKANSAS_mascot.png"
+				"school_logo": "images/logos/Southern_Arkansas_logo.png"
 			},
 			"text": {
 				"school_title": "SOUTHERN ARKANSAS",
@@ -6680,7 +6456,7 @@
 		{
 			"outputFileName": "southern-illinois",
 			"images": {
-				"school_logo": "images/Southern_Illinois_logo.png",
+				"school_logo": "images/logos/Southern_Illinois_logo.png",
 				"school_mascot": "images/mascots/SOUTHERN_ILLINOIS_mascot.png"
 			},
 			"text": {
@@ -6695,7 +6471,7 @@
 		{
 			"outputFileName": "southern-mississippi",
 			"images": {
-				"school_logo": "images/Southern_Mississippi_logo.png",
+				"school_logo": "images/logos/Southern_Mississippi_logo.png",
 				"school_mascot": "images/mascots/SOUTHERN_MISSISSIPPI_mascot.png"
 			},
 			"text": {
@@ -6710,8 +6486,7 @@
 		{
 			"outputFileName": "southern-nazarene",
 			"images": {
-				"school_logo": "images/Southern_Nazarene_logo.png",
-				"school_mascot": "images/mascots/SOUTHERN_NAZARENE_mascot.png"
+				"school_logo": "images/logos/Southern_Nazarene_logo.png"
 			},
 			"text": {
 				"school_title": "SOUTHERN NAZARENE",
@@ -6725,8 +6500,7 @@
 		{
 			"outputFileName": "southern-oregon",
 			"images": {
-				"school_logo": "images/Southern_Oregon_logo.png",
-				"school_mascot": "images/mascots/SOUTHERN_OREGON_mascot.png"
+				"school_logo": "images/logos/Southern_Oregon_logo.png"
 			},
 			"text": {
 				"school_title": "SOUTHERN OREGON",
@@ -6740,7 +6514,7 @@
 		{
 			"outputFileName": "southern-utah",
 			"images": {
-				"school_logo": "images/Southern_Utah_logo.png",
+				"school_logo": "images/logos/Southern_Utah_logo.png",
 				"school_mascot": "images/mascots/SOUTHERN_UTAH_mascot.png"
 			},
 			"text": {
@@ -6755,8 +6529,7 @@
 		{
 			"outputFileName": "southern-virginia",
 			"images": {
-				"school_logo": "images/Southern_Virginia_logo.png",
-				"school_mascot": "images/mascots/SOUTHERN_VIRGINIA_mascot.png"
+				"school_logo": "images/logos/Southern_Virginia_logo.png"
 			},
 			"text": {
 				"school_title": "SOUTHERN VIRGINIA",
@@ -6770,7 +6543,7 @@
 		{
 			"outputFileName": "south-florida",
 			"images": {
-				"school_logo": "images/South_Florida_logo.png",
+				"school_logo": "images/logos/South_Florida_logo.png",
 				"school_mascot": "images/mascots/SOUTH_FLORIDA_mascot.png"
 			},
 			"text": {
@@ -6785,8 +6558,7 @@
 		{
 			"outputFileName": "southwest-baptist",
 			"images": {
-				"school_logo": "images/Southwest_Baptist_logo.png",
-				"school_mascot": "images/mascots/SOUTHWEST_BAPTIST_mascot.png"
+				"school_logo": "images/logos/Southwest_Baptist_logo.png"
 			},
 			"text": {
 				"school_title": "SOUTHWEST BAPTIST",
@@ -6800,8 +6572,7 @@
 		{
 			"outputFileName": "southwest-minnesota-state",
 			"images": {
-				"school_logo": "images/Southwest_Minnesota_State_logo.png",
-				"school_mascot": "images/mascots/SOUTHWEST_MINNESOTA_STATE_mascot.png"
+				"school_logo": "images/logos/Southwest_Minnesota_State_logo.png"
 			},
 			"text": {
 				"school_title": "SOUTHWEST MINNESOTA STATE",
@@ -6815,8 +6586,7 @@
 		{
 			"outputFileName": "springfield",
 			"images": {
-				"school_logo": "images/Springfield_logo.png",
-				"school_mascot": "images/mascots/SPRINGFIELD_mascot.png"
+				"school_logo": "images/logos/Springfield_logo.png"
 			},
 			"text": {
 				"school_title": "SPRINGFIELD",
@@ -6830,8 +6600,7 @@
 		{
 			"outputFileName": "st-ambrose",
 			"images": {
-				"school_logo": "images/St._Ambrose_logo.png",
-				"school_mascot": "images/mascots/ST._AMBROSE_mascot.png"
+				"school_logo": "images/logos/St._Ambrose_logo.png"
 			},
 			"text": {
 				"school_title": "ST. AMBROSE",
@@ -6845,7 +6614,7 @@
 		{
 			"outputFileName": "stanford",
 			"images": {
-				"school_logo": "images/Stanford_logo.png",
+				"school_logo": "images/logos/Stanford_logo.png",
 				"school_mascot": "images/mascots/STANFORD_mascot.png"
 			},
 			"text": {
@@ -6860,8 +6629,7 @@
 		{
 			"outputFileName": "st-augustines",
 			"images": {
-				"school_logo": "images/St._Augustines_logo.png",
-				"school_mascot": "images/mascots/ST._AUGUSTINES_mascot.png"
+				"school_logo": "images/logos/St._Augustines_logo.png"
 			},
 			"text": {
 				"school_title": "ST. AUGUSTINE'S",
@@ -6875,7 +6643,7 @@
 		{
 			"outputFileName": "st-cloud-state",
 			"images": {
-				"school_logo": "images/St._Cloud_State_logo.png",
+				"school_logo": "images/logos/St._Cloud_State_logo.png",
 				"school_mascot": "images/mascots/ST._CLOUD_STATE_mascot.png"
 			},
 			"text": {
@@ -6890,7 +6658,7 @@
 		{
 			"outputFileName": "stephen-f-austin",
 			"images": {
-				"school_logo": "images/Stephen_F._Austin_logo.png",
+				"school_logo": "images/logos/Stephen_F._Austin_logo.png",
 				"school_mascot": "images/mascots/STEPHEN_F._AUSTIN_mascot.png"
 			},
 			"text": {
@@ -6905,7 +6673,7 @@
 		{
 			"outputFileName": "stetson",
 			"images": {
-				"school_logo": "images/Stetson_logo.png",
+				"school_logo": "images/logos/Stetson_logo.png",
 				"school_mascot": "images/mascots/STETSON_mascot.png"
 			},
 			"text": {
@@ -6920,8 +6688,7 @@
 		{
 			"outputFileName": "stevenson",
 			"images": {
-				"school_logo": "images/Stevenson_logo.png",
-				"school_mascot": "images/mascots/STEVENSON_mascot.png"
+				"school_logo": "images/logos/Stevenson_logo.png"
 			},
 			"text": {
 				"school_title": "STEVENSON",
@@ -6935,7 +6702,7 @@
 		{
 			"outputFileName": "st-francis-pa",
 			"images": {
-				"school_logo": "images/St_Francis_PA_logo.png",
+				"school_logo": "images/logos/St_Francis_PA_logo.png",
 				"school_mascot": "images/mascots/ST_FRANCIS_PA_mascot.png"
 			},
 			"text": {
@@ -6950,8 +6717,7 @@
 		{
 			"outputFileName": "st-john-fisher",
 			"images": {
-				"school_logo": "images/St._John_Fisher_logo.png",
-				"school_mascot": "images/mascots/ST._JOHN_FISHER_mascot.png"
+				"school_logo": "images/logos/St._John_Fisher_logo.png"
 			},
 			"text": {
 				"school_title": "ST. JOHN FISHER",
@@ -6965,8 +6731,7 @@
 		{
 			"outputFileName": "st-norbert",
 			"images": {
-				"school_logo": "images/St._Norbert_logo.png",
-				"school_mascot": "images/mascots/ST._NORBERT_mascot.png"
+				"school_logo": "images/logos/St._Norbert_logo.png"
 			},
 			"text": {
 				"school_title": "ST. NORBERT",
@@ -6980,8 +6745,7 @@
 		{
 			"outputFileName": "st-olaf-college",
 			"images": {
-				"school_logo": "images/St._Olaf_College_logo.png",
-				"school_mascot": "images/mascots/ST._OLAF_COLLEGE_mascot.png"
+				"school_logo": "images/logos/St._Olaf_College_logo.png"
 			},
 			"text": {
 				"school_title": "ST. OLAF COLLEGE",
@@ -6995,7 +6759,7 @@
 		{
 			"outputFileName": "stony-brook",
 			"images": {
-				"school_logo": "images/Stony_Brook_logo.png",
+				"school_logo": "images/logos/Stony_Brook_logo.png",
 				"school_mascot": "images/mascots/STONY_BROOK_mascot.png"
 			},
 			"text": {
@@ -7010,8 +6774,7 @@
 		{
 			"outputFileName": "st-peters",
 			"images": {
-				"school_logo": "images/St._Peters_logo.png",
-				"school_mascot": "images/mascots/ST._PETERS_mascot.png"
+				"school_logo": "images/logos/St._Peters_logo.png"
 			},
 			"text": {
 				"school_title": "ST. PETER'S",
@@ -7025,7 +6788,7 @@
 		{
 			"outputFileName": "st-thomas-mn",
 			"images": {
-				"school_logo": "images/St._Thomas_MN_logo.png",
+				"school_logo": "images/logos/St._Thomas_MN_logo.png",
 				"school_mascot": "images/mascots/ST._THOMAS_MN_mascot.png"
 			},
 			"text": {
@@ -7040,8 +6803,7 @@
 		{
 			"outputFileName": "suny-maritime",
 			"images": {
-				"school_logo": "images/SUNY_Maritime_logo.png",
-				"school_mascot": "images/mascots/SUNY_MARITIME_mascot.png"
+				"school_logo": "images/logos/SUNY_Maritime_logo.png"
 			},
 			"text": {
 				"school_title": "SUNY MARITIME",
@@ -7055,7 +6817,7 @@
 		{
 			"outputFileName": "syracuse",
 			"images": {
-				"school_logo": "images/Syracuse_logo.png",
+				"school_logo": "images/logos/Syracuse_logo.png",
 				"school_mascot": "images/mascots/SYRACUSE_mascot.png"
 			},
 			"text": {
@@ -7070,7 +6832,7 @@
 		{
 			"outputFileName": "tarleton-state",
 			"images": {
-				"school_logo": "images/Tarleton_State_logo.png",
+				"school_logo": "images/logos/Tarleton_State_logo.png",
 				"school_mascot": "images/mascots/TARLETON_STATE_mascot.png"
 			},
 			"text": {
@@ -7085,7 +6847,7 @@
 		{
 			"outputFileName": "tcu",
 			"images": {
-				"school_logo": "images/TCU_logo.png",
+				"school_logo": "images/logos/TCU_logo.png",
 				"school_mascot": "images/mascots/TCU_mascot.png"
 			},
 			"text": {
@@ -7100,7 +6862,7 @@
 		{
 			"outputFileName": "temple",
 			"images": {
-				"school_logo": "images/Temple_logo.png",
+				"school_logo": "images/logos/Temple_logo.png",
 				"school_mascot": "images/mascots/TEMPLE_mascot.png"
 			},
 			"text": {
@@ -7115,7 +6877,7 @@
 		{
 			"outputFileName": "tennessee",
 			"images": {
-				"school_logo": "images/Tennessee_logo.png",
+				"school_logo": "images/logos/Tennessee_logo.png",
 				"school_mascot": "images/mascots/TENNESSEE_mascot.png"
 			},
 			"text": {
@@ -7130,7 +6892,7 @@
 		{
 			"outputFileName": "tennessee-state",
 			"images": {
-				"school_logo": "images/Tennessee_State_logo.png",
+				"school_logo": "images/logos/Tennessee_State_logo.png",
 				"school_mascot": "images/mascots/TENNESSEE_STATE_mascot.png"
 			},
 			"text": {
@@ -7145,7 +6907,7 @@
 		{
 			"outputFileName": "tennessee-tech",
 			"images": {
-				"school_logo": "images/Tennessee_Tech_logo.png",
+				"school_logo": "images/logos/Tennessee_Tech_logo.png",
 				"school_mascot": "images/mascots/TENNESSEE_TECH_mascot.png"
 			},
 			"text": {
@@ -7160,7 +6922,7 @@
 		{
 			"outputFileName": "texas",
 			"images": {
-				"school_logo": "images/Texas_logo.png",
+				"school_logo": "images/logos/Texas_logo.png",
 				"school_mascot": "images/mascots/TEXAS_mascot.png"
 			},
 			"text": {
@@ -7175,7 +6937,7 @@
 		{
 			"outputFileName": "texas-am",
 			"images": {
-				"school_logo": "images/Texas_AM_logo.png",
+				"school_logo": "images/logos/Texas_AM_logo.png",
 				"school_mascot": "images/mascots/TEXAS_AM_mascot.png"
 			},
 			"text": {
@@ -7190,7 +6952,7 @@
 		{
 			"outputFileName": "texas-am-commerce",
 			"images": {
-				"school_logo": "images/Texas_AM-Commerce_logo.png",
+				"school_logo": "images/logos/Texas_AM-Commerce_logo.png",
 				"school_mascot": "images/mascots/TEXAS_AM-COMMERCE_mascot.png"
 			},
 			"text": {
@@ -7205,8 +6967,7 @@
 		{
 			"outputFileName": "texas-am-kingsville",
 			"images": {
-				"school_logo": "images/Texas_AM-Kingsville_logo.png",
-				"school_mascot": "images/mascots/TEXAS_AM-KINGSVILLE_mascot.png"
+				"school_logo": "images/logos/Texas_AM-Kingsville_logo.png"
 			},
 			"text": {
 				"school_title": "TEXAS A&M-KINGSVILLE",
@@ -7220,8 +6981,7 @@
 		{
 			"outputFileName": "texas-lutheran",
 			"images": {
-				"school_logo": "images/Texas_Lutheran_logo.png",
-				"school_mascot": "images/mascots/TEXAS_LUTHERAN_mascot.png"
+				"school_logo": "images/logos/Texas_Lutheran_logo.png"
 			},
 			"text": {
 				"school_title": "TEXAS LUTHERAN",
@@ -7235,7 +6995,7 @@
 		{
 			"outputFileName": "texas-southern",
 			"images": {
-				"school_logo": "images/Texas_Southern_logo.png",
+				"school_logo": "images/logos/Texas_Southern_logo.png",
 				"school_mascot": "images/mascots/TEXAS_SOUTHERN_mascot.png"
 			},
 			"text": {
@@ -7250,7 +7010,7 @@
 		{
 			"outputFileName": "texas-state",
 			"images": {
-				"school_logo": "images/Texas_State_logo.png",
+				"school_logo": "images/logos/Texas_State_logo.png",
 				"school_mascot": "images/mascots/TEXAS_STATE_mascot.png"
 			},
 			"text": {
@@ -7265,7 +7025,7 @@
 		{
 			"outputFileName": "texas-tech",
 			"images": {
-				"school_logo": "images/Texas_Tech_logo.png",
+				"school_logo": "images/logos/Texas_Tech_logo.png",
 				"school_mascot": "images/mascots/TEXAS_TECH_mascot.png"
 			},
 			"text": {
@@ -7280,7 +7040,7 @@
 		{
 			"outputFileName": "the-citadel",
 			"images": {
-				"school_logo": "images/The_Citadel_logo.png",
+				"school_logo": "images/logos/The_Citadel_logo.png",
 				"school_mascot": "images/mascots/THE_CITADEL_mascot.png"
 			},
 			"text": {
@@ -7295,8 +7055,7 @@
 		{
 			"outputFileName": "tiffin",
 			"images": {
-				"school_logo": "images/Tiffin_logo.png",
-				"school_mascot": "images/mascots/TIFFIN_mascot.png"
+				"school_logo": "images/logos/Tiffin_logo.png"
 			},
 			"text": {
 				"school_title": "TIFFIN",
@@ -7310,7 +7069,7 @@
 		{
 			"outputFileName": "toledo",
 			"images": {
-				"school_logo": "images/Toledo_logo.png",
+				"school_logo": "images/logos/Toledo_logo.png",
 				"school_mascot": "images/mascots/TOLEDO_mascot.png"
 			},
 			"text": {
@@ -7325,7 +7084,7 @@
 		{
 			"outputFileName": "towson",
 			"images": {
-				"school_logo": "images/Towson_logo.png",
+				"school_logo": "images/logos/Towson_logo.png",
 				"school_mascot": "images/mascots/TOWSON_mascot.png"
 			},
 			"text": {
@@ -7340,8 +7099,7 @@
 		{
 			"outputFileName": "trine",
 			"images": {
-				"school_logo": "images/Trine_logo.png",
-				"school_mascot": "images/mascots/TRINE_mascot.png"
+				"school_logo": "images/logos/Trine_logo.png"
 			},
 			"text": {
 				"school_title": "TRINE",
@@ -7355,8 +7113,7 @@
 		{
 			"outputFileName": "trinity-ct",
 			"images": {
-				"school_logo": "images/Trinity_CT_logo.png",
-				"school_mascot": "images/mascots/TRINITY_CT_mascot.png"
+				"school_logo": "images/logos/Trinity_CT_logo.png"
 			},
 			"text": {
 				"school_title": "TRINITY (CT)",
@@ -7370,8 +7127,7 @@
 		{
 			"outputFileName": "trinity-tx",
 			"images": {
-				"school_logo": "images/Trinity_TX_logo.png",
-				"school_mascot": "images/mascots/TRINITY_TX_mascot.png"
+				"school_logo": "images/logos/Trinity_TX_logo.png"
 			},
 			"text": {
 				"school_title": "TRINITY (TX)",
@@ -7385,7 +7141,7 @@
 		{
 			"outputFileName": "troy",
 			"images": {
-				"school_logo": "images/Troy_logo.png",
+				"school_logo": "images/logos/Troy_logo.png",
 				"school_mascot": "images/mascots/TROY_mascot.png"
 			},
 			"text": {
@@ -7400,8 +7156,7 @@
 		{
 			"outputFileName": "tufts",
 			"images": {
-				"school_logo": "images/Tufts_logo.png",
-				"school_mascot": "images/mascots/TUFTS_mascot.png"
+				"school_logo": "images/logos/Tufts_logo.png"
 			},
 			"text": {
 				"school_title": "TUFTS",
@@ -7415,7 +7170,7 @@
 		{
 			"outputFileName": "tulane",
 			"images": {
-				"school_logo": "images/Tulane_logo.png",
+				"school_logo": "images/logos/Tulane_logo.png",
 				"school_mascot": "images/mascots/TULANE_mascot.png"
 			},
 			"text": {
@@ -7430,7 +7185,7 @@
 		{
 			"outputFileName": "tulsa",
 			"images": {
-				"school_logo": "images/Tulsa_logo.png",
+				"school_logo": "images/logos/Tulsa_logo.png",
 				"school_mascot": "images/mascots/TULSA_mascot.png"
 			},
 			"text": {
@@ -7445,8 +7200,7 @@
 		{
 			"outputFileName": "tusculum",
 			"images": {
-				"school_logo": "images/Tusculum_logo.png",
-				"school_mascot": "images/mascots/TUSCULUM_mascot.png"
+				"school_logo": "images/logos/Tusculum_logo.png"
 			},
 			"text": {
 				"school_title": "TUSCULUM",
@@ -7460,8 +7214,7 @@
 		{
 			"outputFileName": "tuskegee",
 			"images": {
-				"school_logo": "images/Tuskegee_logo.png",
-				"school_mascot": "images/mascots/TUSKEGEE_mascot.png"
+				"school_logo": "images/logos/Tuskegee_logo.png"
 			},
 			"text": {
 				"school_title": "TUSKEGEE",
@@ -7475,7 +7228,7 @@
 		{
 			"outputFileName": "uab",
 			"images": {
-				"school_logo": "images/UAB_logo.png",
+				"school_logo": "images/logos/UAB_logo.png",
 				"school_mascot": "images/mascots/UAB_mascot.png"
 			},
 			"text": {
@@ -7490,7 +7243,7 @@
 		{
 			"outputFileName": "uc-davis",
 			"images": {
-				"school_logo": "images/UC_Davis_logo.png",
+				"school_logo": "images/logos/UC_Davis_logo.png",
 				"school_mascot": "images/mascots/UC_DAVIS_mascot.png"
 			},
 			"text": {
@@ -7505,7 +7258,7 @@
 		{
 			"outputFileName": "ucf",
 			"images": {
-				"school_logo": "images/UCF_logo.png",
+				"school_logo": "images/logos/UCF_logo.png",
 				"school_mascot": "images/mascots/UCF_mascot.png"
 			},
 			"text": {
@@ -7520,7 +7273,7 @@
 		{
 			"outputFileName": "ucla",
 			"images": {
-				"school_logo": "images/UCLA_logo.png",
+				"school_logo": "images/logos/UCLA_logo.png",
 				"school_mascot": "images/mascots/UCLA_mascot.png"
 			},
 			"text": {
@@ -7535,7 +7288,7 @@
 		{
 			"outputFileName": "umass",
 			"images": {
-				"school_logo": "images/UMass_logo.png",
+				"school_logo": "images/logos/UMass_logo.png",
 				"school_mascot": "images/mascots/UMASS_mascot.png"
 			},
 			"text": {
@@ -7550,8 +7303,7 @@
 		{
 			"outputFileName": "umass-dartmouth",
 			"images": {
-				"school_logo": "images/UMass_Dartmouth_logo.png",
-				"school_mascot": "images/mascots/UMASS_DARTMOUTH_mascot.png"
+				"school_logo": "images/logos/UMass_Dartmouth_logo.png"
 			},
 			"text": {
 				"school_title": "UMASS DARTMOUTH",
@@ -7565,8 +7317,7 @@
 		{
 			"outputFileName": "umass-lowell",
 			"images": {
-				"school_logo": "images/UMass_Lowell_logo.png",
-				"school_mascot": "images/mascots/UMASS_LOWELL_mascot.png"
+				"school_logo": "images/logos/UMass_Lowell_logo.png"
 			},
 			"text": {
 				"school_title": "UMASS LOWELL",
@@ -7580,8 +7331,7 @@
 		{
 			"outputFileName": "unc-pembroke",
 			"images": {
-				"school_logo": "images/UNC_Pembroke_logo.png",
-				"school_mascot": "images/mascots/UNC_PEMBROKE_mascot.png"
+				"school_logo": "images/logos/UNC_Pembroke_logo.png"
 			},
 			"text": {
 				"school_title": "UNC PEMBROKE",
@@ -7595,7 +7345,7 @@
 		{
 			"outputFileName": "union",
 			"images": {
-				"school_logo": "images/Union_logo.png",
+				"school_logo": "images/logos/Union_logo.png",
 				"school_mascot": "images/mascots/UNION_mascot.png"
 			},
 			"text": {
@@ -7610,7 +7360,7 @@
 		{
 			"outputFileName": "unlv",
 			"images": {
-				"school_logo": "images/UNLV_logo.png",
+				"school_logo": "images/logos/UNLV_logo.png",
 				"school_mascot": "images/mascots/UNLV_mascot.png"
 			},
 			"text": {
@@ -7625,8 +7375,7 @@
 		{
 			"outputFileName": "upper-iowa",
 			"images": {
-				"school_logo": "images/Upper_Iowa_logo.png",
-				"school_mascot": "images/mascots/UPPER_IOWA_mascot.png"
+				"school_logo": "images/logos/Upper_Iowa_logo.png"
 			},
 			"text": {
 				"school_title": "UPPER IOWA",
@@ -7640,7 +7389,7 @@
 		{
 			"outputFileName": "ursinus",
 			"images": {
-				"school_logo": "images/Ursinus_logo.png",
+				"school_logo": "images/logos/Ursinus_logo.png",
 				"school_mascot": "images/mascots/URSINUS_mascot.png"
 			},
 			"text": {
@@ -7655,7 +7404,7 @@
 		{
 			"outputFileName": "usc",
 			"images": {
-				"school_logo": "images/USC_logo.png",
+				"school_logo": "images/logos/USC_logo.png",
 				"school_mascot": "images/mascots/USC_mascot.png"
 			},
 			"text": {
@@ -7670,7 +7419,7 @@
 		{
 			"outputFileName": "utah",
 			"images": {
-				"school_logo": "images/Utah_logo.png",
+				"school_logo": "images/logos/Utah_logo.png",
 				"school_mascot": "images/mascots/UTAH_mascot.png"
 			},
 			"text": {
@@ -7685,7 +7434,7 @@
 		{
 			"outputFileName": "utah-state",
 			"images": {
-				"school_logo": "images/Utah_State_logo.png",
+				"school_logo": "images/logos/Utah_State_logo.png",
 				"school_mascot": "images/mascots/UTAH_STATE_mascot.png"
 			},
 			"text": {
@@ -7700,7 +7449,7 @@
 		{
 			"outputFileName": "utep",
 			"images": {
-				"school_logo": "images/UTEP_logo.png",
+				"school_logo": "images/logos/UTEP_logo.png",
 				"school_mascot": "images/mascots/UTEP_mascot.png"
 			},
 			"text": {
@@ -7715,8 +7464,7 @@
 		{
 			"outputFileName": "utica",
 			"images": {
-				"school_logo": "images/Utica_logo.png",
-				"school_mascot": "images/mascots/UTICA_mascot.png"
+				"school_logo": "images/logos/Utica_logo.png"
 			},
 			"text": {
 				"school_title": "UTICA",
@@ -7730,7 +7478,7 @@
 		{
 			"outputFileName": "ut-martin",
 			"images": {
-				"school_logo": "images/UT_Martin_logo.png",
+				"school_logo": "images/logos/UT_Martin_logo.png",
 				"school_mascot": "images/mascots/UT_MARTIN_mascot.png"
 			},
 			"text": {
@@ -7745,7 +7493,7 @@
 		{
 			"outputFileName": "ut-san-antonio",
 			"images": {
-				"school_logo": "images/UT_San_Antonio_logo.png",
+				"school_logo": "images/logos/UT_San_Antonio_logo.png",
 				"school_mascot": "images/mascots/UT_SAN_ANTONIO_mascot.png"
 			},
 			"text": {
@@ -7760,7 +7508,7 @@
 		{
 			"outputFileName": "uw-oshkosh",
 			"images": {
-				"school_logo": "images/UW-Oshkosh_logo.png",
+				"school_logo": "images/logos/UW-Oshkosh_logo.png",
 				"school_mascot": "images/mascots/UW-OSHKOSH_mascot.png"
 			},
 			"text": {
@@ -7775,8 +7523,7 @@
 		{
 			"outputFileName": "uw-river-falls",
 			"images": {
-				"school_logo": "images/UW-River_Falls_logo.png",
-				"school_mascot": "images/mascots/UW-RIVER_FALLS_mascot.png"
+				"school_logo": "images/logos/UW-River_Falls_logo.png"
 			},
 			"text": {
 				"school_title": "UW-RIVER FALLS",
@@ -7790,7 +7537,7 @@
 		{
 			"outputFileName": "uw-stout",
 			"images": {
-				"school_logo": "images/UW-Stout_logo.png",
+				"school_logo": "images/logos/UW-Stout_logo.png",
 				"school_mascot": "images/mascots/UW-STOUT_mascot.png"
 			},
 			"text": {
@@ -7805,8 +7552,7 @@
 		{
 			"outputFileName": "valdosta-state",
 			"images": {
-				"school_logo": "images/Valdosta_State_logo.png",
-				"school_mascot": "images/mascots/VALDOSTA_STATE_mascot.png"
+				"school_logo": "images/logos/Valdosta_State_logo.png"
 			},
 			"text": {
 				"school_title": "VALDOSTA STATE",
@@ -7820,7 +7566,7 @@
 		{
 			"outputFileName": "valparaiso",
 			"images": {
-				"school_logo": "images/Valparaiso_logo.png",
+				"school_logo": "images/logos/Valparaiso_logo.png",
 				"school_mascot": "images/mascots/VALPARAISO_mascot.png"
 			},
 			"text": {
@@ -7835,7 +7581,7 @@
 		{
 			"outputFileName": "vanderbilt",
 			"images": {
-				"school_logo": "images/Vanderbilt_logo.png",
+				"school_logo": "images/logos/Vanderbilt_logo.png",
 				"school_mascot": "images/mascots/VANDERBILT_mascot.png"
 			},
 			"text": {
@@ -7850,7 +7596,7 @@
 		{
 			"outputFileName": "villanova",
 			"images": {
-				"school_logo": "images/Villanova_logo.png",
+				"school_logo": "images/logos/Villanova_logo.png",
 				"school_mascot": "images/mascots/VILLANOVA_mascot.png"
 			},
 			"text": {
@@ -7865,7 +7611,7 @@
 		{
 			"outputFileName": "virginia",
 			"images": {
-				"school_logo": "images/Virginia_logo.png",
+				"school_logo": "images/logos/Virginia_logo.png",
 				"school_mascot": "images/mascots/VIRGINIA_mascot.png"
 			},
 			"text": {
@@ -7880,8 +7626,7 @@
 		{
 			"outputFileName": "virginia-state",
 			"images": {
-				"school_logo": "images/Virginia_State_logo.png",
-				"school_mascot": "images/mascots/VIRGINIA_STATE_mascot.png"
+				"school_logo": "images/logos/Virginia_State_logo.png"
 			},
 			"text": {
 				"school_title": "VIRGINIA STATE",
@@ -7895,7 +7640,7 @@
 		{
 			"outputFileName": "virginia-tech",
 			"images": {
-				"school_logo": "images/Virginia_Tech_logo.png",
+				"school_logo": "images/logos/Virginia_Tech_logo.png",
 				"school_mascot": "images/mascots/VIRGINIA_TECH_mascot.png"
 			},
 			"text": {
@@ -7910,7 +7655,7 @@
 		{
 			"outputFileName": "vmi",
 			"images": {
-				"school_logo": "images/VMI_logo.png",
+				"school_logo": "images/logos/VMI_logo.png",
 				"school_mascot": "images/mascots/VMI_mascot.png"
 			},
 			"text": {
@@ -7925,8 +7670,7 @@
 		{
 			"outputFileName": "wabash-college",
 			"images": {
-				"school_logo": "images/Wabash_College_logo.png",
-				"school_mascot": "images/mascots/WABASH_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Wabash_College_logo.png"
 			},
 			"text": {
 				"school_title": "WABASH COLLEGE",
@@ -7940,7 +7684,7 @@
 		{
 			"outputFileName": "wagner",
 			"images": {
-				"school_logo": "images/Wagner_logo.png",
+				"school_logo": "images/logos/Wagner_logo.png",
 				"school_mascot": "images/mascots/WAGNER_mascot.png"
 			},
 			"text": {
@@ -7955,7 +7699,7 @@
 		{
 			"outputFileName": "wake-forest",
 			"images": {
-				"school_logo": "images/Wake_Forest_logo.png",
+				"school_logo": "images/logos/Wake_Forest_logo.png",
 				"school_mascot": "images/mascots/WAKE_FOREST_mascot.png"
 			},
 			"text": {
@@ -7970,8 +7714,7 @@
 		{
 			"outputFileName": "wartburg",
 			"images": {
-				"school_logo": "images/Wartburg_logo.png",
-				"school_mascot": "images/mascots/WARTBURG_mascot.png"
+				"school_logo": "images/logos/Wartburg_logo.png"
 			},
 			"text": {
 				"school_title": "WARTBURG",
@@ -7985,8 +7728,7 @@
 		{
 			"outputFileName": "washburn",
 			"images": {
-				"school_logo": "images/Washburn_logo.png",
-				"school_mascot": "images/mascots/WASHBURN_mascot.png"
+				"school_logo": "images/logos/Washburn_logo.png"
 			},
 			"text": {
 				"school_title": "WASHBURN",
@@ -8000,7 +7742,7 @@
 		{
 			"outputFileName": "washington",
 			"images": {
-				"school_logo": "images/Washington_logo.png",
+				"school_logo": "images/logos/Washington_logo.png",
 				"school_mascot": "images/mascots/WASHINGTON_mascot.png"
 			},
 			"text": {
@@ -8015,8 +7757,7 @@
 		{
 			"outputFileName": "washington--jefferson",
 			"images": {
-				"school_logo": "images/Washington__Jefferson_logo.png",
-				"school_mascot": "images/mascots/WASHINGTON__JEFFERSON_mascot.png"
+				"school_logo": "images/logos/Washington__Jefferson_logo.png"
 			},
 			"text": {
 				"school_title": "WASHINGTON & JEFFERSON",
@@ -8030,8 +7771,7 @@
 		{
 			"outputFileName": "washington--lee",
 			"images": {
-				"school_logo": "images/Washington__Lee_logo.png",
-				"school_mascot": "images/mascots/WASHINGTON__LEE_mascot.png"
+				"school_logo": "images/logos/Washington__Lee_logo.png"
 			},
 			"text": {
 				"school_title": "WASHINGTON & LEE",
@@ -8045,7 +7785,7 @@
 		{
 			"outputFileName": "washington-state",
 			"images": {
-				"school_logo": "images/Washington_State_logo.png",
+				"school_logo": "images/logos/Washington_State_logo.png",
 				"school_mascot": "images/mascots/WASHINGTON_STATE_mascot.png"
 			},
 			"text": {
@@ -8060,8 +7800,7 @@
 		{
 			"outputFileName": "waynesburg",
 			"images": {
-				"school_logo": "images/Waynesburg_logo.png",
-				"school_mascot": "images/mascots/WAYNESBURG_mascot.png"
+				"school_logo": "images/logos/Waynesburg_logo.png"
 			},
 			"text": {
 				"school_title": "WAYNESBURG",
@@ -8075,8 +7814,7 @@
 		{
 			"outputFileName": "wayne-state-mi",
 			"images": {
-				"school_logo": "images/Wayne_State_MI_logo.png",
-				"school_mascot": "images/mascots/WAYNE_STATE_MI_mascot.png"
+				"school_logo": "images/logos/Wayne_State_MI_logo.png"
 			},
 			"text": {
 				"school_title": "WAYNE STATE (MI)",
@@ -8090,8 +7828,7 @@
 		{
 			"outputFileName": "wayne-state-ne",
 			"images": {
-				"school_logo": "images/Wayne_State_NE_logo.png",
-				"school_mascot": "images/mascots/WAYNE_STATE_NE_mascot.png"
+				"school_logo": "images/logos/Wayne_State_NE_logo.png"
 			},
 			"text": {
 				"school_title": "WAYNE STATE (NE)",
@@ -8105,7 +7842,7 @@
 		{
 			"outputFileName": "weber-state",
 			"images": {
-				"school_logo": "images/Weber_State_logo.png",
+				"school_logo": "images/logos/Weber_State_logo.png",
 				"school_mascot": "images/mascots/WEBER_STATE_mascot.png"
 			},
 			"text": {
@@ -8120,8 +7857,7 @@
 		{
 			"outputFileName": "wesleyan",
 			"images": {
-				"school_logo": "images/Wesleyan_logo.png",
-				"school_mascot": "images/mascots/WESLEYAN_mascot.png"
+				"school_logo": "images/logos/Wesleyan_logo.png"
 			},
 			"text": {
 				"school_title": "WESLEYAN",
@@ -8135,8 +7871,7 @@
 		{
 			"outputFileName": "west-alabama",
 			"images": {
-				"school_logo": "images/West_Alabama_logo.png",
-				"school_mascot": "images/mascots/WEST_ALABAMA_mascot.png"
+				"school_logo": "images/logos/West_Alabama_logo.png"
 			},
 			"text": {
 				"school_title": "WEST ALABAMA",
@@ -8150,8 +7885,7 @@
 		{
 			"outputFileName": "west-chester",
 			"images": {
-				"school_logo": "images/West_Chester_logo.png",
-				"school_mascot": "images/mascots/WEST_CHESTER_mascot.png"
+				"school_logo": "images/logos/West_Chester_logo.png"
 			},
 			"text": {
 				"school_title": "WEST CHESTER",
@@ -8165,7 +7899,7 @@
 		{
 			"outputFileName": "western-carolina",
 			"images": {
-				"school_logo": "images/Western_Carolina_logo.png",
+				"school_logo": "images/logos/Western_Carolina_logo.png",
 				"school_mascot": "images/mascots/WESTERN_CAROLINA_mascot.png"
 			},
 			"text": {
@@ -8180,8 +7914,7 @@
 		{
 			"outputFileName": "western-connecticut-state",
 			"images": {
-				"school_logo": "images/Western_Connecticut_State_logo.png",
-				"school_mascot": "images/mascots/WESTERN_CONNECTICUT_STATE_mascot.png"
+				"school_logo": "images/logos/Western_Connecticut_State_logo.png"
 			},
 			"text": {
 				"school_title": "WESTERN CONNECTICUT STATE",
@@ -8195,7 +7928,7 @@
 		{
 			"outputFileName": "western-illinois",
 			"images": {
-				"school_logo": "images/Western_Illinois_logo.png",
+				"school_logo": "images/logos/Western_Illinois_logo.png",
 				"school_mascot": "images/mascots/WESTERN_ILLINOIS_mascot.png"
 			},
 			"text": {
@@ -8210,7 +7943,7 @@
 		{
 			"outputFileName": "western-kentucky",
 			"images": {
-				"school_logo": "images/Western_Kentucky_logo.png",
+				"school_logo": "images/logos/Western_Kentucky_logo.png",
 				"school_mascot": "images/mascots/WESTERN_KENTUCKY_mascot.png"
 			},
 			"text": {
@@ -8225,7 +7958,7 @@
 		{
 			"outputFileName": "western-michigan",
 			"images": {
-				"school_logo": "images/Western_Michigan_logo.png",
+				"school_logo": "images/logos/Western_Michigan_logo.png",
 				"school_mascot": "images/mascots/WESTERN_MICHIGAN_mascot.png"
 			},
 			"text": {
@@ -8240,8 +7973,7 @@
 		{
 			"outputFileName": "western-new-england",
 			"images": {
-				"school_logo": "images/Western_New_England_logo.png",
-				"school_mascot": "images/mascots/WESTERN_NEW_ENGLAND_mascot.png"
+				"school_logo": "images/logos/Western_New_England_logo.png"
 			},
 			"text": {
 				"school_title": "WESTERN NEW ENGLAND",
@@ -8255,8 +7987,7 @@
 		{
 			"outputFileName": "western-new-mexico",
 			"images": {
-				"school_logo": "images/Western_New_Mexico_logo.png",
-				"school_mascot": "images/mascots/WESTERN_NEW_MEXICO_mascot.png"
+				"school_logo": "images/logos/Western_New_Mexico_logo.png"
 			},
 			"text": {
 				"school_title": "WESTERN NEW MEXICO",
@@ -8270,8 +8001,7 @@
 		{
 			"outputFileName": "western-oregon",
 			"images": {
-				"school_logo": "images/Western_Oregon_logo.png",
-				"school_mascot": "images/mascots/WESTERN_OREGON_mascot.png"
+				"school_logo": "images/logos/Western_Oregon_logo.png"
 			},
 			"text": {
 				"school_title": "WESTERN OREGON",
@@ -8285,8 +8015,7 @@
 		{
 			"outputFileName": "westfield-state",
 			"images": {
-				"school_logo": "images/Westfield_State_logo.png",
-				"school_mascot": "images/mascots/WESTFIELD_STATE_mascot.png"
+				"school_logo": "images/logos/Westfield_State_logo.png"
 			},
 			"text": {
 				"school_title": "WESTFIELD STATE",
@@ -8300,7 +8029,7 @@
 		{
 			"outputFileName": "west-georgia",
 			"images": {
-				"school_logo": "images/West_Georgia_logo.png",
+				"school_logo": "images/logos/West_Georgia_logo.png",
 				"school_mascot": "images/mascots/WEST_GEORGIA_mascot.png"
 			},
 			"text": {
@@ -8315,8 +8044,7 @@
 		{
 			"outputFileName": "west-liberty",
 			"images": {
-				"school_logo": "images/West_Liberty_logo.png",
-				"school_mascot": "images/mascots/WEST_LIBERTY_mascot.png"
+				"school_logo": "images/logos/West_Liberty_logo.png"
 			},
 			"text": {
 				"school_title": "WEST LIBERTY",
@@ -8330,8 +8058,7 @@
 		{
 			"outputFileName": "westminster",
 			"images": {
-				"school_logo": "images/Westminster_logo.png",
-				"school_mascot": "images/mascots/WESTMINSTER_mascot.png"
+				"school_logo": "images/logos/Westminster_logo.png"
 			},
 			"text": {
 				"school_title": "WESTMINSTER",
@@ -8345,8 +8072,7 @@
 		{
 			"outputFileName": "west-texas-am",
 			"images": {
-				"school_logo": "images/West_Texas_AM_logo.png",
-				"school_mascot": "images/mascots/WEST_TEXAS_AM_mascot.png"
+				"school_logo": "images/logos/West_Texas_AM_logo.png"
 			},
 			"text": {
 				"school_title": "WEST TEXAS A&M",
@@ -8360,7 +8086,7 @@
 		{
 			"outputFileName": "west-virginia",
 			"images": {
-				"school_logo": "images/West_Virginia_logo.png",
+				"school_logo": "images/logos/West_Virginia_logo.png",
 				"school_mascot": "images/mascots/WEST_VIRGINIA_mascot.png"
 			},
 			"text": {
@@ -8375,8 +8101,7 @@
 		{
 			"outputFileName": "wheaton-college-ill",
 			"images": {
-				"school_logo": "images/Wheaton_College_Ill_logo.png",
-				"school_mascot": "images/mascots/WHEATON_COLLEGE_ILL_mascot.png"
+				"school_logo": "images/logos/Wheaton_College_Ill_logo.png"
 			},
 			"text": {
 				"school_title": "WHEATON COLLEGE (ILL)",
@@ -8390,8 +8115,7 @@
 		{
 			"outputFileName": "whittier",
 			"images": {
-				"school_logo": "images/Whittier_logo.png",
-				"school_mascot": "images/mascots/WHITTIER_mascot.png"
+				"school_logo": "images/logos/Whittier_logo.png"
 			},
 			"text": {
 				"school_title": "WHITTIER",
@@ -8405,8 +8129,7 @@
 		{
 			"outputFileName": "whitworth",
 			"images": {
-				"school_logo": "images/Whitworth_logo.png",
-				"school_mascot": "images/mascots/WHITWORTH_mascot.png"
+				"school_logo": "images/logos/Whitworth_logo.png"
 			},
 			"text": {
 				"school_title": "WHITWORTH",
@@ -8420,8 +8143,7 @@
 		{
 			"outputFileName": "widener",
 			"images": {
-				"school_logo": "images/Widener_logo.png",
-				"school_mascot": "images/mascots/WIDENER_mascot.png"
+				"school_logo": "images/logos/Widener_logo.png"
 			},
 			"text": {
 				"school_title": "WIDENER",
@@ -8435,8 +8157,7 @@
 		{
 			"outputFileName": "wilkes",
 			"images": {
-				"school_logo": "images/Wilkes_logo.png",
-				"school_mascot": "images/mascots/WILKES_mascot.png"
+				"school_logo": "images/logos/Wilkes_logo.png"
 			},
 			"text": {
 				"school_title": "WILKES",
@@ -8450,8 +8171,7 @@
 		{
 			"outputFileName": "willamette",
 			"images": {
-				"school_logo": "images/Willamette_logo.png",
-				"school_mascot": "images/mascots/WILLAMETTE_mascot.png"
+				"school_logo": "images/logos/Willamette_logo.png"
 			},
 			"text": {
 				"school_title": "WILLAMETTE",
@@ -8465,8 +8185,7 @@
 		{
 			"outputFileName": "william-jewell-college",
 			"images": {
-				"school_logo": "images/William_Jewell_College_logo.png",
-				"school_mascot": "images/mascots/WILLIAM_JEWELL_COLLEGE_mascot.png"
+				"school_logo": "images/logos/William_Jewell_College_logo.png"
 			},
 			"text": {
 				"school_title": "WILLIAM JEWELL COLLEGE",
@@ -8480,7 +8199,7 @@
 		{
 			"outputFileName": "william--mary",
 			"images": {
-				"school_logo": "images/William__Mary_logo.png",
+				"school_logo": "images/logos/William__Mary_logo.png",
 				"school_mascot": "images/mascots/WILLIAM__MARY_mascot.png"
 			},
 			"text": {
@@ -8495,8 +8214,7 @@
 		{
 			"outputFileName": "william-paterson",
 			"images": {
-				"school_logo": "images/William_Paterson_logo.png",
-				"school_mascot": "images/mascots/WILLIAM_PATERSON_mascot.png"
+				"school_logo": "images/logos/William_Paterson_logo.png"
 			},
 			"text": {
 				"school_title": "WILLIAM PATERSON",
@@ -8510,8 +8228,7 @@
 		{
 			"outputFileName": "williams",
 			"images": {
-				"school_logo": "images/Williams_logo.png",
-				"school_mascot": "images/mascots/WILLIAMS_mascot.png"
+				"school_logo": "images/logos/Williams_logo.png"
 			},
 			"text": {
 				"school_title": "WILLIAMS",
@@ -8525,8 +8242,7 @@
 		{
 			"outputFileName": "wilmington-oh",
 			"images": {
-				"school_logo": "images/Wilmington_OH_logo.png",
-				"school_mascot": "images/mascots/WILMINGTON_OH_mascot.png"
+				"school_logo": "images/logos/Wilmington_OH_logo.png"
 			},
 			"text": {
 				"school_title": "WILMINGTON (OH)",
@@ -8540,8 +8256,7 @@
 		{
 			"outputFileName": "wingate",
 			"images": {
-				"school_logo": "images/Wingate_logo.png",
-				"school_mascot": "images/mascots/WINGATE_mascot.png"
+				"school_logo": "images/logos/Wingate_logo.png"
 			},
 			"text": {
 				"school_title": "WINGATE",
@@ -8555,7 +8270,7 @@
 		{
 			"outputFileName": "winona-state",
 			"images": {
-				"school_logo": "images/Winona_State_logo.png",
+				"school_logo": "images/logos/Winona_State_logo.png",
 				"school_mascot": "images/mascots/WINONA_STATE_mascot.png"
 			},
 			"text": {
@@ -8570,8 +8285,7 @@
 		{
 			"outputFileName": "winston-salem",
 			"images": {
-				"school_logo": "images/Winston-Salem_logo.png",
-				"school_mascot": "images/mascots/WINSTON-SALEM_mascot.png"
+				"school_logo": "images/logos/Winston-Salem_logo.png"
 			},
 			"text": {
 				"school_title": "WINSTON-SALEM",
@@ -8585,7 +8299,7 @@
 		{
 			"outputFileName": "wisconsin",
 			"images": {
-				"school_logo": "images/Wisconsin_logo.png",
+				"school_logo": "images/logos/Wisconsin_logo.png",
 				"school_mascot": "images/mascots/WISCONSIN_mascot.png"
 			},
 			"text": {
@@ -8600,7 +8314,7 @@
 		{
 			"outputFileName": "wisconsin-eau-claire",
 			"images": {
-				"school_logo": "images/Wisconsin-Eau_Claire_logo.png",
+				"school_logo": "images/logos/Wisconsin-Eau_Claire_logo.png",
 				"school_mascot": "images/mascots/WISCONSIN-EAU_CLAIRE_mascot.png"
 			},
 			"text": {
@@ -8615,7 +8329,7 @@
 		{
 			"outputFileName": "wisconsin-la-crosse",
 			"images": {
-				"school_logo": "images/Wisconsin-La_Crosse_logo.png",
+				"school_logo": "images/logos/Wisconsin-La_Crosse_logo.png",
 				"school_mascot": "images/mascots/WISCONSIN-LA_CROSSE_mascot.png"
 			},
 			"text": {
@@ -8630,8 +8344,7 @@
 		{
 			"outputFileName": "wisconsin-lutheran",
 			"images": {
-				"school_logo": "images/Wisconsin_Lutheran_logo.png",
-				"school_mascot": "images/mascots/WISCONSIN_LUTHERAN_mascot.png"
+				"school_logo": "images/logos/Wisconsin_Lutheran_logo.png"
 			},
 			"text": {
 				"school_title": "WISCONSIN LUTHERAN",
@@ -8645,8 +8358,7 @@
 		{
 			"outputFileName": "wisconsin-platteville",
 			"images": {
-				"school_logo": "images/Wisconsin-Platteville_logo.png",
-				"school_mascot": "images/mascots/WISCONSIN-PLATTEVILLE_mascot.png"
+				"school_logo": "images/logos/Wisconsin-Platteville_logo.png"
 			},
 			"text": {
 				"school_title": "WISCONSIN-PLATTEVILLE",
@@ -8660,8 +8372,7 @@
 		{
 			"outputFileName": "wisconsin-stevens-point",
 			"images": {
-				"school_logo": "images/Wisconsin-Stevens_Point_logo.png",
-				"school_mascot": "images/mascots/WISCONSIN-STEVENS_POINT_mascot.png"
+				"school_logo": "images/logos/Wisconsin-Stevens_Point_logo.png"
 			},
 			"text": {
 				"school_title": "WISCONSIN-STEVENS POINT",
@@ -8675,8 +8386,7 @@
 		{
 			"outputFileName": "wittenberg",
 			"images": {
-				"school_logo": "images/Wittenberg_logo.png",
-				"school_mascot": "images/mascots/WITTENBERG_mascot.png"
+				"school_logo": "images/logos/Wittenberg_logo.png"
 			},
 			"text": {
 				"school_title": "WITTENBERG",
@@ -8690,7 +8400,7 @@
 		{
 			"outputFileName": "wofford",
 			"images": {
-				"school_logo": "images/Wofford_logo.png",
+				"school_logo": "images/logos/Wofford_logo.png",
 				"school_mascot": "images/mascots/WOFFORD_mascot.png"
 			},
 			"text": {
@@ -8705,8 +8415,7 @@
 		{
 			"outputFileName": "wooster",
 			"images": {
-				"school_logo": "images/Wooster_logo.png",
-				"school_mascot": "images/mascots/WOOSTER_mascot.png"
+				"school_logo": "images/logos/Wooster_logo.png"
 			},
 			"text": {
 				"school_title": "WOOSTER",
@@ -8720,8 +8429,7 @@
 		{
 			"outputFileName": "worcester-state-college",
 			"images": {
-				"school_logo": "images/Worcester_State_College_logo.png",
-				"school_mascot": "images/mascots/WORCESTER_STATE_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Worcester_State_College_logo.png"
 			},
 			"text": {
 				"school_title": "WORCESTER STATE COLLEGE",
@@ -8735,8 +8443,7 @@
 		{
 			"outputFileName": "wright-state-university",
 			"images": {
-				"school_logo": "images/Wright_State_University_logo.png",
-				"school_mascot": "images/mascots/WRIGHT_STATE_UNIVERSITY_mascot.png"
+				"school_logo": "images/logos/Wright_State_University_logo.png"
 			},
 			"text": {
 				"school_title": "WRIGHT STATE UNIVERSITY",
@@ -8750,7 +8457,7 @@
 		{
 			"outputFileName": "wyoming",
 			"images": {
-				"school_logo": "images/Wyoming_logo.png",
+				"school_logo": "images/logos/Wyoming_logo.png",
 				"school_mascot": "images/mascots/WYOMING_mascot.png"
 			},
 			"text": {
@@ -8765,7 +8472,7 @@
 		{
 			"outputFileName": "yale",
 			"images": {
-				"school_logo": "images/Yale_logo.png",
+				"school_logo": "images/logos/Yale_logo.png",
 				"school_mascot": "images/mascots/YALE_mascot.png"
 			},
 			"text": {
@@ -8780,7 +8487,7 @@
 		{
 			"outputFileName": "youngstown-state",
 			"images": {
-				"school_logo": "images/Youngstown_State_logo.png",
+				"school_logo": "images/logos/Youngstown_State_logo.png",
 				"school_mascot": "images/mascots/YOUNGSTOWN_STATE_mascot.png"
 			},
 			"text": {
@@ -8795,8 +8502,7 @@
 		{
 			"outputFileName": "belhaven-college",
 			"images": {
-				"school_logo": "images/Belhaven_College_logo.png",
-				"school_mascot": "images/mascots/BELHAVEN_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Belhaven_College_logo.png"
 			},
 			"text": {
 				"school_title": "BELHAVEN COLLEGE",
@@ -8810,8 +8516,7 @@
 		{
 			"outputFileName": "bowie-state",
 			"images": {
-				"school_logo": "images/Bowie_State_logo.png",
-				"school_mascot": "images/mascots/BOWIE_STATE_mascot.png"
+				"school_logo": "images/logos/Bowie_State_logo.png"
 			},
 			"text": {
 				"school_title": "BOWIE STATE",
@@ -8825,8 +8530,7 @@
 		{
 			"outputFileName": "chowan",
 			"images": {
-				"school_logo": "images/Chowan_logo.png",
-				"school_mascot": "images/mascots/CHOWAN_mascot.png"
+				"school_logo": "images/logos/Chowan_logo.png"
 			},
 			"text": {
 				"school_title": "CHOWAN",
@@ -8840,7 +8544,7 @@
 		{
 			"outputFileName": "dixie-state",
 			"images": {
-				"school_logo": "images/Dixie_State_logo.png",
+				"school_logo": "images/logos/Dixie_State_logo.png",
 				"school_mascot": "images/mascots/DIXIE_STATE_mascot.png"
 			},
 			"text": {
@@ -8855,8 +8559,7 @@
 		{
 			"outputFileName": "hofstra",
 			"images": {
-				"school_logo": "images/Hofstra_logo.png",
-				"school_mascot": "images/mascots/HOFSTRA_mascot.png"
+				"school_logo": "images/logos/Hofstra_logo.png"
 			},
 			"text": {
 				"school_title": "HOFSTRA",
@@ -8870,8 +8573,7 @@
 		{
 			"outputFileName": "kean",
 			"images": {
-				"school_logo": "images/Kean_logo.png",
-				"school_mascot": "images/mascots/KEAN_mascot.png"
+				"school_logo": "images/logos/Kean_logo.png"
 			},
 			"text": {
 				"school_title": "KEAN",
@@ -8885,8 +8587,7 @@
 		{
 			"outputFileName": "knox-college",
 			"images": {
-				"school_logo": "images/Knox_College_logo.png",
-				"school_mascot": "images/mascots/KNOX_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Knox_College_logo.png"
 			},
 			"text": {
 				"school_title": "KNOX COLLEGE",
@@ -8900,8 +8601,7 @@
 		{
 			"outputFileName": "lane",
 			"images": {
-				"school_logo": "images/Lane_logo.png",
-				"school_mascot": "images/mascots/LANE_mascot.png"
+				"school_logo": "images/logos/Lane_logo.png"
 			},
 			"text": {
 				"school_title": "LANE",
@@ -8915,8 +8615,7 @@
 		{
 			"outputFileName": "loras-college",
 			"images": {
-				"school_logo": "images/Loras_College_logo.png",
-				"school_mascot": "images/mascots/LORAS_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Loras_College_logo.png"
 			},
 			"text": {
 				"school_title": "LORAS COLLEGE",
@@ -8930,8 +8629,7 @@
 		{
 			"outputFileName": "mckendree",
 			"images": {
-				"school_logo": "images/McKendree_logo.png",
-				"school_mascot": "images/mascots/MCKENDREE_mascot.png"
+				"school_logo": "images/logos/McKendree_logo.png"
 			},
 			"text": {
 				"school_title": "MCKENDREE",
@@ -8945,8 +8643,7 @@
 		{
 			"outputFileName": "mit",
 			"images": {
-				"school_logo": "images/MIT_logo.png",
-				"school_mascot": "images/mascots/MIT_mascot.png"
+				"school_logo": "images/logos/MIT_logo.png"
 			},
 			"text": {
 				"school_title": "MIT",
@@ -8960,8 +8657,7 @@
 		{
 			"outputFileName": "northeastern",
 			"images": {
-				"school_logo": "images/Northeastern_logo.png",
-				"school_mascot": "images/mascots/NORTHEASTERN_mascot.png"
+				"school_logo": "images/logos/Northeastern_logo.png"
 			},
 			"text": {
 				"school_title": "NORTHEASTERN",
@@ -8975,8 +8671,7 @@
 		{
 			"outputFileName": "shorter",
 			"images": {
-				"school_logo": "images/Shorter_logo.png",
-				"school_mascot": "images/mascots/SHORTER_mascot.png"
+				"school_logo": "images/logos/Shorter_logo.png"
 			},
 			"text": {
 				"school_title": "SHORTER",
@@ -8990,8 +8685,7 @@
 		{
 			"outputFileName": "sioux-falls",
 			"images": {
-				"school_logo": "images/Sioux_Falls_logo.png",
-				"school_mascot": "images/mascots/SIOUX_FALLS_mascot.png"
+				"school_logo": "images/logos/Sioux_Falls_logo.png"
 			},
 			"text": {
 				"school_title": "SIOUX FALLS",
@@ -9005,8 +8699,7 @@
 		{
 			"outputFileName": "thiel-college",
 			"images": {
-				"school_logo": "images/Thiel_College_logo.png",
-				"school_mascot": "images/mascots/THIEL_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Thiel_College_logo.png"
 			},
 			"text": {
 				"school_title": "THIEL COLLEGE",
@@ -9020,8 +8713,7 @@
 		{
 			"outputFileName": "union-college",
 			"images": {
-				"school_logo": "images/Union_College_logo.png",
-				"school_mascot": "images/mascots/UNION_COLLEGE_mascot.png"
+				"school_logo": "images/logos/Union_College_logo.png"
 			},
 			"text": {
 				"school_title": "UNION COLLEGE",
@@ -9035,8 +8727,7 @@
 		{
 			"outputFileName": "virginia-union",
 			"images": {
-				"school_logo": "images/Virginia_Union_logo.png",
-				"school_mascot": "images/mascots/VIRGINIA_UNION_mascot.png"
+				"school_logo": "images/logos/Virginia_Union_logo.png"
 			},
 			"text": {
 				"school_title": "VIRGINIA UNION",

@@ -26,6 +26,7 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const FALL_FOOTBALL_DIR = __dirname;
 const IMAGES_DIR = join(FALL_FOOTBALL_DIR, 'images');
+const MASCOTS_DIR = join(IMAGES_DIR, 'mascots');
 const CONTENT_JSON = join(FALL_FOOTBALL_DIR, 'fall-football-content.json');
 const MAPPING_CSV = join(FALL_FOOTBALL_DIR, 'sportradar-team-ids.csv');
 
@@ -225,7 +226,7 @@ async function main() {
   const { byName, byId } = buildTeamMaps(manifest);
   console.log('Manifest entries (by name):', byName.size, '(by id):', byId.size);
 
-  mkdirSync(IMAGES_DIR, { recursive: true });
+  mkdirSync(MASCOTS_DIR, { recursive: true });
   let downloaded = 0;
   let updated = 0;
 
@@ -244,8 +245,8 @@ async function main() {
     const { imageUrl } = match;
     const ext = extensionFromUrl(imageUrl);
     const filename = mascotFilenameFromSchool(schoolName, ext);
-    const fullPath = join(IMAGES_DIR, filename);
-    const relativePath = 'images/' + filename;
+    const fullPath = join(MASCOTS_DIR, filename);
+    const relativePath = 'images/mascots/' + filename;
 
     if (dryRun) {
       console.log('Would set school_mascot:', schoolName, '->', relativePath);

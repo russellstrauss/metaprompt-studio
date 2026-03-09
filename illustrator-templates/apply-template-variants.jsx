@@ -160,6 +160,20 @@ var VARIANT_LIMIT = 20;
   if (batchMode) quitBatch();
 
   function applyOneVariant(doc, config, basePath) {
+    // Hide the mascot layer when this variant has no mascot image (logo is the only graphic).
+    if (!config.images || !config.images.school_mascot) {
+      var mascotLayer = getLayerByName(doc, 'school_mascot');
+      if (mascotLayer) {
+        try { mascotLayer.visible = false; } catch (eHide) {}
+      }
+    } else {
+      // Ensure it's visible for variants that do have a distinct mascot.
+      var mascotLayerOn = getLayerByName(doc, 'school_mascot');
+      if (mascotLayerOn) {
+        try { mascotLayerOn.visible = true; } catch (eShow) {}
+      }
+    }
+
     if (config.images && typeof config.images === 'object') {
       applyImages(doc, config.images, basePath);
     }
@@ -1038,6 +1052,60 @@ var VARIANT_LIMIT = 20;
       if (yearContainer) {
         setStrokeColorOnTextFrames(yearContainer, secondaryRgb);
         setStrokeColorOnPaths(yearContainer, secondaryRgb);
+      }
+    }
+
+    // 4) If secondary color is white, set "COLLEGE FOOTBALL SEASON" text fill to black.
+    if (secondaryRgb && secondaryRgb.red === 255 && secondaryRgb.green === 255 && secondaryRgb.blue === 255) {
+      var blackColor = new RGBColor();
+      blackColor.red = 0;
+      blackColor.green = 0;
+      blackColor.blue = 0;
+      setFillColorOnMatchingTextFrames(doc, 'COLLEGE FOOTBALL SEASON', blackColor);
+    }
+  }
+
+  // Recursively find TextFrames whose contents include searchText and set their fill color.
+  function setFillColorOnMatchingTextFrames(container, searchText, color) {
+    if (!container) return;
+
+    var items = null;
+    try { items = container.pageItems; } catch (e1) {}
+
+    if (items && items.length) {
+      for (var i = 0; i < items.length; i++) {
+        var it = items[i];
+        if (it.typename === 'TextFrame') {
+          try {
+            if (String(it.contents).indexOf(searchText) !== -1) {
+              var tr = it.textRange;
+              var ca = tr.characterAttributes;
+              ca.fillColor = color;
+              var chars = tr.characters;
+              if (chars && chars.length) {
+                for (var c = 0; c < chars.length; c++) {
+                  try {
+                    if (chars[c].characterAttributes) {
+                      chars[c].characterAttributes.fillColor = color;
+                    }
+                  } catch (e2) {}
+                }
+              }
+            }
+          } catch (e3) {}
+        }
+        if (it.typename === 'GroupItem') {
+          setFillColorOnMatchingTextFrames(it, searchText, color);
+        }
+      }
+    }
+
+    var layers = null;
+    try { layers = container.layers; } catch (e4) {}
+
+    if (layers && layers.length) {
+      for (var j = 0; j < layers.length; j++) {
+        setFillColorOnMatchingTextFrames(layers[j], searchText, color);
       }
     }
   }

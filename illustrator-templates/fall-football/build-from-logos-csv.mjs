@@ -1,6 +1,6 @@
 /**
  * build-from-logos-csv.mjs
- * Reads logos.csv (school, color, alt_color, logo URL), downloads logos into images/
+ * Reads logos.csv (school, color, alt_color, logo URL), downloads logos into images/logos/
  * with filenames like University_of_Kansas_logo.png, and writes fall-football-content.json
  * for use with apply-template-variants.jsx.
  *
@@ -15,7 +15,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const FALL_FOOTBALL_DIR = __dirname;
-const IMAGES_DIR = join(FALL_FOOTBALL_DIR, 'images');
+const IMAGES_DIR = join(FALL_FOOTBALL_DIR, 'images', 'logos');
 const DEFAULT_CSV = join(FALL_FOOTBALL_DIR, 'logos.csv');
 const CONTENT_JSON = join(FALL_FOOTBALL_DIR, 'fall-football-content.json');
 
@@ -168,7 +168,7 @@ async function main() {
       const ext = extensionFromUrl(logoUrl);
       const filename = logoFilenameFromSchool(school, ext);
       const fullPath = join(IMAGES_DIR, filename);
-      const relativePath = 'images/' + filename;
+      const relativePath = 'images/logos/' + filename;
 
       let needDownload = !existsSync(fullPath);
       if (!needDownload && !isExistingFileValidImage(fullPath, ext)) {
