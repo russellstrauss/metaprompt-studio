@@ -762,6 +762,18 @@ var VARIANT_LIMIT = 0; // Change to 20 to re-enable the testing limit
       var allExisting = findAllImageItemsInContainer(layer);
       var item = null;
 
+      // Unlock a container so items can be moved into or out of it.
+      // Walks up the parent chain to unlock any ancestor layers that are also locked.
+      function safeUnlock(container) {
+        var cur = container;
+        var depth = 0;
+        while (cur && depth < 20) {
+          try { cur.locked = false; } catch (e) {}
+          try { cur = cur.parent; } catch (e) { break; }
+          depth++;
+        }
+      }
+
       function placeFileAndPosition(placeItem, parent, left, top, width, height) {
         try {
           placeItem.file = file;
@@ -773,6 +785,11 @@ var VARIANT_LIMIT = 0; // Change to 20 to re-enable the testing limit
           logError('Could not place image (relink/place failed); skipping. Layer: ' + layerName + ', path: ' + (file.fsName || pathOrUrl));
           return null;
         }
+        // Unlock both the item's current (source) layer and the destination.
+        // doc.placedItems.add() places the new item on the active layer; if that
+        // layer is locked, moving out of it also throws Error 9024.
+        try { safeUnlock(placeItem.parent); } catch (eSrc) {}
+        safeUnlock(parent);
         placeItem.move(parent, ElementPlacement.PLACEATEND);
         if (left !== undefined && top !== undefined) {
           placeItem.left = left;
@@ -804,6 +821,7 @@ var VARIANT_LIMIT = 0; // Change to 20 to re-enable the testing limit
                 existing.width = width;
                 existing.height = height;
               }
+              safeUnlock(parent);
               existing.move(parent, ElementPlacement.PLACEATEND);
               item = existing;
               relinkedFirst = true;
@@ -824,6 +842,7 @@ var VARIANT_LIMIT = 0; // Change to 20 to re-enable the testing limit
         var parent = existing.parent;
         if (existing.typename === 'PlacedItem') {
           try {
+            safeUnlock(parent);
             existing.relink(file);
             existing.move(parent, ElementPlacement.PLACEATEND);
             item = existing;
@@ -866,6 +885,8 @@ var VARIANT_LIMIT = 0; // Change to 20 to re-enable the testing limit
           if (item === placeItem) {
             placeItem.left = 0;
             placeItem.top = 0;
+            try { safeUnlock(placeItem.parent); } catch (eSrc2) {}
+            safeUnlock(layer);
             placeItem.move(layer, ElementPlacement.PLACEATEND);
           }
         }
